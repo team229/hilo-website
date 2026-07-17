@@ -18,8 +18,18 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+@media (max-width: 1023px) {
+  body {
+    padding-bottom: 64px;
+  }
+}
+
 .clip-hexagon {
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0);
 }
 
 .animate-fade-in {
