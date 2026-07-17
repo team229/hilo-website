@@ -45,4 +45,4 @@ If you've checked your thermostat and changed your filter, but your home is stil
 At Hilo Heating and Air, we serve **Anaheim, Stanton, and the greater Orange County area** with honest, transparent service. We believe in **Honest Work, Every Time.** We will never try to sell you a costly replacement system if a reliable, expert repair can safely get your cool breeze back.
 
 > **Is your AC acting up? Don't sweat it.**
-> Call us today at **(714) 853-5534** or email **hilohvacservices@gmail.com** for fast, reliable emergency HVAC service you can trust. We offer upfront pricing with absolutely no hidden charges!
+> Call us today at **(714) 853-5534** or email **info@hiloheatingandair.com** for fast, reliable emergency HVAC service you can trust. We offer upfront pricing with absolutely no hidden charges!

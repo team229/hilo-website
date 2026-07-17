@@ -3,6 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import CTASection from '../components/CTASection';
+import ServiceForm from '../components/ServiceForm';
+import LicenseBadges from '../components/LicenseBadges.astro';
 ---
 
 <BaseLayout title="Contact Us | HiLo Heating & Air" description="Contact HiLo Heating & Air for same-day HVAC service in Orange County. Call (714) 853-5534 for emergency AC repair, heating service, and free estimates.">
@@ -16,26 +18,14 @@ import CTASection from '../components/CTASection';
       </div>
     </section>
 
+    <LicenseBadges />
+
     {/* Contact Form & Info */}
     <section class="py-16 sm:py-24 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Form */}
-          <div class="bg-white border-2 border-brand-blue/10 rounded-2xl shadow-xl p-8">
-            <h2 class="text-2xl font-bold text-brand-blue mb-6">Send Us a Message</h2>
-            <form class="space-y-4">
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <input type="text" placeholder="Your Name" required class="w-full px-4 py-3 rounded-lg border-2 border-brand-blue/10 focus:border-brand-blue focus:outline-none text-sm transition" />
-                <input type="tel" placeholder="Phone Number" required class="w-full px-4 py-3 rounded-lg border-2 border-brand-blue/10 focus:border-brand-blue focus:outline-none text-sm transition" />
-              </div>
-              <input type="email" placeholder="Email Address" class="w-full px-4 py-3 rounded-lg border-2 border-brand-blue/10 focus:border-brand-blue focus:outline-none text-sm transition" />
-              <input type="text" placeholder="Subject" class="w-full px-4 py-3 rounded-lg border-2 border-brand-blue/10 focus:border-brand-blue focus:outline-none text-sm transition" />
-              <textarea placeholder="Your Message" rows={5} class="w-full px-4 py-3 rounded-lg border-2 border-brand-blue/10 focus:border-brand-blue focus:outline-none text-sm transition resize-none"></textarea>
-              <button type="submit" class="w-full bg-brand-blue text-white font-bold py-3.5 rounded-xl text-base hover:bg-blue-700 transition shadow-lg shadow-brand-blue/30">
-                Send Message
-              </button>
-            </form>
-          </div>
+          <ServiceForm client:load />
 
           {/* Info */}
           <div class="space-y-8">
@@ -62,7 +52,7 @@ import CTASection from '../components/CTASection';
                 </div>
                 <div>
                   <h3 class="font-bold text-brand-blue mb-1">Email</h3>
-                  <a href="mailto:hilohvacservices@gmail.com" class="text-slate-600 hover:text-brand-red transition">hilohvacservices@gmail.com</a>
+                  <a href="mailto:info@hiloheatingandair.com" class="text-slate-600 hover:text-brand-red transition">info@hiloheatingandair.com</a>
                   <p class="text-sm text-brand-blue/60">We respond within 24 hours</p>
                 </div>
               </div>
