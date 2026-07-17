@@ -7,9 +7,40 @@ import Reviews from '../../components/Reviews';
 import ServiceForm from '../../components/ServiceForm';
 import LicenseBadges from '../../components/LicenseBadges.astro';
 import BrandsSection from '../../components/BrandsSection.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What HVAC services do you offer in Orange?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Furnace repair, AC service, heating maintenance, and installation in Orange and surrounding areas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer emergency service in Orange?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — 24/7 emergency HVAC service in Orange. Call (714) 853-5534 anytime."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long have you served Orange?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We've been serving Orange and Orange County since 2016 with reliable HVAC service."
+      }
+    }
+  ]
+};
 ---
 
-<BaseLayout title="HVAC Services in Orange, CA | HiLo Heating & Air" description="Reliable furnace repair, heating maintenance, and AC services in Orange, CA. Honest diagnostics and repairs that hold up from HiLo Heating & Air since 2000.">
+<BaseLayout title="HVAC Services in Orange, CA | HiLo Heating & Air" description="Reliable furnace repair, heating maintenance, and AC services in Orange, CA. Honest diagnostics and repairs that hold up from HiLo Heating & Air since 2000." faqSchema={faqSchemaObject}>
   <Header />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">

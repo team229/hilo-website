@@ -1,5 +1,36 @@
 ---
 import ServicePageLayout from '../layouts/ServicePageLayout.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why install a whole-home humidifier?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It maintains ideal humidity levels throughout your home, preventing dry skin, static electricity, and damage to wood furniture."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What humidity level should my home be?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Between 30-50% relative humidity is ideal for comfort and health in Southern California homes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is a humidifier installed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It's installed directly into your HVAC system's ductwork, treating the air for your entire home — not just one room."
+      }
+    }
+  ]
+};
 ---
 
 <ServicePageLayout
@@ -7,6 +38,7 @@ import ServicePageLayout from '../layouts/ServicePageLayout.astro';
   description="Professional whole-home humidifier installation in Stanton, CA. Improve comfort and protect your home from dry air damage with HiLo Heating & Air."
   heroTitle="HVAC Humidifier Installation in Stanton, CA"
   heroSubtitle="Ever notice your skin gets itchy and your nose feels stuffy the second winter hits? That's dry indoor air, and a whole-home humidifier is one of the more underrated upgrades a homeowner can make."
+  faqSchema={faqSchemaObject}
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">

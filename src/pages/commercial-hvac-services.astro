@@ -3,9 +3,40 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import CTASection from '../components/CTASection';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you offer commercial HVAC maintenance plans?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we offer custom maintenance plans for businesses including restaurants, offices, and retail spaces in Orange County."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly can you respond to commercial HVAC emergencies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We prioritize commercial emergency calls and typically dispatch within 2 hours for businesses in Orange County."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What commercial HVAC systems do you work on?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We service rooftop units, split systems, VRF/VRV systems, chillers, and packaged units for commercial properties."
+      }
+    }
+  ]
+};
 ---
 
-<BaseLayout title="Commercial HVAC Services in Stanton, CA | HiLo Heating & Air" description="Professional commercial HVAC services for businesses in Stanton, CA. Installation, maintenance, emergency repairs, and replacements for offices, restaurants, and more.">
+<BaseLayout title="Commercial HVAC Services in Stanton, CA | HiLo Heating & Air" description="Professional commercial HVAC services for businesses in Stanton, CA. Installation, maintenance, emergency repairs, and replacements for offices, restaurants, and more." faqSchema={faqSchemaObject}>
   <Header />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">

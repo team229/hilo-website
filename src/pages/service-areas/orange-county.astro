@@ -7,9 +7,40 @@ import Reviews from '../../components/Reviews';
 import ServiceForm from '../../components/ServiceForm';
 import LicenseBadges from '../../components/LicenseBadges.astro';
 import BrandsSection from '../../components/BrandsSection.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What areas of Orange County do you serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All major cities including Anaheim, Irvine, Santa Ana, Fullerton, Costa Mesa, Newport Beach, Garden Grove, and more."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer same-day service across Orange County?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — same-day HVAC service throughout Orange County. Most calls handled within hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you licensed in Orange County?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — California C-20 HVAC Contractor License #1155955, fully insured and bonded."
+      }
+    }
+  ]
+};
 ---
 
-<BaseLayout title="HVAC Services in Orange County, CA | HiLo Heating & Air" description="Expert AC repair, heating service, and HVAC maintenance throughout Orange County, CA. From coastal corrosion to inland heat, HiLo Heating & Air covers it all.">
+<BaseLayout title="HVAC Services in Orange County, CA | HiLo Heating & Air" description="Expert AC repair, heating service, and HVAC maintenance throughout Orange County, CA. From coastal corrosion to inland heat, HiLo Heating & Air covers it all." faqSchema={faqSchemaObject}>
   <Header />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">

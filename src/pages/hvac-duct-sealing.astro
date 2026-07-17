@@ -1,5 +1,36 @@
 ---
 import ServicePageLayout from '../layouts/ServicePageLayout.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much energy do leaky ducts waste?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Leaky ducts can waste 20-30% of your heating and cooling energy, significantly increasing your monthly utility bills."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is duct sealing done?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We use mastic sealant and metal tape for permanent seals — not duct tape which degrades over time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does duct sealing last?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Professional duct sealing with proper materials lasts 5-10 years or more with no maintenance needed."
+      }
+    }
+  ]
+};
 ---
 
 <ServicePageLayout
@@ -7,6 +38,7 @@ import ServicePageLayout from '../layouts/ServicePageLayout.astro';
   description="Professional duct sealing and ductwork repair services in Stanton, CA. Stop losing conditioned air through leaky ducts with HiLo Heating & Air."
   heroTitle="HVAC Duct Sealing in Stanton, CA"
   heroSubtitle="Your AC kicks on, runs all afternoon, and the house still doesn't feel right? A lot of the time that's air escaping before it even reaches your vents."
+  faqSchema={faqSchemaObject}
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">

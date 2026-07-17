@@ -7,9 +7,40 @@ import Reviews from '../../components/Reviews';
 import ServiceForm from '../../components/ServiceForm';
 import LicenseBadges from '../../components/LicenseBadges.astro';
 import BrandsSection from '../../components/BrandsSection.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you serve all of Irvine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — including Woodbridge, Turtle Rock, Great Park, and all Irvine neighborhoods."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer HVAC maintenance plans in Irvine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — seasonal maintenance plans to keep your system running efficiently year-round."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly can you respond in Irvine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Same-day service available for AC repair and HVAC emergencies across Irvine."
+      }
+    }
+  ]
+};
 ---
 
-<BaseLayout title="HVAC Services in Irvine, CA | HiLo Heating & Air" description="Expert AC repair, furnace repair, and HVAC services in Irvine, CA. Same-day service from licensed technicians at HiLo Heating & Air.">
+<BaseLayout title="HVAC Services in Irvine, CA | HiLo Heating & Air" description="Expert AC repair, furnace repair, and HVAC services in Irvine, CA. Same-day service from licensed technicians at HiLo Heating & Air." faqSchema={faqSchemaObject}>
   <Header />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">

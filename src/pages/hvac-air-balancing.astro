@@ -1,5 +1,36 @@
 ---
 import ServicePageLayout from '../layouts/ServicePageLayout.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is HVAC air balancing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Air balancing adjusts your HVAC system's airflow to ensure even temperatures throughout your home. It fixes hot and cold spots."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know if my home needs air balancing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Signs include rooms that never reach the right temperature, whistling vents, or high energy bills despite a well-functioning system."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does air balancing take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most residential air balancing takes 2-4 hours depending on home size and the number of zones."
+      }
+    }
+  ]
+};
 ---
 
 <ServicePageLayout
@@ -7,6 +38,7 @@ import ServicePageLayout from '../layouts/ServicePageLayout.astro';
   description="Professional HVAC air balancing and system inspection services in Stanton, CA. Fix uneven temperatures and improve comfort throughout your home."
   heroTitle="HVAC Air Balancing in Stanton, CA"
   heroSubtitle="One room's too cold, another's too hot? That's usually an airflow problem, not a system problem. HiLo Heating and Air handles air balancing and HVAC system inspection."
+  faqSchema={faqSchemaObject}
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">

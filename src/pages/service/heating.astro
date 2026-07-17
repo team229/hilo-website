@@ -1,5 +1,36 @@
 ---
 import ServicePageLayout from '../../layouts/ServicePageLayout.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What heating services do you offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Furnace repair, heating installation, seasonal maintenance, and emergency heating service across Orange County."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know if my furnace needs repair?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unusual noises, uneven heat, rising bills, or system short-cycling indicate your furnace needs professional attention."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer emergency heating service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — 24/7 emergency heating service. Call (714) 853-5534 if your heat stops working."
+      }
+    }
+  ]
+};
 ---
 
 <ServicePageLayout
@@ -7,6 +38,7 @@ import ServicePageLayout from '../../layouts/ServicePageLayout.astro';
   description="Reliable furnace repair, heating maintenance, and heating installation in Orange County. Honest diagnostics and repairs that hold up from HiLo Heating & Air."
   heroTitle="Furnace Repair Orange CA"
   heroSubtitle="Reliable heating service from people who actually care. We've been helping homeowners across Orange County stay warm since 2000."
+  faqSchema={faqSchemaObject}
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">

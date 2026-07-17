@@ -7,9 +7,40 @@ import Reviews from '../../components/Reviews';
 import ServiceForm from '../../components/ServiceForm';
 import LicenseBadges from '../../components/LicenseBadges.astro';
 import BrandsSection from '../../components/BrandsSection.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How quickly can you get to Anaheim for AC repair?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We dispatch same-day across Anaheim. Most calls are answered within a few hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer free estimates in Anaheim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — free estimates and free diagnostics with any approved repair for Anaheim homeowners."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What areas of Anaheim do you serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All of Anaheim including Anaheim Hills, Downtown Anaheim, and surrounding neighborhoods."
+      }
+    }
+  ]
+};
 ---
 
-<BaseLayout title="HVAC Services in Anaheim, CA | HiLo Heating & Air" description="Expert HVAC repair, AC installation, and heating services in Anaheim, CA. Same-day service from licensed technicians serving Anaheim and Orange County since 2000.">
+<BaseLayout title="HVAC Services in Anaheim, CA | HiLo Heating & Air" description="Expert HVAC repair, AC installation, and heating services in Anaheim, CA. Same-day service from licensed technicians serving Anaheim and Orange County since 2000." faqSchema={faqSchemaObject}>
   <Header />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">

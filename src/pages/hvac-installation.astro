@@ -1,5 +1,36 @@
 ---
 import ServicePageLayout from '../layouts/ServicePageLayout.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Should I repair or replace my HVAC system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If repairs cost more than 50% of a new system or your unit is over 15 years old, replacement is usually more cost-effective."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a full HVAC installation take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Complete system installation typically takes 1-2 days depending on the complexity of your home's setup."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What SEER rating should I choose?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For Orange County's climate, a 14-16 SEER system offers the best balance of efficiency and cost. Higher SEER ratings save more energy for a higher upfront cost."
+      }
+    }
+  ]
+};
 ---
 
 <ServicePageLayout
@@ -7,6 +38,7 @@ import ServicePageLayout from '../layouts/ServicePageLayout.astro';
   description="Professional new HVAC system installation for homes and businesses in Stanton, CA and surrounding Orange County areas. Proper sizing and expert setup from HiLo Heating & Air."
   heroTitle="New HVAC System Installation in Stanton, CA"
   heroSubtitle="If your heating and cooling system has been struggling, a patch job probably won't cut it for long. Hilo Heating and Air handles new HVAC system installation throughout Stanton and Orange County."
+  faqSchema={faqSchemaObject}
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">

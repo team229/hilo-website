@@ -1,5 +1,36 @@
 ---
 import ServicePageLayout from '../layouts/ServicePageLayout.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How often should I service my furnace?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Annual maintenance is recommended, ideally in fall before heating season. This prevents mid-winter breakdowns."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does heating maintenance include?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Inspect heat exchanger, clean burners, check gas pressure, test safety controls, lubricate motors, and replace air filters."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can maintenance prevent carbon monoxide leaks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we inspect the heat exchanger for cracks during every maintenance visit, which is critical for preventing CO leaks."
+      }
+    }
+  ]
+};
 ---
 
 <ServicePageLayout
@@ -7,6 +38,7 @@ import ServicePageLayout from '../layouts/ServicePageLayout.astro';
   description="Professional heating maintenance and seasonal tune-ups in Stanton, CA. Prevent breakdowns and keep your furnace running efficiently."
   heroTitle="Heating Maintenance in Stanton, CA"
   heroSubtitle="Most furnaces don't quit without warning. They give signs first. Staying ahead of that is the whole point of HVAC maintenance service."
+  faqSchema={faqSchemaObject}
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">

@@ -1,6 +1,37 @@
 ---
 import ServicePageLayout from '../layouts/ServicePageLayout.astro';
 
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What areas do you serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All of Orange County including Anaheim, Irvine, Santa Ana, Fullerton, Costa Mesa, Newport Beach, Garden Grove, Laguna Hills, Stanton, Rancho Santa Margarita, and Los Angeles."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer same-day service in all areas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — same-day HVAC service across all our service areas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I find service in my city?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check our service areas page or call (714) 853-5534 to check availability in your area."
+      }
+    }
+  ]
+};
+
 const areas = [
   { city: 'Anaheim', desc: 'AC repair, heating service, and emergency HVAC repairs.', href: '/service-areas/anaheim/' },
   { city: 'Costa Mesa', desc: 'Quality HVAC repair and installation services.', href: '/service-areas/costa-mesa/' },
@@ -22,6 +53,7 @@ const areas = [
   description="Proudly serving Orange County and surrounding areas with reliable HVAC services. Same-day AC repair, heating service, and emergency HVAC repairs."
   heroTitle="Service Areas"
   heroSubtitle="Proudly serving Orange County and surrounding areas with reliable HVAC services."
+  faqSchema={faqSchemaObject}
 >
   <section class="py-16 sm:py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

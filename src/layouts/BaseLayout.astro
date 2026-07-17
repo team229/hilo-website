@@ -6,13 +6,15 @@ interface Props {
   description?: string;
   canonical?: string;
   robots?: string;
+  faqSchema?: object;
 }
 
 const { 
   title = 'AC Repair Anaheim | HiLo Heating & Air',
   description = 'Need AC repair in Anaheim? HiLo Heating & Air offers same-day AC repair, free diagnostics with repair, and 24/7 emergency service. EPA-certified technicians. Call (714) 853-5534!',
   canonical,
-  robots
+  robots,
+  faqSchema
 } = Astro.props;
 
 const siteUrl = 'https://hiloheatingandair.com';
@@ -20,20 +22,32 @@ const pageCanonical = canonical || Astro.url.href;
 const siteName = 'HiLo Heating and Air';
 const ogImage = `${siteUrl}/images/og-image.jpeg`;
 
+function generateBreadcrumbs(pathname: string) {
+  const parts = pathname.replace(/\/$/, '').split('/').filter(Boolean);
+  const items = [{ position: 1, name: 'Home', item: siteUrl }];
+  let currentPath = '';
+  for (const part of parts) {
+    currentPath += `/${part}`;
+    const name = part.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    items.push({ position: items.length + 1, name, item: `${siteUrl}${currentPath}/` });
+  }
+  return items;
+}
+
+const breadcrumbItems = generateBreadcrumbs(Astro.url.pathname);
+
 const schemaOrg = {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "BreadcrumbList",
       "@id": `${siteUrl}/#breadcrumblist`,
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "@id": `${siteUrl}#listItem`,
-          "position": 1,
-          "name": "Home"
-        }
-      ]
+      "itemListElement": breadcrumbItems.map((item) => ({
+        "@type": "ListItem",
+        "position": item.position,
+        "name": item.name,
+        "item": item.item
+      }))
     },
     {
       "@type": "Organization",
@@ -175,26 +189,6 @@ const schemaOrg = {
         "https://www.youtube.com/@hilohvac",
         "https://www.linkedin.com/in/hilo-heating-and-air-conditioning"
       ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Does HiLo offer same-day AC repair services in Anaheim?",
-          "acceptedAnswer": { "@type": "Answer", "text": "HiLo Heating & Air Conditioning provides same-day AC repair throughout Anaheim with certified technicians dispatched quickly to restore your comfort fast." }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you offer 24/7 emergency HVAC service?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. HiLo Heating & Air Conditioning offers 24/7 emergency HVAC repair across Orange County, including Irvine, Santa Ana, Fullerton, and Garden Grove with rapid dispatch." }
-        },
-        {
-          "@type": "Question",
-          "name": "Does HiLo waive the diagnostic fee when approving a repair?",
-          "acceptedAnswer": { "@type": "Answer", "text": "HiLo Heating & Air Conditioning completely waives the standard diagnostic fee when you approve any repair, making it easier and more affordable to restore your HVAC system fast." }
-        }
-      ]
     }
   ]
 };
@@ -241,6 +235,10 @@ const schemaOrg = {
   
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json" set:html={JSON.stringify(schemaOrg)} />
+  
+  {faqSchema && (
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  )}
   
   <title>{title}</title>
 </head>

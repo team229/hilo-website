@@ -1,6 +1,37 @@
 ---
 import ServicePageLayout from '../layouts/ServicePageLayout.astro';
 import LicenseBadges from '../components/LicenseBadges.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How often should I get AC maintenance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We recommend annual maintenance, ideally in spring before peak cooling season. It catches small issues before they become costly breakdowns."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's included in an AC tune-up?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Inspect coils, check refrigerant levels, clean drain lines, test electrical components, replace air filters, and verify thermostat calibration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does AC maintenance really save money?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — regular maintenance improves efficiency by up to 15%, extends system lifespan, and prevents expensive emergency repairs."
+      }
+    }
+  ]
+};
 ---
 
 <ServicePageLayout
@@ -8,6 +39,7 @@ import LicenseBadges from '../components/LicenseBadges.astro';
   description="Professional AC maintenance and seasonal tune-ups in Stanton, CA. Prevent breakdowns, improve efficiency, and extend your system's lifespan with HiLo Heating & Air."
   heroTitle="AC Maintenance in Stanton, CA"
   heroSubtitle="Your AC doesn't just break one day. It warns you first. AC maintenance is how you avoid that whole scenario."
+  faqSchema={faqSchemaObject}
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">

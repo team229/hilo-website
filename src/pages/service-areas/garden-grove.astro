@@ -7,9 +7,40 @@ import Reviews from '../../components/Reviews';
 import ServiceForm from '../../components/ServiceForm';
 import LicenseBadges from '../../components/LicenseBadges.astro';
 import BrandsSection from '../../components/BrandsSection.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What HVAC services do you offer in Garden Grove?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AC repair, heating service, HVAC maintenance, and installation throughout Garden Grove."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long have you served Garden Grove?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We've been providing HVAC service to Garden Grove and Orange County since 2016."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer emergency HVAC service in Garden Grove?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — 24/7 emergency service. Call (714) 853-5534 for immediate dispatch to Garden Grove."
+      }
+    }
+  ]
+};
 ---
 
-<BaseLayout title="HVAC Services in Garden Grove, CA | HiLo Heating & Air" description="Fast, professional AC repair, heating service, and HVAC maintenance in Garden Grove, CA. Same-day service from licensed technicians at HiLo Heating & Air.">
+<BaseLayout title="HVAC Services in Garden Grove, CA | HiLo Heating & Air" description="Fast, professional AC repair, heating service, and HVAC maintenance in Garden Grove, CA. Same-day service from licensed technicians at HiLo Heating & Air." faqSchema={faqSchemaObject}>
   <Header />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">

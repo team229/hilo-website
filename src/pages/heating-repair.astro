@@ -1,5 +1,36 @@
 ---
 import ServicePageLayout from '../layouts/ServicePageLayout.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I know if my furnace needs repair?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Signs include unusual noises, uneven heating, rising energy bills, frequent cycling, or yellow burner flames instead of blue."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer emergency heating repair?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we provide 24/7 emergency heating repair. If your furnace stops working in cold weather, call (714) 853-5534."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you repair all furnace brands?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We repair Carrier, Trane, Goodman, Lennox, Rheem, York, and most other major furnace brands."
+      }
+    }
+  ]
+};
 ---
 
 <ServicePageLayout
@@ -7,6 +38,7 @@ import ServicePageLayout from '../layouts/ServicePageLayout.astro';
   description="Fast, reliable heating repair for homes and businesses in Stanton, CA. Emergency furnace repair with same-day service from licensed technicians at HiLo Heating & Air."
   heroTitle="Heating Repair in Stanton, CA"
   heroSubtitle="Heat goes out on the one cold week we actually get in Southern California. Hilo Heating and Air handles emergency heating repair for homes and businesses across Stanton."
+  faqSchema={faqSchemaObject}
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">

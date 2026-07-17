@@ -1,5 +1,36 @@
 ---
 import ServicePageLayout from '../layouts/ServicePageLayout.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Are mini splits efficient for whole-home cooling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Multi-zone mini splits can efficiently cool your entire home. They're especially good for homes without existing ductwork."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does mini split installation take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Single-zone installation takes 4-6 hours. Multi-zone systems typically require 1-2 days."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do mini splits work for heating too?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — most mini splits are heat pumps that provide both cooling and heating down to very low outdoor temperatures."
+      }
+    }
+  ]
+};
 ---
 
 <ServicePageLayout
@@ -7,6 +38,7 @@ import ServicePageLayout from '../layouts/ServicePageLayout.astro';
   description="Professional mini split installation for homes and businesses in Stanton, CA. Ductless solutions for efficient cooling and heating."
   heroTitle="Mini Split Installation in Stanton, CA"
   heroSubtitle="No ducts needed, easy zoning, and one of the more efficient ways to cool or heat a single room or addition."
+  faqSchema={faqSchemaObject}
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">

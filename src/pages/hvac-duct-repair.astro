@@ -1,5 +1,36 @@
 ---
 import ServicePageLayout from '../layouts/ServicePageLayout.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I know if my ducts need repair?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Signs include uneven room temperatures, whistling sounds from vents, visible duct damage, or unusually high energy bills."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does duct repair take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Minor repairs take 1-2 hours. Major duct replacement can take a full day depending on accessibility and scope."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are duct repairs expensive?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most duct repairs are affordable. We provide upfront quotes before any work begins — no surprises."
+      }
+    }
+  ]
+};
 ---
 
 <ServicePageLayout
@@ -7,6 +38,7 @@ import ServicePageLayout from '../layouts/ServicePageLayout.astro';
   description="Professional HVAC duct repair, ductwork repair, and HVAC duct replacement services in Stanton, CA and surrounding Orange County areas."
   heroTitle="HVAC Duct Repair & Replacement in Stanton, CA"
   heroSubtitle="Nine times out of ten, uneven temperatures or high bills are a duct problem, not an equipment problem. HiLo Heating and Air handles HVAC duct repair and replacement."
+  faqSchema={faqSchemaObject}
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">

@@ -3,9 +3,40 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import CTASection from '../components/CTASection';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How often should dryer vents be cleaned?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At least once per year. Homes with heavy dryer usage or long vent runs may need cleaning every 6 months."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can dirty dryer vents cause fires?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — lint buildup in dryer vents is a leading cause of house fires. Regular cleaning eliminates this risk."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does dryer vent cleaning take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most residential dryer vent cleaning takes 30-60 minutes, including inspection and cleaning from dryer to exterior vent."
+      }
+    }
+  ]
+};
 ---
 
-<BaseLayout title="Dryer Vent Cleaning in Stanton, CA | Hilo Heating and Air" description="Professional dryer vent cleaning services in Stanton, CA and surrounding Orange County areas. Prevent fires and improve dryer efficiency.">
+<BaseLayout title="Dryer Vent Cleaning in Stanton, CA | Hilo Heating and Air" description="Professional dryer vent cleaning services in Stanton, CA and surrounding Orange County areas. Prevent fires and improve dryer efficiency." faqSchema={faqSchemaObject}>
   <Header />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">

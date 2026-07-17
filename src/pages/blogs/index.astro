@@ -9,11 +9,42 @@ const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
 );
 
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What topics do you cover on your blog?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "HVAC tips, seasonal maintenance guides, energy efficiency advice, and common repair guides."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often do you publish new articles?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We regularly publish new content to help homeowners maintain their HVAC systems."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I suggest a blog topic?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely — contact us with your suggestion and we'll consider it for a future post."
+      }
+    }
+  ]
+};
+
 const title = 'Blogs | HiLo Heating & Air';
 const description = 'Expert HVAC advice, tips, and guides from the HiLo Heating and Air team. Learn about AC repair, heating maintenance, and indoor air quality.';
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} faqSchema={faqSchemaObject}>
   <Header />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">

@@ -1,5 +1,36 @@
 ---
 import ServicePageLayout from '../layouts/ServicePageLayout.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does furnace installation take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most residential furnace installations are completed in one day, including removal of the old unit and setup of the new system."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What type of heating system is best for my home?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on your home's size, existing ductwork, and fuel source. We offer gas furnaces, heat pumps, and electric options."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you install all brands of furnaces?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we install Carrier, Trane, Goodman, Lennox, Rheem, and other major brands with proper sizing and manufacturer warranty."
+      }
+    }
+  ]
+};
 ---
 
 <ServicePageLayout
@@ -7,6 +38,7 @@ import ServicePageLayout from '../layouts/ServicePageLayout.astro';
   description="Professional furnace and heating system installation in Stanton and Laguna Hills, CA. Expert setup with proper sizing and quality workmanship."
   heroTitle="Heating Installation in Stanton & Laguna Hills, CA"
   heroSubtitle="At some point, every furnace stops being worth fixing. Hilo Heating and Air handles furnace installation homeowners can count on."
+  faqSchema={faqSchemaObject}
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">

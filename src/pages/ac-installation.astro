@@ -1,5 +1,36 @@
 ---
 import ServicePageLayout from '../layouts/ServicePageLayout.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a new AC installation cost in Los Angeles?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cost varies based on system size, efficiency rating, and your home's ductwork. We provide free, no-obligation quotes with transparent pricing — no hidden fees."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does AC installation take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most residential AC installations are completed in one day. Complex jobs with ductwork modifications may take 2-3 days."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What size AC unit do I need for my home?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We perform a Manual J load calculation to determine the exact size needed. Bigger isn't better — an oversized unit short-cycles and wastes energy."
+      }
+    }
+  ]
+};
 ---
 
 <ServicePageLayout
@@ -7,6 +38,7 @@ import ServicePageLayout from '../layouts/ServicePageLayout.astro';
   description="Professional AC installation for homes and businesses in Los Angeles and Orange County. Proper sizing, expert setup, and lasting performance."
   heroTitle="AC Installation Los Angeles"
   heroSubtitle="If your AC is wheezing through July, you already know how this story ends. Hilo Heating and Air handles AC installation homeowners actually trust."
+  faqSchema={faqSchemaObject}
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">

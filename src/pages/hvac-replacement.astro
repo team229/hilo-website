@@ -1,5 +1,36 @@
 ---
 import ServicePageLayout from '../layouts/ServicePageLayout.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "When should I replace my HVAC system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If your system is over 15 years old, needs frequent repairs, or energy bills are rising despite maintenance, replacement is worth considering."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you handle permits for HVAC replacement?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we handle all required permits and inspections for HVAC replacements in Orange County, ensuring code compliance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What financing options are available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer flexible financing options for HVAC replacements. Contact us for current rates and terms."
+      }
+    }
+  ]
+};
 ---
 
 <ServicePageLayout
@@ -7,6 +38,7 @@ import ServicePageLayout from '../layouts/ServicePageLayout.astro';
   description="Expert HVAC system replacement in Stanton, CA. Honest assessments, proper sizing, and quality installation from Hilo Heating and Air."
   heroTitle="HVAC Replacement in Stanton, CA"
   heroSubtitle="Sometimes a repair just doesn't make sense anymore. Hilo Heating and Air handles full HVAC replacement and will tell you straight whether you actually need one."
+  faqSchema={faqSchemaObject}
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">

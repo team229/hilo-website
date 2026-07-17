@@ -1,5 +1,36 @@
 ---
 import ServicePageLayout from '../layouts/ServicePageLayout.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you offer 24/7 emergency AC repair?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we provide 24/7 emergency AC repair across Orange County. Call (714) 853-5534 anytime for immediate dispatch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How fast can you get here for emergency AC repair?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We dispatch same-day in most cases, typically arriving within 2-4 hours for emergency calls in Orange County."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What counts as an AC emergency?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No cooling in extreme heat, refrigerant leaks, electrical issues, or unusual noises/smells from your system all qualify as emergencies."
+      }
+    }
+  ]
+};
 ---
 
 <ServicePageLayout
@@ -7,6 +38,7 @@ import ServicePageLayout from '../layouts/ServicePageLayout.astro';
   description="24/7 emergency AC repair in Stanton, CA. Fast response times, same-day service, and honest pricing from Hilo Heating and Air."
   heroTitle="Emergency AC Repair in Stanton, CA"
   heroSubtitle="It always happens at the worst time. Hilo Heating and Air does emergency AC repair all over Stanton, and we actually answer the phone."
+  faqSchema={faqSchemaObject}
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">

@@ -7,9 +7,40 @@ import Reviews from '../../components/Reviews';
 import ServiceForm from '../../components/ServiceForm';
 import LicenseBadges from '../../components/LicenseBadges.astro';
 import BrandsSection from '../../components/BrandsSection.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What HVAC services do you offer in Stanton?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Heating and cooling services including maintenance, inspections, installation, and emergency repair."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you serve businesses in Stanton?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — commercial HVAC services for offices, retail, and restaurants in Stanton."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly can you respond in Stanton?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Same-day service available. We're local to Stanton and can dispatch quickly."
+      }
+    }
+  ]
+};
 ---
 
-<BaseLayout title="HVAC Services in Stanton, CA | HiLo Heating & Air" description="Heating and cooling services for homes and businesses in Stanton, CA. Maintenance, inspections, installation, and emergency repair from HiLo Heating & Air.">
+<BaseLayout title="HVAC Services in Stanton, CA | HiLo Heating & Air" description="Heating and cooling services for homes and businesses in Stanton, CA. Maintenance, inspections, installation, and emergency repair from HiLo Heating & Air." faqSchema={faqSchemaObject}>
   <Header />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">

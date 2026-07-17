@@ -7,9 +7,40 @@ import Reviews from '../../components/Reviews';
 import ServiceForm from '../../components/ServiceForm';
 import LicenseBadges from '../../components/LicenseBadges.astro';
 import BrandsSection from '../../components/BrandsSection.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you offer furnace repair in Rancho Santa Margarita?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — fast, reliable furnace repair with same-day service available in RSM."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What brands do you repair?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All major brands including Carrier, Trane, Lennox, Goodman, and Rheem."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly can you get to Rancho Santa Margarita?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Same-day dispatch for most HVAC emergencies in RSM and surrounding areas."
+      }
+    }
+  ]
+};
 ---
 
-<BaseLayout title="Furnace Repair Rancho Santa Margarita | HiLo Heating and Air" description="Fast, reliable furnace repair in Rancho Santa Margarita, CA. Same-day service from licensed technicians at HiLo Heating and Air.">
+<BaseLayout title="Furnace Repair Rancho Santa Margarita | HiLo Heating and Air" description="Fast, reliable furnace repair in Rancho Santa Margarita, CA. Same-day service from licensed technicians at HiLo Heating and Air." faqSchema={faqSchemaObject}>
   <Header />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">

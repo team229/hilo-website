@@ -5,9 +5,40 @@ import Footer from '../components/Footer.astro';
 import CTASection from '../components/CTASection';
 import ServiceForm from '../components/ServiceForm';
 import LicenseBadges from '../components/LicenseBadges.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How quickly do you respond to inquiries?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We typically respond within 15 minutes during business hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What information should I provide when contacting you?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your name, phone number, address, and a brief description of the issue."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer free estimates?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — free estimates and free diagnostics with any approved repair."
+      }
+    }
+  ]
+};
 ---
 
-<BaseLayout title="Contact Us | HiLo Heating & Air" description="Contact HiLo Heating & Air for same-day HVAC service in Orange County. Call (714) 853-5534 for emergency AC repair, heating service, and free estimates.">
+<BaseLayout title="Contact Us | HiLo Heating & Air" description="Contact HiLo Heating & Air for same-day HVAC service in Orange County. Call (714) 853-5534 for emergency AC repair, heating service, and free estimates." faqSchema={faqSchemaObject}>
   <Header />
   <main>
     {/* Hero */}

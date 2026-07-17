@@ -17,12 +17,13 @@ interface Props {
   heroSubtitle: string;
   canonical?: string;
   robots?: string;
+  faqSchema?: object;
 }
 
-const { title, description, heroTitle, heroSubtitle, canonical, robots } = Astro.props;
+const { title, description, heroTitle, heroSubtitle, canonical, robots, faqSchema } = Astro.props;
 ---
 
-<BaseLayout title={title} description={description} canonical={canonical} robots={robots}>
+<BaseLayout title={title} description={description} canonical={canonical} robots={robots} faqSchema={faqSchema}>
   <Header />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">

@@ -7,9 +7,40 @@ import Reviews from '../../components/Reviews';
 import ServiceForm from '../../components/ServiceForm';
 import LicenseBadges from '../../components/LicenseBadges.astro';
 import BrandsSection from '../../components/BrandsSection.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you handle coastal corrosion issues in Costa Mesa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we regularly service HVAC systems affected by salt air corrosion in coastal Costa Mesa homes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How fast is AC repair in Costa Mesa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Same-day service available. Most AC repairs in Costa Mesa are handled within hours of your call."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you serve all of Costa Mesa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we cover Eastside, Westside, Mesa Verde, and all Costa Mesa neighborhoods."
+      }
+    }
+  ]
+};
 ---
 
-<BaseLayout title="HVAC Services in Costa Mesa, CA | HiLo Heating & Air" description="Expert AC repair, heating service, and HVAC maintenance in Costa Mesa, CA. Fast, reliable service from licensed technicians at HiLo Heating & Air.">
+<BaseLayout title="HVAC Services in Costa Mesa, CA | HiLo Heating & Air" description="Expert AC repair, heating service, and HVAC maintenance in Costa Mesa, CA. Fast, reliable service from licensed technicians at HiLo Heating & Air." faqSchema={faqSchemaObject}>
   <Header />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">

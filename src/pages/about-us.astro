@@ -3,9 +3,40 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import CTASection from '../components/CTASection';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long has HiLo been in business?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "HiLo Heating & Air has been serving Orange County since 2016."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are your technicians certified?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — all our technicians are EPA-certified and undergo ongoing training."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What areas do you serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We serve Orange County including Anaheim, Irvine, Santa Ana, Fullerton, Costa Mesa, and Los Angeles."
+      }
+    }
+  ]
+};
 ---
 
-<BaseLayout title="About Us | HiLo Heating & Air" description="Learn about HiLo Heating & Air — Orange County's trusted HVAC company since 2000. EPA-certified technicians, same-day service, and honest pricing for all your heating and cooling needs.">
+<BaseLayout title="About Us | HiLo Heating & Air" description="Learn about HiLo Heating & Air — Orange County's trusted HVAC company since 2000. EPA-certified technicians, same-day service, and honest pricing for all your heating and cooling needs." faqSchema={faqSchemaObject}>
   <Header />
   <main>
     {/* Hero */}

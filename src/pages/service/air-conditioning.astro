@@ -1,5 +1,36 @@
 ---
 import ServicePageLayout from '../../layouts/ServicePageLayout.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What AC services do you offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We provide AC repair, installation, maintenance, and emergency service across Orange County and Anaheim."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does AC repair cost in Anaheim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Costs vary by issue. We provide free diagnostic quotes and upfront pricing before any work begins."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does AC repair usually take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most AC repairs are completed within 2-4 hours. We carry common parts in our trucks for same-visit repairs."
+      }
+    }
+  ]
+};
 ---
 
 <ServicePageLayout
@@ -7,6 +38,7 @@ import ServicePageLayout from '../../layouts/ServicePageLayout.astro';
   description="Expert AC repair, installation, and maintenance in Anaheim and Orange County. Same-day service, free diagnostics with repair, and 24/7 emergency AC service."
   heroTitle="AC Repair Anaheim CA"
   heroSubtitle="Because sweating through summer isn't an option. Here's something most HVAC companies won't admit: a lot of AC problems are actually pretty simple fixes."
+  faqSchema={faqSchemaObject}
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">

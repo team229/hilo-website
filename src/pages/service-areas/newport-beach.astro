@@ -7,9 +7,40 @@ import Reviews from '../../components/Reviews';
 import ServiceForm from '../../components/ServiceForm';
 import LicenseBadges from '../../components/LicenseBadges.astro';
 import BrandsSection from '../../components/BrandsSection.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you handle salt air corrosion in Newport Beach?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we specialize in coastal HVAC systems and use corrosion-resistant materials for Newport Beach installations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly can you respond in Newport Beach?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Same-day service for AC repair and HVAC emergencies in Newport Beach and Balboa Peninsula."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What areas of Newport Beach do you cover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All of Newport Beach including Balboa Island, Corona del Mar, Newport Coast, and Lido Isle."
+      }
+    }
+  ]
+};
 ---
 
-<BaseLayout title="AC Repair Newport Beach | HiLo Heating and Air" description="Expert AC repair in Newport Beach, CA. Coastal HVAC specialists who understand salt air corrosion. Same-day service from HiLo Heating and Air.">
+<BaseLayout title="AC Repair Newport Beach | HiLo Heating and Air" description="Expert AC repair in Newport Beach, CA. Coastal HVAC specialists who understand salt air corrosion. Same-day service from HiLo Heating and Air." faqSchema={faqSchemaObject}>
   <Header />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">

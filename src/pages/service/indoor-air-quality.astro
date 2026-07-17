@@ -1,5 +1,36 @@
 ---
 import ServicePageLayout from '../../layouts/ServicePageLayout.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What indoor air quality solutions do you offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Air purifiers, whole-home humidifiers, filtration systems, UV germicidal lights, and duct cleaning services."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I improve my home's air quality?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Start with high-MERV filters, add a whole-home air purifier, control humidity levels, and schedule regular duct cleaning."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does improving indoor air quality help with allergies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — proper filtration and humidity control significantly reduce allergens, dust, and airborne irritants in your home."
+      }
+    }
+  ]
+};
 ---
 
 <ServicePageLayout
@@ -7,6 +38,7 @@ import ServicePageLayout from '../../layouts/ServicePageLayout.astro';
   description="Breathe easier with our air purifiers, filtration systems, and duct cleaning services. Expert indoor air quality solutions in Orange County."
   heroTitle="Indoor Air Quality"
   heroSubtitle="Breathe easier with our air purifiers, filtration systems, and duct cleaning services."
+  faqSchema={faqSchemaObject}
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">

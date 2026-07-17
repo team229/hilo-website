@@ -1,5 +1,36 @@
 ---
 import ServicePageLayout from '../layouts/ServicePageLayout.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you offer 24/7 emergency HVAC service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — 24/7 emergency HVAC repair across Orange County and LA. Call (714) 853-5534 for immediate dispatch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What HVAC emergencies do you handle?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Complete system failure, gas leaks, electrical issues, no heat in winter, no AC in summer, and unusual noises or smells."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there an extra charge for after-hours HVAC service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We charge standard rates for emergency service — no hidden after-hour surcharges. Call for a upfront quote."
+      }
+    }
+  ]
+};
 ---
 
 <ServicePageLayout
@@ -7,6 +38,7 @@ import ServicePageLayout from '../layouts/ServicePageLayout.astro';
   description="24/7 emergency HVAC repair in Stanton, CA. Fast response, honest pricing, and same-day service for heating and cooling emergencies."
   heroTitle="Emergency HVAC Repair in Stanton, CA"
   heroSubtitle="It's never a good time. Heat dies in August. Furnace quits in January. If your system just stopped and you need help now, Hilo Heating and Air handles emergency HVAC repair across Stanton."
+  faqSchema={faqSchemaObject}
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">

@@ -7,9 +7,40 @@ import Reviews from '../../components/Reviews';
 import ServiceForm from '../../components/ServiceForm';
 import LicenseBadges from '../../components/LicenseBadges.astro';
 import BrandsSection from '../../components/BrandsSection.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you serve all of Santa Ana?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — all Santa Ana neighborhoods including downtown, South Coast Metro, and Floral Park."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How fast is AC repair in Santa Ana?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Same-day AC repair available. Most calls answered within hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer financing for HVAC repairs in Santa Ana?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — flexible financing options available for qualifying customers in Santa Ana."
+      }
+    }
+  ]
+};
 ---
 
-<BaseLayout title="Air Conditioning Repair Santa Ana | HiLo Heating and Air" description="Expert AC repair and furnace repair in Santa Ana, CA. Fast, reliable HVAC service from licensed technicians at HiLo Heating and Air.">
+<BaseLayout title="Air Conditioning Repair Santa Ana | HiLo Heating and Air" description="Expert AC repair and furnace repair in Santa Ana, CA. Fast, reliable HVAC service from licensed technicians at HiLo Heating and Air." faqSchema={faqSchemaObject}>
   <Header />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">

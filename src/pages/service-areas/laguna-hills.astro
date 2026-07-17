@@ -7,9 +7,40 @@ import Reviews from '../../components/Reviews';
 import ServiceForm from '../../components/ServiceForm';
 import LicenseBadges from '../../components/LicenseBadges.astro';
 import BrandsSection from '../../components/BrandsSection.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you offer furnace installation in Laguna Hills?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — professional furnace installation with proper sizing for Laguna Hills homes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What brands do you install in Laguna Hills?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Carrier, Trane, Goodman, Lennox, and other major brands with full manufacturer warranties."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does furnace installation take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most installations are completed in one day with minimal disruption to your home."
+      }
+    }
+  ]
+};
 ---
 
-<BaseLayout title="Furnace Installation Laguna Hills CA | HiLo Heating and Air" description="Professional furnace installation in Laguna Hills, CA. Expert setup with proper sizing and quality workmanship from HiLo Heating and Air.">
+<BaseLayout title="Furnace Installation Laguna Hills CA | HiLo Heating and Air" description="Professional furnace installation in Laguna Hills, CA. Expert setup with proper sizing and quality workmanship from HiLo Heating and Air." faqSchema={faqSchemaObject}>
   <Header />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">

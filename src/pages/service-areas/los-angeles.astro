@@ -7,9 +7,40 @@ import Reviews from '../../components/Reviews';
 import ServiceForm from '../../components/ServiceForm';
 import LicenseBadges from '../../components/LicenseBadges.astro';
 import BrandsSection from '../../components/BrandsSection.astro';
+
+const faqSchemaObject = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you serve all of Los Angeles?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we provide HVAC service throughout Los Angeles including Downtown, Hollywood, Valley, and surrounding areas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How fast is AC repair in Los Angeles?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Same-day service available across LA. We dispatch quickly to get your AC running again."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer commercial HVAC services in LA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we serve commercial properties, restaurants, and offices throughout Los Angeles."
+      }
+    }
+  ]
+};
 ---
 
-<BaseLayout title="Air Conditioning Repair Los Angeles | HiLo Heating and Air" description="Expert AC repair, AC installation, and heating repair in Los Angeles. Fast, reliable HVAC service from licensed technicians at HiLo Heating and Air.">
+<BaseLayout title="Air Conditioning Repair Los Angeles | HiLo Heating and Air" description="Expert AC repair, AC installation, and heating repair in Los Angeles. Fast, reliable HVAC service from licensed technicians at HiLo Heating and Air." faqSchema={faqSchemaObject}>
   <Header />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">
