@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const categories = [
+  {
+    title: 'Air Conditioning',
+    description: 'AC repair, installation, maintenance, and emergency service. Same-day service across Orange County.',
+    href: '/service/air-conditioning/',
+  },
+  {
+    title: 'Heating',
+    description: 'Furnace repair, heater installation, and heating maintenance. Keeping your home warm all winter.',
+    href: '/service/heating/',
+  },
+  {
+    title: 'HVAC Services',
+    description: 'Full HVAC maintenance, mini split installation, indoor air quality, and comprehensive system services.',
+    href: '/service/hvac-services/',
+  },
+  {
+    title: 'Indoor Air Quality',
+    description: 'Air purification, humidity control, ventilation, and filtration solutions for cleaner indoor air.',
+    href: '/service/indoor-air-quality/',
+  },
+];
+---
+
+<BaseLayout title="HVAC Services in Orange County | HiLo Heating & Air" description="Expert HVAC services including AC repair, heating, maintenance, and indoor air quality solutions across Orange County and Anaheim.">
+  <Header />
+  <main>
+    <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4">Our HVAC Services</h1>
+        <p class="text-white/80 text-lg max-w-2xl mx-auto">Professional heating, cooling, and air quality services for Orange County homes and businesses.</p>
+      </div>
+    </section>
+
+    <section class="py-16 sm:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          {categories.map((cat) => (
+            <a href={cat.href} class="group bg-white border border-brand-blue/10 rounded-2xl p-8 hover:shadow-lg hover:border-brand-blue/30 transition-all">
+              <h2 class="text-2xl font-bold text-brand-blue mb-3 group-hover:text-brand-red transition-colors">{cat.title}</h2>
+              <p class="text-slate-600 mb-4">{cat.description}</p>
+              <span class="text-sm font-semibold text-brand-blue group-hover:text-brand-red transition-colors inline-flex items-center gap-1">
+                Learn More
+                <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+              </span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>

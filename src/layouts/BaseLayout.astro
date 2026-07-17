@@ -1,12 +1,21 @@
 ---
 import '../styles/global.css';
 
+interface ArticleProp {
+  datePublished: string;
+  dateModified?: string;
+  author: string;
+  category: string;
+  image?: string;
+}
+
 interface Props {
   title: string;
   description?: string;
   canonical?: string;
   robots?: string;
   faqSchema?: object;
+  article?: ArticleProp;
 }
 
 const { 
@@ -14,7 +23,8 @@ const {
   description = 'Need AC repair in Anaheim? HiLo Heating & Air offers same-day AC repair, free diagnostics with repair, and 24/7 emergency service. EPA-certified technicians. Call (714) 853-5534!',
   canonical,
   robots,
-  faqSchema
+  faqSchema,
+  article
 } = Astro.props;
 
 const siteUrl = 'https://hiloheatingandair.com';
@@ -36,9 +46,7 @@ function generateBreadcrumbs(pathname: string) {
 
 const breadcrumbItems = generateBreadcrumbs(Astro.url.pathname);
 
-const schemaOrg = {
-  "@context": "https://schema.org",
-  "@graph": [
+const schemaGraph = [
     {
       "@type": "BreadcrumbList",
       "@id": `${siteUrl}/#breadcrumblist`,
@@ -190,12 +198,31 @@ const schemaOrg = {
         "https://www.linkedin.com/in/hilo-heating-and-air-conditioning"
       ]
     }
-  ]
+  ];
+
+if (article) {
+  schemaGraph.push({
+    "@type": "Article",
+    "@id": `${pageCanonical}#article`,
+    "headline": title,
+    "description": description,
+    "image": article.image ? { "@type": "ImageObject", "url": article.image } : undefined,
+    "datePublished": article.datePublished,
+    "dateModified": article.dateModified || article.datePublished,
+    "author": { "@type": "Person", "name": article.author },
+    "publisher": { "@id": `${siteUrl}/#organization` },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": pageCanonical }
+  });
+}
+
+const schemaOrg = {
+  "@context": "https://schema.org",
+  "@graph": schemaGraph,
 };
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -205,16 +232,23 @@ const schemaOrg = {
   
   <!-- Open Graph -->
   <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content={article ? 'article' : 'website'} />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:url" content={pageCanonical} />
   <meta property="og:site_name" content={siteName} />
-  <meta property="og:image" content={ogImage} />
-  <meta property="og:image:secure_url" content={ogImage} />
+  <meta property="og:image" content={article?.image || ogImage} />
+  <meta property="og:image:secure_url" content={article?.image || ogImage} />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:type" content="image/jpeg" />
+  {article && (
+    <>
+      <meta property="article:published_time" content={article.datePublished} />
+      <meta property="article:author" content={article.author} />
+      <meta property="article:section" content={article.category} />
+    </>
+  )}
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />

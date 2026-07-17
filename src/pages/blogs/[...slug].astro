@@ -18,9 +18,16 @@ const { Content } = await render(post);
 
 const title = `${post.data.title} | HiLo Heating & Air`;
 const description = post.data.description;
+const articleData = {
+  datePublished: post.data.date.toISOString(),
+  dateModified: post.data.date.toISOString(),
+  author: post.data.author,
+  category: post.data.category,
+  image: post.data.image ? `https://hiloheatingandair.com${post.data.image}` : undefined,
+};
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} article={articleData}>
   <Header />
   <main>
     <article>

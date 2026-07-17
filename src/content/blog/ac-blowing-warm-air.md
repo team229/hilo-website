@@ -2,7 +2,7 @@
 title: "Why is My AC Blowing Warm Air? (And When to Call an Orange County Pro)"
 description: "Your AC blowing warm air has several common causes. Here's what to check before calling a pro, and when it's time for expert help in Orange County."
 date: 2026-05-25
-category: "Uncategorized"
+category: "AC Repair"
 author: "Cody"
 image: "/images/blog/ac-warm-air.jpg"
 ---
