@@ -123,7 +123,7 @@ export default function HeroSection() {
           <div className="lg:col-span-5 flex flex-col space-y-6">
             {/* Fleet Image */}
             <div className="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white aspect-[16/9] group">
-              <img src="/images/team.jpg" alt="HiLo HVAC Fleet" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src="/images/team.jpg" alt="HiLo HVAC fleet — fully loaded trucks for same-day AC repair and HVAC service in Orange County" width="800" height="533" loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end p-6">
                 <p className="text-lg text-white font-bold">Orange County HVAC Fleet Ready to Roll</p>
                 <p className="text-xs text-white/90">Fully loaded trucks dispatched within minutes of your call.</p>

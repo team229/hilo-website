@@ -40,7 +40,7 @@ export default function AboutIntro() {
               <div className="absolute inset-0 bg-brand-red clip-hexagon transform scale-105"></div>
               <div className="absolute inset-0 bg-white clip-hexagon transform scale-[1.02]"></div>
               <div className="absolute inset-0 bg-brand-blue clip-hexagon overflow-hidden shadow-xl">
-                <img src="/images/hvac-maintenance.jpg" alt="HiLo AC Technician" className="object-cover w-full h-full brightness-95 hover:scale-110 transition-transform duration-500" />
+                <img src="/images/hvac-maintenance.jpg" alt="HiLo AC technician performing HVAC maintenance in Anaheim, CA" width="600" height="750" loading="lazy" className="object-cover w-full h-full brightness-95 hover:scale-110 transition-transform duration-500" />
               </div>
             </div>
           </div>

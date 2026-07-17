@@ -44,7 +44,7 @@ export default function ReliableService() {
           <div className="lg:col-span-5 flex flex-col space-y-6">
             <div className="relative bg-white border border-brand-blue/10 rounded-2xl overflow-hidden shadow-lg p-3">
               <div className="relative rounded-xl overflow-hidden aspect-[4/3] bg-brand-blue">
-                <img src="/images/hilo-air-conditioning.jpg" alt="Indoor HVAC Service" className="object-cover w-full h-full opacity-90" />
+                <img src="/images/hilo-air-conditioning.jpg" alt="HiLo HVAC technician performing indoor air conditioning service in Orange County" width="800" height="600" loading="lazy" className="object-cover w-full h-full opacity-90" />
                 <div className="absolute top-4 left-4 bg-brand-blue text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded shadow-md flex items-center gap-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-brand-red"></span>Certified Mechanics
                 </div>
