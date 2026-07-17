@@ -3,8 +3,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import CTASection from '../../components/CTASection';
-import ServiceForm from '../../components/ServiceForm';
 import Reviews from '../../components/Reviews';
+import ServiceForm from '../../components/ServiceForm';
 import LicenseBadges from '../../components/LicenseBadges.astro';
 import BrandsSection from '../../components/BrandsSection.astro';
 ---
@@ -19,31 +19,9 @@ import BrandsSection from '../../components/BrandsSection.astro';
       </div>
     </section>
 
-    <LicenseBadges />
-
-    <section class="py-16 sm:py-24 bg-white">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">
-        <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mt-0 mb-4">AC &amp; HVAC Services Across Orange County</h2>
-
-        <p>Orange County stretches from coastal towns where salt air eats at outdoor units to inland neighborhoods where summer heat just sits and bakes everything for months. Different conditions, same end result — AC systems take a beating no matter where you live here. Hilo Heating and Air handles <strong>air conditioning repair Orange County</strong> homeowners need across that whole range, from Costa Mesa to Irvine to Rancho Santa Margarita and everywhere in between.</p>
-
-        <h2>Why One Company Across So Many Cities Works Better</h2>
-        <p>Calling around for a new HVAC company every time you move neighborhoods gets old fast. We cover the county broadly enough that most people just keep our number, regardless of which city they end up in. That consistency matters for <strong>air conditioning repair Orange County</strong> residents especially — same techs, same standards, same pricing approach whether you're a mile from the beach or twenty minutes inland.</p>
-
-        <h2>What We're Usually Fixing</h2>
-        <p>A handful of issues show up again and again — a capacitor that's finally given out, a coil thick with dust or, near the coast, corrosion, a refrigerant leak slowly tanking performance, or a compressor that's just old. That's most of what <strong>air conditioning repair Orange County</strong> calls turn into: weak airflow, a unit cycling too often, or one that won't start at all. We diagnose before quoting, because guessing wastes everyone's time and money.</p>
-
-        <h2>We Get There Fast</h2>
-        <p>A dead AC in August isn't something that can wait a week. Most repairs get same-day or next-day scheduling, with trucks stocked for the parts that fail most often in this region — which, depending on the city, sometimes means corrosion-related fixes, sometimes just general wear. Either way, most <strong>air conditioning repair Orange County</strong> jobs wrap up in a single visit.</p>
-
-        <h2>Local Knowledge That Actually Helps</h2>
-        <p>Covering this much territory means we've seen how different the climate and housing styles really are block to block — coastal corrosion in one area, older ductwork in another, newer builds somewhere else entirely. Every job's done to code and backed by a guarantee, no matter which Orange County neighborhood it's in.</p>
-        <p>If your AC's struggling, give Hilo Heating and Air a call. We'd rather diagnose it properly the first time, wherever you're located.</p>
-      </div>
-    </section>
-
     <section class="py-16 sm:py-24 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <LicenseBadges />
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <span class="inline-block bg-brand-blue/10 text-brand-blue text-sm font-semibold px-4 py-1.5 rounded-full mb-4">Schedule Service</span>
@@ -74,6 +52,31 @@ import BrandsSection from '../../components/BrandsSection.astro';
         </div>
       </div>
     </section>
+
+
+
+    <section class="py-16 sm:py-24 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">
+        <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mt-0 mb-4">AC &amp; HVAC Services Across Orange County</h2>
+
+        <p>Orange County stretches from coastal towns where salt air eats at outdoor units to inland neighborhoods where summer heat just sits and bakes everything for months. Different conditions, same end result — AC systems take a beating no matter where you live here. Hilo Heating and Air handles <strong>air conditioning repair Orange County</strong> homeowners need across that whole range, from Costa Mesa to Irvine to Rancho Santa Margarita and everywhere in between.</p>
+
+        <h2>Why One Company Across So Many Cities Works Better</h2>
+        <p>Calling around for a new HVAC company every time you move neighborhoods gets old fast. We cover the county broadly enough that most people just keep our number, regardless of which city they end up in. That consistency matters for <strong>air conditioning repair Orange County</strong> residents especially — same techs, same standards, same pricing approach whether you're a mile from the beach or twenty minutes inland.</p>
+
+        <h2>What We're Usually Fixing</h2>
+        <p>A handful of issues show up again and again — a capacitor that's finally given out, a coil thick with dust or, near the coast, corrosion, a refrigerant leak slowly tanking performance, or a compressor that's just old. That's most of what <strong>air conditioning repair Orange County</strong> calls turn into: weak airflow, a unit cycling too often, or one that won't start at all. We diagnose before quoting, because guessing wastes everyone's time and money.</p>
+
+        <h2>We Get There Fast</h2>
+        <p>A dead AC in August isn't something that can wait a week. Most repairs get same-day or next-day scheduling, with trucks stocked for the parts that fail most often in this region — which, depending on the city, sometimes means corrosion-related fixes, sometimes just general wear. Either way, most <strong>air conditioning repair Orange County</strong> jobs wrap up in a single visit.</p>
+
+        <h2>Local Knowledge That Actually Helps</h2>
+        <p>Covering this much territory means we've seen how different the climate and housing styles really are block to block — coastal corrosion in one area, older ductwork in another, newer builds somewhere else entirely. Every job's done to code and backed by a guarantee, no matter which Orange County neighborhood it's in.</p>
+        <p>If your AC's struggling, give Hilo Heating and Air a call. We'd rather diagnose it properly the first time, wherever you're located.</p>
+      </div>
+    </section>
+
+    
 
     <Reviews client:visible />
     <BrandsSection />

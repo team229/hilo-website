@@ -3,8 +3,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import CTASection from '../../components/CTASection';
-import ServiceForm from '../../components/ServiceForm';
 import Reviews from '../../components/Reviews';
+import ServiceForm from '../../components/ServiceForm';
 import LicenseBadges from '../../components/LicenseBadges.astro';
 import BrandsSection from '../../components/BrandsSection.astro';
 ---
@@ -19,31 +19,9 @@ import BrandsSection from '../../components/BrandsSection.astro';
       </div>
     </section>
 
-    <LicenseBadges />
-
-    <section class="py-16 sm:py-24 bg-white">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">
-        <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mt-0 mb-4">AC Repair Services in Costa Mesa</h2>
-
-        <p>Summer in Costa Mesa doesn't mess around, and neither does a broken AC unit at 2pm on a Tuesday. If your system's blowing warm air or making a noise it definitely shouldn't be making, Hilo Heating and Air handles <strong>air conditioning repair Costa Mesa</strong> residents have relied on for years — not just the easy fixes, but the messy refrigerant leaks and dead compressors too.</p>
-
-        <h2>What Makes Hilo Heating and Air Different</h2>
-        <p>There's no shortage of HVAC companies in Orange County. What tends to set us apart is pretty simple: we show up when we say we will, we explain what's actually wrong before we touch anything, and we don't pad the bill. Our techs work on central air systems, ductless mini-splits, heat pumps — basically whatever's installed in your house, whoever made it. When someone calls about <strong>air conditioning repair Costa Mesa</strong> weather has finally broken, we'd rather walk them through the diagnosis than just hand over a number.</p>
-
-        <h2>The Repairs We See Most Often</h2>
-        <p>A lot of calls come down to the same handful of culprits — a blown capacitor, a coil caked in dust, a compressor on its last legs, or a unit that just won't kick on at all. Sometimes it's something smaller, like a thermostat that's lost its mind. Either way, that's the bread and butter of <strong>air conditioning repair Costa Mesa</strong> homeowners need most: short cycling, weak airflow, a sudden jump in the power bill. We'll also flag anything that looks like it's heading toward a bigger failure, because nobody wants to discover that on the hottest day of August.</p>
-
-        <h2>We Don't Make You Wait a Week</h2>
-        <p>Nobody wants to hear "we can fit you in next Thursday" when their house is 85 degrees. That's why same-day visits are the norm, not the exception, for <strong>air conditioning repair Costa Mesa</strong> residents request during the busy stretch of summer. Trucks go out stocked with the parts techs actually use, so most jobs wrap up in one trip instead of two.</p>
-
-        <h2>Local, and It Shows</h2>
-        <p>Being based here means we already know what Costa Mesa's coastal air and salt exposure tend to do to outdoor units over time — it's not something you pick up from a manual. Every <strong>air conditioning repair Costa Mesa</strong> job gets done to code, with parts and labor backed by a guarantee, because half the point of hiring local is trusting the people who'll actually be around if something comes up later.</p>
-        <p>If your system's struggling, give Hilo Heating and Air a call — we'd rather fix it right the first time than see you again in two weeks.</p>
-      </div>
-    </section>
-
     <section class="py-16 sm:py-24 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <LicenseBadges />
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <span class="inline-block bg-brand-blue/10 text-brand-blue text-sm font-semibold px-4 py-1.5 rounded-full mb-4">Schedule Service</span>
@@ -74,6 +52,31 @@ import BrandsSection from '../../components/BrandsSection.astro';
         </div>
       </div>
     </section>
+
+
+
+    <section class="py-16 sm:py-24 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">
+        <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mt-0 mb-4">AC Repair Services in Costa Mesa</h2>
+
+        <p>Summer in Costa Mesa doesn't mess around, and neither does a broken AC unit at 2pm on a Tuesday. If your system's blowing warm air or making a noise it definitely shouldn't be making, Hilo Heating and Air handles <strong>air conditioning repair Costa Mesa</strong> residents have relied on for years — not just the easy fixes, but the messy refrigerant leaks and dead compressors too.</p>
+
+        <h2>What Makes Hilo Heating and Air Different</h2>
+        <p>There's no shortage of HVAC companies in Orange County. What tends to set us apart is pretty simple: we show up when we say we will, we explain what's actually wrong before we touch anything, and we don't pad the bill. Our techs work on central air systems, ductless mini-splits, heat pumps — basically whatever's installed in your house, whoever made it. When someone calls about <strong>air conditioning repair Costa Mesa</strong> weather has finally broken, we'd rather walk them through the diagnosis than just hand over a number.</p>
+
+        <h2>The Repairs We See Most Often</h2>
+        <p>A lot of calls come down to the same handful of culprits — a blown capacitor, a coil caked in dust, a compressor on its last legs, or a unit that just won't kick on at all. Sometimes it's something smaller, like a thermostat that's lost its mind. Either way, that's the bread and butter of <strong>air conditioning repair Costa Mesa</strong> homeowners need most: short cycling, weak airflow, a sudden jump in the power bill. We'll also flag anything that looks like it's heading toward a bigger failure, because nobody wants to discover that on the hottest day of August.</p>
+
+        <h2>We Don't Make You Wait a Week</h2>
+        <p>Nobody wants to hear "we can fit you in next Thursday" when their house is 85 degrees. That's why same-day visits are the norm, not the exception, for <strong>air conditioning repair Costa Mesa</strong> residents request during the busy stretch of summer. Trucks go out stocked with the parts techs actually use, so most jobs wrap up in one trip instead of two.</p>
+
+        <h2>Local, and It Shows</h2>
+        <p>Being based here means we already know what Costa Mesa's coastal air and salt exposure tend to do to outdoor units over time — it's not something you pick up from a manual. Every <strong>air conditioning repair Costa Mesa</strong> job gets done to code, with parts and labor backed by a guarantee, because half the point of hiring local is trusting the people who'll actually be around if something comes up later.</p>
+        <p>If your system's struggling, give Hilo Heating and Air a call — we'd rather fix it right the first time than see you again in two weeks.</p>
+      </div>
+    </section>
+
+    
 
     <Reviews client:visible />
     <BrandsSection />

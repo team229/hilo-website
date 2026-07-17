@@ -3,8 +3,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import CTASection from '../../components/CTASection';
-import ServiceForm from '../../components/ServiceForm';
 import Reviews from '../../components/Reviews';
+import ServiceForm from '../../components/ServiceForm';
 import LicenseBadges from '../../components/LicenseBadges.astro';
 import BrandsSection from '../../components/BrandsSection.astro';
 ---
@@ -19,31 +19,9 @@ import BrandsSection from '../../components/BrandsSection.astro';
       </div>
     </section>
 
-    <LicenseBadges />
-
-    <section class="py-16 sm:py-24 bg-white">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">
-        <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mt-0 mb-4">AC Repair Services in Newport Beach</h2>
-
-        <p>Living that close to the coast has its perks — and its downsides. The salt air that makes Newport Beach gorgeous also eats away at outdoor AC units faster than you'd expect. So when something goes wrong, it's usually not random — there's a coastal reason behind it. That's where HiLo Heating and Air comes in, handling <strong>air conditioning repair Newport Beach</strong> homeowners need whenever the heat (or the salt corrosion) finally catches up with their system.</p>
-
-        <h2>Coastal Conditions Mean Different Wear and Tear</h2>
-        <p>Inland AC units and coastal ones don't age the same way. Out here, condenser coils corrode faster, electrical connections get finicky, and components that would last a decade elsewhere sometimes need attention in half that time. Our techs see this constantly — it's a big part of why <strong>air conditioning repair Newport Beach</strong> isn't quite the same job as repair work twenty minutes inland. We know what to check first, because we've seen the same failure patterns over and over in homes just like yours.</p>
-
-        <h2>Common Issues We Run Into</h2>
-        <p>Some calls are simple — a tripped breaker, a dirty filter choking airflow. Others take more digging: a refrigerant leak that's slowly killed cooling performance, a capacitor that finally gave out, a compressor on its last legs. Most <strong>air conditioning repair Newport Beach</strong> visits land somewhere in that range — weak airflow, a system short-cycling, or a unit that just won't turn on at all. We diagnose it properly before quoting anything, because guessing wrong means you pay twice.</p>
-
-        <h2>We Don't Make You Wait</h2>
-        <p>When your AC dies on a hot day, "we'll see you next week" isn't really an answer. Most repairs get same-day or next-day appointments, and our trucks are stocked with the parts that actually fail most often around here — corrosion-related stuff, mostly. That means <strong>air conditioning repair Newport Beach</strong> jobs usually wrap up in one visit, not two or three.</p>
-
-        <h2>Local Techs Who Know the Area</h2>
-        <p>Being based nearby isn't just convenience — it means our team already understands what salt air, humidity, and ocean proximity do to HVAC equipment over time. Every job is done to code, backed by a guarantee, and handled by people who'll still be around if something needs a second look later. That's the real value behind hiring a local company instead of someone driving in from out of the area.</p>
-        <p>If your AC's struggling — short on power, blowing warm air, or just refusing to start — give HiLo Heating and Air a call. We'd rather diagnose it right the first time than have you calling back next month.</p>
-      </div>
-    </section>
-
     <section class="py-16 sm:py-24 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <LicenseBadges />
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <span class="inline-block bg-brand-blue/10 text-brand-blue text-sm font-semibold px-4 py-1.5 rounded-full mb-4">Schedule Service</span>
@@ -74,6 +52,31 @@ import BrandsSection from '../../components/BrandsSection.astro';
         </div>
       </div>
     </section>
+
+
+
+    <section class="py-16 sm:py-24 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">
+        <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mt-0 mb-4">AC Repair Services in Newport Beach</h2>
+
+        <p>Living that close to the coast has its perks — and its downsides. The salt air that makes Newport Beach gorgeous also eats away at outdoor AC units faster than you'd expect. So when something goes wrong, it's usually not random — there's a coastal reason behind it. That's where HiLo Heating and Air comes in, handling <strong>air conditioning repair Newport Beach</strong> homeowners need whenever the heat (or the salt corrosion) finally catches up with their system.</p>
+
+        <h2>Coastal Conditions Mean Different Wear and Tear</h2>
+        <p>Inland AC units and coastal ones don't age the same way. Out here, condenser coils corrode faster, electrical connections get finicky, and components that would last a decade elsewhere sometimes need attention in half that time. Our techs see this constantly — it's a big part of why <strong>air conditioning repair Newport Beach</strong> isn't quite the same job as repair work twenty minutes inland. We know what to check first, because we've seen the same failure patterns over and over in homes just like yours.</p>
+
+        <h2>Common Issues We Run Into</h2>
+        <p>Some calls are simple — a tripped breaker, a dirty filter choking airflow. Others take more digging: a refrigerant leak that's slowly killed cooling performance, a capacitor that finally gave out, a compressor on its last legs. Most <strong>air conditioning repair Newport Beach</strong> visits land somewhere in that range — weak airflow, a system short-cycling, or a unit that just won't turn on at all. We diagnose it properly before quoting anything, because guessing wrong means you pay twice.</p>
+
+        <h2>We Don't Make You Wait</h2>
+        <p>When your AC dies on a hot day, "we'll see you next week" isn't really an answer. Most repairs get same-day or next-day appointments, and our trucks are stocked with the parts that actually fail most often around here — corrosion-related stuff, mostly. That means <strong>air conditioning repair Newport Beach</strong> jobs usually wrap up in one visit, not two or three.</p>
+
+        <h2>Local Techs Who Know the Area</h2>
+        <p>Being based nearby isn't just convenience — it means our team already understands what salt air, humidity, and ocean proximity do to HVAC equipment over time. Every job is done to code, backed by a guarantee, and handled by people who'll still be around if something needs a second look later. That's the real value behind hiring a local company instead of someone driving in from out of the area.</p>
+        <p>If your AC's struggling — short on power, blowing warm air, or just refusing to start — give HiLo Heating and Air a call. We'd rather diagnose it right the first time than have you calling back next month.</p>
+      </div>
+    </section>
+
+    
 
     <Reviews client:visible />
     <BrandsSection />

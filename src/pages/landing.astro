@@ -125,7 +125,7 @@ const cities = [
             </h1>
 
             <p class="text-base sm:text-lg text-white/80 max-w-xl font-medium leading-relaxed">
-              <a href="/emergency-ac-repair/" class="text-white underline hover:text-brand-red transition-colors">Same-day AC repair</a>, <a href="/heating-repair/" class="text-white underline hover:text-brand-red transition-colors">heating service</a>, and <a href="/emergency-hvac-repair/" class="text-white underline hover:text-brand-red transition-colors">emergency HVAC dispatch</a> across Orange County &amp; LA — with upfront pricing and <strong class="text-white">no hidden fees</strong>.
+              <a href="#request-form" class="text-white underline hover:text-brand-red transition-colors">Same-day AC repair</a>, <a href="#request-form" class="text-white underline hover:text-brand-red transition-colors">heating service</a>, and <a href="#request-form" class="text-white underline hover:text-brand-red transition-colors">emergency HVAC dispatch</a> across Orange County &amp; LA — with upfront pricing and <strong class="text-white">no hidden fees</strong>.
             </p>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 max-w-xl">
@@ -221,7 +221,7 @@ const cities = [
           <div class="space-y-5">
             <span class="inline-block text-[11px] font-extrabold text-brand-red uppercase tracking-[0.2em] bg-brand-red/10 px-4 py-1.5 rounded-full">Ready to Roll</span>
             <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-blue leading-tight">Fully Loaded Trucks. Same-Day HVAC Dispatch.</h2>
-            <p class="text-slate-500 font-medium leading-relaxed">Our fleet of fully-stocked service vehicles is dispatched across <a href="/service-areas/" class="text-brand-blue underline hover:text-brand-red transition-colors font-bold">Orange County &amp; LA</a> every day. We carry the parts for most <a href="/emergency-ac-repair/" class="text-brand-blue underline hover:text-brand-red transition-colors font-bold">AC repairs</a> and <a href="/heating-repair/" class="text-brand-blue underline hover:text-brand-red transition-colors font-bold">heating service</a> — so we fix it right, the first time, without waiting on supplies.</p>
+            <p class="text-slate-500 font-medium leading-relaxed">Our fleet of fully-stocked service vehicles is dispatched across <a href="#request-form" class="text-brand-blue underline hover:text-brand-red transition-colors font-bold">Orange County &amp; LA</a> every day. We carry the parts for most <a href="#request-form" class="text-brand-blue underline hover:text-brand-red transition-colors font-bold">AC repairs</a> and <a href="#request-form" class="text-brand-blue underline hover:text-brand-red transition-colors font-bold">heating service</a> — so we fix it right, the first time, without waiting on supplies.</p>
             <div class="flex flex-col sm:flex-row gap-3 pt-2">
               <a href={phoneHref} class="inline-flex items-center justify-center gap-2 bg-brand-red text-white font-extrabold px-6 py-3.5 rounded-xl hover:brightness-110 transition-all shadow-lg shadow-brand-red/30 active:scale-[0.98] text-sm">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
@@ -243,12 +243,12 @@ const cities = [
         <div class="text-center max-w-2xl mx-auto space-y-3 mb-12">
           <span class="inline-block text-[11px] font-extrabold text-brand-red uppercase tracking-[0.2em] bg-brand-red/10 px-4 py-1.5 rounded-full">What We Fix</span>
           <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-blue leading-tight">Complete HVAC Solutions — One Call Does It All</h2>
-          <p class="text-slate-500 font-medium text-sm"><a href="/service/air-conditioning/" class="text-brand-blue underline hover:text-brand-red transition-colors font-bold">AC repair</a>, <a href="/service/heating/" class="text-brand-blue underline hover:text-brand-red transition-colors font-bold">heating service</a>, <a href="/service/hvac-services/" class="text-brand-blue underline hover:text-brand-red transition-colors font-bold">HVAC maintenance</a> &amp; more.</p>
+          <p class="text-slate-500 font-medium text-sm"><a href="#request-form" class="text-brand-blue underline hover:text-brand-red transition-colors font-bold">AC repair</a>, <a href="#request-form" class="text-brand-blue underline hover:text-brand-red transition-colors font-bold">heating service</a>, <a href="#request-form" class="text-brand-blue underline hover:text-brand-red transition-colors font-bold">HVAC maintenance</a> &amp; more.</p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {services.map((svc) => (
-            <a href={svc.slug} class="group relative bg-white rounded-2xl border-2 border-slate-100 p-6 hover:border-brand-blue/30 hover:shadow-xl hover:shadow-brand-blue/5 transition-all duration-300 block">
+            <div class="relative bg-white rounded-2xl border-2 border-slate-100 p-6 hover:border-brand-blue/30 hover:shadow-xl hover:shadow-brand-blue/5 transition-all duration-300 block">
               <div class="text-3xl mb-4">{svc.icon}</div>
               <h3 class="text-lg font-extrabold text-brand-blue mb-3">{svc.title}</h3>
               <ul class="space-y-2.5">
@@ -259,7 +259,7 @@ const cities = [
                   </li>
                 ))}
               </ul>
-            </a>
+            </div>
           ))}
         </div>
       </div>
@@ -271,7 +271,7 @@ const cities = [
         <div class="text-center max-w-2xl mx-auto space-y-3 mb-14">
           <span class="inline-block text-[11px] font-extrabold text-brand-red uppercase tracking-[0.2em] bg-brand-red/10 px-4 py-1.5 rounded-full">Simple Process</span>
           <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-blue leading-tight">From Call to Cool Air — Fast</h2>
-          <p class="text-slate-500 font-medium text-sm">No runaround. Here's exactly what happens when you reach out for <a href="/emergency-ac-repair/" class="text-brand-blue underline hover:text-brand-red transition-colors font-bold">AC repair</a> or <a href="/emergency-hvac-repair/" class="text-brand-blue underline hover:text-brand-red transition-colors font-bold">emergency HVAC service</a>.</p>
+          <p class="text-slate-500 font-medium text-sm">No runaround. Here's exactly what happens when you reach out for <a href="#request-form" class="text-brand-blue underline hover:text-brand-red transition-colors font-bold">AC repair</a> or <a href="#request-form" class="text-brand-blue underline hover:text-brand-red transition-colors font-bold">emergency HVAC service</a>.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -295,7 +295,7 @@ const cities = [
           <div class="relative z-10">
             <div class="text-4xl mb-4">🛡️</div>
             <h3 class="text-2xl font-extrabold text-white mb-3">No Fix, No Fee — Guaranteed.</h3>
-            <p class="text-white/80 max-w-2xl mx-auto text-sm font-medium leading-relaxed">If our technician can't diagnose and quote your <a href="/hvac-repair/" class="text-white underline hover:text-white/80 transition-colors">HVAC repair</a> on the first visit, you don't pay a diagnostic fee. Period. That's how confident we are in getting it right the first time.</p>
+            <p class="text-white/80 max-w-2xl mx-auto text-sm font-medium leading-relaxed">If our technician can't diagnose and quote your <a href="#request-form" class="text-white underline hover:text-white/80 transition-colors">HVAC repair</a> on the first visit, you don't pay a diagnostic fee. Period. That's how confident we are in getting it right the first time.</p>
           </div>
         </div>
       </div>
@@ -307,7 +307,7 @@ const cities = [
         <div class="text-center max-w-2xl mx-auto space-y-3 mb-12">
           <span class="inline-block text-[11px] font-extrabold text-brand-red uppercase tracking-[0.2em] bg-brand-red/10 px-4 py-1.5 rounded-full">★★★★★</span>
           <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-blue leading-tight">Trusted by Homeowners Across Orange County</h2>
-          <p class="text-slate-500 font-medium text-sm">Read why homeowners choose us for <a href="/emergency-ac-repair/" class="text-brand-blue underline hover:text-brand-red transition-colors font-bold">AC repair</a>, <a href="/heating-repair/" class="text-brand-blue underline hover:text-brand-red transition-colors font-bold">heating service</a>, and <a href="/hvac-installation/" class="text-brand-blue underline hover:text-brand-red transition-colors font-bold">HVAC installation</a>.</p>
+          <p class="text-slate-500 font-medium text-sm">Read why homeowners choose us for <a href="#request-form" class="text-brand-blue underline hover:text-brand-red transition-colors font-bold">AC repair</a>, <a href="#request-form" class="text-brand-blue underline hover:text-brand-red transition-colors font-bold">heating service</a>, and <a href="#request-form" class="text-brand-blue underline hover:text-brand-red transition-colors font-bold">HVAC installation</a>.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -344,10 +344,10 @@ const cities = [
     <section class="py-14 bg-slate-50 border-y border-slate-100">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-blue mb-2">Proudly Serving Orange County &amp; LA</h2>
-        <p class="text-sm text-slate-500 font-medium mb-7">We dispatch <a href="/emergency-ac-repair/" class="text-brand-blue underline hover:text-brand-red transition-colors font-bold">same-day AC repair</a> and <a href="/emergency-hvac-repair/" class="text-brand-blue underline hover:text-brand-red transition-colors font-bold">HVAC service</a> across these cities daily.</p>
+        <p class="text-sm text-slate-500 font-medium mb-7">We dispatch <a href="#request-form" class="text-brand-blue underline hover:text-brand-red transition-colors font-bold">same-day AC repair</a> and <a href="#request-form" class="text-brand-blue underline hover:text-brand-red transition-colors font-bold">HVAC service</a> across these cities daily.</p>
         <div class="flex flex-wrap justify-center gap-2.5 max-w-3xl mx-auto mb-8">
           {cities.map((city) => (
-            <a href={city.slug} class="bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-sm font-bold text-brand-blue shadow-sm hover:border-brand-blue/30 hover:shadow transition-all">{city.name}</a>
+            <span class="bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-sm font-bold text-brand-blue shadow-sm">{city.name}</span>
           ))}
         </div>
         <a href={phoneHref} class="inline-flex items-center gap-2.5 bg-brand-red text-white font-extrabold px-8 py-4 rounded-xl shadow-lg shadow-brand-red/30 hover:brightness-110 transition-all duration-300 active:scale-[0.97]">
@@ -390,7 +390,7 @@ const cities = [
       <div class="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2"></div>
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 text-center relative z-10">
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-4 leading-tight">Don't Sweat It Another Day.</h2>
-        <p class="text-white/85 text-lg mb-10 max-w-2xl mx-auto font-medium">Same-day <a href="/emergency-ac-repair/" class="text-white underline hover:text-white/80 transition-colors">AC repair</a> &amp; <a href="/heating-repair/" class="text-white underline hover:text-white/80 transition-colors">heating service</a> across Anaheim, Irvine, Santa Ana, Fullerton, Orange &amp; LA. Call now or get your free estimate online.</p>
+        <p class="text-white/85 text-lg mb-10 max-w-2xl mx-auto font-medium">Same-day <a href="#request-form" class="text-white underline hover:text-white/80 transition-colors">AC repair</a> &amp; <a href="#request-form" class="text-white underline hover:text-white/80 transition-colors">heating service</a> across Anaheim, Irvine, Santa Ana, Fullerton, Orange &amp; LA. Call now or get your free estimate online.</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href={phoneHref} class="group inline-flex items-center justify-center gap-3 bg-white text-brand-red font-extrabold px-10 py-5 rounded-xl text-lg hover:bg-slate-100 transition-all shadow-2xl active:scale-[0.97]">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>

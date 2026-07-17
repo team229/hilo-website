@@ -3,8 +3,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import CTASection from '../../components/CTASection';
-import ServiceForm from '../../components/ServiceForm';
 import Reviews from '../../components/Reviews';
+import ServiceForm from '../../components/ServiceForm';
 import LicenseBadges from '../../components/LicenseBadges.astro';
 import BrandsSection from '../../components/BrandsSection.astro';
 ---
@@ -19,30 +19,9 @@ import BrandsSection from '../../components/BrandsSection.astro';
       </div>
     </section>
 
-    <LicenseBadges />
-
-    <section class="py-16 sm:py-24 bg-white">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">
-        <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mt-0 mb-4">HVAC Services in Stanton</h2>
-
-        <p>Your AC dies in July. Or your furnace decides to quit the one cold week of the year. It happens — and when it does, you want someone local who actually picks up the phone. That's us. Hilo Heating and Air has been working on heating and cooling systems around Stanton for years now, and most of our calls come from people who used us once and just kept calling.</p>
-        <p>We're not trying to be everything to everyone. We do heating and cooling, we do it well, and we'd rather have a smaller list of happy customers than a long list of people who felt rushed or upsold. That's just how we run things.</p>
-
-        <h2>What We Actually Do</h2>
-        <p>Let's be honest — most people ignore their HVAC system until it breaks. But a little <strong>HVAC maintenance service</strong> now and then saves you from the big, expensive surprise later. We clean the coils, check refrigerant, look at the wiring, test the thermostat. Boring stuff. But boring stuff is what keeps a system running for fifteen years instead of eight. Skipping it doesn't save you money — it just delays the bill and makes it bigger.</p>
-        <p>If something feels off but you can't quite name it, ask for an <strong>HVAC system inspection</strong>. We'll go through the airflow, the ductwork, the safety switches — basically the whole system — and tell you what's actually wrong, not just what sounds expensive. We've turned away plenty of "you need a new system" calls because, honestly, a $200 fix did the trick. An inspection is also smart if you're buying a house, selling one, or just haven't had anyone look at your unit in a couple years.</p>
-        <p>When a system really is done, we do full <strong>new HVAC system installation</strong> work too — sizing it right for your home, pulling the old unit, putting in the new one, and testing it before we pack up. Getting the size wrong is one of the most common mistakes in this industry, and it leads to higher bills and a system that struggles year-round. You shouldn't have to wonder if it's working, or whether you got the right unit for your space in the first place.</p>
-
-        <h2>How We Work</h2>
-        <p>We try to keep things simple. You call, we ask a few questions, and we give you a real window for when we'll show up — not a vague "sometime this week." Before any work starts, you'll know what it costs. No add-ons sprung on you halfway through the job. If a repair makes more sense than a replacement, we'll say so, even if it means a smaller invoice for us.</p>
-
-        <h2>Why People Stick With Us</h2>
-        <p>Hilo Heating and Air isn't the biggest company in Orange County, and that's kind of the point. We show up, we're straight with you about pricing, and we don't vanish after the invoice. That's pretty much our whole pitch. Most of our work comes from referrals — neighbors telling neighbors — which says more about us than any ad ever could.</p>
-      </div>
-    </section>
-
     <section class="py-16 sm:py-24 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <LicenseBadges />
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <span class="inline-block bg-brand-blue/10 text-brand-blue text-sm font-semibold px-4 py-1.5 rounded-full mb-4">Schedule Service</span>
@@ -73,6 +52,30 @@ import BrandsSection from '../../components/BrandsSection.astro';
         </div>
       </div>
     </section>
+
+
+
+    <section class="py-16 sm:py-24 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">
+        <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mt-0 mb-4">HVAC Services in Stanton</h2>
+
+        <p>Your AC dies in July. Or your furnace decides to quit the one cold week of the year. It happens — and when it does, you want someone local who actually picks up the phone. That's us. Hilo Heating and Air has been working on heating and cooling systems around Stanton for years now, and most of our calls come from people who used us once and just kept calling.</p>
+        <p>We're not trying to be everything to everyone. We do heating and cooling, we do it well, and we'd rather have a smaller list of happy customers than a long list of people who felt rushed or upsold. That's just how we run things.</p>
+
+        <h2>What We Actually Do</h2>
+        <p>Let's be honest — most people ignore their HVAC system until it breaks. But a little <strong>HVAC maintenance service</strong> now and then saves you from the big, expensive surprise later. We clean the coils, check refrigerant, look at the wiring, test the thermostat. Boring stuff. But boring stuff is what keeps a system running for fifteen years instead of eight. Skipping it doesn't save you money — it just delays the bill and makes it bigger.</p>
+        <p>If something feels off but you can't quite name it, ask for an <strong>HVAC system inspection</strong>. We'll go through the airflow, the ductwork, the safety switches — basically the whole system — and tell you what's actually wrong, not just what sounds expensive. We've turned away plenty of "you need a new system" calls because, honestly, a $200 fix did the trick. An inspection is also smart if you're buying a house, selling one, or just haven't had anyone look at your unit in a couple years.</p>
+        <p>When a system really is done, we do full <strong>new HVAC system installation</strong> work too — sizing it right for your home, pulling the old unit, putting in the new one, and testing it before we pack up. Getting the size wrong is one of the most common mistakes in this industry, and it leads to higher bills and a system that struggles year-round. You shouldn't have to wonder if it's working, or whether you got the right unit for your space in the first place.</p>
+
+        <h2>How We Work</h2>
+        <p>We try to keep things simple. You call, we ask a few questions, and we give you a real window for when we'll show up — not a vague "sometime this week." Before any work starts, you'll know what it costs. No add-ons sprung on you halfway through the job. If a repair makes more sense than a replacement, we'll say so, even if it means a smaller invoice for us.</p>
+
+        <h2>Why People Stick With Us</h2>
+        <p>Hilo Heating and Air isn't the biggest company in Orange County, and that's kind of the point. We show up, we're straight with you about pricing, and we don't vanish after the invoice. That's pretty much our whole pitch. Most of our work comes from referrals — neighbors telling neighbors — which says more about us than any ad ever could.</p>
+      </div>
+    </section>
+
+    
 
     <Reviews client:visible />
     <BrandsSection />

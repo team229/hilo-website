@@ -3,8 +3,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import CTASection from '../../components/CTASection';
-import ServiceForm from '../../components/ServiceForm';
 import Reviews from '../../components/Reviews';
+import ServiceForm from '../../components/ServiceForm';
 import LicenseBadges from '../../components/LicenseBadges.astro';
 import BrandsSection from '../../components/BrandsSection.astro';
 ---
@@ -19,31 +19,9 @@ import BrandsSection from '../../components/BrandsSection.astro';
       </div>
     </section>
 
-    <LicenseBadges />
-
-    <section class="py-16 sm:py-24 bg-white">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">
-        <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mt-0 mb-4">Furnace &amp; Heating Services in Rancho Santa Margarita</h2>
-
-        <p>It doesn't get freezing here often. But when a cold snap hits and your furnace decides that's the moment to act up, it's miserable timing. Hilo Heating and Air takes care of <strong>furnace repair Rancho Santa Margarita</strong> homeowners need, whether it's a quick fix or something that's been building for a while.</p>
-
-        <h2>The Warning Signs Worth Paying Attention To</h2>
-        <p>Furnaces don't usually quit without warning. There's a noise that wasn't there before. A room that stays cold no matter what the thermostat says. A pilot light that keeps going out. Sometimes there's a smell — faintly burnt, or something a little off when the system kicks on, and that one's worth checking right away, not waiting on. People tend to call us for <strong>furnace repair Rancho Santa Margarita</strong> after noticing one of these for a week or two, hoping it'll resolve on its own. It usually doesn't.</p>
-
-        <h2>What's Actually Going Wrong, Most of the Time</h2>
-        <p>A dead ignitor shows up a lot. So does a blower motor on its way out, or a flame sensor coated in just enough grime to trip the safety shutoff. Thermostats miscommunicate sometimes too — looks like a furnace problem, isn't really one. Then there's the rarer, more serious stuff: a cracked heat exchanger, which isn't something to put off fixing. Either way, before any part gets swapped, <strong>furnace repair Rancho Santa Margarita</strong> jobs start with an actual diagnosis — not a guess dressed up as one.</p>
-
-        <h2>Getting to You Quickly</h2>
-        <p>Cold houses don't wait well, and neither should you have to. Most repairs get same-day or next-morning appointments, trucks carry the parts that fail most often, and the majority of jobs finish in a single visit. That's the goal behind <strong>furnace repair Rancho Santa Margarita</strong> service — get there fast, fix it right, don't make you call twice.</p>
-
-        <h2>Local, and It Shows</h2>
-        <p>We're not driving in from somewhere far. Being based nearby means knowing the housing styles, the typical furnace setups, what tends to fail first given the climate here. Every job's done to code, backed by a guarantee — if something feels off after we leave, we're close enough to come back and sort it.</p>
-        <p>If your furnace's acting up, give Hilo Heating and Air a call. Better to fix it properly now than deal with the same problem again in a month.</p>
-      </div>
-    </section>
-
     <section class="py-16 sm:py-24 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <LicenseBadges />
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <span class="inline-block bg-brand-blue/10 text-brand-blue text-sm font-semibold px-4 py-1.5 rounded-full mb-4">Schedule Service</span>
@@ -74,6 +52,31 @@ import BrandsSection from '../../components/BrandsSection.astro';
         </div>
       </div>
     </section>
+
+
+
+    <section class="py-16 sm:py-24 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">
+        <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mt-0 mb-4">Furnace &amp; Heating Services in Rancho Santa Margarita</h2>
+
+        <p>It doesn't get freezing here often. But when a cold snap hits and your furnace decides that's the moment to act up, it's miserable timing. Hilo Heating and Air takes care of <strong>furnace repair Rancho Santa Margarita</strong> homeowners need, whether it's a quick fix or something that's been building for a while.</p>
+
+        <h2>The Warning Signs Worth Paying Attention To</h2>
+        <p>Furnaces don't usually quit without warning. There's a noise that wasn't there before. A room that stays cold no matter what the thermostat says. A pilot light that keeps going out. Sometimes there's a smell — faintly burnt, or something a little off when the system kicks on, and that one's worth checking right away, not waiting on. People tend to call us for <strong>furnace repair Rancho Santa Margarita</strong> after noticing one of these for a week or two, hoping it'll resolve on its own. It usually doesn't.</p>
+
+        <h2>What's Actually Going Wrong, Most of the Time</h2>
+        <p>A dead ignitor shows up a lot. So does a blower motor on its way out, or a flame sensor coated in just enough grime to trip the safety shutoff. Thermostats miscommunicate sometimes too — looks like a furnace problem, isn't really one. Then there's the rarer, more serious stuff: a cracked heat exchanger, which isn't something to put off fixing. Either way, before any part gets swapped, <strong>furnace repair Rancho Santa Margarita</strong> jobs start with an actual diagnosis — not a guess dressed up as one.</p>
+
+        <h2>Getting to You Quickly</h2>
+        <p>Cold houses don't wait well, and neither should you have to. Most repairs get same-day or next-morning appointments, trucks carry the parts that fail most often, and the majority of jobs finish in a single visit. That's the goal behind <strong>furnace repair Rancho Santa Margarita</strong> service — get there fast, fix it right, don't make you call twice.</p>
+
+        <h2>Local, and It Shows</h2>
+        <p>We're not driving in from somewhere far. Being based nearby means knowing the housing styles, the typical furnace setups, what tends to fail first given the climate here. Every job's done to code, backed by a guarantee — if something feels off after we leave, we're close enough to come back and sort it.</p>
+        <p>If your furnace's acting up, give Hilo Heating and Air a call. Better to fix it properly now than deal with the same problem again in a month.</p>
+      </div>
+    </section>
+
+    
 
     <Reviews client:visible />
     <BrandsSection />
