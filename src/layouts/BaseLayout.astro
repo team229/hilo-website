@@ -5,12 +5,14 @@ interface Props {
   title: string;
   description?: string;
   canonical?: string;
+  robots?: string;
 }
 
 const { 
   title = 'AC Repair Anaheim | HiLo Heating & Air',
   description = 'Need AC repair in Anaheim? HiLo Heating & Air offers same-day AC repair, free diagnostics with repair, and 24/7 emergency service. EPA-certified technicians. Call (714) 853-5534!',
-  canonical
+  canonical,
+  robots
 } = Astro.props;
 
 const siteUrl = 'https://hiloheatingandair.com';
@@ -199,7 +201,7 @@ const schemaOrg = {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content={description} />
-  <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+  <meta name="robots" content={robots || 'index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large'} />
   <link rel="canonical" href={pageCanonical} />
   
   <!-- Open Graph -->

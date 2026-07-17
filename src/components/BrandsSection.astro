@@ -9,24 +9,53 @@ const brands = [
 ];
 ---
 
-<section class="py-16 sm:py-24 bg-slate-50">
+<style is:global>
+  @keyframes brand-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .brand-track {
+    animation: brand-scroll 30s linear infinite;
+    width: fit-content;
+    will-change: transform;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  .brand-track:hover {
+    animation-play-state: paused;
+  }
+  .brand-logo {
+    height: 48px;
+    width: auto;
+    max-width: 140px;
+    object-fit: contain;
+    image-rendering: auto;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+</style>
+
+<section class="py-16 sm:py-24 bg-slate-50 overflow-hidden">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-12">
       <span class="inline-block bg-brand-blue/10 text-brand-blue text-sm font-semibold px-4 py-1.5 rounded-full mb-4">Trusted Brands</span>
       <h2 class="text-3xl sm:text-4xl font-bold text-brand-blue mb-4">Brands We Service</h2>
       <p class="text-slate-600 max-w-2xl mx-auto">Our technicians are trained on all major HVAC brands.</p>
     </div>
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
-      {brands.map((brand) => (
-        <div class="flex items-center justify-center p-6 bg-white rounded-xl border border-slate-100 hover:border-brand-blue/20 hover:shadow-lg transition-all duration-300 group">
-          <img 
-            src={brand.logo} 
-            alt={brand.name} 
-            class="h-12 w-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
-            loading="lazy"
-          />
-        </div>
-      ))}
+    <div class="relative">
+      <div class="flex brand-track gap-8 items-center">
+        {[...brands, ...brands].map((brand) => (
+          <div class="flex-shrink-0 flex items-center justify-center p-6 bg-white rounded-xl border border-slate-100 hover:border-brand-blue/20 hover:shadow-lg transition-all duration-300 group w-[180px]">
+            <img 
+              src={brand.logo} 
+              alt={brand.name}
+              width="140" height="48"
+              class="brand-logo"
+              loading="lazy"
+            />
+          </div>
+        ))}
+      </div>
     </div>
   </div>
 </section>
