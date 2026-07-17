@@ -1,0 +1,51 @@
+---
+import ServicePageLayout from '../layouts/ServicePageLayout.astro';
+
+const areas = [
+  { city: 'Anaheim', desc: 'AC repair, heating service, and emergency HVAC repairs.', href: '/service-areas/anaheim/' },
+  { city: 'Costa Mesa', desc: 'Quality HVAC repair and installation services.', href: '/service-areas/costa-mesa/' },
+  { city: 'Garden Grove', desc: 'Fast, professional AC and heating repairs.', href: '/service-areas/garden-grove/' },
+  { city: 'Irvine', desc: 'Reliable heating and cooling services for your home.', href: '/service-areas/irvine/' },
+  { city: 'Laguna Hills', desc: 'Trusted HVAC solutions for your comfort.', href: '/service-areas/laguna-hills/' },
+  { city: 'Los Angeles', desc: 'Professional air conditioning repair and installation.', href: '/service-areas/los-angeles/' },
+  { city: 'Newport Beach', desc: 'Premium HVAC services for coastal homes.', href: '/service-areas/newport-beach/' },
+  { city: 'Orange', desc: 'Expert heating and AC services for Orange homes.', href: '/service-areas/orange/' },
+  { city: 'Orange County', desc: 'Complete HVAC solutions for residential and commercial.', href: '/service-areas/orange-county/' },
+  { city: 'Rancho Santa Margarita', desc: 'Professional HVAC services for Rancho Santa Margarita.', href: '/service-areas/rancho-santa-margarita/' },
+  { city: 'Santa Ana', desc: 'Expert HVAC repair and maintenance services.', href: '/service-areas/santa-ana/' },
+  { city: 'Stanton', desc: 'Local HVAC company serving Stanton homes.', href: '/service-areas/stanton/' },
+];
+---
+
+<ServicePageLayout
+  title="Service Areas | HiLo Heating & Air"
+  description="Proudly serving Orange County and surrounding areas with reliable HVAC services. Same-day AC repair, heating service, and emergency HVAC repairs."
+  heroTitle="Service Areas"
+  heroSubtitle="Proudly serving Orange County and surrounding areas with reliable HVAC services."
+>
+  <section class="py-16 sm:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-3xl font-bold text-brand-blue mb-4">Where We Serve</h2>
+        <p class="text-slate-600">We provide same-day HVAC service across Orange County and surrounding areas. Click on your city to learn more about our services in your area.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {areas.map((area) => (
+          <a href={area.href} class="bg-white border border-brand-blue/10 rounded-2xl p-6 hover:shadow-lg hover:border-brand-blue/30 transition-all group block">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 bg-brand-blue/10 rounded-lg flex items-center justify-center group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                <svg class="w-5 h-5 text-brand-blue group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+              </div>
+              <h3 class="text-lg font-bold text-brand-blue group-hover:text-brand-red transition-colors">{area.city}</h3>
+            </div>
+            <p class="text-sm text-slate-600 mb-3">{area.desc}</p>
+            <span class="text-sm font-semibold text-brand-blue group-hover:text-brand-red transition-colors inline-flex items-center gap-1">
+              View Services
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+            </span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</ServicePageLayout>

@@ -1,0 +1,243 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  canonical?: string;
+}
+
+const { 
+  title = 'AC Repair Anaheim | HiLo Heating & Air',
+  description = 'Need AC repair in Anaheim? HiLo Heating & Air offers same-day AC repair, free diagnostics with repair, and 24/7 emergency service. EPA-certified technicians. Call (714) 853-5534!',
+  canonical
+} = Astro.props;
+
+const siteUrl = 'https://hiloheatingandair.com';
+const pageCanonical = canonical || Astro.url.href;
+const siteName = 'HiLo Heating and Air';
+const ogImage = `${siteUrl}/images/og-image.jpeg`;
+
+const schemaOrg = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": `${siteUrl}/#breadcrumblist`,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "@id": `${siteUrl}#listItem`,
+          "position": 1,
+          "name": "Home"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": `${siteUrl}/#organization`,
+      "name": "HiLo Heating and Air",
+      "description": "Reliable HVAC Services You Can Trust.",
+      "url": `${siteUrl}/`,
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${siteUrl}/images/hvac-logo.png`,
+        "@id": `${siteUrl}/#organizationLogo`,
+        "width": 1254,
+        "height": 1254
+      },
+      "image": {
+        "@id": `${siteUrl}/#organizationLogo`
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": `${siteUrl}/#webpage`,
+      "url": pageCanonical,
+      "name": title,
+      "description": description,
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": `${siteUrl}/#website`
+      },
+      "breadcrumb": {
+        "@id": `${siteUrl}/#breadcrumblist`
+      },
+      "datePublished": "2023-06-29T04:25:49+00:00",
+      "dateModified": "2026-07-16T20:14:01+00:00"
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      "url": `${siteUrl}/`,
+      "name": siteName,
+      "description": "Reliable HVAC Services You Can Trust.",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": `${siteUrl}/#organization`
+      }
+    },
+    {
+      "@type": "HVACBusiness",
+      "name": "HiLo Heating & Air Conditioning",
+      "alternateName": "HiLo Heating and Air",
+      "description": "Family owned & operated HVAC company providing same-day AC repair, heating service, mini split installation, and emergency HVAC repairs in Anaheim and Orange County.",
+      "image": `${siteUrl}/images/hvac-logo.png`,
+      "@id": `${siteUrl}/#organization`,
+      "url": `${siteUrl}/`,
+      "telephone": "(714) 853-5534",
+      "email": "info@hiloheatingandair.com",
+      "priceRange": "$$",
+      "foundingDate": "2016",
+      "slogan": "Service You Can Trust",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "8131 Electric Ave",
+        "addressLocality": "Stanton",
+        "addressRegion": "CA",
+        "postalCode": "90680",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "33.8017",
+        "longitude": "-117.9931"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Anaheim" },
+        { "@type": "City", "name": "Fullerton" },
+        { "@type": "City", "name": "Orange" },
+        { "@type": "City", "name": "Irvine" },
+        { "@type": "City", "name": "Santa Ana" },
+        { "@type": "County", "name": "Orange County" },
+        { "@type": "City", "name": "Los Angeles" }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "8",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Raphaela Isho" },
+          "datePublished": "2026-06-11",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "I hired HiLo Heating & Air Conditioning for a new HVAC installation at my home in Westminster. The entire experience was smooth from start to finish."
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Thomas DeWitt" },
+          "datePublished": "2026-06-11",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "Our furnace stopped working unexpectedly, and we contacted HiLo Heating & Air Conditioning for help. They arrived on time, performed a thorough inspection, and quickly identified a faulty ignition component."
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Majeda Khlaifat" },
+          "datePublished": "2026-06-11",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "After getting multiple estimates for a new air conditioning system in Santa Ana, I chose HiLo Heating & Air Conditioning because they were straightforward and easy to work with."
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "HVAC Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Air Conditioning Repair & Installation" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Heating Repair & Installation" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "HVAC Maintenance" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Indoor Air Quality" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mini Split Installation" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Emergency HVAC Repair" } }
+        ]
+      },
+      "identifier": [
+        { "@type": "PropertyValue", "name": "California C-20 HVAC Contractor License", "value": "1155955" }
+      ],
+      "knowsAbout": [
+        "AC Repair", "Heating Repair", "HVAC Maintenance", "Mini Split Installation",
+        "Indoor Air Quality", "Emergency HVAC Service", "Furnace Repair"
+      ],
+      "sameAs": [`${siteUrl}/`]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does HiLo offer same-day AC repair services in Anaheim?",
+          "acceptedAnswer": { "@type": "Answer", "text": "HiLo Heating & Air Conditioning provides same-day AC repair throughout Anaheim with certified technicians dispatched quickly to restore your comfort fast." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer 24/7 emergency HVAC service?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. HiLo Heating & Air Conditioning offers 24/7 emergency HVAC repair across Orange County, including Irvine, Santa Ana, Fullerton, and Garden Grove with rapid dispatch." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does HiLo waive the diagnostic fee when approving a repair?",
+          "acceptedAnswer": { "@type": "Answer", "text": "HiLo Heating & Air Conditioning completely waives the standard diagnostic fee when you approve any repair, making it easier and more affordable to restore your HVAC system fast." }
+        }
+      ]
+    }
+  ]
+};
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={description} />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+  <link rel="canonical" href={pageCanonical} />
+  
+  <!-- Open Graph -->
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={pageCanonical} />
+  <meta property="og:site_name" content={siteName} />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:image:secure_url" content={ogImage} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/jpeg" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImage} />
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192.png" />
+  <link rel="apple-touch-icon" href="/images/favicon-180.png" />
+  <meta name="msapplication-TileImage" content="/images/favicon-270.png" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json" set:html={JSON.stringify(schemaOrg)} />
+  
+  <title>{title}</title>
+</head>
+<body class="min-h-screen">
+  <slot />
+</body>
+</html>

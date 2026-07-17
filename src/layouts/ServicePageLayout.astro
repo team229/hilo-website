@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Reviews from '../components/Reviews';
+import FAQSection from '../components/FAQSection';
+import ContactBar from '../components/ContactBar';
+import CTASection from '../components/CTASection';
+import ServiceForm from '../components/ServiceForm';
+import LicenseBadges from '../components/LicenseBadges.astro';
+import BrandsSection from '../components/BrandsSection.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  heroTitle: string;
+  heroSubtitle: string;
+}
+
+const { title, description, heroTitle, heroSubtitle } = Astro.props;
+---
+
+<BaseLayout title={title} description={description}>
+  <Header />
+  <main>
+    <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4">{heroTitle}</h1>
+        <p class="text-white/80 text-lg max-w-2xl mx-auto">{heroSubtitle}</p>
+      </div>
+    </section>
+
+    <LicenseBadges />
+
+    <slot />
+
+    <section class="py-16 sm:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div>
+            <span class="inline-block bg-brand-blue/10 text-brand-blue text-sm font-semibold px-4 py-1.5 rounded-full mb-4">Schedule Service</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-brand-blue mb-4">Get a Free Estimate</h2>
+            <p class="text-slate-600 mb-6">Fill out the form and our team will get back to you within 15 minutes. Same-day service available.</p>
+            <div class="space-y-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-brand-blue/10 rounded-lg flex items-center justify-center">
+                  <svg class="w-5 h-5 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <span class="text-sm font-semibold text-brand-blue">Same-Day Service Available</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-brand-blue/10 rounded-lg flex items-center justify-center">
+                  <svg class="w-5 h-5 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+                </div>
+                <span class="text-sm font-semibold text-brand-blue">Free Diagnostics with Repair</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-brand-blue/10 rounded-lg flex items-center justify-center">
+                  <svg class="w-5 h-5 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"/></svg>
+                </div>
+                <span class="text-sm font-semibold text-brand-blue">Upfront Pricing, No Hidden Fees</span>
+              </div>
+            </div>
+          </div>
+          <ServiceForm client:load />
+        </div>
+      </div>
+    </section>
+
+    <Reviews client:visible />
+    <BrandsSection />
+    <FAQSection client:visible />
+    <ContactBar client:visible />
+    <CTASection client:visible />
+  </main>
+  <Footer />
+</BaseLayout>

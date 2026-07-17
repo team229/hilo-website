@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import HeroSection from '../components/HeroSection';
+import AboutIntro from '../components/AboutIntro';
+import ReliableService from '../components/ReliableService';
+import ServiceCards from '../components/ServiceCards';
+import CTABanner from '../components/CTABanner';
+import ServiceAreas from '../components/ServiceAreas';
+import Reviews from '../components/Reviews';
+import AboutStats from '../components/AboutStats';
+import ContactBar from '../components/ContactBar';
+import FAQSection from '../components/FAQSection';
+import CTASection from '../components/CTASection';
+---
+
+<BaseLayout title="HVAC Services in Anaheim & Orange County | HiLo Heating & Air" description="HiLo Heating & Air provides same-day AC repair, heating service, mini split installation, and emergency HVAC repairs in Anaheim and Orange County. Call (714) 853-5534!">
+  <Header />
+  <main>
+    <HeroSection client:load />
+    <AboutIntro client:visible />
+    <ReliableService client:visible />
+    <ServiceCards client:visible />
+    <CTABanner client:visible />
+    <ServiceAreas client:visible />
+    <Reviews client:visible />
+    <AboutStats client:visible />
+    <ContactBar client:visible />
+    <FAQSection client:visible />
+    <CTASection client:visible />
+  </main>
+  <Footer />
+</BaseLayout>

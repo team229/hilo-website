@@ -1,0 +1,165 @@
+---
+const services = [
+  {
+    name: 'Air Conditioning',
+    href: '/service/air-conditioning/',
+    sub: [
+      { name: 'AC Maintenance', href: '/ac-maintenance/' },
+      { name: 'AC Installation', href: '/ac-installation/' },
+      { name: 'Emergency AC Repair', href: '/emergency-ac-repair/' },
+      { name: 'Mini Split Installation', href: '/mini-split-installation/' },
+    ],
+  },
+  {
+    name: 'Heating',
+    href: '/service/heating/',
+    sub: [
+      { name: 'Heating Repair', href: '/heating-repair/' },
+      { name: 'Heating Maintenance', href: '/heating-maintenance/' },
+      { name: 'Heating Installation', href: '/heating-installation/' },
+    ],
+  },
+  {
+    name: 'HVAC Services',
+    href: '/service/hvac-services/',
+    sub: [
+      { name: 'HVAC Installation', href: '/hvac-installation/' },
+      { name: 'HVAC Replacement', href: '/hvac-replacement/' },
+      { name: 'Air Balancing', href: '/hvac-air-balancing/' },
+      { name: 'Duct Repair', href: '/hvac-duct-repair/' },
+      { name: 'Duct Sealing', href: '/hvac-duct-sealing/' },
+      { name: 'Humidifier Installation', href: '/hvac-humidifier/' },
+      { name: 'Duct Installation', href: '/duct-installation/' },
+      { name: 'Emergency HVAC Repair', href: '/emergency-hvac-repair/' },
+      { name: 'Commercial HVAC', href: '/commercial-hvac-services/' },
+    ],
+  },
+  { name: 'Indoor Air Quality', href: '/service/indoor-air-quality/' },
+];
+
+const navLinks = [
+  { name: 'Service Area', href: '/service-areas/' },
+  { name: 'About Us', href: '/about-us/' },
+  { name: 'Blogs', href: '/blogs/' },
+  { name: 'Contact Us', href: '/contact-us/' },
+];
+---
+
+<header class="relative z-50">
+  <!-- Top Bar -->
+  <div class="bg-brand-red text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-2">
+      <div class="hidden md:flex gap-5">
+        <span class="text-sm font-medium">🕐 Same-Day HVAC Service</span>
+        <span class="text-sm font-medium">🚨 Emergency Services Available</span>
+        <span class="text-sm font-medium">✓ Free Estimates</span>
+      </div>
+      <div class="flex items-center gap-5 mx-auto md:mx-0">
+        <a href="tel:+17148535534" class="text-sm font-bold whitespace-nowrap hover:underline">(714) 853-5534</a>
+        <a href="/contact-us" class="bg-white text-brand-red text-sm font-semibold px-4 py-1.5 rounded-full whitespace-nowrap hover:bg-gray-100 transition">📞 Request Service</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Nav -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-[86px] gap-5">
+      <a href="/" class="flex items-center flex-shrink-0">
+        <img src="/images/logo.png" alt="HiLo Heating & Air" class="h-16 w-auto" width="200" height="150" />
+      </a>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden lg:flex items-center gap-2 flex-1 justify-center">
+        <li><a href="/" class="text-slate-800 text-[15px] font-semibold px-4 py-2.5 rounded-lg hover:text-brand-blue hover:bg-slate-100 transition">Home</a></li>
+        <li class="relative group">
+          <a href="#" class="text-slate-800 text-[15px] font-semibold px-4 py-2.5 rounded-lg hover:text-brand-blue hover:bg-slate-100 transition flex items-center gap-1">Services <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></a>
+          <ul class="absolute top-full left-0 bg-white min-w-[240px] py-2 shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 translate-y-2 transition-all duration-200 z-50">
+            {services.map((svc) => (
+              <li class="relative group/sub">
+                <a href={svc.href} class="flex justify-between items-center px-6 py-3.5 text-slate-800 text-[15px] font-semibold hover:bg-slate-100 hover:text-brand-blue transition">
+                  {svc.name}
+                  {svc.sub && <span class="text-slate-300 font-light text-lg">›</span>}
+                </a>
+                {svc.sub && (
+                  <ul class="absolute left-full top-[-8px] bg-white min-w-[260px] py-3 shadow-xl rounded-xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible group-hover/sub:translate-x-0 translate-x-2.5 transition-all duration-200 z-50">
+                    {svc.sub.map((sub) => (
+                      <li>
+                        <a href={sub.href} class="block px-6 py-3.5 text-slate-400 text-sm font-medium hover:bg-slate-100 hover:text-brand-blue transition">{sub.name}</a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ul>
+        </li>
+        {navLinks.map((link) => (
+          <li><a href={link.href} class="text-slate-800 text-[15px] font-semibold px-4 py-2.5 rounded-lg hover:text-brand-blue hover:bg-slate-100 transition">{link.name}</a></li>
+        ))}
+      </ul>
+
+      <div class="hidden lg:flex items-center gap-3 flex-shrink-0">
+        <a href="tel:+17148535534" class="bg-brand-blue text-white text-sm font-bold px-5 py-2.5 rounded-lg whitespace-nowrap hover:bg-blue-700 transition">📞 24/7 Emergency</a>
+      </div>
+
+      <!-- Mobile burger -->
+      <button id="burger-btn" class="lg:hidden flex flex-col justify-center items-center gap-[5px] w-11 h-11 border-2 border-slate-800 rounded-lg p-0 flex-shrink-0" aria-label="Open menu">
+        <span class="block w-[22px] h-0.5 bg-slate-800 rounded"></span>
+        <span class="block w-[22px] h-0.5 bg-slate-800 rounded"></span>
+        <span class="block w-[22px] h-0.5 bg-slate-800 rounded"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-overlay" class="fixed inset-0 bg-black/55 z-[999998] hidden"></div>
+  <div id="mobile-drawer" class="fixed top-0 right-0 w-[300px] max-w-[85vw] h-screen bg-white z-[999999] flex flex-col overflow-y-auto shadow-[-6px_0_30px_rgba(0,0,0,0.25)] translate-x-full transition-transform duration-300">
+    <div class="flex items-center justify-between px-5 py-4 border-b border-slate-200 bg-white flex-shrink-0">
+      <img src="/images/logo.png" alt="HiLo" class="h-11 w-auto" width="200" height="150" />
+      <button id="drawer-close" class="text-2xl text-slate-800 p-1 bg-transparent border-none cursor-pointer">&times;</button>
+    </div>
+    <ul class="flex-1 py-2">
+      <li class="border-b border-slate-100"><a href="/" class="block w-full px-6 py-4 text-base font-semibold text-slate-800 hover:text-brand-blue hover:bg-slate-50">Home</a></li>
+      <li class="border-b border-slate-100">
+        <button id="services-toggle" class="drawer-svc-btn block w-full px-6 py-4 text-base font-semibold text-slate-800 text-left bg-transparent border-none cursor-pointer font-montserrat hover:text-brand-blue hover:bg-slate-50">Services <span class="text-[10px] ml-1.5">▾</span></button>
+        <ul id="services-sub" class="hidden bg-slate-50 border-l-4 border-brand-blue max-h-[60vh] overflow-y-auto">
+          {services.map((svc) => (
+            <li class="border-b border-slate-200 last:border-b-0">
+              <a href={svc.href} class="block px-7 py-3.5 text-sm font-medium text-slate-400 hover:text-brand-blue hover:bg-white transition">{svc.name}</a>
+            </li>
+          ))}
+        </ul>
+      </li>
+      <li class="border-b border-slate-100"><a href="/service-areas/" class="block w-full px-6 py-4 text-base font-semibold text-slate-800 hover:text-brand-blue hover:bg-slate-50">Service Area</a></li>
+      <li class="border-b border-slate-100"><a href="/about-us/" class="block w-full px-6 py-4 text-base font-semibold text-slate-800 hover:text-brand-blue hover:bg-slate-50">About Us</a></li>
+      <li class="border-b border-slate-100"><a href="/blogs/" class="block w-full px-6 py-4 text-base font-semibold text-slate-800 hover:text-brand-blue hover:bg-slate-50">Blogs</a></li>
+      <li class="border-b border-slate-100"><a href="/contact-us/" class="block w-full px-6 py-4 text-base font-semibold text-slate-800 hover:text-brand-blue hover:bg-slate-50">Contact Us</a></li>
+    </ul>
+    <a href="tel:+17148535534" class="block mx-4 my-4 px-5 py-3.5 bg-brand-red text-white text-[15px] font-bold rounded-lg text-center flex-shrink-0 hover:bg-red-700 transition">📞 Call Now: (714) 853-5534</a>
+  </div>
+</header>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', function() {
+    var burgerBtn = document.getElementById('burger-btn');
+    var overlay = document.getElementById('mobile-overlay');
+    var drawer = document.getElementById('mobile-drawer');
+    var closeBtn = document.getElementById('drawer-close');
+    var servicesToggle = document.getElementById('services-toggle');
+    var servicesSub = document.getElementById('services-sub');
+
+    function openDrawer() {
+      overlay.classList.remove('hidden');
+      drawer.classList.remove('translate-x-full');
+    }
+    function closeDrawer() {
+      overlay.classList.add('hidden');
+      drawer.classList.add('translate-x-full');
+    }
+
+    burgerBtn.addEventListener('click', openDrawer);
+    overlay.addEventListener('click', closeDrawer);
+    closeBtn.addEventListener('click', closeDrawer);
+    servicesToggle.addEventListener('click', function() { servicesSub.classList.toggle('hidden'); });
+  });
+</script>

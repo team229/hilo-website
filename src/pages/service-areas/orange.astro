@@ -1,0 +1,140 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import CTASection from '../../components/CTASection';
+import ServiceForm from '../../components/ServiceForm';
+import Reviews from '../../components/Reviews';
+import LicenseBadges from '../../components/LicenseBadges.astro';
+import BrandsSection from '../../components/BrandsSection.astro';
+---
+
+<BaseLayout title="HVAC Services in Orange, CA | HiLo Heating & Air" description="Reliable furnace repair, heating maintenance, and AC services in Orange, CA. Honest diagnostics and repairs that hold up from HiLo Heating & Air since 2000.">
+  <Header />
+  <main>
+    <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4">Furnace Repair Orange CA</h1>
+        <p class="text-white/80 text-lg max-w-2xl mx-auto">Reliable heating service from people who actually care. Straightforward diagnostics, honest pricing, and repairs that hold up.</p>
+      </div>
+    </section>
+
+    <LicenseBadges />
+
+    <section class="py-16 sm:py-24 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">
+        <p>Winter nights in Orange, CA might not be brutal by national standards — but when your furnace stops working and the temperature drops to the low 40s, it feels plenty cold inside. That's exactly when you need someone you can call without worrying about getting oversold or overcharged.</p>
+        <p>At HiLo Heating & Air Conditioning, we've been helping homeowners across Orange County stay warm since 2000. We do <strong>furnace repair Orange</strong> residents can count on — straightforward diagnostics, honest pricing, and repairs that actually hold up. No unnecessary upsells, no inflated quotes. Just a technician who shows up, figures out what's wrong, and fixes it.</p>
+
+        <h2>How Do You Know It's Time to Call for Furnace Repair?</h2>
+        <p>Furnaces tend to give you hints before they completely give out. The trick is catching those hints before a manageable issue turns into a full system failure on the coldest night of the year.</p>
+        <p>Keep an eye out for these warning signs:</p>
+        <ul>
+          <li>Your home takes much longer than usual to reach the temperature you've set</li>
+          <li>The furnace kicks on and off in short bursts without properly heating the space</li>
+          <li>You're hearing banging, rattling, or squealing sounds that weren't there before</li>
+          <li>Some rooms feel warm while others stay cold no matter what</li>
+          <li>There's a burning smell when the heat first turns on — or it lingers</li>
+          <li>Your gas or electric bill has crept up without any change in usage habits</li>
+          <li>The pilot light keeps going out, or it's burning yellow instead of blue</li>
+        </ul>
+        <p>Any of these things can point to something specific — a faulty igniter, a dirty flame sensor, a blower motor issue, a cracked heat exchanger, or airflow problems caused by a clogged filter. Our technicians diagnose the actual cause rather than guessing or replacing parts unnecessarily.</p>
+
+        <h2>What We Fix</h2>
+        <p>For <strong>furnace repair Orange</strong> homeowners call us about, we handle the full range of issues: ignition system failures, gas valve problems, heat exchanger inspections, thermostat calibration, blower motor repairs, control board issues, and duct-related airflow problems. We work on all major brands — Carrier, Trane, Lennox, Goodman, Rheem, York, and more — and our trucks are stocked with common parts so most repairs wrap up in a single visit.</p>
+
+        <h2>Why Orange Homeowners Choose HiLo</h2>
+        <p>Plenty of HVAC companies serve Orange. What makes people call us back — and refer their neighbors — comes down to a few consistent things.</p>
+        <p>We're local, we've been here since 2000, and we treat every home like it's our own. When you call us for <strong>furnace repair Orange</strong> service, you're not going through a call center or waiting days for a callback. You get a real team that responds quickly, communicates clearly, and doesn't pad the bill.</p>
+        <p>We also don't push replacements when a repair makes more sense. If your furnace can be fixed reliably, that's what we'll recommend. If it genuinely can't — because of age, a cracked heat exchanger, or the cost math just doesn't work — we'll tell you that too and walk you through your options honestly.</p>
+        <p>Every repair we do is backed by a warranty. If something isn't right after we've been out, we come back and make it right.</p>
+      </div>
+    </section>
+
+    <section class="py-16 sm:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div>
+            <span class="inline-block bg-brand-blue/10 text-brand-blue text-sm font-semibold px-4 py-1.5 rounded-full mb-4">Schedule Service</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-brand-blue mb-4">Get a Free Estimate</h2>
+            <p class="text-slate-600 mb-6">Fill out the form and our team will get back to you within 15 minutes. Same-day service available.</p>
+            <div class="space-y-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-brand-blue/10 rounded-lg flex items-center justify-center">
+                  <svg class="w-5 h-5 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <span class="text-sm font-semibold text-brand-blue">Same-Day Service Available</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-brand-blue/10 rounded-lg flex items-center justify-center">
+                  <svg class="w-5 h-5 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+                </div>
+                <span class="text-sm font-semibold text-brand-blue">Free Diagnostics with Repair</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-brand-blue/10 rounded-lg flex items-center justify-center">
+                  <svg class="w-5 h-5 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"/></svg>
+                </div>
+                <span class="text-sm font-semibold text-brand-blue">Upfront Pricing, No Hidden Fees</span>
+              </div>
+            </div>
+          </div>
+          <ServiceForm client:load />
+        </div>
+      </div>
+    </section>
+
+    <Reviews client:visible />
+    <BrandsSection />
+
+    <section class="py-16 sm:py-24 bg-slate-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-brand-blue mb-8">Frequently Asked Questions</h2>
+        <div class="space-y-4">
+          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
+            <h3 class="text-lg font-bold text-brand-blue mb-2">My furnace is running but the house isn't warming up. What's going on?</h3>
+            <p class="text-slate-600">That's actually one of the more common calls we get for furnace repair Orange — the system runs but produces little or no heat. It's usually a failed igniter, a dirty flame sensor, or a gas supply issue. Could also be airflow restriction from a clogged filter. Any of those are fixable without replacing the whole unit.</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
+            <h3 class="text-lg font-bold text-brand-blue mb-2">How much does furnace repair in Orange typically cost?</h3>
+            <p class="text-slate-600">It really depends on the specific problem. Smaller repairs — like a flame sensor cleaning or a capacitor swap — are relatively affordable. A blower motor or control board is more involved. We give you an exact quote before touching anything, so there are no surprises on the bill.</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
+            <h3 class="text-lg font-bold text-brand-blue mb-2">Is it safe to run my furnace if it's making a banging noise?</h3>
+            <p class="text-slate-600">We'd say don't push it. A banging sound can mean something loose inside — like a panel or fan blade — or it could point to delayed ignition, which causes small gas buildups that ignite with a bang. That second one in particular is worth having looked at promptly.</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
+            <h3 class="text-lg font-bold text-brand-blue mb-2">My furnace is 14 years old. Should I repair it or just replace it?</h3>
+            <p class="text-slate-600">Fourteen years is getting up there, but it doesn't automatically mean replacement. We'd look at the specific repair needed, what condition the rest of the system is in, and what the cost comparison looks like. We'll give you an honest take.</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
+            <h3 class="text-lg font-bold text-brand-blue mb-2">How fast can you get to my home in Orange?</h3>
+            <p class="text-slate-600">We prioritize same-day and next-day appointments whenever we can, especially when someone is without heat. Call (714) 853-5534 and we'll tell you exactly when we can have someone there.</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
+            <h3 class="text-lg font-bold text-brand-blue mb-2">Do you work on all furnace brands?</h3>
+            <p class="text-slate-600">Yes — we handle all the major brands including Carrier, Trane, Lennox, Goodman, Rheem, and York, among others.</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
+            <h3 class="text-lg font-bold text-brand-blue mb-2">What's the yellow pilot light thing about?</h3>
+            <p class="text-slate-600">A yellow or orange pilot light usually indicates incomplete combustion — often caused by a dirty burner or, more seriously, the presence of carbon monoxide. Blue is what you want to see. If yours is yellow, schedule furnace repair Orange service sooner rather than later.</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
+            <h3 class="text-lg font-bold text-brand-blue mb-2">Do you offer maintenance plans?</h3>
+            <p class="text-slate-600">We do. Annual furnace tune-ups catch small problems before they turn into cold-night emergencies. Ask us about our maintenance options when you call.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-brand-blue/5 py-8">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-brand-blue font-semibold">HiLo Heating & Air Conditioning · 8131 Electric Ave, Stanton, CA 90680, United States</p>
+        <p class="text-slate-600 mt-1"><a href="tel:+17148535534" class="hover:text-brand-red transition">(714) 853-5534</a> · <a href="mailto:info@hiloheatingandair.com" class="hover:text-brand-red transition">info@hiloheatingandair.com</a></p>
+      </div>
+    </section>
+
+    <CTASection client:visible />
+  </main>
+  <Footer />
+</BaseLayout>
