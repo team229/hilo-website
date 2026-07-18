@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import HeroSection from '../components/HeroSection';
+import HeroForm from '../components/HeroForm';
 import AboutIntro from '../components/AboutIntro';
 import ReliableService from '../components/ReliableService';
 import ServiceCards from '../components/ServiceCards';
@@ -20,6 +21,7 @@ import CTASection from '../components/CTASection';
   <Header />
   <main>
     <HeroSection client:load />
+    <HeroForm client:load />
     <AboutIntro client:visible />
     <ReliableService client:visible />
     <ServiceCards client:visible />
