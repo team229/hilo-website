@@ -97,7 +97,7 @@ export default function HeroSection() {
                   <h4 className="text-lg sm:text-xl font-extrabold text-[#002d62] mb-3">
                     Same-Day Fast Repair
                   </h4>
-                  <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[11px] font-bold text-gray-600">
+                  <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-4 text-[11px] font-bold text-gray-600">
                     <span className="flex items-center">
                       <Check className="w-4 h-4 text-[#cc0000] mr-1" strokeWidth={2.5} />
                       Quick Response
@@ -107,24 +107,15 @@ export default function HeroSection() {
                       <Clock className="w-4 h-4 text-[#002d62] mr-1" strokeWidth={2.5} />
                       Skilled Technicians
                     </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-[0_15px_50px_-15px_rgba(0,0,0,0.1)] border border-gray-100 w-full">
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
-                <div>
-                  <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[11px] font-bold text-gray-600">
+                    <span className="inline-block text-gray-300">|</span>
                     <span className="flex items-center">
                       <MapPin className="w-4 h-4 text-[#cc0000] mr-1" strokeWidth={2.5} />
                       Local & Reliable
                     </span>
                   </div>
-                </div>
-                <div className="flex-shrink-0">
                   <a
                     href="tel:+17148535534"
-                    className="inline-block bg-[#cc0000] hover:bg-[#b30000] text-white font-bold px-6 py-3.5 rounded-xl transition duration-200 shadow-md text-center w-full sm:w-auto whitespace-nowrap"
+                    className="inline-block bg-[#cc0000] hover:bg-[#b30000] text-white font-bold px-6 py-3 rounded-xl transition duration-200 shadow-md text-sm"
                   >
                     Call Now
                   </a>
