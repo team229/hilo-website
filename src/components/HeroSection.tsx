@@ -130,8 +130,6 @@ export default function HeroSection() {
 
         </div>
 
-        {/* Decorative Bottom Wave */}
-        <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-r from-[#cc0000] via-[#002d62] to-[#001d42] transform skew-y-1 pointer-events-none opacity-90 hidden lg:block"></div>
       </div>
     </section>
   );
