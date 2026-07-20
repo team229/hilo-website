@@ -89,23 +89,25 @@ export default function HeroSection() {
                 alt="HiLo HVAC Technician"
                 className="w-full h-auto object-cover aspect-[4/5] lg:aspect-[3/4]"
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-6 sm:p-8">
-                <span className="text-[#cc0000] font-extrabold tracking-wider text-xs uppercase block mb-1">
-                  NEED RAPID DISPATCH?
-                </span>
-                <h4 className="text-xl sm:text-2xl font-extrabold text-white mb-3">
-                  Same-Day Fast Repair
-                </h4>
-                <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[11px] font-bold text-white/90">
-                  <span className="flex items-center">
-                    <Check className="w-4 h-4 text-[#cc0000] mr-1" strokeWidth={2.5} />
-                    Quick Response
+              <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+                <div className="bg-white/95 backdrop-blur-sm rounded-xl p-5 sm:p-6 shadow-lg">
+                  <span className="text-[#cc0000] font-extrabold tracking-wider text-xs uppercase block mb-1">
+                    NEED RAPID DISPATCH?
                   </span>
-                  <span className="inline-block text-white/40">|</span>
-                  <span className="flex items-center">
-                    <Clock className="w-4 h-4 text-white mr-1" strokeWidth={2.5} />
-                    Skilled Technicians
-                  </span>
+                  <h4 className="text-lg sm:text-xl font-extrabold text-[#002d62] mb-3">
+                    Same-Day Fast Repair
+                  </h4>
+                  <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[11px] font-bold text-gray-600">
+                    <span className="flex items-center">
+                      <Check className="w-4 h-4 text-[#cc0000] mr-1" strokeWidth={2.5} />
+                      Quick Response
+                    </span>
+                    <span className="inline-block text-gray-300">|</span>
+                    <span className="flex items-center">
+                      <Clock className="w-4 h-4 text-[#002d62] mr-1" strokeWidth={2.5} />
+                      Skilled Technicians
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
