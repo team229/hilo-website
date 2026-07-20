@@ -7,10 +7,10 @@ export default function HeroSection() {
       style={{ backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.85) 40%, rgba(0, 0, 0, 0.3) 100%), url(/images/hero-bg-hilo.jpg)' }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-20 lg:pt-32 lg:pb-28">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          
           {/* LEFT COLUMN: Heading, Tags & Action */}
-          <div className="lg:col-span-7 flex flex-col justify-center">
+          <div className="lg:col-span-7 flex flex-col justify-center lg:pt-8">
 
             <div className="inline-flex items-center space-x-2 bg-[#cc0000] text-white px-4 py-2 rounded-md font-bold tracking-wider text-xs uppercase w-max mb-6 shadow-md">
               <ShieldCheck className="w-4 h-4" strokeWidth={2.5} />
@@ -52,7 +52,7 @@ export default function HeroSection() {
           </div>
 
           {/* RIGHT COLUMN: Schedule Service Form Card */}
-          <div className="lg:col-span-5 w-full">
+          <div className="lg:col-span-5 w-full lg:pt-16">
             <div className="bg-[#003366] rounded-2xl p-6 sm:p-8 shadow-[0_20px_50px_rgba(0,0,0,0.3)] border border-[#004080]">
               <h3 className="text-2xl sm:text-3xl font-extrabold text-white mb-2">Schedule Service</h3>
               <p className="text-xs sm:text-sm text-gray-200 mb-6 font-medium">Fast response for repairs, installations, and emergency service.</p>
