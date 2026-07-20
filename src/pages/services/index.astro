@@ -40,12 +40,11 @@ import CTASection from '../../components/CTASection';
           <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-blue mb-4">Explore Our HVAC Services</h2>
           <p class="text-slate-600 max-w-2xl mx-auto font-medium">From emergency repairs to full system installations, we deliver reliable HVAC solutions across Orange County.</p>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {[
             { title: 'Air Conditioning', desc: 'Expert AC repair, installation, and maintenance. Same-day service with certified technicians.', href: '/services/air-conditioning-services/', icon: 'ac' },
             { title: 'Heating', desc: 'Reliable heating repair, installation, and maintenance. Keep your home warm all winter.', href: '/services/heating-services/', icon: 'heat' },
             { title: 'HVAC Services', desc: 'Complete HVAC solutions including installation, replacement, duct work, and more.', href: '/services/hvac-services/', icon: 'hvac' },
-            { title: 'Commercial HVAC', desc: 'HVAC services for offices, restaurants, and businesses across Orange County.', href: '/services/commercial-hvac-services/', icon: 'com' },
             { title: 'Indoor Air Quality', desc: 'Air purification, filtration, humidity control, and duct services for cleaner air.', href: '/services/indoor-air-quality-solutions/', icon: 'air' },
           ].map((svc) => {
             const icons: Record<string, string> = {
