@@ -5,36 +5,86 @@ import Footer from '../../components/Footer.astro';
 import CTASection from '../../components/CTASection';
 ---
 
-<BaseLayout title="HVAC Maintenance, Inspection & Installation | HiLo Heating & Air" description="Explore complete HVAC maintenance services, system inspections, and new HVAC installation in Orange County. Same-day scheduling, upfront pricing, and EPA-certified technicians. Request a free estimate today!">
+<BaseLayout title="HVAC Services in Stanton, CA | Hilo Heating and Air" description="Explore complete HVAC maintenance services, system inspections, and new HVAC installation in Orange County. Same-day scheduling, upfront pricing, and EPA-certified technicians. Request a free estimate today!">
   <Header />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4">Our HVAC Services</h1>
-        <p class="text-white/80 text-lg max-w-2xl mx-auto">Complete HVAC maintenance, inspection, and installation services across Orange County. Same-day scheduling, upfront pricing, and EPA-certified technicians.</p>
+        <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4">HVAC Services in Stanton, CA</h1>
+        <p class="text-white/80 text-lg max-w-2xl mx-auto">Your AC dies in July. Or your furnace decides to quit the one cold week of the year. That's us. Hilo Heating and Air has been working on heating and cooling systems around Stanton for years.</p>
       </div>
     </section>
 
     <section class="py-16 sm:py-24 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[
-            { title: 'Air Conditioning Services', desc: 'Expert AC repair, installation, and maintenance.', href: '/services/air-conditioning-services/' },
-            { title: 'Heating Services', desc: 'Reliable furnace repair, heating maintenance and installation.', href: '/services/heating-services/' },
-            { title: 'HVAC Services', desc: 'Complete heating and cooling services for your home.', href: '/services/hvac-services/' },
-            { title: 'Commercial HVAC', desc: 'HVAC services for offices, restaurants, and more.', href: '/services/commercial-hvac-services/' },
-            { title: 'Indoor Air Quality', desc: 'Air purification, filtration, and humidity control.', href: '/services/indoor-air-quality-solutions/' },
-          ].map((svc) => (
-            <a href={svc.href} class="bg-white border border-brand-blue/10 rounded-2xl p-6 hover:shadow-lg hover:border-brand-blue/30 transition-all group">
-              <h3 class="text-lg font-bold text-brand-blue mb-2 group-hover:text-brand-red transition-colors">{svc.title}</h3>
-              <p class="text-sm text-slate-600 mb-4">{svc.desc}</p>
-              <span class="text-sm font-semibold text-brand-blue group-hover:text-brand-red transition-colors inline-flex items-center gap-1">
-                Learn More
-                <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
-              </span>
-            </a>
-          ))}
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">
+        <p>Your AC dies in July. Or your furnace decides to quit the one cold week of the year. It happens — and when it does, you want someone local who actually picks up the phone. That's us. Hilo Heating and Air has been working on heating and cooling systems around Stanton for years now, and most of our calls come from people who used us once and just kept calling.</p>
+        <p>We're not trying to be everything to everyone. We do heating and cooling, we do it well, and we'd rather have a smaller list of happy customers than a long list of people who felt rushed or upsold. That's just how we run things.</p>
+
+        <h2>What We Actually Do</h2>
+        <p>Let's be honest — most people ignore their HVAC system until it breaks. But a little <strong>HVAC maintenance service</strong> now and then saves you from the big, expensive surprise later. We clean the coils, check refrigerant, look at the wiring, test the thermostat. Boring stuff. But boring stuff is what keeps a system running for fifteen years instead of eight. Skipping it doesn't save you money — it just delays the bill and makes it bigger.</p>
+        <p>If something feels off but you can't quite name it, ask for an <strong>HVAC system inspection</strong>. We'll go through the airflow, the ductwork, the safety switches — basically the whole system — and tell you what's actually wrong, not just what sounds expensive. We've turned away plenty of "you need a new system" calls because, honestly, a $200 fix did the trick. An inspection is also smart if you're buying a house, selling one, or just haven't had anyone look at your unit in a couple years.</p>
+        <p>When a system really is done, we do full <strong>new HVAC system installation</strong> work too — sizing it right for your home, pulling the old unit, putting in the new one, and testing it before we pack up. Getting the size wrong is one of the most common mistakes in this industry, and it leads to higher bills and a system that struggles year-round. You shouldn't have to wonder if it's working, or whether you got the right unit for your space in the first place.</p>
+
+        <h2>How We Work</h2>
+        <p>We try to keep things simple. You call, we ask a few questions, and we give you a real window for when we'll show up — not a vague "sometime this week." Before any work starts, you'll know what it costs. No add-ons sprung on you halfway through the job. If a repair makes more sense than a replacement, we'll say so, even if it means a smaller invoice for us.</p>
+
+        <h2>Why People Stick With Us</h2>
+        <p>Hilo Heating and Air isn't the biggest company in Orange County, and that's kind of the point. We show up, we're straight with you about pricing, and we don't vanish after the invoice. That's pretty much our whole pitch. Most of our work comes from referrals — neighbors telling neighbors — which says more about us than any ad ever could.</p>
+      </div>
+    </section>
+
+    <section class="py-16 sm:py-24 bg-slate-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-brand-blue mb-8">FAQs</h2>
+        <div class="space-y-4">
+          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
+            <h3 class="text-lg font-bold text-brand-blue mb-2">How often should I schedule maintenance?</h3>
+            <p class="text-slate-600">Spring and fall, ideally. Before the heat hits and before the cold does.</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
+            <h3 class="text-lg font-bold text-brand-blue mb-2">What happens during an inspection?</h3>
+            <p class="text-slate-600">We check airflow, wiring, refrigerant, ducts, and the safety controls — then tell you what we find, good or bad.</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
+            <h3 class="text-lg font-bold text-brand-blue mb-2">How fast is a new install?</h3>
+            <p class="text-slate-600">Usually one day. Bigger jobs might spill into a second.</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
+            <h3 class="text-lg font-bold text-brand-blue mb-2">Got an emergency line?</h3>
+            <p class="text-slate-600">Yep. Call the number below and we'll get someone moving.</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
+            <h3 class="text-lg font-bold text-brand-blue mb-2">Are techs licensed?</h3>
+            <p class="text-slate-600">All of them. Licensed, insured, no exceptions.</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
+            <h3 class="text-lg font-bold text-brand-blue mb-2">Do you push a specific brand?</h3>
+            <p class="text-slate-600">No — we install what actually fits your house and budget.</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
+            <h3 class="text-lg font-bold text-brand-blue mb-2">Financing available?</h3>
+            <p class="text-slate-600">Yes, for installs especially. Ask when you call.</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
+            <h3 class="text-lg font-bold text-brand-blue mb-2">Do you serve areas outside Stanton?</h3>
+            <p class="text-slate-600">Yes, we cover most of the surrounding Orange County area — just give us a call to check your zip code.</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
+            <h3 class="text-lg font-bold text-brand-blue mb-2">What if I just need a repair, not a full system?</h3>
+            <p class="text-slate-600">That's most of our calls, honestly. We'll fix what's broken before we ever talk replacement.</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
+            <h3 class="text-lg font-bold text-brand-blue mb-2">Is there a service fee just to come look?</h3>
+            <p class="text-slate-600">We'll go over any diagnostic costs upfront, before anyone steps foot on your property.</p>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="bg-brand-blue/5 py-8">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-brand-blue font-semibold">Hilo Heating and Air · 8131 Electric Ave, Stanton, CA 90680, United States</p>
+        <p class="text-slate-600 mt-1"><a href="tel:+17148535534" class="hover:text-brand-red transition">(714) 853-5534</a> · <a href="mailto:info@hiloheatingandair.com" class="hover:text-brand-red transition">info@hiloheatingandair.com</a></p>
       </div>
     </section>
 
