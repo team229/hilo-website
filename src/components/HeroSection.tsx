@@ -89,36 +89,40 @@ export default function HeroSection() {
                 alt="HiLo HVAC Technician"
                 className="w-full h-auto object-cover aspect-[4/5] lg:aspect-[3/4]"
               />
-              <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
-                <div className="bg-white/95 backdrop-blur-sm rounded-xl p-5 sm:p-6 shadow-lg">
-                  <span className="text-[#cc0000] font-extrabold tracking-wider text-xs uppercase block mb-1">
-                    NEED RAPID DISPATCH?
-                  </span>
-                  <h4 className="text-lg sm:text-xl font-extrabold text-[#002d62] mb-3">
-                    Same-Day Fast Repair
-                  </h4>
-                  <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-4 text-[11px] font-bold text-gray-600">
-                    <span className="flex items-center">
-                      <Check className="w-4 h-4 text-[#cc0000] mr-1" strokeWidth={2.5} />
-                      Quick Response
-                    </span>
-                    <span className="inline-block text-gray-300">|</span>
-                    <span className="flex items-center">
-                      <Clock className="w-4 h-4 text-[#002d62] mr-1" strokeWidth={2.5} />
-                      Skilled Technicians
-                    </span>
-                    <span className="inline-block text-gray-300">|</span>
-                    <span className="flex items-center">
-                      <MapPin className="w-4 h-4 text-[#cc0000] mr-1" strokeWidth={2.5} />
-                      Local & Reliable
-                    </span>
+              <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4">
+                <div className="bg-white/95 backdrop-blur-sm rounded-xl p-4 sm:p-5 shadow-lg">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                    <div>
+                      <span className="text-[#cc0000] font-extrabold tracking-wider text-[10px] uppercase block mb-0.5">
+                        NEED RAPID DISPATCH?
+                      </span>
+                      <h4 className="text-base sm:text-lg font-extrabold text-[#002d62] mb-2">
+                        Same-Day Fast Repair
+                      </h4>
+                      <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[10px] font-bold text-gray-600">
+                        <span className="flex items-center">
+                          <Check className="w-3.5 h-3.5 text-[#cc0000] mr-1" strokeWidth={2.5} />
+                          Quick Response
+                        </span>
+                        <span className="inline-block text-gray-300">|</span>
+                        <span className="flex items-center">
+                          <Clock className="w-3.5 h-3.5 text-[#002d62] mr-1" strokeWidth={2.5} />
+                          Skilled Technicians
+                        </span>
+                        <span className="inline-block text-gray-300">|</span>
+                        <span className="flex items-center">
+                          <MapPin className="w-3.5 h-3.5 text-[#cc0000] mr-1" strokeWidth={2.5} />
+                          Local & Reliable
+                        </span>
+                      </div>
+                    </div>
+                    <a
+                      href="tel:+17148535534"
+                      className="inline-block bg-[#cc0000] hover:bg-[#b30000] text-white font-bold px-5 py-2.5 rounded-xl transition duration-200 shadow-md text-xs sm:text-sm whitespace-nowrap flex-shrink-0"
+                    >
+                      Call Now
+                    </a>
                   </div>
-                  <a
-                    href="tel:+17148535534"
-                    className="inline-block bg-[#cc0000] hover:bg-[#b30000] text-white font-bold px-6 py-3 rounded-xl transition duration-200 shadow-md text-sm"
-                  >
-                    Call Now
-                  </a>
                 </div>
               </div>
             </div>
