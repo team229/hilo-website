@@ -1,133 +1,66 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import CTASection from '../../components/CTASection';
+import ServicePageLayout from '../../layouts/ServicePageLayout.astro';
 ---
 
-<BaseLayout title="HVAC Services in Stanton, CA | Hilo Heating and Air" description="Explore complete HVAC maintenance services, system inspections, and new HVAC installation in Orange County. Same-day scheduling, upfront pricing, and EPA-certified technicians. Request a free estimate today!">
-  <Header />
-  <main>
-    <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4">HVAC Services in Stanton, CA</h1>
-        <p class="text-white/80 text-lg max-w-2xl mx-auto">Your AC dies in July. Or your furnace decides to quit the one cold week of the year. That's us. Hilo Heating and Air has been working on heating and cooling systems around Stanton for years.</p>
+<ServicePageLayout
+  title="HVAC Services in Stanton, CA | Hilo Heating and Air"
+  description="Explore complete HVAC maintenance services, system inspections, and new HVAC installation in Orange County. Same-day scheduling, upfront pricing, and EPA-certified technicians. Request a free estimate today!"
+  heroTitle="HVAC Services in Stanton, CA"
+  heroSubtitle="Your AC dies in July. Or your furnace decides to quit the one cold week of the year. That's us. Hilo Heating and Air has been working on heating and cooling systems around Stanton for years."
+>
+  <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">
+      <p>Your AC dies in July. Or your furnace decides to quit the one cold week of the year. It happens — and when it does, you want someone local who actually picks up the phone. That's us. Hilo Heating and Air has been working on heating and cooling systems around Stanton for years now, and most of our calls come from people who used us once and just kept calling.</p>
+      <p>We're not trying to be everything to everyone. We do heating and cooling, we do it well, and we'd rather have a smaller list of happy customers than a long list of people who felt rushed or upsold. That's just how we run things.</p>
+
+      <h2>What We Actually Do</h2>
+      <p>Let's be honest — most people ignore their HVAC system until it breaks. But a little <strong>HVAC maintenance service</strong> now and then saves you from the big, expensive surprise later. We clean the coils, check refrigerant, look at the wiring, test the thermostat. Boring stuff. But boring stuff is what keeps a system running for fifteen years instead of eight. Skipping it doesn't save you money — it just delays the bill and makes it bigger.</p>
+      <p>If something feels off but you can't quite name it, ask for an <strong>HVAC system inspection</strong>. We'll go through the airflow, the ductwork, the safety switches — basically the whole system — and tell you what's actually wrong, not just what sounds expensive. We've turned away plenty of "you need a new system" calls because, honestly, a $200 fix did the trick. An inspection is also smart if you're buying a house, selling one, or just haven't had anyone look at your unit in a couple years.</p>
+      <p>When a system really is done, we do full <strong>new HVAC system installation</strong> work too — sizing it right for your home, pulling the old unit, putting in the new one, and testing it before we pack up. Getting the size wrong is one of the most common mistakes in this industry, and it leads to higher bills and a system that struggles year-round. You shouldn't have to wonder if it's working, or whether you got the right unit for your space in the first place.</p>
+
+      <h2>How We Work</h2>
+      <p>We try to keep things simple. You call, we ask a few questions, and we give you a real window for when we'll show up — not a vague "sometime this week." Before any work starts, you'll know what it costs. No add-ons sprung on you halfway through the job. If a repair makes more sense than a replacement, we'll say so, even if it means a smaller invoice for us.</p>
+
+      <h2>Why People Stick With Us</h2>
+      <p>Hilo Heating and Air isn't the biggest company in Orange County, and that's kind of the point. We show up, we're straight with you about pricing, and we don't vanish after the invoice. That's pretty much our whole pitch. Most of our work comes from referrals — neighbors telling neighbors — which says more about us than any ad ever could.</p>
+    </div>
+  </section>
+
+  <section class="py-16 sm:py-24 bg-slate-50 border-y border-brand-blue/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <span class="inline-block bg-brand-red/10 text-brand-red text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">Our Services</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-blue mb-4">Explore Our HVAC Services</h2>
+        <p class="text-slate-600 max-w-2xl mx-auto font-medium">From emergency repairs to full system installations, we deliver reliable HVAC solutions across Orange County.</p>
       </div>
-    </section>
-
-    <section class="py-16 sm:py-24 bg-white">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">
-        <p>Your AC dies in July. Or your furnace decides to quit the one cold week of the year. It happens — and when it does, you want someone local who actually picks up the phone. That's us. Hilo Heating and Air has been working on heating and cooling systems around Stanton for years now, and most of our calls come from people who used us once and just kept calling.</p>
-        <p>We're not trying to be everything to everyone. We do heating and cooling, we do it well, and we'd rather have a smaller list of happy customers than a long list of people who felt rushed or upsold. That's just how we run things.</p>
-
-        <h2>What We Actually Do</h2>
-        <p>Let's be honest — most people ignore their HVAC system until it breaks. But a little <strong>HVAC maintenance service</strong> now and then saves you from the big, expensive surprise later. We clean the coils, check refrigerant, look at the wiring, test the thermostat. Boring stuff. But boring stuff is what keeps a system running for fifteen years instead of eight. Skipping it doesn't save you money — it just delays the bill and makes it bigger.</p>
-        <p>If something feels off but you can't quite name it, ask for an <strong>HVAC system inspection</strong>. We'll go through the airflow, the ductwork, the safety switches — basically the whole system — and tell you what's actually wrong, not just what sounds expensive. We've turned away plenty of "you need a new system" calls because, honestly, a $200 fix did the trick. An inspection is also smart if you're buying a house, selling one, or just haven't had anyone look at your unit in a couple years.</p>
-        <p>When a system really is done, we do full <strong>new HVAC system installation</strong> work too — sizing it right for your home, pulling the old unit, putting in the new one, and testing it before we pack up. Getting the size wrong is one of the most common mistakes in this industry, and it leads to higher bills and a system that struggles year-round. You shouldn't have to wonder if it's working, or whether you got the right unit for your space in the first place.</p>
-
-        <h2>How We Work</h2>
-        <p>We try to keep things simple. You call, we ask a few questions, and we give you a real window for when we'll show up — not a vague "sometime this week." Before any work starts, you'll know what it costs. No add-ons sprung on you halfway through the job. If a repair makes more sense than a replacement, we'll say so, even if it means a smaller invoice for us.</p>
-
-        <h2>Why People Stick With Us</h2>
-        <p>Hilo Heating and Air isn't the biggest company in Orange County, and that's kind of the point. We show up, we're straight with you about pricing, and we don't vanish after the invoice. That's pretty much our whole pitch. Most of our work comes from referrals — neighbors telling neighbors — which says more about us than any ad ever could.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        {[
+          { title: 'Air Conditioning', desc: 'Expert AC repair, installation, and maintenance. Same-day service with certified technicians.', href: '/services/air-conditioning-services/', icon: 'ac' },
+          { title: 'Heating', desc: 'Reliable heating repair, installation, and maintenance. Keep your home warm all winter.', href: '/services/heating-services/', icon: 'heat' },
+          { title: 'HVAC Services', desc: 'Complete HVAC solutions including installation, replacement, duct work, and more.', href: '/services/hvac-services/', icon: 'hvac' },
+          { title: 'Indoor Air Quality', desc: 'Air purification, filtration, humidity control, and duct services for cleaner air.', href: '/services/indoor-air-quality-solutions/', icon: 'air' },
+        ].map((svc) => {
+          const icons: Record<string, string> = {
+            ac: 'M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z',
+            heat: 'M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48zM12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z',
+            hvac: 'M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5',
+            air: 'M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418',
+          };
+          return (
+            <a href={svc.href} class="group bg-white border border-brand-blue/10 rounded-2xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center">
+              <div class="w-16 h-16 bg-brand-blue/5 rounded-2xl flex items-center justify-center text-brand-red mb-5 group-hover:bg-brand-red group-hover:text-white transition-all duration-300">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d={icons[svc.icon]} /></svg>
+              </div>
+              <h3 class="text-base font-bold text-brand-blue mb-2 group-hover:text-brand-red transition-colors">{svc.title}</h3>
+              <p class="text-xs text-slate-500 font-medium leading-relaxed">{svc.desc}</p>
+              <span class="mt-4 text-sm font-bold text-brand-red inline-flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                Learn More
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+              </span>
+            </a>
+          );
+        })}
       </div>
-    </section>
-
-    <section class="py-16 sm:py-24 bg-slate-50 border-y border-brand-blue/10">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <span class="inline-block bg-brand-red/10 text-brand-red text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">Our Services</span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-blue mb-4">Explore Our HVAC Services</h2>
-          <p class="text-slate-600 max-w-2xl mx-auto font-medium">From emergency repairs to full system installations, we deliver reliable HVAC solutions across Orange County.</p>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {[
-            { title: 'Air Conditioning', desc: 'Expert AC repair, installation, and maintenance. Same-day service with certified technicians.', href: '/services/air-conditioning-services/', icon: 'ac' },
-            { title: 'Heating', desc: 'Reliable heating repair, installation, and maintenance. Keep your home warm all winter.', href: '/services/heating-services/', icon: 'heat' },
-            { title: 'HVAC Services', desc: 'Complete HVAC solutions including installation, replacement, duct work, and more.', href: '/services/hvac-services/', icon: 'hvac' },
-            { title: 'Indoor Air Quality', desc: 'Air purification, filtration, humidity control, and duct services for cleaner air.', href: '/services/indoor-air-quality-solutions/', icon: 'air' },
-          ].map((svc) => {
-            const icons: Record<string, string> = {
-              ac: 'M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z',
-              heat: 'M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48zM12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z',
-              hvac: 'M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5',
-              com: 'M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008z',
-              air: 'M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418',
-            };
-            return (
-              <a href={svc.href} class="group bg-white border border-brand-blue/10 rounded-2xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center">
-                <div class="w-16 h-16 bg-brand-blue/5 rounded-2xl flex items-center justify-center text-brand-red mb-5 group-hover:bg-brand-red group-hover:text-white transition-all duration-300">
-                  <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d={icons[svc.icon]} /></svg>
-                </div>
-                <h3 class="text-base font-bold text-brand-blue mb-2 group-hover:text-brand-red transition-colors">{svc.title}</h3>
-                <p class="text-xs text-slate-500 font-medium leading-relaxed">{svc.desc}</p>
-                <span class="mt-4 text-sm font-bold text-brand-red inline-flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                  Learn More
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
-                </span>
-              </a>
-            );
-          })}
-        </div>
-      </div>
-    </section>
-
-    <section class="py-16 sm:py-24 bg-white">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-brand-blue mb-8">FAQs</h2>
-        <div class="space-y-4">
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">How often should I schedule maintenance?</h3>
-            <p class="text-slate-600">Spring and fall, ideally. Before the heat hits and before the cold does.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">What happens during an inspection?</h3>
-            <p class="text-slate-600">We check airflow, wiring, refrigerant, ducts, and the safety controls — then tell you what we find, good or bad.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">How fast is a new install?</h3>
-            <p class="text-slate-600">Usually one day. Bigger jobs might spill into a second.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Got an emergency line?</h3>
-            <p class="text-slate-600">Yep. Call the number below and we'll get someone moving.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Are techs licensed?</h3>
-            <p class="text-slate-600">All of them. Licensed, insured, no exceptions.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Do you push a specific brand?</h3>
-            <p class="text-slate-600">No — we install what actually fits your house and budget.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Financing available?</h3>
-            <p class="text-slate-600">Yes, for installs especially. Ask when you call.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Do you serve areas outside Stanton?</h3>
-            <p class="text-slate-600">Yes, we cover most of the surrounding Orange County area — just give us a call to check your zip code.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">What if I just need a repair, not a full system?</h3>
-            <p class="text-slate-600">That's most of our calls, honestly. We'll fix what's broken before we ever talk replacement.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Is there a service fee just to come look?</h3>
-            <p class="text-slate-600">We'll go over any diagnostic costs upfront, before anyone steps foot on your property.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-brand-blue/5 py-8">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p class="text-brand-blue font-semibold">Hilo Heating and Air · 8131 Electric Ave, Stanton, CA 90680, United States</p>
-        <p class="text-slate-600 mt-1"><a href="tel:+17148535534" class="hover:text-brand-red transition">(714) 853-5534</a> · <a href="mailto:info@hiloheatingandair.com" class="hover:text-brand-red transition">info@hiloheatingandair.com</a></p>
-      </div>
-    </section>
-
-    <CTASection client:visible />
-  </main>
-  <Footer />
-</BaseLayout>
+    </div>
+  </section>
+</ServicePageLayout>
