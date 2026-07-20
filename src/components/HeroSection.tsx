@@ -97,10 +97,9 @@ export default function HeroSection() {
               <span className="text-brand-red text-[10px] font-bold tracking-wider uppercase block mb-0.5">
                 Need Rapid Dispatch?
               </span>
-              <h2 className="text-lg sm:text-xl font-bold text-[#1a2332] mb-2">
+              <h2 className="text-lg sm:text-xl font-bold text-[#1a2332] mb-3">
                 Same-Day Fast Repair
               </h2>
-              <div className="w-8 h-[2px] bg-brand-red mb-3"></div>
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <div className="flex flex-wrap gap-2 sm:gap-3">
                   <div className="flex items-center gap-1">
