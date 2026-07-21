@@ -86,7 +86,7 @@ export default function TrustedChoiceSection() {
               <img
                 src="/images/hero-technician.png"
                 alt="HiLo HVAC Technician"
-                className="w-full h-auto object-cover aspect-[4/5] lg:aspect-[3/4]"
+                className="w-full h-auto object-cover aspect-[4/3] sm:aspect-[4/5] lg:aspect-[3/4]"
               />
               <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4">
                 <div className="bg-white/95 backdrop-blur-sm rounded-xl p-3 sm:p-5 shadow-lg">
