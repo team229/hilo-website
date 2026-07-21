@@ -21,14 +21,6 @@ const reviews = [
   },
 ];
 
-const trustItems = [
-  { label: 'Licensed & Insured', sub: 'CA Lic. #1155955' },
-  { label: 'Same-Day Service', sub: 'Fast response when you need it' },
-  { label: 'Family-Owned & Operated', sub: 'Proudly serving our community' },
-  { label: 'Serving Orange County & Los Angeles', sub: 'Local experts you can trust' },
-  { label: '100% Satisfaction Guarantee', sub: 'Your comfort is our priority' },
-];
-
 const faqs = [
   {
     q: 'Does HiLo Heating & Air Conditioning offer same-day AC repair services in Anaheim, CA?',
@@ -130,24 +122,6 @@ export default function ReviewsAndFAQ() {
             ))}
           </div>
 
-          {/* Trust Bar */}
-          <div className="bg-brand-blue rounded-2xl p-6">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-              {trustItems.map((item, i) => (
-                <div key={i} className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-xs font-bold text-white leading-tight">{item.label}</h4>
-                    <span className="text-[10px] text-white/70 block mt-0.5">{item.sub}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
 

@@ -14,25 +14,25 @@ import BrandsSection from '../components/BrandsSection.astro';
 import AboutStats from '../components/AboutStats.astro';
 import ContactBar from '../components/ContactBar';
 import ServiceAreasMap from '../components/ServiceAreasMap.astro';
-import ServiceLocations from '../components/ServiceLocations.astro';
 import CTASection from '../components/CTASection';
+import TrustStrip from '../components/TrustStrip.astro';
 ---
 
 <BaseLayout   title="AC Repair Anaheim | HiLo Heating & Air" description="Need AC repair in Anaheim? HiLo Heating & Air offers same-day AC repair, free diagnostics with repair, and 24/7 emergency service. EPA-certified technicians. Call (714) 853-5534!">
   <Header />
   <main>
     <HeroSection />
+    <TrustStrip />
     <AboutIntro />
     <TrustedChoiceSection client:visible />
     <ReliableService />
     <ServiceCards />
     <CTABanner client:visible />
-    <ReviewsAndFAQ client:visible />
     <BrandsSection />
     <AboutStats />
+    <ReviewsAndFAQ client:visible />
     <ContactBar client:visible />
     <ServiceAreasMap />
-    <ServiceLocations />
     <CTASection client:visible />
   </main>
   <Footer />

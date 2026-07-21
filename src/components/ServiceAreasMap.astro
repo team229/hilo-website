@@ -41,9 +41,45 @@ const features = [
           <span class="text-brand-red">Los Angeles</span>
         </h2>
         <div class="w-20 h-1.5 bg-brand-red rounded mt-5 mb-6"></div>
-        <p class="text-slate-600 text-base leading-relaxed max-w-md mb-8">
+        <p class="text-slate-600 text-base leading-relaxed max-w-md mb-6">
           Our technicians are based locally and dispatch daily across our service area to ensure fast response times.
         </p>
+
+        <div class="flex flex-wrap gap-x-6 gap-y-2 mb-8">
+          {
+            [
+              { name: 'Anaheim', slug: 'anaheim' },
+              { name: 'Costa Mesa', slug: 'costa-mesa' },
+              { name: 'Fullerton', slug: '' },
+              { name: 'Garden Grove', slug: 'garden-grove' },
+              { name: 'Irvine', slug: 'irvine' },
+              { name: 'Laguna Hills', slug: 'laguna-hills' },
+              { name: 'Los Angeles', slug: 'los-angeles' },
+              { name: 'Newport Beach', slug: 'newport-beach' },
+              { name: 'Orange', slug: 'orange' },
+              { name: 'Orange County', slug: 'orange-county' },
+              { name: 'Rancho Santa Margarita', slug: 'rancho-santa-margarita' },
+              { name: 'Santa Ana', slug: 'santa-ana' },
+              { name: 'Stanton', slug: 'stanton' },
+            ].map((loc) => (
+              loc.slug
+                ? <a href={`/service-areas/${loc.slug}/`} class="flex items-center gap-1.5 group">
+                    <svg class="w-3.5 h-3.5 text-brand-red flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                    </svg>
+                    <span class="text-sm font-bold text-brand-blue group-hover:text-brand-red transition-colors">{loc.name}</span>
+                  </a>
+                : <div class="flex items-center gap-1.5">
+                    <svg class="w-3.5 h-3.5 text-brand-red flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                    </svg>
+                    <span class="text-sm font-bold text-brand-blue">{loc.name}</span>
+                  </div>
+            ))
+          }
+        </div>
 
         <div class="inline-flex items-center gap-4 bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
           <div class="text-4xl font-bold text-blue-500">G</div>
@@ -119,5 +155,6 @@ const features = [
         </div>
       ))}
     </div>
+
   </div>
 </section>
