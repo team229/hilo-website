@@ -22,7 +22,7 @@ const reviews = [
 ];
 
 const trustItems = [
-  { label: 'Licensed & Insured', sub: 'CA Lic. #1111111' },
+  { label: 'Licensed & Insured', sub: 'CA Lic. #1155955' },
   { label: 'Same-Day Service', sub: 'Fast response when you need it' },
   { label: 'Family-Owned & Operated', sub: 'Proudly serving our community' },
   { label: 'Serving Orange County & Los Angeles', sub: 'Local experts you can trust' },
