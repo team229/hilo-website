@@ -53,7 +53,7 @@ export default function LandingForm() {
     setStatus('loading');
     try {
       const utmTags = Object.entries(utm).filter(([, v]) => v).map(([k, v]) => `${k}: ${v}`).join('\n');
-      const res = await fetch('https://api-inform.bythub.in/?formId=Z6R2t7vXQWrhIa1fzvv6', {
+      const res = await fetch('https://api-inform.bythub.in/?formId=kS72mkXRXs3ieQIUQWR6', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

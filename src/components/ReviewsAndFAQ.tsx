@@ -71,8 +71,8 @@ export default function ReviewsAndFAQ() {
           </div>
 
           {/* Google Rating */}
-          <div className="flex items-center justify-center gap-4 mb-10">
-            <div className="flex items-center gap-3">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
+            <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
               <span className="text-4xl font-bold text-blue-500">G</span>
               <div className="flex text-yellow-400 gap-0.5">
                 {[...Array(5)].map((_, i) => (
@@ -81,9 +81,9 @@ export default function ReviewsAndFAQ() {
                   </svg>
                 ))}
               </div>
-              <span className="text-sm text-gray-600 font-medium">5.0 out of 5 based on 12 reviews</span>
+              <span className="text-sm text-gray-600 font-medium text-center sm:text-left">5.0 out of 5 based on 12 reviews</span>
             </div>
-            <a href="https://www.google.com/maps/place/HiLo+Heating+%26+Air/@33.8358,-117.9953,15z/data=!4m8!3m7!1s0x80dcd9b7e4b5e5e5:0x1234567890abcdef!8m2!3d33.8358!4d-117.9953!9m1!1b1!16s%2Fg%2F11x6x6x6x" target="_blank" rel="noopener noreferrer" className="border border-gray-300 rounded-lg px-4 py-2 text-sm font-semibold text-brand-blue hover:bg-brand-blue/5 transition flex items-center gap-2">
+            <a href="https://www.google.com/maps/place/HiLo+Heating+%26+Air/@33.8358,-117.9953,15z/data=!4m8!3m7!1s0x80dcd9b7e4b5e5e5:0x1234567890abcdef!8m2!3d33.8358!4d-117.9953!9m1!1b1!16s%2Fg%2F11x6x6x6x" target="_blank" rel="noopener noreferrer" className="border border-gray-300 rounded-lg px-4 py-2 text-sm font-semibold text-brand-blue hover:bg-brand-blue/5 transition flex items-center gap-2 w-full sm:w-auto justify-center">
               Read All Google Reviews
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
