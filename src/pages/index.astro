@@ -4,16 +4,16 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import HeroSection from '../components/HeroSection.astro';
 
-import AboutIntro from '../components/AboutIntro';
+import AboutIntro from '../components/AboutIntro.astro';
 import TrustedChoiceSection from '../components/TrustedChoiceSection';
-import ReliableService from '../components/ReliableService';
-import ServiceCards from '../components/ServiceCards';
+import ReliableService from '../components/ReliableService.astro';
+import ServiceCards from '../components/ServiceCards.astro';
 import CTABanner from '../components/CTABanner';
 import ServiceAreas from '../components/ServiceAreas';
 import Reviews from '../components/Reviews';
 import AboutUsBanner from '../components/AboutUsBanner.astro';
 import BrandsSection from '../components/BrandsSection.astro';
-import AboutStats from '../components/AboutStats';
+import AboutStats from '../components/AboutStats.astro';
 import ContactBar from '../components/ContactBar';
 import FAQSection from '../components/FAQSection';
 import CTASection from '../components/CTASection';
@@ -23,16 +23,16 @@ import CTASection from '../components/CTASection';
   <Header />
   <main>
     <HeroSection />
-    <AboutIntro client:visible />
+    <AboutIntro />
     <TrustedChoiceSection client:visible />
-    <ReliableService client:visible />
-    <ServiceCards client:visible />
+    <ReliableService />
+    <ServiceCards />
     <CTABanner client:visible />
     <ServiceAreas client:visible />
     <Reviews client:visible />
     <AboutUsBanner />
     <BrandsSection />
-    <AboutStats client:visible />
+    <AboutStats />
     <ContactBar client:visible />
     <FAQSection client:visible />
     <CTASection client:visible />

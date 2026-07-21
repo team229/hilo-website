@@ -3,6 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import CTASection from '../components/CTASection';
+import { Image } from 'astro:assets';
+import teamImg from '../assets/team.jpg';
 ---
 
 <BaseLayout title="About Us | HiLo Heating & Air" description="Learn about HiLo Heating & Air — Orange County's trusted HVAC company since 2000. EPA-certified technicians, same-day service, and honest pricing for all your heating and cooling needs.">
@@ -37,7 +39,7 @@ import CTASection from '../components/CTASection';
             </a>
           </div>
           <div class="relative rounded-2xl overflow-hidden shadow-xl">
-            <img src="/images/team.jpg" alt="HiLo Team" class="w-full h-auto" />
+            <Image src={teamImg} alt="HiLo Team" class="w-full h-auto" widths={[800, 600]} sizes="(max-width: 1024px) 100vw, 50vw" />
           </div>
         </div>
       </div>

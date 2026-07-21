@@ -1,4 +1,7 @@
 ---
+import { Image } from 'astro:assets';
+import logo from '../assets/logo.png';
+
 const services = [
   {
     name: 'Air Conditioning',
@@ -65,7 +68,7 @@ const navLinks = [
   <nav class="bg-white shadow-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-[86px] gap-5">
       <a href="/" class="flex items-center flex-shrink-0">
-        <img src="/images/logo.png" alt="HiLo Heating & Air" class="h-16 w-auto" width="200" height="150" />
+        <Image src={logo} alt="HiLo Heating & Air" class="h-16 w-auto" width={200} height={150} />
       </a>
 
       <!-- Desktop Menu -->
@@ -115,7 +118,7 @@ const navLinks = [
   <div id="mobile-overlay" class="fixed inset-0 bg-black/55 z-[999998] hidden"></div>
   <div id="mobile-drawer" class="fixed top-0 right-0 w-[300px] max-w-[85vw] h-screen bg-white z-[999999] flex flex-col overflow-y-auto shadow-[-6px_0_30px_rgba(0,0,0,0.25)] translate-x-full transition-transform duration-300">
     <div class="flex items-center justify-between px-5 py-4 border-b border-slate-200 bg-white flex-shrink-0">
-      <img src="/images/logo.png" alt="HiLo" class="h-11 w-auto" width="200" height="150" />
+      <Image src={logo} alt="HiLo" class="h-11 w-auto" width={200} height={150} />
       <button id="drawer-close" class="text-2xl text-slate-800 p-1 bg-transparent border-none cursor-pointer">&times;</button>
     </div>
     <ul class="flex-1 py-2">

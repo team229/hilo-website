@@ -1,4 +1,7 @@
 ---
+import { Image } from 'astro:assets';
+import headerLogo from '../assets/header-logo.png';
+
 const serviceLinks = [
   { name: 'AC Repair', href: '/service/air-conditioning/' },
   { name: 'Heating Repair', href: '/service/heating/' },
@@ -36,7 +39,7 @@ const socials = [
     <div class="w-full flex flex-wrap justify-between gap-8">
       <div class="flex-[1.5] min-w-[260px]">
         <a href="/">
-          <img src="/images/header-logo.png" alt="HiLo Heating & Air" class="h-[65px] w-auto rounded-lg inline-block mb-5" width="200" height="150" loading="lazy" />
+          <Image src={headerLogo} alt="HiLo Heating & Air" class="h-[65px] w-auto rounded-lg inline-block mb-5" width={200} height={150} loading="lazy" />
         </a>
         <p class="text-sm leading-relaxed text-slate-400 mb-5">
           Expert Heating & Air Conditioning repair, installation, and maintenance in Anaheim and Orange County. We prioritize repair over replacements to save your money.
