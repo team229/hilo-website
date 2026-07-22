@@ -1,40 +1,43 @@
 ---
+import { Image } from 'astro:assets';
+import logo from '../assets/logo.png';
+
 const services = [
   {
     name: 'Air Conditioning',
-    href: '/service/air-conditioning/',
+    href: '/services/air-conditioning-services/',
     sub: [
-      { name: 'AC Maintenance', href: '/ac-maintenance/' },
-      { name: 'AC Installation', href: '/ac-installation/' },
-      { name: 'Emergency AC Repair', href: '/emergency-ac-repair/' },
-      { name: 'Mini Split Installation', href: '/mini-split-installation/' },
+      { name: 'AC Maintenance', href: '/services/air-conditioning-services/ac-maintenance/' },
+      { name: 'AC Installation', href: '/services/air-conditioning-services/air-conditioning-installation/' },
+      { name: 'Emergency AC Repair', href: '/services/air-conditioning-services/emergency-ac-repair/' },
+      { name: 'Mini Split Installation', href: '/services/air-conditioning-services/mini-split-installation/' },
     ],
   },
   {
     name: 'Heating',
-    href: '/service/heating/',
+    href: '/services/heating-services/',
     sub: [
-      { name: 'Heating Repair', href: '/heating-repair/' },
-      { name: 'Heating Maintenance', href: '/heating-maintenance/' },
-      { name: 'Heating Installation', href: '/heating-installation/' },
+      { name: 'Heating Repair', href: '/services/heating-services/heating-repair/' },
+      { name: 'Heating Maintenance', href: '/services/heating-services/heating-maintenance/' },
+      { name: 'Heating Installation', href: '/services/heating-services/heating-installation/' },
     ],
   },
   {
     name: 'HVAC Services',
     href: '/service/hvac-services/',
     sub: [
-      { name: 'HVAC Installation', href: '/hvac-installation/' },
-      { name: 'HVAC Replacement', href: '/hvac-replacement/' },
-      { name: 'Air Balancing', href: '/hvac-air-balancing/' },
-      { name: 'Duct Repair', href: '/hvac-duct-repair/' },
-      { name: 'Duct Sealing', href: '/hvac-duct-sealing/' },
-      { name: 'Humidifier Installation', href: '/hvac-humidifier/' },
-      { name: 'Duct Installation', href: '/duct-installation/' },
-      { name: 'Emergency HVAC Repair', href: '/emergency-hvac-repair/' },
-      { name: 'Commercial HVAC', href: '/commercial-hvac-services/' },
+      { name: 'HVAC Installation', href: '/services/hvac-services/hvac-installation/' },
+      { name: 'HVAC Replacement', href: '/services/hvac-services/hvac-replacement/' },
+      { name: 'Air Balancing', href: '/services/indoor-air-quality-solutions/hvac-air-balancing/' },
+      { name: 'Duct Repair', href: '/services/indoor-air-quality-solutions/hvac-duct-repair/' },
+      { name: 'Duct Sealing', href: '/services/indoor-air-quality-solutions/hvac-duct-sealing/' },
+      { name: 'Humidifier Installation', href: '/services/indoor-air-quality-solutions/air-humidifiers/' },
+      { name: 'Duct Installation', href: '/services/indoor-air-quality-solutions/duct-installation/' },
+      { name: 'Emergency HVAC Repair', href: '/services/hvac-services/emergency-hvac-repair/' },
+      { name: 'Commercial HVAC', href: '/services/commercial-hvac-services/' },
     ],
   },
-  { name: 'Indoor Air Quality', href: '/service/indoor-air-quality/' },
+  { name: 'Indoor Air Quality', href: '/services/indoor-air-quality-solutions/' },
 ];
 
 const navLinks = [
@@ -65,14 +68,14 @@ const navLinks = [
   <nav class="bg-white shadow-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-[86px] gap-5">
       <a href="/" class="flex items-center flex-shrink-0">
-        <img src="/images/logo.png" alt="HiLo Heating & Air" class="h-16 w-auto" width="200" height="150" />
+        <Image src={logo} alt="HiLo Heating & Air" class="h-16 w-auto" width={200} height={150} />
       </a>
 
       <!-- Desktop Menu -->
       <ul class="hidden lg:flex items-center gap-2 flex-1 justify-center">
         <li><a href="/" class="text-slate-800 text-[15px] font-semibold px-4 py-2.5 rounded-lg hover:text-brand-blue hover:bg-slate-100 transition">Home</a></li>
         <li class="relative group">
-          <a href="#" class="text-slate-800 text-[15px] font-semibold px-4 py-2.5 rounded-lg hover:text-brand-blue hover:bg-slate-100 transition flex items-center gap-1">Services <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></a>
+          <a href="/services/" class="text-slate-800 text-[15px] font-semibold px-4 py-2.5 rounded-lg hover:text-brand-blue hover:bg-slate-100 transition flex items-center gap-1">Services <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></a>
           <ul class="absolute top-full left-0 bg-white min-w-[240px] py-2 shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 translate-y-2 transition-all duration-200 z-50" style="backface-visibility:hidden">
             {services.map((svc) => (
               <li class="relative group/sub">
@@ -115,7 +118,7 @@ const navLinks = [
   <div id="mobile-overlay" class="fixed inset-0 bg-black/55 z-[999998] hidden"></div>
   <div id="mobile-drawer" class="fixed top-0 right-0 w-[300px] max-w-[85vw] h-screen bg-white z-[999999] flex flex-col overflow-y-auto shadow-[-6px_0_30px_rgba(0,0,0,0.25)] translate-x-full transition-transform duration-300">
     <div class="flex items-center justify-between px-5 py-4 border-b border-slate-200 bg-white flex-shrink-0">
-      <img src="/images/logo.png" alt="HiLo" class="h-11 w-auto" width="200" height="150" />
+      <Image src={logo} alt="HiLo" class="h-11 w-auto" width={200} height={150} />
       <button id="drawer-close" class="text-2xl text-slate-800 p-1 bg-transparent border-none cursor-pointer">&times;</button>
     </div>
     <ul class="flex-1 py-2">

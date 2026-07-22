@@ -1,0 +1,49 @@
+---
+import { Image } from 'astro:assets';
+import secondSectionImage from '../assets/2nd-section.png';
+
+const checks = [
+  '10+ years in business',
+  'Same-Day service',
+  'Family-owned values',
+  '100% Satisfaction Focus',
+];
+---
+
+<section class="relative bg-[#002d62] lg:bg-transparent lg:overflow-hidden lg:min-h-[600px]">
+  <Image
+    src={secondSectionImage}
+    alt="HiLo HVAC technician servicing equipment"
+    class="w-full h-auto lg:absolute lg:inset-0 lg:h-full lg:object-cover"
+    widths={[1920, 1440, 1024]}
+    sizes="100vw"
+  />
+  <div class="hidden lg:block absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-black/20"></div>
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-32">
+    <div class="max-w-2xl space-y-6">
+      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white leading-tight uppercase">
+        Exceptional Air Conditioning<br class="hidden sm:inline" />
+        &amp; Heating Service<br />
+        <span class="text-[#cc0000]">With Integrity</span>
+      </h2>
+      <div class="w-20 h-1.5 bg-[#cc0000] rounded"></div>
+      <p class="text-xs sm:text-sm font-extrabold tracking-widest text-white/80 uppercase">
+        Serving Anaheim and Orange County, HiLo Heating &amp; Air offers repair, maintenance, and installation for home HVAC systems.
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+        {checks.map((item) => (
+          <div class="flex items-center gap-3">
+            <span class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-[#cc0000] flex-shrink-0">
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+            </span>
+            <span class="font-bold text-sm text-white">{item}</span>
+          </div>
+        ))}
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4 pt-4">
+        <a href="/about-us/" class="bg-[#cc0000] text-white text-center font-bold px-7 py-4 rounded hover:bg-[#b30000] transition-colors uppercase tracking-wider text-xs">About Us</a>
+        <a href="#reviews" class="border-2 border-white text-white text-center font-bold px-7 py-4 rounded hover:bg-white hover:text-[#002d62] transition-all uppercase tracking-wider text-xs">Read Our Reviews</a>
+      </div>
+    </div>
+  </div>
+</section>

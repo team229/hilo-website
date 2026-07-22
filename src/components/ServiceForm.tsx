@@ -25,7 +25,7 @@ export default function ServiceForm() {
     }
     setStatus('loading');
     try {
-      const res = await fetch('https://api-inform.bythub.in/?formId=Z6R2t7vXQWrhIa1fzvv6', {
+      const res = await fetch('https://api-inform.bythub.in/?formId=kS72mkXRXs3ieQIUQWR6', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -35,7 +35,7 @@ export default function ServiceForm() {
         }),
       });
       if (res.ok) {
-        setStatus('success');
+        window.location.href = '/thank-you/';
       } else {
         setStatus('error');
       }

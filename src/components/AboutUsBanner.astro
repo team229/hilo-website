@@ -1,0 +1,45 @@
+---
+import { Image } from 'astro:assets';
+import aboutTech from '../assets/about-technician.jpg';
+---
+
+<section class="py-16 lg:py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+      
+      {/* Left: Image */}
+      <div class="relative">
+        <Image
+          src={aboutTech}
+          alt="HiLo Heating & Air technician standing in front of service van"
+          class="w-full h-auto rounded-lg shadow-lg object-cover"
+          widths={[800, 600]}
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          quality={90}
+        />
+      </div>
+
+      {/* Right: Content */}
+      <div>
+        <span class="text-[#cc0000] font-bold text-sm uppercase tracking-wider">About Us</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#003366] mt-2 mb-4 leading-tight">
+          Expert Solutions.<br />
+          <span class="text-[#cc0000]">Year After Year.</span>
+        </h2>
+        <p class="text-gray-600 text-base lg:text-lg mb-6 leading-relaxed">
+          At HiLo Heating & Air, we deliver reliable HVAC solutions with honest pricing and exceptional service. Your comfort is our priority.
+        </p>
+        <a 
+          href="/about-us" 
+          class="inline-flex items-center space-x-2 bg-[#cc0000] hover:bg-[#b30000] text-white font-bold px-6 py-3 rounded-lg transition duration-200 shadow-md group"
+        >
+          <span>Learn More About Us</span>
+          <svg class="w-4 h-4 group-hover:translate-x-1 transition" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>

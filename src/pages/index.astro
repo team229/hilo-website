@@ -2,34 +2,37 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import HeroSection from '../components/HeroSection';
-import AboutIntro from '../components/AboutIntro';
-import ReliableService from '../components/ReliableService';
-import ServiceCards from '../components/ServiceCards';
+import HeroSection from '../components/HeroSection.astro';
+
+import AboutIntro from '../components/AboutIntro.astro';
+import TrustedChoiceSection from '../components/TrustedChoiceSection';
+import ReliableService from '../components/ReliableService.astro';
+import ServiceCards from '../components/ServiceCards.astro';
 import CTABanner from '../components/CTABanner';
-import ServiceAreas from '../components/ServiceAreas';
-import Reviews from '../components/Reviews';
+import ReviewsAndFAQ from '../components/ReviewsAndFAQ';
 import BrandsSection from '../components/BrandsSection.astro';
-import AboutStats from '../components/AboutStats';
+import AboutStats from '../components/AboutStats.astro';
 import ContactBar from '../components/ContactBar';
-import FAQSection from '../components/FAQSection';
+import ServiceAreasMap from '../components/ServiceAreasMap.astro';
 import CTASection from '../components/CTASection';
+import TrustStrip from '../components/TrustStrip.astro';
 ---
 
-<BaseLayout title="HVAC Services in Anaheim & Orange County | HiLo Heating & Air" description="HiLo Heating & Air provides same-day AC repair, heating service, mini split installation, and emergency HVAC repairs in Anaheim and Orange County. Call (714) 853-5534!">
+<BaseLayout   title="AC Repair Anaheim | HiLo Heating & Air" description="Need AC repair in Anaheim? HiLo Heating & Air offers same-day AC repair, free diagnostics with repair, and 24/7 emergency service. EPA-certified technicians. Call (714) 853-5534!">
   <Header />
   <main>
-    <HeroSection client:load />
-    <AboutIntro client:visible />
-    <ReliableService client:visible />
-    <ServiceCards client:visible />
+    <HeroSection />
+    <TrustStrip />
+    <AboutIntro />
+    <TrustedChoiceSection client:visible />
+    <ReliableService />
+    <ServiceCards />
     <CTABanner client:visible />
-    <ServiceAreas client:visible />
-    <Reviews client:visible />
     <BrandsSection />
-    <AboutStats client:visible />
+    <AboutStats />
+    <ReviewsAndFAQ client:visible />
     <ContactBar client:visible />
-    <FAQSection client:visible />
+    <ServiceAreasMap />
     <CTASection client:visible />
   </main>
   <Footer />

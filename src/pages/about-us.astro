@@ -3,40 +3,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import CTASection from '../components/CTASection';
-
-const faqSchemaObject = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How long has HiLo been in business?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "HiLo Heating & Air has been serving Orange County since 2016."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are your technicians certified?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — all our technicians are EPA-certified and undergo ongoing training."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What areas do you serve?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We serve Orange County including Anaheim, Irvine, Santa Ana, Fullerton, Costa Mesa, and Los Angeles."
-      }
-    }
-  ]
-};
+import { Image } from 'astro:assets';
+import teamImg from '../assets/team.jpg';
 ---
 
-<BaseLayout title="About Us | HiLo Heating & Air" description="Learn about HiLo Heating & Air — Orange County's trusted HVAC company since 2000. EPA-certified technicians, same-day service, and honest pricing for all your heating and cooling needs." faqSchema={faqSchemaObject}>
+<BaseLayout title="About Us | HiLo Heating & Air" description="Learn about HiLo Heating & Air — Orange County's trusted HVAC company since 2000. EPA-certified technicians, same-day service, and honest pricing for all your heating and cooling needs.">
   <Header />
   <main>
     {/* Hero */}
@@ -68,7 +39,7 @@ const faqSchemaObject = {
             </a>
           </div>
           <div class="relative rounded-2xl overflow-hidden shadow-xl">
-            <img src="/images/team.jpg" alt="HiLo Heating & Air team ready for same-day HVAC service in Orange County" width="800" height="533" loading="lazy" class="w-full h-auto" />
+            <Image src={teamImg} alt="HiLo Team" class="w-full h-auto" widths={[800, 600]} sizes="(max-width: 1024px) 100vw, 50vw" />
           </div>
         </div>
       </div>

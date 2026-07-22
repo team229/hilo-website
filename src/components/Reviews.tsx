@@ -22,7 +22,7 @@ export default function Reviews() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
           <span className="text-xs font-bold text-brand-red uppercase tracking-widest bg-brand-red/10 px-3.5 py-1 rounded-full">Customer Reviews</span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-blue">Trusted By Homeowners</h2>
+          <h2 className="text-3xl sm:text-4xl font-extrabold"><span className="text-brand-blue">Trusted By </span><span className="text-brand-red">Homeowners</span></h2>
           <div className="w-24 h-1.5 bg-brand-red rounded mx-auto"></div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

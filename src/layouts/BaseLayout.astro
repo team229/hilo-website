@@ -28,7 +28,7 @@ const {
 } = Astro.props;
 
 const siteUrl = 'https://hiloheatingandair.com';
-const pageCanonical = canonical || Astro.url.href;
+const pageCanonical = canonical || `${siteUrl}${Astro.url.pathname}`;
 const siteName = 'HiLo Heating and Air';
 const ogImage = `${siteUrl}/images/og-image.jpeg`;
 
@@ -262,6 +262,15 @@ const schemaOrg = {
   <link rel="apple-touch-icon" href="/images/favicon-180.png" />
   <meta name="msapplication-TileImage" content="/images/favicon-270.png" />
   
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18314297181"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18314297181');
+  </script>
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

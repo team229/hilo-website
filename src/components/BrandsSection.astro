@@ -1,11 +1,15 @@
 ---
+import { Image } from 'astro:assets';
+import carrierLogo from '../assets/logos/carrier-logo.png';
+import goodmanLogo from '../assets/logos/goodman-logo.png';
+import daikinLogo from '../assets/logos/daikin-logo.png';
+import traneLogo from '../assets/logos/trane-logo.png';
+
 const brands = [
-  { name: 'Carrier', logo: '/images/brands/carrier-logo.png' },
-  { name: 'Goodman', logo: '/images/brands/goodman-logo.png' },
-  { name: 'Daikin', logo: '/images/brands/daikin-logo.png' },
-  { name: 'Trane', logo: '/images/brands/trane-logo.png' },
-  { name: 'Lennox', logo: '/images/brands/lennox-logo.svg' },
-  { name: 'Rheem', logo: '/images/brands/rheem-logo.svg' },
+  { name: 'Carrier', logo: carrierLogo },
+  { name: 'Goodman', logo: goodmanLogo },
+  { name: 'Daikin', logo: daikinLogo },
+  { name: 'Trane', logo: traneLogo },
 ];
 ---
 
@@ -46,10 +50,10 @@ const brands = [
       <div class="flex brand-track gap-8 items-center">
         {[...brands, ...brands].map((brand) => (
           <div class="flex-shrink-0 flex items-center justify-center p-6 bg-white rounded-xl border border-slate-100 hover:border-brand-blue/20 hover:shadow-lg transition-all duration-300 group w-[180px]">
-            <img 
+            <Image 
               src={brand.logo} 
               alt={brand.name}
-              width="140" height="48"
+              width={140} height={48}
               class="brand-logo"
               loading="lazy"
             />

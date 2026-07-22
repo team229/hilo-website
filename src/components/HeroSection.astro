@@ -1,0 +1,168 @@
+---
+import { Image } from 'astro:assets';
+import heroBg from '../assets/hero-bg-hilo.png';
+import { Clock, ShieldCheck, Banknote, Check, Phone } from 'lucide-react';
+---
+
+<section class="relative bg-[#1f2d3d] text-white overflow-hidden">
+  <Image
+    src={heroBg}
+    alt="HiLo Heating & Air team standing in front of service van in Orange County neighborhood"
+    class="w-full h-auto lg:absolute lg:inset-0 lg:h-full lg:object-cover"
+    widths={[1920, 1440, 1024, 768]}
+    sizes="100vw"
+    quality={100}
+    loading="eager"
+    fetchpriority="high"
+  />
+  <div class="hidden lg:block absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-8 lg:pt-40 lg:pb-12 w-full lg:min-h-svh lg:flex lg:items-end">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 w-full items-end">
+
+      {/* Left: Content */}
+      <div class="lg:col-span-7">
+
+        <div class="inline-flex items-center space-x-2 bg-[#cc0000] text-white px-3 py-1.5 lg:px-4 lg:py-2 rounded-md font-bold tracking-wider text-xs uppercase w-max mb-4 lg:mb-6 shadow-md">
+          <ShieldCheck class="w-3.5 h-3.5 lg:w-4 lg:h-4" strokeWidth={2.5} />
+          <span>Trusted Local HVAC Company</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-4 lg:mb-6 tracking-tight">
+          Orange County <br class="hidden sm:block" />
+          HVAC Service <br />
+          <span class="text-[#cc0000]">You Can Trust</span>
+        </h1>
+
+        <p class="text-sm sm:text-base text-gray-200 max-w-xl mb-6 lg:mb-8 leading-relaxed font-medium">
+          Family owned & operated HVAC company providing same-day AC repair, heating service, mini split installation, and emergency HVAC repairs.
+        </p>
+
+        <div class="flex sm:grid sm:grid-cols-2 gap-3 sm:gap-4 max-w-xl mb-6 lg:mb-8 overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0 pb-2 sm:pb-0 scrollbar-none">
+          {[
+            { icon: 'clock', label: 'Same-Day Service' },
+            { icon: 'x', label: 'Emergency Repair' },
+            { icon: 'globe', label: 'EPA Certified' },
+            { icon: 'banknote', label: 'Financing Available' },
+            { icon: 'check', label: '24/7 Service' },
+            { icon: 'home', label: 'Home Respect' },
+          ].map((tag, i) => (
+            <div class="bg-white/95 text-gray-900 rounded-lg py-2.5 px-3.5 sm:py-3 sm:px-4 flex items-center space-x-2.5 sm:space-x-3 shadow-md backdrop-blur-sm shrink-0 sm:shrink">
+              <span class="text-[#cc0000] flex-shrink-0">
+                {tag.icon === 'clock' && <Clock class="w-4 h-4 sm:w-5 sm:h-5" strokeWidth={2.5} />}
+                {tag.icon === 'x' && (
+                  <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                )}
+                {tag.icon === 'globe' && (
+                  <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12a7.5 7.5 0 0015 0m-15 0a7.5 7.5 0 1115 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077l1.41-.513m14.095-5.128l1.41-.513M5.106 17.785l1.15-.827m11.379-8.16l1.15-.827M8.14 21.27l.707-.866m10.306-7.538l.707-.866M12 21v-1.5m0-13.5V3" />
+                  </svg>
+                )}
+                {tag.icon === 'banknote' && <Banknote class="w-4 h-4 sm:w-5 sm:h-5" strokeWidth={2.5} />}
+                {tag.icon === 'check' && <Check class="w-4 h-4 sm:w-5 sm:h-5" strokeWidth={2.5} />}
+                {tag.icon === 'home' && (
+                  <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                  </svg>
+                )}
+              </span>
+              <span class="font-bold text-xs sm:text-sm whitespace-nowrap">{tag.label}</span>
+            </div>
+          ))}
+        </div>
+
+        <div>
+          <a href="tel:+17148535534" class="inline-flex items-center space-x-3 bg-[#cc0000] hover:bg-[#b30000] text-white font-extrabold px-6 py-3.5 lg:px-8 lg:py-4 rounded-xl transition duration-200 shadow-lg group text-sm lg:text-base">
+            <Phone class="w-4 h-4 lg:w-5 lg:h-5 fill-current" />
+            <span>Call For Same Day Service</span>
+          </a>
+        </div>
+      </div>
+
+      {/* Right: Form Card bottom-aligned */}
+      <div class="lg:col-span-5">
+        <div class="bg-[#003366]/95 rounded-2xl p-5 sm:p-6 shadow-[0_20px_50px_rgba(0,0,0,0.3)] border border-[#004080] backdrop-blur-sm">
+          <h3 class="text-lg sm:text-xl font-extrabold text-white mb-1">Schedule Service</h3>
+          <p class="text-xs text-gray-300 mb-4 font-medium">Fast response for repairs & installations</p>
+          <form id="hero-form" class="space-y-3" onsubmit="return handleHeroForm(event)">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div class="relative">
+                <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400 pointer-events-none">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" /></svg>
+                </span>
+                <input type="text" id="hero-name" name="name" required placeholder="Full Name" class="w-full bg-white text-gray-900 placeholder-gray-400 pl-9 pr-3 py-2.5 rounded-lg border border-transparent focus:outline-none focus:ring-2 focus:ring-[#cc0000] text-sm font-semibold transition" />
+              </div>
+              <div class="relative">
+                <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400 pointer-events-none">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg>
+                </span>
+                <input type="tel" id="hero-phone" name="phone" required placeholder="Phone" class="w-full bg-white text-gray-900 placeholder-gray-400 pl-9 pr-3 py-2.5 rounded-lg border border-transparent focus:outline-none focus:ring-2 focus:ring-[#cc0000] text-sm font-semibold transition" />
+              </div>
+            </div>
+            <div class="relative">
+              <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400 pointer-events-none">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg>
+              </span>
+              <input type="email" id="hero-email" name="email" placeholder="Email Address" class="w-full bg-white text-gray-900 placeholder-gray-400 pl-9 pr-3 py-2.5 rounded-lg border border-transparent focus:outline-none focus:ring-2 focus:ring-[#cc0000] text-sm font-semibold transition" />
+            </div>
+            <div class="relative">
+              <select id="hero-issue" name="issue" required class="w-full bg-white text-gray-900 pl-3 pr-8 py-2.5 rounded-lg border border-transparent appearance-none focus:outline-none focus:ring-2 focus:ring-[#cc0000] text-sm font-semibold transition">
+                <option value="" disabled selected class="text-gray-400">Tell us about your HVAC issue...</option>
+                <option value="AC Repair">AC Repair</option>
+                <option value="Heating Service">Heating Service</option>
+                <option value="Mini Split Installation">Mini Split Installation</option>
+                <option value="Emergency Request">Emergency Request</option>
+              </select>
+              <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-gray-500">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+              </div>
+            </div>
+            <button type="submit" id="hero-submit" class="w-full bg-[#cc0000] hover:bg-[#b30000] text-white font-extrabold py-2.5 rounded-lg text-sm transition duration-200 shadow-md">
+              Request Service
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  async function handleHeroForm(event) {
+    event.preventDefault();
+    const btn = document.getElementById('hero-submit');
+    const originalText = btn.textContent;
+    btn.textContent = 'Submitting...';
+    btn.disabled = true;
+
+    try {
+      const res = await fetch('https://api-inform.bythub.in/?formId=kS72mkXRXs3ieQIUQWR6', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: document.getElementById('hero-name').value,
+          email: document.getElementById('hero-email').value,
+          message: `Phone: ${document.getElementById('hero-phone').value}\n\nIssue: ${document.getElementById('hero-issue').value}`,
+        }),
+      });
+      if (res.ok) {
+        btn.textContent = 'Sent!';
+        btn.className = 'w-full bg-green-600 text-white font-extrabold py-2.5 rounded-lg text-sm shadow-md';
+        document.getElementById('hero-form').querySelectorAll('input, select').forEach(el => el.value = '');
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.className = 'w-full bg-[#cc0000] hover:bg-[#b30000] text-white font-extrabold py-2.5 rounded-lg text-sm transition duration-200 shadow-md';
+          btn.disabled = false;
+        }, 3000);
+      } else {
+        throw new Error('Submission failed');
+      }
+    } catch {
+      btn.textContent = 'Error — try again';
+      btn.disabled = false;
+      setTimeout(() => { btn.textContent = originalText; }, 3000);
+    }
+  }
+</script>

@@ -53,7 +53,7 @@ export default function LandingForm() {
     setStatus('loading');
     try {
       const utmTags = Object.entries(utm).filter(([, v]) => v).map(([k, v]) => `${k}: ${v}`).join('\n');
-      const res = await fetch('https://api-inform.bythub.in/?formId=Z6R2t7vXQWrhIa1fzvv6', {
+      const res = await fetch('https://api-inform.bythub.in/?formId=kS72mkXRXs3ieQIUQWR6', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -62,7 +62,7 @@ export default function LandingForm() {
           message: `Phone: ${formData.phone}\n\nIssue: ${formData.issue}${utmTags ? `\n\n---\n${utmTags}` : ''}`,
         }),
       });
-      if (res.ok) setStatus('success');
+      if (res.ok) window.location.href = '/thank-you/';
       else setStatus('error');
     } catch {
       setStatus('error');
