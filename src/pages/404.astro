@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { Phone, ArrowRight } from 'lucide-react';
+
+const popularServices = [
+  { name: 'AC Repair', href: '/services/air-conditioning-services/' },
+  { name: 'Heating Repair', href: '/services/heating-services/heating-repair/' },
+  { name: 'AC Installation', href: '/services/air-conditioning-services/air-conditioning-installation/' },
+  { name: 'Mini Split Installation', href: '/services/air-conditioning-services/mini-split-installation/' },
+  { name: 'Emergency HVAC Repair', href: '/services/hvac-services/emergency-hvac-repair/' },
+  { name: 'HVAC Maintenance', href: '/services/air-conditioning-services/ac-maintenance/' },
+];
+---
+
+<BaseLayout
+  title="Page Not Found | HiLo Heating & Air"
+  description="The page you're looking for could not be found. Explore HiLo Heating & Air services for AC repair, heating service, and 24/7 emergency HVAC help in Orange County."
+  robots="noindex, follow"
+>
+  <Header />
+  <main>
+    <section class="bg-[#1f2d3d] text-white overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-28">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div class="lg:col-span-7">
+            <div aria-hidden="true" class="text-[#cc0000] font-black leading-none tracking-tight select-none text-[5.5rem] sm:text-[8rem] lg:text-[10rem]">
+              404
+            </div>
+            <h1 class="text-3xl sm:text-5xl font-black text-white leading-[1.1] tracking-tight mt-4 mb-5">
+              That page is <span class="text-[#cc0000]">out of service.</span>
+            </h1>
+            <p class="text-gray-300 text-base sm:text-lg leading-relaxed max-w-xl mb-8 font-medium">
+              We couldn't find the page you were looking for. It may have been moved or retired. If you can't find what you need, our team is standing by 24/7.
+            </p>
+            <a href="/" class="inline-flex items-center gap-2 bg-[#cc0000] hover:bg-[#b30000] text-white font-extrabold px-7 py-3.5 rounded-xl transition duration-200 shadow-lg">
+              Back to Home
+            </a>
+            <div class="mt-10">
+              <a href="tel:+17148535534" class="inline-flex items-center gap-3 font-bold text-white hover:text-[#cc0000] transition">
+                <Phone class="w-5 h-5 text-[#cc0000] flex-shrink-0" strokeWidth={2.5} />
+                Call (714) 853-5534 for help
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5">
+            <div class="bg-[#003366]/95 rounded-2xl p-6 sm:p-7 border border-[#004080]">
+              <h2 class="text-lg sm:text-xl font-extrabold text-white mb-1">Where would you like to go?</h2>
+              <p class="text-xs text-gray-300 mb-5 font-medium">Popular services across Orange County</p>
+              <ul class="space-y-1">
+                {popularServices.map((svc) => (
+                  <li>
+                    <a href={svc.href} class="group flex items-center justify-between px-3 py-3 rounded-lg text-sm font-semibold text-gray-200 hover:bg-white/10 hover:text-white transition">
+                      {svc.name}
+                      <ArrowRight class="w-4 h-4 text-gray-400 group-hover:text-[#cc0000] group-hover:translate-x-0.5 transition" />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              <a href="/services/" class="block mt-5 text-center bg-brand-blue hover:bg-blue-700 text-white font-extrabold py-3 rounded-lg text-sm transition duration-200">
+                Browse All Services
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>

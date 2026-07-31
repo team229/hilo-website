@@ -2,4 +2,38 @@ User-agent: *
 Allow: /
 Disallow: /landing/
 
+# OpenAI
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Google AI
+User-agent: Google-Extended
+Allow: /
+
+# Microsoft
+User-agent: Bingbot
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+# Common Crawl
+User-agent: CCBot
+Allow: /
+
 Sitemap: https://hiloheatingandair.com/sitemap.xml
