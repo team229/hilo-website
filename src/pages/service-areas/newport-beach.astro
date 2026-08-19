@@ -1,8 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { faqs as faqData } from '../../data/faqs';
+
+const faq = faqData['service-areas-newport-beach'];
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import CTASection from '../../components/CTASection';
+import FAQSection from '../../components/FAQSection';
 import ServiceForm from '../../components/ServiceForm';
 import Reviews from '../../components/Reviews';
 import LicenseBadges from '../../components/LicenseBadges.astro';
@@ -10,7 +14,7 @@ import BrandsSection from '../../components/BrandsSection.astro';
 import VanSection from '../../components/VanSection.astro';
 ---
 
-<BaseLayout title="AC Repair Newport Beach | HiLo Heating and Air" description="Expert AC repair in Newport Beach, CA. Coastal HVAC specialists who understand salt air corrosion. Same-day service from HiLo Heating and Air.">
+<BaseLayout title="AC Repair Newport Beach | HiLo Heating and Air" description="Expert AC repair in Newport Beach, CA. Coastal HVAC specialists who understand salt air corrosion. Same-day service from HiLo Heating and Air." faqSchema={faq.faqSchema}>
   <Header />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">
@@ -84,45 +88,7 @@ import VanSection from '../../components/VanSection.astro';
     <Reviews client:visible />
     <BrandsSection />
 
-    <section class="py-16 sm:py-24 bg-slate-50">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-brand-blue mb-8">Frequently Asked Questions</h2>
-        <div class="space-y-4">
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Why does my AC seem to break down more often living near the beach?</h3>
-            <p class="text-slate-600">Salt air speeds up corrosion on outdoor units, especially coils and electrical connections — it's just part of coastal living.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">How fast can someone come out?</h3>
-            <p class="text-slate-600">Usually same-day, sometimes next-day during busier periods.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Is it actually a repair, or do I need a new system?</h3>
-            <p class="text-slate-600">Most issues are repairable — we'll diagnose it on-site before talking about replacement.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Will I know the price before work starts?</h3>
-            <p class="text-slate-600">Yes, you'll get a quote upfront, no surprises on the invoice afterward.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">How often should coastal homes get their AC inspected?</h3>
-            <p class="text-slate-600">We'd recommend twice a year given the corrosion risk — once before summer, once mid-season if possible.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Do you work on all brands?</h3>
-            <p class="text-slate-600">Yes, central air, ductless mini-splits, heat pumps — most major brands found in Newport Beach homes.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Are your technicians licensed and insured?</h3>
-            <p class="text-slate-600">Every technician is fully licensed and insured.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">What if the problem comes back after a repair?</h3>
-            <p class="text-slate-600">That's covered under our guarantee — just reach out and we'll take care of it.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <FAQSection client:visible faqs={faq.faqs} />
 
     <section class="bg-brand-blue/5 py-8">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

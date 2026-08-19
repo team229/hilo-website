@@ -1,8 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { faqs as faqData } from '../../data/faqs';
+
+const faq = faqData['service-areas-rancho-santa-margarita'];
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import CTASection from '../../components/CTASection';
+import FAQSection from '../../components/FAQSection';
 import ServiceForm from '../../components/ServiceForm';
 import Reviews from '../../components/Reviews';
 import LicenseBadges from '../../components/LicenseBadges.astro';
@@ -10,7 +14,7 @@ import BrandsSection from '../../components/BrandsSection.astro';
 import VanSection from '../../components/VanSection.astro';
 ---
 
-<BaseLayout title="Furnace Repair Rancho Santa Margarita | HiLo Heating and Air" description="Fast, reliable furnace repair in Rancho Santa Margarita, CA. Same-day service from licensed technicians at HiLo Heating and Air.">
+<BaseLayout title="Furnace Repair Rancho Santa Margarita | HiLo Heating and Air" description="Fast, reliable furnace repair in Rancho Santa Margarita, CA. Same-day service from licensed technicians at HiLo Heating and Air." faqSchema={faq.faqSchema}>
   <Header />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">
@@ -84,45 +88,7 @@ import VanSection from '../../components/VanSection.astro';
     <Reviews client:visible />
     <BrandsSection />
 
-    <section class="py-16 sm:py-24 bg-slate-50">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-brand-blue mb-8">Frequently Asked Questions</h2>
-        <div class="space-y-4">
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">There's a faint burnt smell when my furnace starts. Worth worrying about?</h3>
-            <p class="text-slate-600">Yes — could be harmless dust burning off, could be something more serious. Worth having it checked rather than guessing.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">How fast can you get out here?</h3>
-            <p class="text-slate-600">Same-day, most of the time. Next morning if things are busy.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Repair or replace — how do I know which makes sense?</h3>
-            <p class="text-slate-600">Depends on the age and what's actually wrong. We'll tell you straight, not just push a sale.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Do you give a price before starting?</h3>
-            <p class="text-slate-600">Always — nothing gets done until you know the cost.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">How often should the furnace get checked?</h3>
-            <p class="text-slate-600">Once a year, ideally before it gets cold, so problems get caught before they become no-heat emergencies.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">What brands do you service?</h3>
-            <p class="text-slate-600">Most major ones — wide range of systems and ages.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Are the technicians licensed?</h3>
-            <p class="text-slate-600">Yes, every one, fully licensed and insured.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">What happens if the issue comes back?</h3>
-            <p class="text-slate-600">Covered under our guarantee — just call and we'll handle it.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <FAQSection client:visible faqs={faq.faqs} />
 
     <section class="bg-brand-blue/5 py-8">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

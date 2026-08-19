@@ -1,8 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { faqs as faqData } from '../../data/faqs';
+
+const faq = faqData['service-areas-santa-ana'];
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import CTASection from '../../components/CTASection';
+import FAQSection from '../../components/FAQSection';
 import ServiceForm from '../../components/ServiceForm';
 import Reviews from '../../components/Reviews';
 import LicenseBadges from '../../components/LicenseBadges.astro';
@@ -10,7 +14,7 @@ import BrandsSection from '../../components/BrandsSection.astro';
 import VanSection from '../../components/VanSection.astro';
 ---
 
-<BaseLayout title="Air Conditioning Repair Santa Ana | HiLo Heating and Air" description="Expert AC repair and furnace repair in Santa Ana, CA. Fast, reliable HVAC service from licensed technicians at HiLo Heating and Air.">
+<BaseLayout title="Air Conditioning Repair Santa Ana | HiLo Heating and Air" description="Expert AC repair and furnace repair in Santa Ana, CA. Fast, reliable HVAC service from licensed technicians at HiLo Heating and Air." faqSchema={faq.faqSchema}>
   <Header />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">
@@ -86,45 +90,7 @@ import VanSection from '../../components/VanSection.astro';
     <Reviews client:visible />
     <BrandsSection />
 
-    <section class="py-16 sm:py-24 bg-slate-50">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-brand-blue mb-8">Frequently Asked Questions</h2>
-        <div class="space-y-4">
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">How fast can you get to my house?</h3>
-            <p class="text-slate-600">Usually same-day, and often within a couple hours if it's urgent.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">How do I know my furnace needs repair?</h3>
-            <p class="text-slate-600">Cold air instead of warm, odd banging or clicking sounds, the system cycling too often, or a gas bill that's suddenly higher than usual.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Do you do emergency calls after hours?</h3>
-            <p class="text-slate-600">Yep — evenings and weekends included, for both AC and furnace issues.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">What's a repair going to cost?</h3>
-            <p class="text-slate-600">Depends on the problem, but you'll know the price before we start anything. No surprises later.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Do you handle every brand?</h3>
-            <p class="text-slate-600">Carrier, Trane, Lennox, Goodman, Rheem — basically all the major ones.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Should I just replace my system instead of fixing it?</h3>
-            <p class="text-slate-600">Only if it actually makes sense. We'll tell you straight based on age and condition, not push a sale.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Any maintenance plans?</h3>
-            <p class="text-slate-600">Yes, seasonal plans that catch the small stuff before it turns into a bigger repair.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Are your techs licensed?</h3>
-            <p class="text-slate-600">Every single one — licensed, insured, background-checked.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <FAQSection client:visible faqs={faq.faqs} />
 
     <section class="bg-brand-blue/5 py-8">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

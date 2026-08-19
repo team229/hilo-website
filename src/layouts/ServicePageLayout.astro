@@ -9,6 +9,7 @@ import CTASection from '../components/CTASection';
 import ServiceForm from '../components/ServiceForm';
 import LicenseBadges from '../components/LicenseBadges.astro';
 import BrandsSection from '../components/BrandsSection.astro';
+import { faqs as faqData } from '../data/faqs';
 
 interface Props {
   title: string;
@@ -17,13 +18,18 @@ interface Props {
   heroSubtitle: string;
   canonical?: string;
   robots?: string;
+  faqKey?: string;
+  faqs?: { q: string; a: string }[];
   faqSchema?: object;
 }
 
-const { title, description, heroTitle, heroSubtitle, canonical, robots, faqSchema } = Astro.props;
+const { title, description, heroTitle, heroSubtitle, canonical, robots, faqKey, faqs, faqSchema } = Astro.props;
+const faqEntry = faqKey ? faqData[faqKey] : undefined;
+const pageFaqs = faqs ?? faqEntry?.faqs;
+const pageFaqSchema = faqSchema ?? faqEntry?.faqSchema;
 ---
 
-<BaseLayout title={title} description={description} canonical={canonical} robots={robots} faqSchema={faqSchema}>
+<BaseLayout title={title} description={description} canonical={canonical} robots={robots} faqSchema={pageFaqSchema}>
   <Header />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">
@@ -72,7 +78,7 @@ const { title, description, heroTitle, heroSubtitle, canonical, robots, faqSchem
 
     <Reviews client:visible />
     <BrandsSection />
-    <FAQSection client:visible />
+    <FAQSection client:visible faqs={pageFaqs} />
     <ContactBar client:visible />
     <CTASection client:visible />
   </main>

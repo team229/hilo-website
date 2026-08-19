@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const faqs = [
+const defaultFaqs = [
   {
     q: 'Does HiLo offer same-day AC repair services in Anaheim?',
     a: 'HiLo Heating & Air Conditioning provides same-day AC repair throughout Anaheim with certified technicians dispatched quickly to restore your comfort fast.',
@@ -39,7 +39,7 @@ const faqs = [
   },
 ];
 
-export default function FAQSection() {
+export default function FAQSection({ faqs = defaultFaqs }: { faqs?: { q: string; a: string }[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (

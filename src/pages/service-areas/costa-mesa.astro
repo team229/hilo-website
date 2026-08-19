@@ -1,8 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { faqs as faqData } from '../../data/faqs';
+
+const faq = faqData['service-areas-costa-mesa'];
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import CTASection from '../../components/CTASection';
+import FAQSection from '../../components/FAQSection';
 import ServiceForm from '../../components/ServiceForm';
 import Reviews from '../../components/Reviews';
 import LicenseBadges from '../../components/LicenseBadges.astro';
@@ -10,7 +14,7 @@ import BrandsSection from '../../components/BrandsSection.astro';
 import VanSection from '../../components/VanSection.astro';
 ---
 
-<BaseLayout title="HVAC Services in Costa Mesa, CA | HiLo Heating & Air" description="Expert AC repair, heating service, and HVAC maintenance in Costa Mesa, CA. Fast, reliable service from licensed technicians at HiLo Heating & Air.">
+<BaseLayout title="HVAC Services in Costa Mesa, CA | HiLo Heating & Air" description="Expert AC repair, heating service, and HVAC maintenance in Costa Mesa, CA. Fast, reliable service from licensed technicians at HiLo Heating & Air." faqSchema={faq.faqSchema}>
   <Header />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">
@@ -84,45 +88,7 @@ import VanSection from '../../components/VanSection.astro';
     <Reviews client:visible />
     <BrandsSection />
 
-    <section class="py-16 sm:py-24 bg-slate-50">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-brand-blue mb-8">Frequently Asked Questions</h2>
-        <div class="space-y-4">
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">How fast can someone get to my house?</h3>
-            <p class="text-slate-600">Usually same-day, sometimes next-day if it's a slammed week — summer gets busy fast.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">My AC is running but not cooling. Is that a repair or a whole new system?</h3>
-            <p class="text-slate-600">Most of the time it's repairable — low refrigerant, a dirty coil, a failing part. We'll diagnose it on-site before talking replacement.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Do you only work on certain brands?</h3>
-            <p class="text-slate-600">No — central air, mini-splits, heat pumps, most major brands. If it's installed in a Costa Mesa home, odds are we've worked on one like it.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Will I know the cost before you start?</h3>
-            <p class="text-slate-600">Yes. You'll get a price before any work begins, not a surprise on the invoice.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">How often should I get the system checked?</h3>
-            <p class="text-slate-600">Once a year, ideally before it gets hot, catches small problems before they become emergency calls.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Are your guys actually licensed?</h3>
-            <p class="text-slate-600">Yes, every technician is licensed and insured.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Do you cover areas outside Costa Mesa too?</h3>
-            <p class="text-slate-600">We serve a good chunk of Orange County — just ask and we'll confirm your neighborhood.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">What if the same problem comes back?</h3>
-            <p class="text-slate-600">Repairs are backed by a guarantee, so that's covered.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <FAQSection client:visible faqs={faq.faqs} />
 
     <section class="bg-brand-blue/5 py-8">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

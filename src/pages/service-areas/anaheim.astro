@@ -1,8 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { faqs as faqData } from '../../data/faqs';
+
+const faq = faqData['service-areas-anaheim'];
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import CTASection from '../../components/CTASection';
+import FAQSection from '../../components/FAQSection';
 import ServiceForm from '../../components/ServiceForm';
 import Reviews from '../../components/Reviews';
 import LicenseBadges from '../../components/LicenseBadges.astro';
@@ -10,7 +14,7 @@ import BrandsSection from '../../components/BrandsSection.astro';
 import VanSection from '../../components/VanSection.astro';
 ---
 
-<BaseLayout title="AC Repair Anaheim CA | HiLo Heating & Air" description="HiLo Heating & Air is Anaheim's trusted choice for AC repair. We offer same-day AC repair in Anaheim, CA with free diagnostics on any repair, 24/7 emergency service, and EPA-certified technicians. Call (714) 853-5534 today!">
+<BaseLayout title="AC Repair Anaheim CA | HiLo Heating & Air" description="HiLo Heating & Air is Anaheim's trusted choice for AC repair. We offer same-day AC repair in Anaheim, CA with free diagnostics on any repair, 24/7 emergency service, and EPA-certified technicians. Call (714) 853-5534 today!" faqSchema={faq.faqSchema}>
   <Header />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">
@@ -102,53 +106,7 @@ import VanSection from '../../components/VanSection.astro';
     <Reviews client:visible />
     <BrandsSection />
 
-    <section class="py-16 sm:py-24 bg-slate-50">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-brand-blue mb-8">Frequently Asked Questions</h2>
-        <div class="space-y-4">
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">My AC runs constantly but the house stays warm. Is that an ac repair Anaheim CA situation or a replacement?</h3>
-            <p class="text-slate-600">Almost always repairable. A system that runs but doesn't cool is usually dealing with low refrigerant, a dirty coil, or airflow blockage — none of which require a new unit. We'll check it out and be straight with you about what we find.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">What's a ballpark cost for ac repair in Anaheim?</h3>
-            <p class="text-slate-600">Genuinely depends on the problem. Smaller fixes like a capacitor or thermostat swap are on the lower end. Something like a compressor is more involved and costs more. We quote everything upfront — you'll know the number before we start any work.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">How fast do you respond?</h3>
-            <p class="text-slate-600">Same-day in most cases, especially mid-summer when we know people really need it. Call (714) 853-5534 and we'll tell you exactly when we can get there.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">My system is 10 years old. Worth repairing or time to replace?</h3>
-            <p class="text-slate-600">Ten years is middle-aged for an AC unit — not old. Whether it's worth repairing depends on what's wrong and what the repair costs relative to the system's remaining life. We'll give you that honest breakdown without steering you either way for our own benefit.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Do you work on all AC brands?</h3>
-            <p class="text-slate-600">Yes — Carrier, Trane, Lennox, Goodman, Rheem, York, and more. If you have a less common brand, just call and ask. Chances are we've worked on it.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">I tried fixing it myself and now it's worse. Can you still help?</h3>
-            <p class="text-slate-600">Absolutely, and you wouldn't be the first. Electrical components and refrigerant systems are tricky — we'll assess where things stand and get it sorted out.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Why does my AC smell weird when it turns on?</h3>
-            <p class="text-slate-600">Musty usually means mold or mildew somewhere in the system or ductwork. Burning smells can point to electrical issues. Neither one should be brushed off — book an ac repair Anaheim CA visit and we'll track down the source.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">How do I keep from needing repairs so often?</h3>
-            <p class="text-slate-600">Annual maintenance — ideally every spring before you really need the AC. It's not glamorous advice, but a tune-up catches the small stuff before it turns into a breakdown in July. Ask us about our maintenance options.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">What areas do you cover near Anaheim?</h3>
-            <p class="text-slate-600">We serve most of Orange County — Fullerton, Garden Grove, Orange, Santa Ana, Buena Park, Placentia, and nearby communities. Give us a call to confirm your area.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">How do I schedule ac repair in Anaheim with HiLo?</h3>
-            <p class="text-slate-600">Call (714) 853-5534 or go to hiloheatingandair.com. We'll find a time that works for you, get someone out there, and make sure things are actually fixed — not just temporarily patched — before we leave.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <FAQSection client:visible faqs={faq.faqs} />
 
     <section class="bg-brand-blue/5 py-8">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

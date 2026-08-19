@@ -1,8 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { faqs as faqData } from '../../data/faqs';
+
+const faq = faqData['service-areas-irvine'];
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import CTASection from '../../components/CTASection';
+import FAQSection from '../../components/FAQSection';
 import ServiceForm from '../../components/ServiceForm';
 import Reviews from '../../components/Reviews';
 import LicenseBadges from '../../components/LicenseBadges.astro';
@@ -10,7 +14,7 @@ import BrandsSection from '../../components/BrandsSection.astro';
 import VanSection from '../../components/VanSection.astro';
 ---
 
-<BaseLayout title="HVAC Services in Irvine, CA | HiLo Heating & Air" description="Expert AC repair, furnace repair, and HVAC services in Irvine, CA. Same-day service from licensed technicians at HiLo Heating & Air.">
+<BaseLayout title="HVAC Services in Irvine, CA | HiLo Heating & Air" description="Expert AC repair, furnace repair, and HVAC services in Irvine, CA. Same-day service from licensed technicians at HiLo Heating & Air." faqSchema={faq.faqSchema}>
   <Header />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">
@@ -85,45 +89,7 @@ import VanSection from '../../components/VanSection.astro';
     <Reviews client:visible />
     <BrandsSection />
 
-    <section class="py-16 sm:py-24 bg-slate-50">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-brand-blue mb-8">Frequently Asked Questions</h2>
-        <div class="space-y-4">
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">How soon can you come out for an AC issue?</h3>
-            <p class="text-slate-600">Same-day most of the time, next-day at the latest during busy stretches.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Do you actually do furnace work, or mostly AC?</h3>
-            <p class="text-slate-600">Both. Same technicians handle heating and cooling — no need to call two different companies.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">My furnace smells strange when it kicks on. Is that serious?</h3>
-            <p class="text-slate-600">Yes — get it checked. Could be a cracked heat exchanger, which isn't something to wait on.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Will I get a price before any work starts?</h3>
-            <p class="text-slate-600">Yes, you'll see the cost upfront. No surprises on the bill afterward.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">How often should the AC or furnace get inspected?</h3>
-            <p class="text-slate-600">Once a year each, ideally before the season starts, so small issues don't turn into emergencies.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">What brands or systems do you work on?</h3>
-            <p class="text-slate-600">Central air, mini-splits, heat pumps, standard furnaces — most major brands found in Irvine homes.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Are technicians licensed?</h3>
-            <p class="text-slate-600">Yes, every one of them, fully licensed and insured.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">What happens if the issue comes back after a repair?</h3>
-            <p class="text-slate-600">It's covered under our guarantee — just give us a call.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <FAQSection client:visible faqs={faq.faqs} />
 
     <section class="bg-brand-blue/5 py-8">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

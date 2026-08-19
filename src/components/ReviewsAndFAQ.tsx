@@ -21,7 +21,7 @@ const reviews = [
   },
 ];
 
-const faqs = [
+const defaultFaqs = [
   {
     q: 'Does HiLo Heating & Air Conditioning offer same-day AC repair services in Anaheim, CA?',
     a: 'HiLo Heating & Air Conditioning provides same-day AC repair throughout Anaheim with certified technicians dispatched quickly to restore your comfort fast.',
@@ -52,8 +52,9 @@ const faqs = [
   },
 ];
 
-export default function ReviewsAndFAQ() {
+export default function ReviewsAndFAQ({ faqs: faqProp }: { faqs?: { q: string; a: string }[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const faqs = faqProp ?? defaultFaqs;
 
   return (
     <section className="bg-white">

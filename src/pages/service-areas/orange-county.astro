@@ -1,8 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { faqs as faqData } from '../../data/faqs';
+
+const faq = faqData['service-areas-orange-county'];
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import CTASection from '../../components/CTASection';
+import FAQSection from '../../components/FAQSection';
 import ServiceForm from '../../components/ServiceForm';
 import Reviews from '../../components/Reviews';
 import LicenseBadges from '../../components/LicenseBadges.astro';
@@ -10,7 +14,7 @@ import BrandsSection from '../../components/BrandsSection.astro';
 import VanSection from '../../components/VanSection.astro';
 ---
 
-<BaseLayout title="HVAC Services in Orange County, CA | HiLo Heating & Air" description="Expert AC repair, heating service, and HVAC maintenance throughout Orange County, CA. From coastal corrosion to inland heat, HiLo Heating & Air covers it all.">
+<BaseLayout title="HVAC Services in Orange County, CA | HiLo Heating & Air" description="Expert AC repair, heating service, and HVAC maintenance throughout Orange County, CA. From coastal corrosion to inland heat, HiLo Heating & Air covers it all." faqSchema={faq.faqSchema}>
   <Header />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">
@@ -84,45 +88,7 @@ import VanSection from '../../components/VanSection.astro';
     <Reviews client:visible />
     <BrandsSection />
 
-    <section class="py-16 sm:py-24 bg-slate-50">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-brand-blue mb-8">Frequently Asked Questions</h2>
-        <div class="space-y-4">
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">What cities in Orange County do you actually cover?</h3>
-            <p class="text-slate-600">A wide range — Costa Mesa, Irvine, Newport Beach, Rancho Santa Margarita, Laguna Hills, and more. Just ask and we'll confirm your area.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">How fast can someone come out?</h3>
-            <p class="text-slate-600">Usually same-day, sometimes next-day during busier periods.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Does location within the county change what's usually wrong with the AC?</h3>
-            <p class="text-slate-600">Somewhat — coastal homes deal with more corrosion, inland homes deal with more general wear from heat. We adjust diagnostics accordingly.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Will I get pricing before work starts?</h3>
-            <p class="text-slate-600">Yes, always upfront — no surprises on the bill.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">How often should the AC get inspected?</h3>
-            <p class="text-slate-600">Once a year, ideally before summer hits.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Do you work on all brands and system types?</h3>
-            <p class="text-slate-600">Yes — central air, mini-splits, heat pumps, most major brands.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Are your technicians licensed and insured?</h3>
-            <p class="text-slate-600">Every technician, fully licensed and insured.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">What if the problem comes back after a repair?</h3>
-            <p class="text-slate-600">Covered under our guarantee — just give us a call.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <FAQSection client:visible faqs={faq.faqs} />
 
     <section class="bg-brand-blue/5 py-8">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

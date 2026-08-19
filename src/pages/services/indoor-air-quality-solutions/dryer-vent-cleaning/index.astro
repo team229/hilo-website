@@ -1,11 +1,15 @@
 ---
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import Header from '../../../../components/Header.astro';
+import { faqs as faqData } from '../../../../data/faqs';
+
+const faq = faqData['services-iaq-dryer-vent'];
 import Footer from '../../../../components/Footer.astro';
 import CTASection from '../../../../components/CTASection';
+import FAQSection from '../../../../components/FAQSection';
 ---
 
-<BaseLayout title="Dryer Vent Cleaning Services Orange County | HiLo Heating & Air" description="Reduce fire risk and improve dryer efficiency with professional dryer vent cleaning from HiLo Heating & Air. Fast, affordable service across Orange County. Don't wait—clogged vents are a safety hazard. Book your cleaning today!">
+<BaseLayout title="Dryer Vent Cleaning Services Orange County | HiLo Heating & Air" description="Reduce fire risk and improve dryer efficiency with professional dryer vent cleaning from HiLo Heating & Air. Fast, affordable service across Orange County. Don't wait—clogged vents are a safety hazard. Book your cleaning today!" faqSchema={faq.faqSchema}>
   <Header />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">
@@ -95,6 +99,8 @@ import CTASection from '../../../../components/CTASection';
         <p class="text-slate-600 mt-1"><a href="tel:+17148535534" class="hover:text-brand-red transition">(714) 853-5534</a> · <a href="mailto:info@hiloheatingandair.com" class="hover:text-brand-red transition">info@hiloheatingandair.com</a></p>
       </div>
     </section>
+
+    <FAQSection client:visible faqs={faq.faqs} />
 
     <CTASection client:visible />
   </main>

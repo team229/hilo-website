@@ -1,8 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { faqs as faqData } from '../../data/faqs';
+
+const faq = faqData['service-areas-laguna-hills'];
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import CTASection from '../../components/CTASection';
+import FAQSection from '../../components/FAQSection';
 import ServiceForm from '../../components/ServiceForm';
 import Reviews from '../../components/Reviews';
 import LicenseBadges from '../../components/LicenseBadges.astro';
@@ -10,7 +14,7 @@ import BrandsSection from '../../components/BrandsSection.astro';
 import VanSection from '../../components/VanSection.astro';
 ---
 
-<BaseLayout title="Furnace Installation Laguna Hills CA | HiLo Heating and Air" description="Professional furnace installation in Laguna Hills, CA. Expert setup with proper sizing and quality workmanship from HiLo Heating and Air.">
+<BaseLayout title="Furnace Installation Laguna Hills CA | HiLo Heating and Air" description="Professional furnace installation in Laguna Hills, CA. Expert setup with proper sizing and quality workmanship from HiLo Heating and Air." faqSchema={faq.faqSchema}>
   <Header />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">
@@ -84,45 +88,7 @@ import VanSection from '../../components/VanSection.astro';
     <Reviews client:visible />
     <BrandsSection />
 
-    <section class="py-16 sm:py-24 bg-slate-50">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-brand-blue mb-8">Frequently Asked Questions</h2>
-        <div class="space-y-4">
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">How do I know if I need a new furnace or just a repair?</h3>
-            <p class="text-slate-600">Age, repair frequency, and rising energy bills are the main signs. We'll give you an honest read before recommending replacement.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">How long does a typical installation take?</h3>
-            <p class="text-slate-600">Most jobs wrap up in a single day, sometimes longer if ductwork needs work too.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Will you help me pick the right size furnace?</h3>
-            <p class="text-slate-600">Yes, we run a proper load calculation based on your home's size and layout rather than just matching the old unit.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Is the new furnace covered under warranty?</h3>
-            <p class="text-slate-600">Yes, both labor and equipment are covered.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Do I need a permit for furnace installation?</h3>
-            <p class="text-slate-600">Usually, yes — we handle that process for you as part of the job.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">What brands do you install?</h3>
-            <p class="text-slate-600">We work with most major furnace brands and can recommend options based on your budget and home.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">Are your installers licensed?</h3>
-            <p class="text-slate-600">Every technician is fully licensed and insured.</p>
-          </div>
-          <div class="bg-white rounded-xl p-6 border border-brand-blue/10">
-            <h3 class="text-lg font-bold text-brand-blue mb-2">What if something feels off after installation?</h3>
-            <p class="text-slate-600">Just call us — we'll come back out and make it right under warranty.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <FAQSection client:visible faqs={faq.faqs} />
 
     <section class="bg-brand-blue/5 py-8">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

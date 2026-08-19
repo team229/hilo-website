@@ -15,9 +15,12 @@ import ContactBar from '../components/ContactBar';
 import ServiceAreasMap from '../components/ServiceAreasMap.astro';
 import CTASection from '../components/CTASection';
 import TrustStrip from '../components/TrustStrip.astro';
+import { faqs as faqData } from '../data/faqs';
+
+const homeFaq = faqData['home'];
 ---
 
-<BaseLayout   title="AC Repair Anaheim | HiLo Heating & Air" description="Need AC repair in Anaheim? HiLo Heating & Air offers same-day AC repair, free diagnostics with repair, and 24/7 emergency service. EPA-certified technicians. Call (714) 853-5534!">
+<BaseLayout   title="AC Repair Anaheim | HiLo Heating & Air" description="Need AC repair in Anaheim? HiLo Heating & Air offers same-day AC repair, free diagnostics with repair, and 24/7 emergency service. EPA-certified technicians. Call (714) 853-5534!" faqSchema={homeFaq.faqSchema}>
   <Header />
   <main>
     <HeroSection />
@@ -29,7 +32,7 @@ import TrustStrip from '../components/TrustStrip.astro';
     <CTABanner client:visible />
     <BrandsSection />
     <AboutStats />
-    <ReviewsAndFAQ client:visible />
+    <ReviewsAndFAQ client:visible faqs={homeFaq.faqs} />
     <ContactBar client:visible />
     <ServiceAreasMap />
     <CTASection client:visible />
