@@ -1,13 +1,13 @@
 ---
 title: "Planning a New Cooling System That Actually Fits Your Home"
-description: "Planning AC installation in Los Angeles? HiLo Heating & Air helps you plan ahead, size the system right, and avoid the shortcuts that lead to uneven cooling and high bills."
+description: "Planning AC installation in [Los Angeles](/service-areas/los-angeles/)? HiLo Heating & Air helps you plan ahead, size the system right, and avoid the shortcuts that lead to uneven cooling and high bills."
 date: 2026-08-30
 category: "AC Installation"
 author: "Cody"
 image: "/images/blog/hvac-replacement.webp"
 ---
 
-A home that stays uncomfortably warm no matter how low the thermostat is set, or a unit that has needed one too many repairs, usually means it's time to stop patching and start planning. Many homeowners begin researching AC installation Los Angeles options only after a breakdown during a heat spell, but starting the process earlier gives far more room to compare equipment, contractors, and financing without the pressure of a house that's already too hot to sleep in.
+A home that stays uncomfortably warm no matter how low the thermostat is set, or a unit that has needed one too many repairs, usually means it's time to stop patching and start planning. Many homeowners begin researching [AC installation](/services/air-conditioning-services/air-conditioning-installation/) Los Angeles options only after a breakdown during a heat spell, but starting the process earlier gives far more room to compare equipment, contractors, and financing without the pressure of a house that's already too hot to sleep in.
 
 ## Signs the Old System Has Reached Its Limit
 
@@ -42,3 +42,7 @@ A system installed correctly the first time tends to run quieter, last longer, a
 4. **Are permits required for a new system?** Yes, in nearly every jurisdiction across the county. A permitted job includes an inspection confirming the electrical, refrigerant, and ventilation work all meet current safety standards.
 
 5. **How much can a higher efficiency system actually save on bills?** Savings vary by climate zone and usage, but upgrading from an older, lower-efficiency unit to a modern high-SEER system commonly reduces cooling costs noticeably over a typical summer.
+
+---
+
+**Related services:** [AC Repair](/services/air-conditioning-services/) · [Heating Repair](/services/heating-services/heating-repair/) · [Emergency HVAC](/services/hvac-services/emergency-hvac-repair/) · [All Services](/services/) · [Service Areas](/service-areas/)

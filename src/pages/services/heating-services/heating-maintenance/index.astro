@@ -3,10 +3,12 @@ import ServicePageLayout from '../../../../layouts/ServicePageLayout.astro';
 ---
 
 <ServicePageLayout
+  relatedKey="heating-maintenance"
   title="Heating Maintenance & Seasonal HVAC Service | HiLo Heating & Air"
   description="Prepare your home for winter with professional heating maintenance and seasonal HVAC maintenance from HiLo Heating & Air. Prevent costly breakdowns, improve efficiency, and extend system life. Book your tune-up in Orange County today!"
   heroTitle="Heating Maintenance in Stanton, CA"
   heroSubtitle="Most furnaces don't quit without warning. They give signs first. Staying ahead of that is the whole point of HVAC maintenance service."
+  relatedServices={[{ name: "Heating Repair", href: "/services/heating-services/heating-repair/", desc: "Fast fixes when needed." },{ name: "Heating Installation", href: "/services/heating-services/heating-installation/", desc: "Right-sized replacement." },{ name: "HVAC Services", href: "/services/hvac-services/", desc: "Full-system care." }]}
   faqKey="services-heating-maintenance"
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
@@ -28,6 +30,11 @@ import ServicePageLayout from '../../../../layouts/ServicePageLayout.astro';
 
       <h2>Why Hilo Heating and Air</h2>
       <p>We built our name in Stanton by being straightforward — show up when we say we will, tell you the truth about what's actually wrong. Our technicians are licensed, insured, and trained to catch things most homeowners would never notice on their own. Whether it's a single visit or a standing maintenance plan, every system gets the same level of attention.</p>
+          <div class="not-prose mt-10 p-6 bg-brand-blue/5 border border-brand-blue/10 rounded-2xl">
+        <p class="text-sm text-slate-700 leading-relaxed m-0">
+          <strong class="text-brand-blue">More heating help:</strong> Need a fix now? See <a href="/services/heating-services/heating-repair/" class="text-brand-blue underline hover:text-brand-red">heating repair</a>. Planning ahead? Check <a href="/services/heating-services/heating-installation/" class="text-brand-blue underline hover:text-brand-red">heating installation</a> and <a href="/services/air-conditioning-services/ac-maintenance/" class="text-brand-blue underline hover:text-brand-red">AC maintenance</a> for year-round comfort.
+        </p>
+      </div>
     </div>
   </section>
 </ServicePageLayout>

@@ -3,10 +3,12 @@ import ServicePageLayout from '../../../../layouts/ServicePageLayout.astro';
 ---
 
 <ServicePageLayout
+  relatedKey="emergency-hvac-repair"
   title="Emergency HVAC Repair & 24/7 Emergency HVAC Services | HiLo Heating & Air"
   description="HVAC emergency? HiLo Heating & Air provides 24/7 emergency HVAC repair and emergency HVAC services throughout Orange County. EPA-certified techs dispatched fast, free diagnostic with repair. Call (714) 853-5534 anytime!"
   heroTitle="Emergency HVAC Repair in Stanton, CA"
   heroSubtitle="It's never a good time. Heat dies in August. Furnace quits in January. If your system just stopped and you need help now, Hilo Heating and Air handles emergency HVAC repair across Stanton."
+  relatedServices={[{ name: "Emergency AC Repair", href: "/services/air-conditioning-services/emergency-ac-repair/", desc: "AC-only emergencies." },{ name: "Heating Repair", href: "/services/heating-services/heating-repair/", desc: "No-heat emergencies." },{ name: "HVAC Replacement", href: "/services/hvac-services/hvac-replacement/", desc: "When emergency = replace." }]}
   faqKey="services-hvac-emergency"
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
@@ -28,6 +30,11 @@ import ServicePageLayout from '../../../../layouts/ServicePageLayout.astro';
 
       <h2>Why Stanton Calls Us</h2>
       <p>We built this reputation by showing up when people actually need us, not just when it's convenient. Licensed, insured, and stocked enough to handle most emergencies in one trip — compressor failures, refrigerant leaks, ignition issues, electrical faults. Chances are good we've already fixed exactly what you're dealing with.</p>
+          <div class="not-prose mt-10 p-6 bg-brand-blue/5 border border-brand-blue/10 rounded-2xl">
+        <p class="text-sm text-slate-700 leading-relaxed m-0">
+          <strong class="text-brand-blue">More emergency help:</strong> For cooling-only emergencies see <a href="/services/air-conditioning-services/emergency-ac-repair/" class="text-brand-blue underline hover:text-brand-red">emergency AC repair</a>, for heating see <a href="/services/heating-services/heating-repair/" class="text-brand-blue underline hover:text-brand-red">heating repair</a>, or avoid the next breakdown with <a href="/services/air-conditioning-services/ac-maintenance/" class="text-brand-blue underline hover:text-brand-red">AC maintenance</a>.
+        </p>
+      </div>
     </div>
   </section>
 </ServicePageLayout>

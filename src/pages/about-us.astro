@@ -3,12 +3,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import CTASection from '../components/CTASection';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import ServiceAreasLinks from '../components/ServiceAreasLinks.astro';
+import RelatedServices from '../components/RelatedServices.astro';
 import { Image } from 'astro:assets';
 import teamImg from '../assets/team.jpg';
 ---
 
 <BaseLayout title="About Us | HiLo Heating & Air" description="Learn about HiLo Heating & Air — Orange County's trusted HVAC company since 2000. EPA-certified technicians, same-day service, and honest pricing for all your heating and cooling needs.">
   <Header />
+  <Breadcrumbs currentLabel="About Us" />
   <main>
     {/* Hero */}
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">
@@ -32,7 +36,7 @@ import teamImg from '../assets/team.jpg';
               Our team of EPA-certified technicians is fully insured and committed to delivering exceptional service. We believe in repairing before replacing, saving you money while ensuring your comfort.
             </p>
             <p class="text-slate-600 leading-relaxed mb-6">
-              From emergency AC repairs to complete heating system installations, we handle it all with professionalism and care. We treat every home like our own.
+              From <a href="/services/air-conditioning-services/emergency-ac-repair/" class="text-brand-blue underline hover:text-brand-red">emergency AC repairs</a> to complete <a href="/services/heating-services/heating-installation/" class="text-brand-blue underline hover:text-brand-red">heating system installations</a>, we handle it all with professionalism and care. We treat every home like our own. Explore our <a href="/services/" class="text-brand-blue underline hover:text-brand-red">full services</a> or see <a href="/service-areas/" class="text-brand-blue underline hover:text-brand-red">where we serve</a>.
             </p>
             <a href="tel:+17148535534" class="inline-block bg-brand-red text-white font-bold px-8 py-3.5 rounded-xl text-base hover:bg-red-700 transition shadow-lg shadow-brand-red/30">
               Call Us Today
@@ -68,6 +72,8 @@ import teamImg from '../assets/team.jpg';
       </div>
     </section>
 
+    <RelatedServices relatedKey="ac-maintenance" title="Our Most Requested Services" subtitle="Trusted across Orange County for these core services" />
+    <ServiceAreasLinks compact />
     <CTASection client:visible />
   </main>
   <Footer />

@@ -1,0 +1,43 @@
+---
+import { serviceAreas, type LinkItem } from '../data/internalLinks';
+
+interface Props {
+  title?: string;
+  subtitle?: string;
+  exclude?: string; // href to exclude (current area page)
+  limit?: number;
+  compact?: boolean;
+}
+
+const { title = 'We Serve Your Neighborhood', subtitle = 'Same-day HVAC service across Orange County & Los Angeles — click your city for local service info', exclude, limit, compact = false } = Astro.props;
+
+let areas: LinkItem[] = serviceAreas;
+if (exclude) areas = areas.filter(a => a.href !== exclude);
+if (limit) areas = areas.slice(0, limit);
+---
+
+<section class={compact ? "py-12 bg-white border-y border-slate-100" : "py-16 sm:py-20 bg-white border-t border-slate-100"}>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-10">
+      <span class="inline-block bg-brand-blue/10 text-brand-blue text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">Service Areas</span>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-blue mb-3">{title}</h2>
+      <p class="text-slate-600 text-sm sm:text-base">{subtitle}</p>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3">
+      {areas.map((area) => (
+        <a href={area.href} class="group flex items-center gap-2.5 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 hover:bg-brand-blue hover:border-brand-blue hover:shadow-md transition-all duration-200">
+          <svg class="w-4 h-4 text-brand-red group-hover:text-white flex-shrink-0 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+          <span class="text-sm font-bold text-brand-blue group-hover:text-white transition-colors truncate">{area.name}</span>
+        </a>
+      ))}
+    </div>
+
+    <div class="text-center mt-8">
+      <a href="/service-areas/" class="inline-flex items-center gap-2 bg-brand-blue text-white font-semibold px-6 py-3 rounded-full hover:bg-blue-700 transition text-sm">
+        View all service areas
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+      </a>
+    </div>
+  </div>
+</section>

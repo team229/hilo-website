@@ -4,10 +4,12 @@ import LicenseBadges from '../../../../components/LicenseBadges.astro';
 ---
 
 <ServicePageLayout
+  relatedKey="ac-maintenance"
   title="AC Maintenance & Seasonal HVAC Tune-Ups | HiLo Heating & Air"
   description="Extend the life of your AC with professional AC maintenance and seasonal HVAC tune-ups from HiLo Heating & Air. Serving Orange County with fast scheduling, clear pricing, and certified air conditioner servicing. Schedule now!"
   heroTitle="AC Maintenance in Stanton, CA"
   heroSubtitle="Your AC doesn't just break one day. It warns you first. AC maintenance is how you avoid that whole scenario."
+  relatedServices={[{ name: "AC Installation", href: "/services/air-conditioning-services/air-conditioning-installation/", desc: "New AC sizing & install." },{ name: "Emergency AC Repair", href: "/services/air-conditioning-services/emergency-ac-repair/", desc: "When maintenance finds urgent issues." },{ name: "HVAC Replacement", href: "/services/hvac-services/hvac-replacement/", desc: "When repair isn’t enough." }]}
   faqKey="services-air-conditioning-ac-maintenance"
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
@@ -30,6 +32,11 @@ import LicenseBadges from '../../../../components/LicenseBadges.astro';
 
       <h2>Why Hilo Heating and Air</h2>
       <p>We built this reputation one job at a time — show up when we say we will, tell you the truth about what's wrong. Licensed. Insured. Trained to catch what most homeowners would miss completely. Single visit or standing plan, doesn't matter — we treat your system the same either way.</p>
+          <div class="not-prose mt-10 p-6 bg-brand-blue/5 border border-brand-blue/10 rounded-2xl">
+        <p class="text-sm text-slate-700 leading-relaxed m-0">
+          <strong class="text-brand-blue">Keep exploring:</strong> If maintenance reveals a bigger issue, see our <a href="/services/air-conditioning-services/emergency-ac-repair/" class="text-brand-blue underline hover:text-brand-red">emergency AC repair</a> for same-day help, or learn about <a href="/services/air-conditioning-services/air-conditioning-installation/" class="text-brand-blue underline hover:text-brand-red">AC installation</a> if your system is aging. Many efficiency problems also trace back to leaky ducts — <a href="/services/indoor-air-quality-solutions/hvac-duct-sealing/" class="text-brand-blue underline hover:text-brand-red">duct sealing</a> can make a surprising difference.
+        </p>
+      </div>
     </div>
   </section>
 </ServicePageLayout>

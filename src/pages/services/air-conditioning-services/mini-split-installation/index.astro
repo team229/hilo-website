@@ -3,10 +3,12 @@ import ServicePageLayout from '../../../../layouts/ServicePageLayout.astro';
 ---
 
 <ServicePageLayout
+  relatedKey="mini-split-installation"
   title="Mini Split Installation | Cost & Contractors | HiLo Heating & Air"
   description="Get expert mini split installation from licensed mini split contractors at HiLo Heating & Air. We provide upfront mini split installation cost estimates with no hidden fees. Serving Orange County & Los Angeles. Request a free quote today!"
   heroTitle="Mini Split Installation in Stanton, CA"
   heroSubtitle="No ducts needed, easy zoning, and one of the more efficient ways to cool or heat a single room or addition."
+  relatedServices={[{ name: "AC Installation", href: "/services/air-conditioning-services/air-conditioning-installation/", desc: "Central AC alternative." },{ name: "AC Maintenance", href: "/services/air-conditioning-services/ac-maintenance/", desc: "Keep mini-splits efficient." },{ name: "HVAC Installation", href: "/services/hvac-services/hvac-installation/", desc: "Full system installs." }]}
   faqKey="services-air-conditioning-mini-split"
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
@@ -29,6 +31,11 @@ import ServicePageLayout from '../../../../layouts/ServicePageLayout.astro';
 
       <h2>Why Hilo Heating and Air</h2>
       <p>We're licensed, insured, and we don't push a bigger system than your space actually needs. Most of our mini split customers come from word of mouth — someone's neighbor finally got their garage cooled down and couldn't stop talking about it.</p>
+          <div class="not-prose mt-10 p-6 bg-brand-blue/5 border border-brand-blue/10 rounded-2xl">
+        <p class="text-sm text-slate-700 leading-relaxed m-0">
+          <strong class="text-brand-blue">Good to know:</strong> Compare <a href="/services/air-conditioning-services/air-conditioning-installation/" class="text-brand-blue underline hover:text-brand-red">central AC installation</a> vs ductless, explore <a href="/services/hvac-services/hvac-installation/" class="text-brand-blue underline hover:text-brand-red">whole-home HVAC installation</a>, or keep your new unit efficient with <a href="/services/air-conditioning-services/ac-maintenance/" class="text-brand-blue underline hover:text-brand-red">AC maintenance</a>.
+        </p>
+      </div>
     </div>
   </section>
 </ServicePageLayout>

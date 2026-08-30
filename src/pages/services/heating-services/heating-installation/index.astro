@@ -3,10 +3,12 @@ import ServicePageLayout from '../../../../layouts/ServicePageLayout.astro';
 ---
 
 <ServicePageLayout
+  relatedKey="heating-installation"
   title="Furnace Installation Laguna Hills CA | New HVAC System Install | HiLo Heating & Air"
   description="HiLo Heating & Air provides expert furnace installation in Laguna Hills, CA and new HVAC system installation across Orange County. Upfront pricing, licensed contractors, and fast scheduling. Get your free installation estimate today!"
   heroTitle="Heating Installation in Stanton & Laguna Hills, CA"
   heroSubtitle="At some point, every furnace stops being worth fixing. Hilo Heating and Air handles furnace installation homeowners can count on."
+  relatedServices={[{ name: "Heating Repair", href: "/services/heating-services/heating-repair/", desc: "Fix vs replace assessment." },{ name: "Heating Maintenance", href: "/services/heating-services/heating-maintenance/", desc: "Protect new furnace." },{ name: "HVAC Installation", href: "/services/hvac-services/hvac-installation/", desc: "Whole-home installs." }]}
   faqKey="services-heating-installation"
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
@@ -28,6 +30,11 @@ import ServicePageLayout from '../../../../layouts/ServicePageLayout.astro';
 
       <h2>Why Hilo Heating and Air</h2>
       <p>We're licensed, insured, and we work with most major furnace brands, so you're not locked into whatever happens to be sitting in a warehouse. A good chunk of our installation customers come from referrals — someone's neighbor finally got their heating fixed right and mentioned it to a few people.</p>
+          <div class="not-prose mt-10 p-6 bg-brand-blue/5 border border-brand-blue/10 rounded-2xl">
+        <p class="text-sm text-slate-700 leading-relaxed m-0">
+          <strong class="text-brand-blue">Heating resources:</strong> Keep your new furnace tuned with <a href="/services/heating-services/heating-maintenance/" class="text-brand-blue underline hover:text-brand-red">heating maintenance</a>, compare <a href="/services/hvac-services/hvac-installation/" class="text-brand-blue underline hover:text-brand-red">full HVAC installation</a>, or see <a href="/services/hvac-services/hvac-replacement/" class="text-brand-blue underline hover:text-brand-red">HVAC replacement</a> if you’re upgrading the whole system.
+        </p>
+      </div>
     </div>
   </section>
 </ServicePageLayout>

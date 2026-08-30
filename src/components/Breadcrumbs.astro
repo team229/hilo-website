@@ -1,0 +1,48 @@
+---
+interface BreadcrumbItem {
+  name: string;
+  href?: string;
+}
+interface Props {
+  items?: BreadcrumbItem[];
+  currentLabel?: string;
+}
+const { items: explicitItems, currentLabel } = Astro.props;
+
+function autoBreadcrumbs(pathname: string): BreadcrumbItem[] {
+  const parts = pathname.replace(/\/$/, '').split('/').filter(Boolean);
+  const crumbs: BreadcrumbItem[] = [{ name: 'Home', href: '/' }];
+  let currentPath = '';
+  // Skip last segment – rendered as current page non-link
+  const segments = currentLabel ? parts.slice(0, -1) : parts;
+  for (const part of segments) {
+    currentPath += `/${part}`;
+    const name = part.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    crumbs.push({ name, href: `${currentPath}/` });
+  }
+  return crumbs;
+}
+
+const pathname = Astro.url.pathname;
+const autoItems = autoBreadcrumbs(pathname);
+const displayItems = explicitItems ?? autoItems;
+const current = currentLabel ?? pathname.split('/').filter(Boolean).pop()?.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') ?? 'Page';
+---
+
+<nav aria-label="Breadcrumb" class="bg-slate-50 border-b border-slate-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+    <ol class="flex flex-wrap items-center gap-1.5 text-sm">
+      {displayItems.map((item) => (
+        <li class="flex items-center gap-1.5">
+          {item.href ? (
+            <a href={item.href} class="text-slate-500 hover:text-brand-blue transition-colors font-medium">{item.name}</a>
+          ) : (
+            <span class="text-slate-500 font-medium">{item.name}</span>
+          )}
+          <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </li>
+      ))}
+      <li aria-current="page" class="text-brand-blue font-semibold">{current}</li>
+    </ol>
+  </div>
+</nav>

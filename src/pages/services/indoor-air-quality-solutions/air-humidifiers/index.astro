@@ -3,10 +3,12 @@ import ServicePageLayout from '../../../../layouts/ServicePageLayout.astro';
 ---
 
 <ServicePageLayout
+  relatedKey="air-humidifiers"
   title="HVAC Humidifier Installation Orange County | HiLo Heating & Air"
   description="Improve your home's comfort with professional HVAC humidifier installation from HiLo Heating & Air. Whole-home humidity solutions, upfront pricing, and certified technicians serving Orange County. Get your free installation quote today!"
   heroTitle="HVAC Humidifier Installation in Stanton, CA"
   heroSubtitle="Ever notice your skin gets itchy and your nose feels stuffy the second winter hits? That's dry indoor air, and a whole-home humidifier is one of the more underrated upgrades a homeowner can make."
+  relatedServices={[{ name: "Duct Sealing", href: "/services/indoor-air-quality-solutions/hvac-duct-sealing/", desc: "Seal leaks, balance humidity." },{ name: "Duct Repair", href: "/services/indoor-air-quality-solutions/hvac-duct-repair/", desc: "Fix damaged ducts." },{ name: "Indoor Air Quality", href: "/services/indoor-air-quality-solutions/", desc: "Full IAQ solutions." }]}
   faqKey="services-iaq-humidifiers"
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
@@ -33,6 +35,11 @@ import ServicePageLayout from '../../../../layouts/ServicePageLayout.astro';
 
       <h2>Ready When You Are</h2>
       <p>Tired of dry air making your house miserable every winter? Get in touch with HiLo Heating and Air to schedule your <strong>HVAC humidifier installation</strong>, and see why homeowners around Stanton keep calling us back.</p>
+          <div class="not-prose mt-10 p-6 bg-brand-blue/5 border border-brand-blue/10 rounded-2xl">
+        <p class="text-sm text-slate-700 leading-relaxed m-0">
+          <strong class="text-brand-blue">More IAQ help:</strong> Explore all <a href="/services/indoor-air-quality-solutions/" class="text-brand-blue underline hover:text-brand-red">indoor air quality solutions</a>, pair humidity control with <a href="/services/indoor-air-quality-solutions/hvac-duct-sealing/" class="text-brand-blue underline hover:text-brand-red">duct sealing</a> for efficiency, or check <a href="/services/heating-services/heating-maintenance/" class="text-brand-blue underline hover:text-brand-red">heating maintenance</a> to keep your furnace humidifier-ready.
+        </p>
+      </div>
     </div>
   </section>
 </ServicePageLayout>

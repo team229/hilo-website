@@ -3,10 +3,12 @@ import ServicePageLayout from '../../../../layouts/ServicePageLayout.astro';
 ---
 
 <ServicePageLayout
+  relatedKey="emergency-ac-repair"
   title="Emergency AC Repair & Same-Day Service | HiLo Heating & Air"
   description="AC broke down? HiLo Heating & Air provides emergency AC repair and same-day AC service in Orange County. 24/7 availability, EPA-certified techs, and free diagnostic with repair. Call (714) 853-5534 now!"
   heroTitle="Emergency AC Repair in Stanton, CA"
   heroSubtitle="It always happens at the worst time. Hilo Heating and Air does emergency AC repair all over Stanton, and we actually answer the phone."
+  relatedServices={[{ name: "AC Maintenance", href: "/services/air-conditioning-services/ac-maintenance/", desc: "Prevent next emergency." },{ name: "AC Installation", href: "/services/air-conditioning-services/air-conditioning-installation/", desc: "If replacement is needed." },{ name: "Emergency HVAC Repair", href: "/services/hvac-services/emergency-hvac-repair/", desc: "All-systems emergency." }]}
   faqKey="services-air-conditioning-emergency-ac-repair"
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
@@ -26,6 +28,11 @@ import ServicePageLayout from '../../../../layouts/ServicePageLayout.astro';
       <h2>Why Stanton Calls Us First</h2>
       <p>We built this business on actually showing up. Hilo Heating and Air is licensed, insured, and carries enough on the truck to fix most AC emergencies in one visit — bad compressors, refrigerant leaks, electrical shorts, units that just won't turn on. Chances are, we've fixed it before.</p>
       <p>We'd rather you call us again next year than squeeze an extra hundred bucks out of you today. Most of our work comes from people telling their neighbors, which says more than any ad we could run.</p>
+          <div class="not-prose mt-10 p-6 bg-brand-blue/5 border border-brand-blue/10 rounded-2xl">
+        <p class="text-sm text-slate-700 leading-relaxed m-0">
+          <strong class="text-brand-blue">Avoid the next emergency:</strong> Schedule <a href="/services/air-conditioning-services/ac-maintenance/" class="text-brand-blue underline hover:text-brand-red">AC maintenance</a> to catch small issues early, compare <a href="/services/air-conditioning-services/air-conditioning-installation/" class="text-brand-blue underline hover:text-brand-red">AC installation options</a> if your unit is near end of life, or see our <a href="/services/hvac-services/emergency-hvac-repair/" class="text-brand-blue underline hover:text-brand-red">24/7 HVAC emergency repair</a> for full-system coverage.
+        </p>
+      </div>
     </div>
   </section>
 </ServicePageLayout>

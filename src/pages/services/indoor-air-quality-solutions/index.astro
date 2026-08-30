@@ -9,6 +9,11 @@ import VanSection from '../../../components/VanSection.astro';
   heroTitle="Indoor Air Quality"
   heroSubtitle="Breathe easier with our air purifiers, filtration systems, and duct cleaning services."
   faqKey="services-iaq"
+  relatedServices={[
+    { name: 'Duct Sealing', href: '/services/indoor-air-quality-solutions/hvac-duct-sealing/', desc: 'Stop conditioned-air loss and dust intrusion.' },
+    { name: 'Duct Repair', href: '/services/indoor-air-quality-solutions/hvac-duct-repair/', desc: 'Fix leaks, crushed runs, and bad joints.' },
+    { name: 'HVAC Humidifier', href: '/services/indoor-air-quality-solutions/air-humidifiers/', desc: 'Whole-home balanced humidity.' },
+  ]}
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">
@@ -35,7 +40,8 @@ import VanSection from '../../../components/VanSection.astro';
       <p>Professional duct cleaning to remove accumulated dust, debris, and contaminants from your ductwork. Clean ducts improve air quality, system efficiency, and reduce allergens throughout your home.</p>
 
       <h2>How We Approach Indoor Air Quality</h2>
-      <p>Every home is different. We start by assessing your current air quality, identifying problem areas, and recommending solutions that fit your budget and needs. Whether you need a simple filter upgrade or a complete air purification system, we'll walk you through your options and let you decide.</p>
+      <p>Every home is different. We start by assessing your current air quality, identifying problem areas, and recommending solutions that fit your budget and needs. Whether you need a simple filter upgrade or a complete <a href="/services/indoor-air-quality-solutions/air-humidifiers/" class="text-brand-blue underline hover:text-brand-red">humidifier</a> / air purification system, we'll walk you through your options and let you decide.</p>
+      <p>IAQ problems often trace back to ducts — explore <a href="/services/indoor-air-quality-solutions/hvac-duct-repair/" class="text-brand-blue underline hover:text-brand-red">duct repair</a>, <a href="/services/indoor-air-quality-solutions/hvac-duct-sealing/" class="text-brand-blue underline hover:text-brand-red">duct sealing</a>, and <a href="/services/indoor-air-quality-solutions/duct-installation/" class="text-brand-blue underline hover:text-brand-red">duct installation</a>, plus <a href="/services/indoor-air-quality-solutions/hvac-air-balancing/" class="text-brand-blue underline hover:text-brand-red">air balancing</a> and <a href="/services/indoor-air-quality-solutions/dryer-vent-cleaning/" class="text-brand-blue underline hover:text-brand-red">dryer vent cleaning</a>. Prefer to learn more? See <a href="/blogs/home-comfort-habit/" class="text-brand-blue underline hover:text-brand-red">Home Comfort Habit</a>.</p>
     </div>
   </section>
 

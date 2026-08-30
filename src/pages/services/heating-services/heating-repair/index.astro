@@ -3,10 +3,12 @@ import ServicePageLayout from '../../../../layouts/ServicePageLayout.astro';
 ---
 
 <ServicePageLayout
+  relatedKey="heating-repair"
   title="Emergency Heating Repair & Furnace Repair Los Angeles | HiLo Heating & Air"
   description="Don't go cold! HiLo Heating & Air offers emergency heating repair and furnace repair in Los Angeles with 24/7 availability. EPA-certified technicians, same-day service, and free diagnostic with any repair. Call now!"
   heroTitle="Heating Repair in Stanton, CA"
   heroSubtitle="Heat goes out on the one cold week we actually get in Southern California. Hilo Heating and Air handles emergency heating repair for homes and businesses across Stanton."
+  relatedServices={[{ name: "Heating Maintenance", href: "/services/heating-services/heating-maintenance/", desc: "Prevent future breakdowns." },{ name: "Heating Installation", href: "/services/heating-services/heating-installation/", desc: "When repair isn’t viable." },{ name: "Emergency HVAC Repair", href: "/services/hvac-services/emergency-hvac-repair/", desc: "24/7 no-heat help." }]}
   faqKey="services-heating-repair"
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
@@ -28,6 +30,11 @@ import ServicePageLayout from '../../../../layouts/ServicePageLayout.astro';
 
       <h2>Why People Call Hilo Heating and Air</h2>
       <p>We've built our name in Stanton on actually showing up and being honest about what's broken and what it'll cost to fix. Licensed, insured, and we've seen most of what can go wrong with a furnace at this point. We'd rather fix it right the first time than have you calling us back in two weeks for the same problem.</p>
+          <div class="not-prose mt-10 p-6 bg-brand-blue/5 border border-brand-blue/10 rounded-2xl">
+        <p class="text-sm text-slate-700 leading-relaxed m-0">
+          <strong class="text-brand-blue">Stay warm:</strong> Prevent future breakdowns with <a href="/services/heating-services/heating-maintenance/" class="text-brand-blue underline hover:text-brand-red">heating maintenance</a>, explore <a href="/services/heating-services/heating-installation/" class="text-brand-blue underline hover:text-brand-red">heating installation</a> if your furnace is aging, or call our <a href="/services/hvac-services/emergency-hvac-repair/" class="text-brand-blue underline hover:text-brand-red">emergency HVAC team</a> for 24/7 help.
+        </p>
+      </div>
     </div>
   </section>
 </ServicePageLayout>

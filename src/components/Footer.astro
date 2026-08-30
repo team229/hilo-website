@@ -2,11 +2,48 @@
 import { Image } from 'astro:assets';
 import headerLogo from '../assets/header-logo.png';
 
-const serviceLinks = [
-  { name: 'AC Repair', href: '/service/air-conditioning/' },
-  { name: 'Heating Repair', href: '/service/heating/' },
-  { name: 'HVAC Maintenance', href: '/service/hvac-services/' },
-  { name: 'Indoor Air Quality', href: '/service/indoor-air-quality/' },
+const serviceGroups = [
+  {
+    title: 'Air Conditioning',
+    links: [
+      { name: 'AC Repair & Maintenance', href: '/services/air-conditioning-services/' },
+      { name: 'AC Installation', href: '/services/air-conditioning-services/air-conditioning-installation/' },
+      { name: 'Emergency AC Repair', href: '/services/air-conditioning-services/emergency-ac-repair/' },
+      { name: 'AC Maintenance', href: '/services/air-conditioning-services/ac-maintenance/' },
+      { name: 'Mini Split Installation', href: '/services/air-conditioning-services/mini-split-installation/' },
+    ],
+  },
+  {
+    title: 'Heating',
+    links: [
+      { name: 'Heating Services', href: '/services/heating-services/' },
+      { name: 'Heating Repair', href: '/services/heating-services/heating-repair/' },
+      { name: 'Heating Maintenance', href: '/services/heating-services/heating-maintenance/' },
+      { name: 'Heating Installation', href: '/services/heating-services/heating-installation/' },
+    ],
+  },
+  {
+    title: 'HVAC & Commercial',
+    links: [
+      { name: 'HVAC Services', href: '/services/hvac-services/' },
+      { name: 'HVAC Installation', href: '/services/hvac-services/hvac-installation/' },
+      { name: 'HVAC Replacement', href: '/services/hvac-services/hvac-replacement/' },
+      { name: 'Emergency HVAC Repair', href: '/services/hvac-services/emergency-hvac-repair/' },
+      { name: 'Commercial HVAC', href: '/services/commercial-hvac-services/' },
+    ],
+  },
+  {
+    title: 'Indoor Air Quality',
+    links: [
+      { name: 'IAQ Solutions', href: '/services/indoor-air-quality-solutions/' },
+      { name: 'Duct Installation', href: '/services/indoor-air-quality-solutions/duct-installation/' },
+      { name: 'Duct Repair', href: '/services/indoor-air-quality-solutions/hvac-duct-repair/' },
+      { name: 'Duct Sealing', href: '/services/indoor-air-quality-solutions/hvac-duct-sealing/' },
+      { name: 'Air Balancing', href: '/services/indoor-air-quality-solutions/hvac-air-balancing/' },
+      { name: 'Humidifiers', href: '/services/indoor-air-quality-solutions/air-humidifiers/' },
+      { name: 'Dryer Vent Cleaning', href: '/services/indoor-air-quality-solutions/dryer-vent-cleaning/' },
+    ],
+  },
 ];
 
 const areaLinks = [
@@ -54,13 +91,23 @@ const socials = [
         </div>
       </div>
 
-      <div class="flex-1 min-w-[220px]">
-        <h4 class="text-white text-base font-bold mb-6">Services</h4>
-        <ul class="space-y-3">
-          {serviceLinks.map((link) => (
-            <li><a href={link.href} class="text-slate-400 text-sm hover:text-brand-red transition">{link.name}</a></li>
+      <div class="flex-[2] min-w-[280px]">
+        <div class="grid grid-cols-2 gap-8">
+          {serviceGroups.map((group) => (
+            <div>
+              <h4 class="text-white text-sm font-bold mb-4">{group.title}</h4>
+              <ul class="space-y-2">
+                {group.links.map((link) => (
+                  <li><a href={link.href} class="text-slate-400 text-xs sm:text-sm hover:text-brand-red transition leading-snug">{link.name}</a></li>
+                ))}
+              </ul>
+            </div>
           ))}
-        </ul>
+        </div>
+        <div class="mt-6 flex flex-wrap gap-2">
+          <a href="/services/" class="text-xs font-semibold text-brand-red hover:text-white border border-brand-red/30 rounded-full px-3 py-1 hover:bg-brand-red transition">View All Services →</a>
+          <a href="/blogs/" class="text-xs font-semibold text-slate-400 hover:text-white border border-slate-700 rounded-full px-3 py-1 hover:bg-slate-700 transition">HVAC Blog</a>
+        </div>
       </div>
 
       <div class="flex-1 min-w-[220px]">
@@ -70,6 +117,7 @@ const socials = [
             <li><a href={link.href} class="text-slate-400 text-sm hover:text-brand-red transition">{link.name}</a></li>
           ))}
         </ul>
+        <a href="/service-areas/" class="inline-block mt-4 text-xs font-semibold text-brand-red hover:text-white transition">View all areas →</a>
       </div>
 
       <div class="flex-1 min-w-[220px]">

@@ -19,7 +19,7 @@ Here's something people underestimate — a neglected system doesn't just risk a
 
 ## How You Know You're Overdue
 
-A few giveaways tend to show up. Uneven temps from room to room. Bills climbing with no obvious reason. Odd smells when the system kicks on. Weird noises — clicking, rattling, that sort of thing. A system running nonstop without ever actually hitting the temperature you set. Any of that popping up usually means, yeah, time to get an HVAC maintenance service scheduled instead of hoping it just fixes itself. It rarely does.
+A few giveaways tend to show up. Uneven temps from room to room. Bills climbing with no obvious reason. Odd smells when the system kicks on. Weird noises — clicking, rattling, that sort of thing. A system running nonstop without ever actually hitting the temperature you set. Any of that popping up usually means, yeah, time to get an [HVAC maintenance](/services/hvac-services/) service scheduled instead of hoping it just fixes itself. It rarely does.
 
 ## So How Often Is Actually Enough?
 
@@ -36,3 +36,7 @@ At Hilo Heating and Air, we treat this the way we'd want it handled in our own h
 ## Bottom Line
 
 An HVAC maintenance service isn't about ceremony. It's basic upkeep — saves money, prevents breakdowns, keeps the house comfortable no matter what's happening outside. Twice a year, a bit of attention, a team that actually knows what they're doing. That's really the whole formula. Hilo Heating and Air is ready whenever you decide it's time to get it on the calendar.
+
+---
+
+**Related services:** [AC Repair](/services/air-conditioning-services/) · [Heating Repair](/services/heating-services/heating-repair/) · [Emergency HVAC](/services/hvac-services/emergency-hvac-repair/) · [All Services](/services/) · [Service Areas](/service-areas/)

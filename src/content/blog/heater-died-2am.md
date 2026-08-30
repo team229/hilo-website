@@ -19,13 +19,13 @@ Not every HVAC issue needs an urgent call at odd hours. A slightly uneven temper
 
 If your home is getting dangerously cold in winter — we're talking temperatures dropping fast with no backup heat — that's an emergency. Same thing in summer when the heat index is climbing and your air conditioning has completely stopped. These aren't just comfort problems. For young children, elderly family members, or anyone with a respiratory or heart condition, extreme indoor temperatures become a health risk faster than most people realize.
 
-Other clear emergencies? A burning smell coming from your vents. Water actively dripping from your system onto your floor or ceiling. A gas odor near your furnace — leave the house immediately if that happens and call your gas provider first. Ice forming on your AC unit in the middle of July. Loud electrical buzzing or popping from inside the unit. Any of these should prompt a call for emergency HVAC services right away, not a "let me wait and see" approach.
+Other clear emergencies? A burning smell coming from your vents. Water actively dripping from your system onto your floor or ceiling. A gas odor near your furnace — leave the house immediately if that happens and call your gas provider first. Ice forming on your AC unit in the middle of July. Loud electrical buzzing or popping from inside the unit. Any of these should prompt a call for [emergency HVAC](/services/hvac-services/emergency-hvac-repair/) services right away, not a "let me wait and see" approach.
 
 ## Why You Can't Just Wait Until Morning
 
 Here's something a lot of people don't consider until it's too late — a broken HVAC system doesn't just mean discomfort. It can mean real damage to your home.
 
-In freezing weather, pipes in poorly heated areas of the house can freeze and burst within hours. That turns a $300 furnace repair into a multi-thousand-dollar plumbing nightmare. In summer, a failed AC combined with high humidity can create conditions for mold growth inside walls and ductwork — often in places you won't notice until the damage is significant.
+In freezing weather, pipes in poorly heated areas of the house can freeze and burst within hours. That turns a $300 [furnace repair](/services/heating-services/heating-repair/) into a multi-thousand-dollar plumbing nightmare. In summer, a failed AC combined with high humidity can create conditions for mold growth inside walls and ductwork — often in places you won't notice until the damage is significant.
 
 The cost of fast emergency HVAC services almost always ends up being far less than the cost of the secondary damage that comes from waiting. That math becomes very clear very quickly once you've dealt with burst pipes or water-damaged ceilings.
 
@@ -78,3 +78,7 @@ You deserve a team that shows up on time, gives you honest answers, and fixes th
 Keep our number somewhere easy to find. You might need it someday, and when that day comes, you'll be glad it's there.
 
 *HiLo Heating & Air — Real People, Real Fast, Real Fixed.*
+
+---
+
+**Related services:** [AC Repair](/services/air-conditioning-services/) · [Heating Repair](/services/heating-services/heating-repair/) · [Emergency HVAC](/services/hvac-services/emergency-hvac-repair/) · [All Services](/services/) · [Service Areas](/service-areas/)

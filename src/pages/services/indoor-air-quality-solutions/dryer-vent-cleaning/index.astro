@@ -7,6 +7,9 @@ const faq = faqData['services-iaq-dryer-vent'];
 import Footer from '../../../../components/Footer.astro';
 import CTASection from '../../../../components/CTASection';
 import FAQSection from '../../../../components/FAQSection';
+import Breadcrumbs from '../../../../components/Breadcrumbs.astro';
+import RelatedServices from '../../../../components/RelatedServices.astro';
+import ServiceAreasLinks from '../../../../components/ServiceAreasLinks.astro';
 ---
 
 <BaseLayout title="Dryer Vent Cleaning Services Orange County | HiLo Heating & Air" description="Reduce fire risk and improve dryer efficiency with professional dryer vent cleaning from HiLo Heating & Air. Fast, affordable service across Orange County. Don't wait—clogged vents are a safety hazard. Book your cleaning today!" faqSchema={faq.faqSchema}>
@@ -99,6 +102,14 @@ import FAQSection from '../../../../components/FAQSection';
         <p class="text-slate-600 mt-1"><a href="tel:+17148535534" class="hover:text-brand-red transition">(714) 853-5534</a> · <a href="mailto:info@hiloheatingandair.com" class="hover:text-brand-red transition">info@hiloheatingandair.com</a></p>
       </div>
     </section>
+
+    <RelatedServices services={[
+      { name: 'Duct Sealing', href: '/services/indoor-air-quality-solutions/hvac-duct-sealing/', desc: 'Seal leaky ducts.' },
+      { name: 'Indoor Air Quality', href: '/services/indoor-air-quality-solutions/', desc: 'Cleaner air solutions.' },
+      { name: 'HVAC Services', href: '/services/hvac-services/', desc: 'Full HVAC care.' }
+    ]} />
+    <ServiceAreasLinks />
+    <Breadcrumbs />
 
     <FAQSection client:visible faqs={faq.faqs} />
 

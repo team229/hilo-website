@@ -11,7 +11,7 @@ Last July, a homeowner called us in a panic. It was a Tuesday, 97 degrees outsid
 
 That's a service call, a same-day emergency fee, and hours of her family sitting in the heat waiting for the coil to thaw. All of it completely avoidable.
 
-This is what **air conditioning maintenance** actually prevents. Not just the inconvenience — the cost, the stress, the timing. Nobody's AC ever seems to break down on a mild day in October.
+This is what **[air conditioning maintenance](/services/air-conditioning-services/ac-maintenance/)** actually prevents. Not just the inconvenience — the cost, the stress, the timing. Nobody's AC ever seems to break down on a mild day in October.
 
 At [**HiLo Heating & Air**](https://hiloheatingandair.com/), we'd rather you never experience that Tuesday.
 
@@ -98,3 +98,7 @@ Air conditioning maintenance is not a complicated thing to get right. It just re
 If you haven't had a maintenance visit this year — or if you honestly can't remember the last time you did — give us a call. Let's take a look before summer makes the decision for you.
 
 **Book your air conditioning maintenance appointment with [HiLo Heating & Air today](https://hiloheatingandair.com/).**
+
+---
+
+**Related services:** [AC Repair](/services/air-conditioning-services/) · [Heating Repair](/services/heating-services/heating-repair/) · [Emergency HVAC](/services/hvac-services/emergency-hvac-repair/) · [All Services](/services/) · [Service Areas](/service-areas/)

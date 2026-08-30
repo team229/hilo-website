@@ -3,10 +3,12 @@ import ServicePageLayout from '../../../layouts/ServicePageLayout.astro';
 ---
 
 <ServicePageLayout
+  relatedKey="commercial-hvac"
   title="Commercial HVAC Services Orange County | HiLo Heating & Air"
   description="HiLo Heating & Air delivers reliable commercial HVAC services including repair, maintenance, and installation across Orange County. EPA-certified, fully insured, and available for same-day commercial dispatch. Contact us today!"
   heroTitle="Commercial HVAC Services in Orange County"
   heroSubtitle="A broken AC at home is annoying. A broken AC in a packed restaurant kitchen, mid-lunch rush? That's lost money, fast. Hilo Heating and Air handles commercial HVAC services for businesses around Orange County."
+  relatedServices={[{ name: "HVAC Installation", href: "/services/hvac-services/hvac-installation/", desc: "Commercial installs." },{ name: "Emergency HVAC Repair", href: "/services/hvac-services/emergency-hvac-repair/", desc: "Minimize downtime." },{ name: "Duct Installation", href: "/services/indoor-air-quality-solutions/duct-installation/", desc: "Commercial ductwork." }]}
   faqKey="services-commercial-hvac"
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
@@ -31,6 +33,11 @@ import ServicePageLayout from '../../../layouts/ServicePageLayout.astro';
       <p>Licensed, insured, and we've worked the harder jobs, not just the easy ones. We've built relationships here by showing up when we say we will and being straight about cost and timeline. A good chunk of our commercial clients started as a single emergency call — and just kept calling after that.</p>
 
 
+          <div class="not-prose mt-10 p-6 bg-brand-blue/5 border border-brand-blue/10 rounded-2xl">
+        <p class="text-sm text-slate-700 leading-relaxed m-0">
+          <strong class="text-brand-blue">Commercial resources:</strong> For new builds see <a href="/services/hvac-services/hvac-installation/" class="text-brand-blue underline hover:text-brand-red">HVAC installation</a>, for aging systems see <a href="/services/hvac-services/hvac-replacement/" class="text-brand-blue underline hover:text-brand-red">HVAC replacement</a>, and ensure ductwork via <a href="/services/indoor-air-quality-solutions/duct-installation/" class="text-brand-blue underline hover:text-brand-red">duct installation</a>.
+        </p>
+      </div>
     </div>
   </section>
 </ServicePageLayout>

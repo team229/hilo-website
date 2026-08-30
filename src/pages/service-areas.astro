@@ -1,5 +1,6 @@
 ---
 import ServicePageLayout from '../layouts/ServicePageLayout.astro';
+import { serviceLinks } from '../data/internalLinks';
 
 const faqSchemaObject = {
   "@context": "https://schema.org",
@@ -77,6 +78,19 @@ const areas = [
             </span>
           </a>
         ))}
+      </div>
+
+      <div class="mt-16 bg-slate-50 border border-slate-200 rounded-2xl p-8">
+        <h3 class="text-xl font-bold text-brand-blue mb-3 text-center">Popular Services by City</h3>
+        <p class="text-sm text-slate-600 text-center mb-6">Jump directly to the service you need in your area.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm">
+          <a href="/services/air-conditioning-services/" class="text-brand-blue hover:text-brand-red hover:underline font-medium">AC Repair in Orange County →</a>
+          <a href="/services/heating-services/heating-repair/" class="text-brand-blue hover:text-brand-red hover:underline font-medium">Heating Repair in Los Angeles →</a>
+          <a href="/services/hvac-services/emergency-hvac-repair/" class="text-brand-blue hover:text-brand-red hover:underline font-medium">Emergency HVAC Repair →</a>
+          <a href="/services/indoor-air-quality-solutions/hvac-duct-sealing/" class="text-brand-blue hover:text-brand-red hover:underline font-medium">Duct Sealing & Repair →</a>
+          <a href="/services/air-conditioning-services/air-conditioning-installation/" class="text-brand-blue hover:text-brand-red hover:underline font-medium">AC Installation →</a>
+          <a href="/blogs/" class="text-brand-blue hover:text-brand-red hover:underline font-medium">HVAC Tips & Guides →</a>
+        </div>
       </div>
     </div>
   </section>

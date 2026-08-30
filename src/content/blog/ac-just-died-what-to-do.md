@@ -8,7 +8,7 @@ image: "/images/blog/ac-quit.webp"
 ---
 
 It always happens at the worst time. Not on a mild Tuesday when you'd barely notice — no, it's 95 degrees, it's a Saturday, and you've got people coming over in two hours. The unit just stops. No warning, no gradual decline you could've caught earlier. One minute it's fine, the next it's dead air coming out of the vents.
-And here's the thing nobody tells you: that panic is exactly how people end up overpaying. You Google "AC fix now," call the first number, and three hours later some guy shows up, charges double what it should've cost, and doesn't even fix the actual problem. So before you do that — before you're standing in a hot kitchen scrolling through five-star reviews you haven't had time to read — it helps to know what really counts as urgent, what's worth checking yourself first, and who to actually call. That's what emergency AC repair is supposed to mean. Not a scare tactic. An actual fast response when it's actually needed.
+And here's the thing nobody tells you: that panic is exactly how people end up overpaying. You Google "AC fix now," call the first number, and three hours later some guy shows up, charges double what it should've cost, and doesn't even fix the actual problem. So before you do that — before you're standing in a hot kitchen scrolling through five-star reviews you haven't had time to read — it helps to know what really counts as urgent, what's worth checking yourself first, and who to actually call. That's what emergency [AC repair](/services/air-conditioning-services/) is supposed to mean. Not a scare tactic. An actual fast response when it's actually needed.
 We get these calls all the time at HiLo Heating & Air, especially once June rolls around. So here's what we've picked up from being the ones on the other end of that 9pm "please help" phone call, more times than either of us would probably guess.
 Is It Actually an Emergency, Though?
 Honestly? Not every AC hiccup needs someone driving over tonight. But a few things genuinely can't wait until Monday:
@@ -17,7 +17,7 @@ Honestly? Not every AC hiccup needs someone driving over tonight. But a few thin
 - Water pooling near the indoor unit — it'll ruin your flooring fast if it sits there
 - Grinding or banging that wasn't there yesterday
 - Breakers that keep tripping, or anything that looks like sparking
-If you're staring down any of that list, that's when you actually need emergency AC repair, not tomorrow, not "when someone's free." Now.
+If you're staring down any of that list, that's when you actually need [emergency AC repair](/services/air-conditioning-services/emergency-ac-repair/), not tomorrow, not "when someone's free." Now.
 Quick Things Worth Checking First
 Sometimes it's not as bad as it seems. Two minutes of checking can save you a call entirely:
 - Thermostat. Is it actually set to cool? Are the batteries dead? You'd be surprised.
@@ -60,3 +60,7 @@ Frequently Asked Questions
 3. My AC's running but it's not actually cold. Is that urgent? Depends on how hot it is and who's in the house. If it's mild out and everyone's fine, it can probably wait for a regular appointment. If it's genuinely dangerous heat, or there's someone vulnerable at home, don't wait — call sooner.
 4. What should I do while I'm waiting on the technician? Close your blinds to block direct sun, skip using the oven, and run fans to keep air moving through the house. If it's dangerously hot, it might be worth heading somewhere cooler until we get there.
 5. Can going without AC for a few days actually damage the house itself? It can, yeah — extended heat and humidity indoors can mess with wood floors, electronics, even drywall over a multi-day stretch. It's not just about comfort, which is part of why getting it fixed quickly actually matters.
+
+---
+
+**Related services:** [AC Repair](/services/air-conditioning-services/) · [Heating Repair](/services/heating-services/heating-repair/) · [Emergency HVAC](/services/hvac-services/emergency-hvac-repair/) · [All Services](/services/) · [Service Areas](/service-areas/)

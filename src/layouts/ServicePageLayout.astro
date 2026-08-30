@@ -9,7 +9,11 @@ import CTASection from '../components/CTASection';
 import ServiceForm from '../components/ServiceForm';
 import LicenseBadges from '../components/LicenseBadges.astro';
 import BrandsSection from '../components/BrandsSection.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import ServiceAreasLinks from '../components/ServiceAreasLinks.astro';
+import RelatedServices from '../components/RelatedServices.astro';
 import { faqs as faqData } from '../data/faqs';
+import { serviceLinks, hubServices } from '../data/internalLinks';
 
 interface Props {
   title: string;
@@ -21,9 +25,13 @@ interface Props {
   faqKey?: string;
   faqs?: { q: string; a: string }[];
   faqSchema?: object;
+  relatedServices?: { name: string; href: string; desc?: string; description?: string }[];
+  relatedKey?: string;
+  showServiceAreas?: boolean;
+  showHubLinks?: boolean;
 }
 
-const { title, description, heroTitle, heroSubtitle, canonical, robots, faqKey, faqs, faqSchema } = Astro.props;
+const { title, description, heroTitle, heroSubtitle, canonical, robots, faqKey, faqs, faqSchema, relatedServices, relatedKey, showServiceAreas = true, showHubLinks = true } = Astro.props;
 const faqEntry = faqKey ? faqData[faqKey] : undefined;
 const pageFaqs = faqs ?? faqEntry?.faqs;
 const pageFaqSchema = faqSchema ?? faqEntry?.faqSchema;
@@ -31,6 +39,7 @@ const pageFaqSchema = faqSchema ?? faqEntry?.faqSchema;
 
 <BaseLayout title={title} description={description} canonical={canonical} robots={robots} faqSchema={pageFaqSchema}>
   <Header />
+  <Breadcrumbs />
   <main>
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -75,6 +84,31 @@ const pageFaqSchema = faqSchema ?? faqEntry?.faqSchema;
     </section>
 
     <slot />
+
+    {relatedKey ? (
+      <RelatedServices relatedKey={relatedKey} />
+    ) : relatedServices && relatedServices.length > 0 ? (
+      <RelatedServices services={relatedServices as any} />
+    ) : null}
+
+    {showServiceAreas && (
+      <ServiceAreasLinks title="Serving All of Orange County" subtitle="Choose your city for local HVAC service — same-day appointments available everywhere we serve." />
+    )}
+
+    {showHubLinks && (
+      <section class="py-8 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-wrap justify-center gap-2 text-sm">
+            <span class="text-slate-500 font-medium mr-2">Explore:</span>
+            {hubServices.map((svc) => (
+              <a href={svc.href} class="px-3 py-1.5 bg-white border border-slate-200 rounded-full font-semibold text-slate-700 hover:bg-brand-blue hover:text-white hover:border-brand-blue transition text-xs sm:text-sm">{svc.name}</a>
+            ))}
+            <a href="/blogs/" class="px-3 py-1.5 bg-white border border-slate-200 rounded-full font-semibold text-slate-700 hover:bg-brand-blue hover:text-white hover:border-brand-blue transition text-xs sm:text-sm">HVAC Blog</a>
+            <a href="/service-areas/" class="px-3 py-1.5 bg-white border border-slate-200 rounded-full font-semibold text-slate-700 hover:bg-brand-blue hover:text-white hover:border-brand-blue transition text-xs sm:text-sm">Service Areas</a>
+          </div>
+        </div>
+      </section>
+    )}
 
     <Reviews client:visible />
     <BrandsSection />

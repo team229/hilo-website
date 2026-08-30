@@ -3,10 +3,12 @@ import ServicePageLayout from '../../../../layouts/ServicePageLayout.astro';
 ---
 
 <ServicePageLayout
+  relatedKey="hvac-installation"
   title="New HVAC System Installation Orange County | HiLo Heating & Air"
   description="Ready for a new HVAC system installation? HiLo Heating & Air offers expert installation with upfront pricing, no hidden fees, and same-day estimates across Orange County. Licensed, bonded, and insured. Schedule your installation today!"
   heroTitle="New HVAC System Installation in Stanton, CA"
   heroSubtitle="If your heating and cooling system has been struggling, a patch job probably won't cut it for long. Hilo Heating and Air handles new HVAC system installation throughout Stanton and Orange County."
+  relatedServices={[{ name: "HVAC Replacement", href: "/services/hvac-services/hvac-replacement/", desc: "Honest replacement advice." },{ name: "AC Installation", href: "/services/air-conditioning-services/air-conditioning-installation/", desc: "Cooling-specific installs." },{ name: "Heating Installation", href: "/services/heating-services/heating-installation/", desc: "Heating-specific installs." }]}
   faqKey="services-hvac-installation"
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
@@ -29,6 +31,11 @@ import ServicePageLayout from '../../../../layouts/ServicePageLayout.astro';
 
       <h2>Ready to Get Started?</h2>
       <p>Don't wait for your system to fail completely before calling someone. Reach out to Hilo Heating and Air for a free consultation on your <strong>new HVAC system installation</strong>, and see why so many homeowners around Stanton, CA keep coming back to us.</p>
+          <div class="not-prose mt-10 p-6 bg-brand-blue/5 border border-brand-blue/10 rounded-2xl">
+        <p class="text-sm text-slate-700 leading-relaxed m-0">
+          <strong class="text-brand-blue">Explore more:</strong> If your system is failing often, see <a href="/services/hvac-services/hvac-replacement/" class="text-brand-blue underline hover:text-brand-red">HVAC replacement</a>, compare <a href="/services/heating-services/heating-installation/" class="text-brand-blue underline hover:text-brand-red">heating installation</a> and <a href="/services/air-conditioning-services/air-conditioning-installation/" class="text-brand-blue underline hover:text-brand-red">AC installation</a>, or check <a href="/services/indoor-air-quality-solutions/duct-installation/" class="text-brand-blue underline hover:text-brand-red">duct installation</a>.
+        </p>
+      </div>
     </div>
   </section>
 </ServicePageLayout>

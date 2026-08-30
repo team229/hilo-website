@@ -97,6 +97,36 @@ import VanSection from '../../components/VanSection.astro';
       </div>
     </section>
 
+    
+    {/* Internal Linking: Services + Nearby Areas */}
+    <section class="py-12 sm:py-16 bg-slate-50 border-y border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold text-brand-blue mb-6 text-center">Related HVAC Services in Laguna Hills</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+          <a href="/services/air-conditioning-services/" class="bg-white border border-slate-200 rounded-xl p-4 text-center hover:shadow-md hover:border-brand-blue/30 transition group"><span class="text-sm font-bold text-brand-blue group-hover:text-brand-red">Air Conditioning</span><span class="block text-xs text-slate-500 mt-1">AC repair & install</span></a>
+          <a href="/services/heating-services/" class="bg-white border border-slate-200 rounded-xl p-4 text-center hover:shadow-md hover:border-brand-blue/30 transition group"><span class="text-sm font-bold text-brand-blue group-hover:text-brand-red">Heating Services</span><span class="block text-xs text-slate-500 mt-1">Furnace repair & install</span></a>
+          <a href="/services/hvac-services/" class="bg-white border border-slate-200 rounded-xl p-4 text-center hover:shadow-md hover:border-brand-blue/30 transition group"><span class="text-sm font-bold text-brand-blue group-hover:text-brand-red">HVAC Services</span><span class="block text-xs text-slate-500 mt-1">Maintenance & install</span></a>
+          <a href="/services/hvac-services/emergency-hvac-repair/" class="bg-white border border-slate-200 rounded-xl p-4 text-center hover:shadow-md hover:border-brand-blue/30 transition group"><span class="text-sm font-bold text-brand-blue group-hover:text-brand-red">Emergency Repair</span><span class="block text-xs text-slate-500 mt-1">24/7 same-day</span></a>
+          <a href="/services/air-conditioning-services/ac-maintenance/" class="bg-white border border-slate-200 rounded-xl p-4 text-center hover:shadow-md hover:border-brand-blue/30 transition group"><span class="text-sm font-bold text-brand-blue group-hover:text-brand-red">AC Maintenance</span><span class="block text-xs text-slate-500 mt-1">Tune-ups</span></a>
+          <a href="/services/indoor-air-quality-solutions/" class="bg-white border border-slate-200 rounded-xl p-4 text-center hover:shadow-md hover:border-brand-blue/30 transition group"><span class="text-sm font-bold text-brand-blue group-hover:text-brand-red">Indoor Air Quality</span><span class="block text-xs text-slate-500 mt-1">Duct & air</span></a>
+          <a href="/services/commercial-hvac-services/" class="bg-white border border-slate-200 rounded-xl p-4 text-center hover:shadow-md hover:border-brand-blue/30 transition group"><span class="text-sm font-bold text-brand-blue group-hover:text-brand-red">Commercial HVAC</span><span class="block text-xs text-slate-500 mt-1">Business systems</span></a>
+          <a href="/blogs/" class="bg-white border border-slate-200 rounded-xl p-4 text-center hover:shadow-md hover:border-brand-blue/30 transition group"><span class="text-sm font-bold text-brand-blue group-hover:text-brand-red">HVAC Blog</span><span class="block text-xs text-slate-500 mt-1">Tips & guides</span></a>
+        </div>
+        <div class="mt-8 text-center">
+          <p class="text-sm text-slate-500 mb-3">Nearby service areas:</p>
+          <div class="flex flex-wrap justify-center gap-2">
+            <a href="/service-areas/anaheim/" class="text-sm text-brand-blue hover:text-brand-red hover:underline">Anaheim</a><span class="text-slate-300">·</span>
+            <a href="/service-areas/irvine/" class="text-sm text-brand-blue hover:text-brand-red hover:underline">Irvine</a><span class="text-slate-300">·</span>
+            <a href="/service-areas/orange/" class="text-sm text-brand-blue hover:text-brand-red hover:underline">Orange</a><span class="text-slate-300">·</span>
+            <a href="/service-areas/santa-ana/" class="text-sm text-brand-blue hover:text-brand-red hover:underline">Santa Ana</a><span class="text-slate-300">·</span>
+            <a href="/service-areas/costa-mesa/" class="text-sm text-brand-blue hover:text-brand-red hover:underline">Costa Mesa</a><span class="text-slate-300">·</span>
+            <a href="/service-areas/garden-grove/" class="text-sm text-brand-blue hover:text-brand-red hover:underline">Garden Grove</a><span class="text-slate-300">·</span>
+            <a href="/service-areas/" class="text-sm font-semibold text-brand-blue hover:text-brand-red hover:underline">View All Areas →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <CTASection client:visible />
   </main>
   <Footer />

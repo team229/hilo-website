@@ -1,13 +1,13 @@
 ---
 title: "What Nobody Tells You Before You Install a New AC in LA"
-description: "Planning a new AC install? HiLo Heating & Air handles expert AC installation Los Angeles homeowners trust — fair pricing, right-sized systems, no shortcuts."
+description: "Planning a new AC install? HiLo Heating & Air handles expert AC installation [Los Angeles](/service-areas/los-angeles/) homeowners trust — fair pricing, right-sized systems, no shortcuts."
 date: 2026-07-26
 category: "AC Installation"
 author: "Cody"
 image: "/images/blog/hvac-replacement.webp"
 ---
 
-At some point, every AC owner in this city hits the same wall. The unit's old, it's limping through summer, the repair bills keep stacking up, and eventually your tech looks at you and says something like "honestly, at this point, replacing it probably makes more sense than fixing it again." That's usually the moment people start looking into AC installation Los Angeles companies, half-relieved to finally deal with it and half-dreading the cost.
+At some point, every AC owner in this city hits the same wall. The unit's old, it's limping through summer, the repair bills keep stacking up, and eventually your tech looks at you and says something like "honestly, at this point, replacing it probably makes more sense than fixing it again." That's usually the moment people start looking into [AC installation](/services/air-conditioning-services/air-conditioning-installation/) Los Angeles companies, half-relieved to finally deal with it and half-dreading the cost.
 Here's the part that doesn't get talked about enough: a bad installation can haunt you for years. Wrong size unit, sloppy ductwork, corners cut to save a few hundred bucks upfront — it all shows up later as higher bills, uneven cooling, and a system that dies way earlier than it should've. So the company you choose actually matters here, arguably more than for a repair job.
 HiLo Heating & Air has installed enough systems across LA to know exactly where the shortcuts tend to happen, and why they cost people so much more down the line. Here's what actually goes into a good installation, what tends to go wrong with a bad one, and why locals keep coming back to us for AC installation Los Angeles wide.
 Why "Just Get a New AC" Is More Complicated Than It Sounds
@@ -54,3 +54,7 @@ Frequently Asked Questions
 3. Is it worth replacing an AC that still technically works? Sometimes, yes. If it's older, using an outdated refrigerant, or you're calling for repairs multiple times a year, a new system often pays for itself through lower energy bills and fewer breakdowns. We'll give you an honest read on whether replacement actually makes sense for your situation.
 4. Do I need to upgrade my ductwork when I install a new AC? Not always, but it's worth checking. Old or leaky ducts can undercut the performance of even a brand-new, efficient system, so we inspect them as part of the process and let you know if repairs would meaningfully improve results.
 5. What's included in your installation quote? Everything — the unit itself, labor, permits, and any ductwork or electrical work identified during the assessment. We don't do vague estimates that turn into add-on charges once the job's underway; what you're quoted is what you pay.
+
+---
+
+**Related services:** [AC Repair](/services/air-conditioning-services/) · [Heating Repair](/services/heating-services/heating-repair/) · [Emergency HVAC](/services/hvac-services/emergency-hvac-repair/) · [All Services](/services/) · [Service Areas](/service-areas/)

@@ -1,0 +1,54 @@
+---
+import { getCollection } from 'astro:content';
+
+interface Props {
+  currentSlug: string;
+  category?: string;
+  limit?: number;
+}
+
+const { currentSlug, category, limit = 3 } = Astro.props;
+
+const allPosts = await getCollection('blog');
+let related = allPosts.filter(p => p.id !== currentSlug);
+if (category) {
+  const sameCategory = related.filter(p => p.data.category === category);
+  // Prefer same category, fill with recent if not enough
+  if (sameCategory.length >= limit) related = sameCategory;
+  else {
+    const others = related.filter(p => p.data.category !== category);
+    related = [...sameCategory, ...others];
+  }
+}
+related = related.sort((a,b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, limit);
+---
+
+{related.length > 0 && (
+  <section class="py-12 sm:py-16 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mb-8 text-center">Related Articles</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+        {related.map((post) => (
+          <a href={`/blogs/${post.id}/`} class="group bg-white rounded-xl overflow-hidden border border-slate-200 hover:shadow-lg hover:border-brand-blue/20 transition-all flex flex-col">
+            {post.data.image && (
+              <div class="aspect-[16/10] overflow-hidden">
+                <img src={post.data.image} alt={post.data.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+              </div>
+            )}
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="text-xs font-semibold text-brand-blue bg-brand-blue/10 px-2.5 py-1 rounded-full">{post.data.category}</span>
+              </div>
+              <h3 class="text-base font-bold text-slate-800 group-hover:text-brand-blue transition-colors line-clamp-2 flex-1">{post.data.title}</h3>
+              <p class="text-sm text-slate-500 mt-2 line-clamp-2">{post.data.description}</p>
+              <span class="mt-4 text-sm font-semibold text-brand-blue group-hover:text-brand-red inline-flex items-center gap-1">Read article <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></span>
+            </div>
+          </a>
+        ))}
+      </div>
+      <p class="text-center mt-8">
+        <a href="/blogs/" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-brand-blue transition">View all articles →</a>
+      </p>
+    </div>
+  </section>
+)}

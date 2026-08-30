@@ -3,10 +3,12 @@ import ServicePageLayout from '../../../../layouts/ServicePageLayout.astro';
 ---
 
 <ServicePageLayout
+  relatedKey="hvac-replacement"
   title="HVAC Replacement After System Inspection | HiLo Heating & Air"
   description="Considering HVAC replacement? Our certified technicians perform a thorough HVAC system inspection first—we prioritize repair over replacement to save you money. Serving Orange County. Get an honest assessment and free estimate today!"
   heroTitle="HVAC Replacement in Stanton, CA"
   heroSubtitle="Sometimes a repair just doesn't make sense anymore. Hilo Heating and Air handles full HVAC replacement and will tell you straight whether you actually need one."
+  relatedServices={[{ name: "HVAC Installation", href: "/services/hvac-services/hvac-installation/", desc: "New system installs." },{ name: "AC Maintenance", href: "/services/air-conditioning-services/ac-maintenance/", desc: "Extend new system life." },{ name: "Emergency HVAC Repair", href: "/services/hvac-services/emergency-hvac-repair/", desc: "Urgent replacement." }]}
   faqKey="services-hvac-replacement"
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
@@ -28,6 +30,11 @@ import ServicePageLayout from '../../../../layouts/ServicePageLayout.astro';
 
       <h2>Why Hilo Heating and Air</h2>
       <p>We've built a name in Stanton on being upfront, not pushy. Licensed, insured, and we work with most major HVAC brands, so you're not stuck with whatever's sitting in our warehouse that week. A lot of our replacement customers started with a simple inspection call and a tech who told them the truth instead of the easy upsell.</p>
+          <div class="not-prose mt-10 p-6 bg-brand-blue/5 border border-brand-blue/10 rounded-2xl">
+        <p class="text-sm text-slate-700 leading-relaxed m-0">
+          <strong class="text-brand-blue">Next steps:</strong> Learn about <a href="/services/hvac-services/hvac-installation/" class="text-brand-blue underline hover:text-brand-red">new HVAC installation</a>, check <a href="/services/heating-services/heating-installation/" class="text-brand-blue underline hover:text-brand-red">furnace installation</a> or <a href="/services/indoor-air-quality-solutions/hvac-duct-repair/" class="text-brand-blue underline hover:text-brand-red">duct repair</a> to ensure your new system performs at its best.
+        </p>
+      </div>
     </div>
   </section>
 </ServicePageLayout>

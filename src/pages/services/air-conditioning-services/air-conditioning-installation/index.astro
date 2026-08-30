@@ -7,6 +7,7 @@ import ServicePageLayout from '../../../../layouts/ServicePageLayout.astro';
   description="Looking for professional AC installation in Los Angeles? HiLo Heating & Air delivers expert air conditioning installation with upfront pricing and no hidden fees. Licensed, bonded & insured. Get your free estimate today!"
   heroTitle="AC Installation Los Angeles"
   heroSubtitle="If your AC is wheezing through July, you already know how this story ends. Hilo Heating and Air handles AC installation homeowners actually trust."
+  relatedServices={[{ name: "AC Maintenance", href: "/services/air-conditioning-services/ac-maintenance/", desc: "Protect your new system." },{ name: "Mini Split Installation", href: "/services/air-conditioning-services/mini-split-installation/", desc: "Ductless alternative." },{ name: "HVAC Installation", href: "/services/hvac-services/hvac-installation/", desc: "Full HVAC installs." }]}
   faqKey="services-air-conditioning-installation"
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
@@ -26,6 +27,11 @@ import ServicePageLayout from '../../../../layouts/ServicePageLayout.astro';
       <h2>Why Hilo Heating and Air</h2>
       <p>For <strong>AC installation Los Angeles</strong> families keep coming back for, we've built our name on doing it right and being straight with people about cost and timeline. Licensed, insured, and we work with pretty much every major brand — so you're not stuck with whatever's sitting in our warehouse that week. Most new customers find us through a neighbor who already used us once.</p>
       <p>We're not the loudest company in the area. That's fine. We'd rather be the one you call again in ten years than the one you forget by next summer.</p>
+          <div class="not-prose mt-10 p-6 bg-brand-blue/5 border border-brand-blue/10 rounded-2xl">
+        <p class="text-sm text-slate-700 leading-relaxed m-0">
+          <strong class="text-brand-blue">Related services:</strong> After installation, protect your investment with <a href="/services/air-conditioning-services/ac-maintenance/" class="text-brand-blue underline hover:text-brand-red">AC maintenance</a>, consider <a href="/services/air-conditioning-services/mini-split-installation/" class="text-brand-blue underline hover:text-brand-red">mini split installation</a> for additions or garages, and make sure your <a href="/services/indoor-air-quality-solutions/duct-installation/" class="text-brand-blue underline hover:text-brand-red">ductwork</a> is sized correctly.
+        </p>
+      </div>
     </div>
   </section>
 </ServicePageLayout>

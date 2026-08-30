@@ -19,7 +19,7 @@ This seems obvious once you say it out loud, but a lot of business owners don't 
 
 Your home AC runs a few hours a day. It's conditioning maybe 2,000 square feet, accounting for a couple of people and maybe a few appliances. A commercial system is doing something entirely different. It might be running 14 hours a day in a building with 40 employees, commercial kitchen equipment pushing out heat, a server closet that can't go above 75 degrees, and a customer-facing area that needs to stay comfortable regardless of how many people walk in at noon on a Tuesday.
 
-Rooftop package units, variable refrigerant flow systems, chilled water systems, commercial air handlers — this equipment is bigger, more complex, and wears differently than residential gear. **Commercial HVAC services** require technicians who actually know these systems, not someone who handles home installs and figures the rest out as they go.
+Rooftop package units, variable refrigerant flow systems, chilled water systems, commercial air handlers — this equipment is bigger, more complex, and wears differently than residential gear. **[commercial HVAC](/services/commercial-hvac-services/) services** require technicians who actually know these systems, not someone who handles home installs and figures the rest out as they go.
 
 **HiLo Heating & Air** works on commercial systems day in and day out. That matters more than it might seem.
 
@@ -45,7 +45,7 @@ Old equipment gets to a point where it costs more to maintain than it would to r
 
 An oversized commercial system will short-cycle constantly, wear out faster, and leave humidity problems behind because it doesn't run long enough to pull moisture out of the air. An undersized one just runs forever and never quite gets there. Neither is acceptable. **HiLo Heating & Air** sizes systems based on what your building actually needs.
 
-### Indoor Air Quality
+### [indoor air quality](/services/indoor-air-quality-solutions/)
 
 More businesses are paying attention to this now than ever before, and for good reason. Filtration quality, ventilation rates, humidity levels, carbon dioxide buildup in densely occupied spaces — all of it affects how people feel, how well they work, and in some industries, whether you're meeting code requirements.
 
@@ -96,3 +96,7 @@ That's what **HiLo Heating & Air** wants for your business. Not a one-time call 
 If you can't remember the last time your commercial system had a real inspection, that's worth fixing before summer makes the decision for you.
 
 **Get in touch with HiLo Heating & Air and let's talk about what your building actually needs.**
+
+---
+
+**Related services:** [AC Repair](/services/air-conditioning-services/) · [Heating Repair](/services/heating-services/heating-repair/) · [Emergency HVAC](/services/hvac-services/emergency-hvac-repair/) · [All Services](/services/) · [Service Areas](/service-areas/)

@@ -3,10 +3,12 @@ import ServicePageLayout from '../../../../layouts/ServicePageLayout.astro';
 ---
 
 <ServicePageLayout
+  relatedKey="hvac-duct-sealing"
   title="HVAC Duct Sealing & Ductwork Repair | HiLo Heating & Air"
   description="Stop energy loss with professional HVAC duct sealing and ductwork repair from HiLo Heating & Air. Our certified technicians seal leaks to improve efficiency and comfort across Orange County. Book your duct sealing service today!"
   heroTitle="HVAC Duct Sealing in Stanton, CA"
   heroSubtitle="Your AC kicks on, runs all afternoon, and the house still doesn't feel right? A lot of the time that's air escaping before it even reaches your vents."
+  relatedServices={[{ name: "Duct Repair", href: "/services/indoor-air-quality-solutions/hvac-duct-repair/", desc: "Fix damage before sealing." },{ name: "Duct Installation", href: "/services/indoor-air-quality-solutions/duct-installation/", desc: "New runs, proper sealing." },{ name: "AC Maintenance", href: "/services/air-conditioning-services/ac-maintenance/", desc: "Tune-ups + duct check." }]}
   faqKey="services-iaq-duct-sealing"
 >
   <section class="pt-4 sm:pt-8 pb-16 sm:pb-24 bg-white">
@@ -34,6 +36,11 @@ import ServicePageLayout from '../../../../layouts/ServicePageLayout.astro';
 
       <h2>Schedule Your Duct Inspection</h2>
       <p>Stop losing conditioned air — and money — through gaps you can't see. Contact HiLo Heating and Air to schedule an inspection, and we'll tell you straight whether sealing or repair makes sense for your home.</p>
+          <div class="not-prose mt-10 p-6 bg-brand-blue/5 border border-brand-blue/10 rounded-2xl">
+        <p class="text-sm text-slate-700 leading-relaxed m-0">
+          <strong class="text-brand-blue">Related duct services:</strong> For damaged sections see <a href="/services/indoor-air-quality-solutions/hvac-duct-repair/" class="text-brand-blue underline hover:text-brand-red">duct repair</a>, for new construction see <a href="/services/indoor-air-quality-solutions/duct-installation/" class="text-brand-blue underline hover:text-brand-red">duct installation</a>, and fix hot/cold spots via <a href="/services/indoor-air-quality-solutions/hvac-air-balancing/" class="text-brand-blue underline hover:text-brand-red">air balancing</a>.
+        </p>
+      </div>
     </div>
   </section>
 </ServicePageLayout>

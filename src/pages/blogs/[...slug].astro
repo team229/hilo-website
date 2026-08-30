@@ -3,7 +3,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import CTASection from '../../components/CTASection';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import RelatedPosts from '../../components/RelatedPosts.astro';
 import { getCollection, render } from 'astro:content';
+import { blogServiceMap, serviceLinks, serviceAreas } from '../../data/internalLinks';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -25,6 +28,8 @@ const articleData = {
   category: post.data.category,
   image: post.data.image ? `https://hiloheatingandair.com${post.data.image}` : undefined,
 };
+const slugKey = post.id.replace(/\.md$/, '');
+const relatedServices = blogServiceMap[slugKey] || [serviceLinks.hvac, serviceLinks.airConditioning, serviceLinks.heating];
 ---
 
 <BaseLayout title={title} description={description} article={articleData}>
@@ -54,30 +59,70 @@ const articleData = {
         )}
       </div>
 
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <Breadcrumbs />
+      </div>
+
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
         <div class="prose prose-lg prose-slate max-w-none prose-headings:text-gray-900 prose-headings:font-bold prose-p:text-gray-600 prose-p:leading-relaxed prose-a:text-brand-blue prose-a:no-underline hover:prose-a:underline prose-strong:text-gray-900 prose-li:text-gray-600">
           <Content />
         </div>
       </div>
 
+      {/* Internal Linking: Related Services */}
+      <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-10">
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8">
+          <h3 class="text-lg font-bold text-brand-blue mb-2">Need help with this? HiLo can help.</h3>
+          <p class="text-sm text-slate-600 mb-4">Related services from HiLo Heating & Air:</p>
+          <div class="flex flex-wrap gap-2">
+            {relatedServices.map((svc) => (
+              <a href={svc.href} class="inline-flex items-center gap-1.5 px-4 py-2 bg-white border border-slate-200 rounded-full text-sm font-semibold text-brand-blue hover:bg-brand-blue hover:text-white hover:border-brand-blue transition">{svc.name}</a>
+            ))}
+          </div>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a href="/services/" class="text-sm font-semibold text-slate-500 hover:text-brand-blue">All services →</a>
+            <span class="text-slate-300">·</span>
+            <a href="/service-areas/" class="text-sm font-semibold text-slate-500 hover:text-brand-blue">Service areas →</a>
+            <span class="text-slate-300">·</span>
+            <a href="/contact-us/" class="text-sm font-semibold text-slate-500 hover:text-brand-blue">Contact us →</a>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas for this post */}
+      <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-10">
+        <div class="flex flex-wrap gap-2 justify-center">
+          {serviceAreas.slice(0, 8).map((area) => (
+            <a href={area.href} class="text-xs font-medium text-slate-500 bg-white border border-slate-200 px-3 py-1.5 rounded-full hover:border-brand-blue hover:text-brand-blue transition">{area.name}</a>
+          ))}
+          <a href="/service-areas/" class="text-xs font-semibold text-brand-blue px-3 py-1.5">View all →</a>
+        </div>
+      </section>
+
+      <RelatedPosts currentSlug={post.id} category={post.data.category} />
+
       <div class="bg-slate-50 py-16 sm:py-20">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Need HVAC Help?</h2>
-          <p class="text-gray-500 mb-8">Call HiLo Heating and Air today for expert service.</p>
+          <p class="text-gray-500 mb-8">Call HiLo Heating and Air today for expert service. <a href="/services/" class="text-brand-blue underline hover:text-brand-red">Explore our services</a> or <a href="/service-areas/" class="text-brand-blue underline hover:text-brand-red">find your city</a>.</p>
           <a href="tel:+17148535534" class="inline-flex items-center gap-2 bg-brand-blue text-white font-bold px-8 py-4 rounded-lg hover:bg-blue-700 transition text-lg">
             (714) 853-5534
           </a>
         </div>
       </div>
 
-      <div class="py-16 sm:py-20">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <a href="/blogs" class="inline-flex items-center gap-2 text-brand-blue font-semibold hover:underline">
+      <div class="py-10 sm:py-12">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap gap-3">
+          <a href="/blogs/" class="inline-flex items-center gap-2 text-brand-blue font-semibold hover:underline">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
             </svg>
             Back to All Blogs
           </a>
+          <span class="text-slate-300">·</span>
+          <a href="/services/" class="inline-flex items-center gap-1 text-slate-600 font-medium hover:text-brand-blue">Services</a>
+          <span class="text-slate-300">·</span>
+          <a href="/service-areas/" class="inline-flex items-center gap-1 text-slate-600 font-medium hover:text-brand-blue">Service Areas</a>
         </div>
       </div>
     </article>

@@ -6,10 +6,13 @@ import CTASection from '../components/CTASection';
 import ServiceForm from '../components/ServiceForm';
 import LicenseBadges from '../components/LicenseBadges.astro';
 import VanSection from '../components/VanSection.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import ServiceAreasLinks from '../components/ServiceAreasLinks.astro';
 ---
 
 <BaseLayout title="Contact Us | HiLo Heating & Air" description="Contact HiLo Heating & Air for same-day HVAC service in Orange County. Call (714) 853-5534 for emergency AC repair, heating service, and free estimates.">
   <Header />
+  <Breadcrumbs currentLabel="Contact Us" />
   <main>
     {/* Hero */}
     <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">
