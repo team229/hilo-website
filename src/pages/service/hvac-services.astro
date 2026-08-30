@@ -65,14 +65,14 @@ const faqSchemaObject = {
       <h2 class="text-3xl font-bold text-brand-blue mb-8 text-center">Our HVAC Services</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {[
-          { title: 'HVAC Installation', desc: 'New HVAC system installation with proper sizing.', href: '/hvac-installation/' },
-          { title: 'HVAC Replacement', desc: 'Honest assessments and quality system replacement.', href: '/hvac-replacement/' },
-          { title: 'Air Balancing', desc: 'Fix uneven temperatures throughout your home.', href: '/hvac-air-balancing/' },
-          { title: 'Duct Repair', desc: 'Professional duct repair and replacement.', href: '/hvac-duct-repair/' },
-          { title: 'Duct Sealing', desc: 'Stop losing conditioned air through leaky ducts.', href: '/hvac-duct-sealing/' },
-          { title: 'Humidifier Install', desc: 'Whole-home humidity control solutions.', href: '/hvac-humidifier/' },
-          { title: 'Duct Installation', desc: 'New ductwork for additions and replacements.', href: '/duct-installation/' },
-          { title: 'Emergency HVAC', desc: '24/7 emergency heating and cooling repair.', href: '/emergency-hvac-repair/' },
+          { title: 'HVAC Installation', desc: 'New HVAC system installation with proper sizing.', href: '/services/hvac-services/hvac-installation/' },
+          { title: 'HVAC Replacement', desc: 'Honest assessments and quality system replacement.', href: '/services/hvac-services/hvac-replacement/' },
+          { title: 'Air Balancing', desc: 'Fix uneven temperatures throughout your home.', href: '/services/indoor-air-quality-solutions/hvac-air-balancing/' },
+          { title: 'Duct Repair', desc: 'Professional duct repair and replacement.', href: '/services/indoor-air-quality-solutions/hvac-duct-repair/' },
+          { title: 'Duct Sealing', desc: 'Stop losing conditioned air through leaky ducts.', href: '/services/indoor-air-quality-solutions/hvac-duct-sealing/' },
+          { title: 'Humidifier Install', desc: 'Whole-home humidity control solutions.', href: '/services/indoor-air-quality-solutions/air-humidifiers/' },
+          { title: 'Duct Installation', desc: 'New ductwork for additions and replacements.', href: '/services/indoor-air-quality-solutions/duct-installation/' },
+          { title: 'Emergency HVAC', desc: '24/7 emergency heating and cooling repair.', href: '/services/hvac-services/emergency-hvac-repair/' },
         ].map((svc) => (
           <a href={svc.href} class="bg-white border border-brand-blue/10 rounded-2xl p-6 hover:shadow-lg hover:border-brand-blue/30 transition-all group">
             <h3 class="text-lg font-bold text-brand-blue mb-2 group-hover:text-brand-red transition-colors">{svc.title}</h3>
