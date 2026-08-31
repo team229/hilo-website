@@ -13,6 +13,7 @@ import BrandsSection from '../components/BrandsSection.astro';
 import AboutStats from '../components/AboutStats.astro';
 import ContactBar from '../components/ContactBar';
 import ServiceAreasMap from '../components/ServiceAreasMap.astro';
+import Footer from '../components/Footer.astro';
 import CTASection from '../components/CTASection';
 import TrustStrip from '../components/TrustStrip.astro';
 import { faqs as faqData } from '../data/faqs';
@@ -37,5 +38,5 @@ const homeFaq = faqData['home'];
     <ServiceAreasMap />
     <CTASection client:visible />
   </main>
-
+  <Footer />
 </BaseLayout>
