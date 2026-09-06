@@ -9,7 +9,7 @@ image: "/images/blog/ac-quit.webp"
 
 Last July, a homeowner called us in a panic. It was a Tuesday, 97 degrees outside, and her AC had stopped blowing cold air sometime overnight. She had family visiting. Her house was already 84 degrees inside by 10 AM. We got out there as fast as we could — and when our tech opened the unit, the evaporator coil was completely frozen solid. The culprit? A filter so clogged it had probably been in there for two years.
 
-That's a service call, a same-day emergency fee, and hours of her family sitting in the heat waiting for the coil to thaw. All of it completely avoidable.
+That's a service call, a same-day [emergency AC repair](/services/air-conditioning-services/emergency-ac-repair/) fee, and hours of her family sitting in the heat waiting for the coil to thaw. All of it completely avoidable.
 
 This is what **[air conditioning maintenance](/services/air-conditioning-services/ac-maintenance/)** actually prevents. Not just the inconvenience — the cost, the stress, the timing. Nobody's AC ever seems to break down on a mild day in October.
 

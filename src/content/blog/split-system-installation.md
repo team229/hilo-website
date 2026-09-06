@@ -15,7 +15,7 @@ A split system is exactly what it sounds like — the unit is split into two par
 
 ## Why People Choose This Over Central Air
 
-Not every home is built for ducts. Older houses, additions, converted garages, sunrooms — these spaces often can't fit traditional ductwork without a full renovation. That's usually the moment split system air conditioner installation gets mentioned. It solves a real problem: cooling a specific area without tearing into walls or ceilings. On top of that, since there's no duct loss, these systems tend to run more efficiently, which shows up as lower bills over time.
+Not every home is built for ducts. Older houses, additions, converted garages, sunrooms — these spaces often can't fit traditional ductwork without a full renovation. That's usually the moment [split system air conditioner installation](/services/air-conditioning-services/mini-split-installation/) gets mentioned. It solves a real problem: cooling a specific area without tearing into walls or ceilings. On top of that, since there's no duct loss, these systems tend to run more efficiently, which shows up as lower bills over time. If your central AC is on its last legs too, a mini split can carry the load while you plan a full [new HVAC system installation](/services/hvac-services/hvac-installation/).
 
 ## What Actually Happens During Installation
 

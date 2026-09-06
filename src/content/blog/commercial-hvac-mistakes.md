@@ -11,7 +11,7 @@ I'll start with something most HVAC companies won't say out loud: the majority o
 
 That's the honest reality of how most businesses treat their heating and cooling systems. They're invisible until they're not.
 
-At **[HiLo Heating & Air](https://hiloheatingandair.com/)**, we do a lot of emergency calls. We're good at them. But if we're being straight with you, we'd rather you never need one.
+At **[HiLo Heating & Air](https://hiloheatingandair.com/)**, we do a lot of [emergency HVAC repair](/services/hvac-services/emergency-hvac-repair/) calls. We're good at them. But if we're being straight with you, we'd rather you never need one.
 
 ## First — Why Commercial Is Completely Different From Residential
 

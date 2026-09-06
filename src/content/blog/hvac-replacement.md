@@ -7,9 +7,9 @@ author: "Cody"
 image: "/images/blog/hvac-replacement.webp"
 ---
 
-Here's something that happens constantly in this industry, and I think it's worth saying plainly. A homeowner's system dies. Maybe it limps through one last summer and finally quits in August. They call whoever they can get on the phone, someone shows up, gives them a number, and the decision gets made in about twenty minutes — usually while the house is still hot and everyone's uncomfortable and nobody's thinking clearly.
+Here's something that happens constantly in this industry, and I think it's worth saying plainly. A homeowner's system dies. Maybe it limps through one last summer and finally quits in August. They call whoever they can get on the phone, someone shows up, gives them a number, and the decision gets made in about twenty minutes — usually while the house is still hot and everyone's uncomfortable and nobody's thinking clearly. A [new HVAC system installation](/services/hvac-services/hvac-installation/) done that way rarely ends up sized right for the home.
 
-A **new HVAC system installation** is not a small purchase. Depending on the size of your home and what you're installing, you're looking at anywhere from $5,000 to $15,000 or more. That kind of money deserves more than a panicked same-day decision.
+A **new HVAC system installation** is not a small purchase. Depending on the size of your home and what you're installing, you're looking at anywhere from $5,000 to $15,000 or more. That kind of money deserves more than a panicked same-day decision. If you're still unsure whether the old system is truly past saving, a careful [HVAC system inspection](/services/hvac-services/hvac-replacement/) will give you a straight answer before you commit to spending thousands.
 
 So whether your system is limping along right now, you've gotten the "it's time" verdict from a technician, or you're just being smart and thinking ahead — this is the article I wish more homeowners read before they started making calls.
 

@@ -15,7 +15,7 @@ Not every heating hiccup needs a 2 a.m. phone call, to be fair. But some absolut
 
 ## Why the Timing Piece Matters So Much
 
-A furnace quitting at 2 p.m. on a mild afternoon? Annoying, sure. A furnace quitting at midnight during a hard freeze is a completely different animal. Pipes freeze. Indoor temps drop faster than most people expect, especially in older homes or ones without great insulation. And that's really the whole point — emergency heating repair can't run on some normal booked-out schedule. Certain problems can't wait until morning. Forget waiting until next week.
+A furnace quitting at 2 p.m. on a mild afternoon? Annoying, sure. A furnace quitting at midnight during a hard freeze is a completely different animal. Pipes freeze. Indoor temps drop faster than most people expect, especially in older homes or ones without great insulation. And that's really the whole point — [emergency heating repair](/services/heating-services/heating-repair/) can't run on some normal booked-out schedule. Certain problems can't wait until morning. Forget waiting until next week. A [heating maintenance](/services/heating-services/heating-maintenance/) visit during the fall is the best way to avoid that midnight call entirely.
 
 ## The Usual Suspects Behind Sudden Failures
 

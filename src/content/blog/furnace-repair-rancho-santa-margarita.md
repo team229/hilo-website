@@ -11,7 +11,7 @@ A heating system rarely stops working without giving some notice first. Strange 
 
 ## Common Problems That Bring a Furnace to a Stop
 
-Ignition failures are among the most frequent reasons a system stops producing heat. A dirty flame sensor, a worn igniter, or a buildup of dust on internal components can prevent the burner from lighting properly. Thermostat miscommunication is another frequent culprit, where the unit either runs constantly or won't turn on at all despite a correct setting. Technicians handling furnace repair Rancho Santa Margarita households call in regularly report that a large share of service visits trace back to these two categories alone.
+Ignition failures are among the most frequent reasons a system stops producing heat. A dirty flame sensor, a worn igniter, or a buildup of dust on internal components can prevent the burner from lighting properly. Thermostat miscommunication is another frequent culprit, where the unit either runs constantly or won't turn on at all despite a correct setting. Technicians handling furnace repair Rancho Santa Margarita households call in regularly report that a large share of service visits trace back to these two categories alone, and that regular [heating maintenance](/services/heating-services/heating-maintenance/) catches most of them before they become emergencies.
 
 Airflow restrictions caused by a clogged filter or blocked return vent also strain the system, forcing the blower motor to work harder than it should. Left unaddressed, this extra strain often shortens the lifespan of the motor itself.
 

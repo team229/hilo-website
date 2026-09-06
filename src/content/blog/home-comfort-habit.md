@@ -7,7 +7,7 @@ author: "Cody"
 image: "/images/blog/home-comfort-habit.webp"
 ---
 
-Funny thing about HVAC systems — nobody thinks about them until they quit on you. Then it's suddenly an emergency. A scramble. A same-day call because the house is either sweltering or freezing and you need someone there yesterday. Most of that stress? Avoidable, honestly. A decent [HVAC maintenance service](https://hiloheatingandair.com/services/), done on a regular schedule, catches the small stuff before it turns into the expensive stuff. Not glamorous work. Kind of like changing your oil, or getting a dental cleaning — nobody's excited about it, but skipping it always costs more later.
+Funny thing about HVAC systems — nobody thinks about them until they quit on you. Then it's suddenly an emergency. A scramble. A same-day call because the house is either sweltering or freezing and you need someone there yesterday. Most of that stress? Avoidable, honestly. A decent [HVAC maintenance service](https://hiloheatingandair.com/services/), done on a regular schedule, catches the small stuff before it turns into the expensive stuff. And when the system does fail in the middle of a heatwave, having our [emergency HVAC repair](/services/hvac-services/emergency-hvac-repair/) team a phone call away takes the panic out of it. Not glamorous work. Kind of like changing your oil, or getting a dental cleaning — nobody's excited about it, but skipping it always costs more later.
 
 ## What This Kind of Service Actually Involves
 

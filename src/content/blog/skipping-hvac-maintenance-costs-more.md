@@ -7,7 +7,7 @@ author: "Cody"
 image: "/images/blog/seasonal-maintenance.png"
 ---
 
-Most people don't think about their heating and cooling system until it stops working. That's just how it goes — the AC hums along fine for years, so it fades into the background, and then one afternoon in July it just... doesn't turn on. At that point you're not looking at a routine checkup anymore, you're looking at an emergency repair bill and a house that's 85 degrees while you wait for someone to show up.
+Most people don't think about their heating and cooling system until it stops working. That's just how it goes — the AC hums along fine for years, so it fades into the background, and then one afternoon in July it just... doesn't turn on. At that point you're not looking at a routine checkup anymore, you're looking at an emergency repair bill and a house that's 85 degrees while you wait for someone to show up — a prime reason our [emergency AC repair](/services/air-conditioning-services/emergency-ac-repair/) line exists.
 A regular tune-up is basically the thing that prevents that whole scenario. It's not glamorous, and it's easy to put off — but the homeowners who stick with it tend to spend a lot less over the life of their system, and their units just tend to last longer, plain and simple.
 At HiLo Heating & Air, we've watched this play out enough times to know it's not a sales pitch. It's just how mechanical systems work. Let's get into why maintenance matters so much, what actually happens during a tune-up, and why locals keep trusting us for their [HVAC maintenance](/services/hvac-services/) service.
 What Even Is HVAC Maintenance, Really?

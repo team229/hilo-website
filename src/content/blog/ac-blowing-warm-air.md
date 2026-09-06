@@ -9,9 +9,9 @@ image: "/images/blog/ac-warm-air.jpg"
 
 There is nothing quite like the dread of turning on your air conditioner during a scorching Orange County summer day, only to be greeted by a blast of lukewarm or flat-out hot air.
 
-Before you start panicking about the cost of a brand-new system, take a deep breath. At **HiLo Heating and Air**, our motto is simple: *we prioritize repair over replacement to save you money.* A warm AC doesn't automatically mean you need a new unit. In fact, many common culprits can be fixed quickly by a certified technician.
+Before you start panicking about the cost of a brand-new system, take a deep breath. At **HiLo Heating and Air**, our motto is simple: *we prioritize [repair](/services/air-conditioning-services/emergency-ac-repair/) over replacement to save you money.* A warm AC doesn't automatically mean you need a new unit. In fact, many common culprits can be fixed quickly by a certified [AC repair](/services/air-conditioning-services/) technician.
 
-Here are the most common reasons your AC is blowing warm air and what you should do next.
+Here are the most common reasons your AC is blowing warm air and what you should do next. Walking through the list below first — checking the thermostat, filter, and airflow — can save you an unnecessary service call, while [AC maintenance](/services/air-conditioning-services/ac-maintenance/) keeps the problem from coming back.
 
 ## 1. Your Thermostat is Set Correctly — But Moderated Wrong
 

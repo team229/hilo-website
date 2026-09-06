@@ -11,7 +11,7 @@ Cooler nights in the foothills and canyon neighborhoods tend to expose weaknesse
 
 ## Warning Signs That Point Toward Replacement
 
-A furnace nearing the end of its service life rarely fails without giving hints first. Rooms that heat unevenly, a yellow rather than blue pilot flame, strange burning smells, and a noticeable jump in monthly utility bills are all signals worth taking seriously. When these symptoms show up in a unit older than fifteen years, most technicians will recommend furnace installation Laguna Hills CA homeowners can rely on for years rather than another round of repairs on a system that keeps breaking down.
+A furnace nearing the end of its service life rarely fails without giving hints first. Rooms that heat unevenly, a yellow rather than blue pilot flame, strange burning smells, and a noticeable jump in monthly utility bills are all signals worth taking seriously. When these symptoms show up in a unit older than fifteen years, most technicians will recommend furnace installation Laguna Hills CA homeowners can rely on for years rather than another round of [furnace repair](/services/heating-services/heating-repair/) on a system that keeps breaking down.
 
 Frequent short cycling is another red flag. A furnace turning on and off in rapid bursts usually means the heat exchanger, blower motor, or thermostat sensor is struggling, and running it that way often shortens what little lifespan remains.
 

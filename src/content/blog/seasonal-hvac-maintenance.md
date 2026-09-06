@@ -7,7 +7,7 @@ author: "Cody"
 image: "/images/blog/seasonal-maintenance.png"
 ---
 
-You know that moment when the furnace kicks on for the first time in October and it smells like burning dust and you just… hope it's fine? Yeah. That's usually the moment people start thinking about their HVAC system — right when something's already wrong. A little attention spread out across the year could've saved the headache. Expensive repairs, wild energy bills, uncomfortable nights. All avoidable. This is basically why [seasonal HVAC maintenance](https://hiloheatingandair.com/services/air-conditioning-services/ac-maintenance/) is worth caring about, even though it's boring, even though it's easy to put off. At Hilo Heating and Air we've seen this play out over and over. Small effort now, big payoff later.
+You know that moment when the furnace kicks on for the first time in October and it smells like burning dust and you just… hope it's fine? Yeah. That's usually the moment people start thinking about their HVAC system — right when something's already wrong. A little attention spread out across the year could've saved the headache. Expensive repairs, wild energy bills, uncomfortable nights. All avoidable. This is basically why [seasonal HVAC maintenance](https://hiloheatingandair.com/services/air-conditioning-services/ac-maintenance/) is worth caring about, even though it's boring, even though it's easy to put off. At Hilo Heating and Air we've seen this play out over and over — it's also why our [heating maintenance](/services/heating-services/heating-maintenance/) visits before winter are booked up the fastest. Small effort now, big payoff later.
 
 ## Okay, But What Does Seasonal [HVAC maintenance](/services/hvac-services/) Even Mean
 

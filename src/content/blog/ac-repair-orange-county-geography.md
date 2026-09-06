@@ -7,7 +7,7 @@ author: "Cody"
 image: "/images/blog/ac-quit.webp"
 ---
 
-Few regions pack as much climate variety into such a small area as this one, where a coastal breeze can keep beach neighborhoods mild while inland communities bake under triple-digit heat the very same afternoon. That gap matters more than most homeowners realize when a cooling system starts acting up, since the search for air conditioning repair Orange County residents run often turns up very different diagnoses depending on how far the home sits from the water and how much daily heat stress the equipment absorbs.
+Few regions pack as much climate variety into such a small area as this one, where a coastal breeze can keep beach neighborhoods mild while inland communities bake under triple-digit heat the very same afternoon. That gap matters more than most homeowners realize when a cooling system starts acting up, since the search for [air conditioning repair Orange County](/services/air-conditioning-services/) residents run often turns up very different diagnoses depending on how far the home sits from the water and how much daily heat stress the equipment absorbs.
 
 ## Why Inland Homes See More Frequent Breakdowns
 
