@@ -4,7 +4,7 @@ description: "Stop reacting to breakdowns. HiLo Heating & Air's seasonal HVAC ma
 date: 2026-07-26
 category: "HVAC Maintenance"
 author: "Cody"
-image: "/images/blog/seasonal-maintenance.png"
+image: "/images/blog/set-it-and-forget-it-hvac.webp"
 ---
 
 There's a certain kind of person who only thinks about their heating and cooling system twice a year — once when it's too hot, once when it's too cold, and both times right after something's already gone wrong. It's not a character flaw, it's just how most people operate until they've been burned once by an August breakdown or a furnace that won't kick on in January. The [new HVAC system installation](/services/hvac-services/hvac-installation/) you put in intending to forget it still needs that twice-yearly attention.

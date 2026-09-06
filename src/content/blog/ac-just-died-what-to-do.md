@@ -4,7 +4,7 @@ description: "AC died in the middle of a heatwave? HiLo Heating & Air offers fas
 date: 2026-07-26
 category: "Emergency AC Repair"
 author: "Cody"
-image: "/images/blog/ac-quit.webp"
+image: "/images/blog/ac-just-died-what-to-do.webp"
 ---
 
 It always happens at the worst time. Not on a mild Tuesday when you'd barely notice — no, it's 95 degrees, it's a Saturday, and you've got people coming over in two hours. The unit just stops. No warning, no gradual decline you could've caught earlier. One minute it's fine, the next it's dead air coming out of the vents.

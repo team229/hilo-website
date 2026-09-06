@@ -4,7 +4,7 @@ description: "Why does your Orange County AC break down while a friend's near th
 date: 2026-08-30
 category: "AC Repair"
 author: "Cody"
-image: "/images/blog/ac-quit.webp"
+image: "/images/blog/ac-repair-orange-county-geography.webp"
 ---
 
 Few regions pack as much climate variety into such a small area as this one, where a coastal breeze can keep beach neighborhoods mild while inland communities bake under triple-digit heat the very same afternoon. That gap matters more than most homeowners realize when a cooling system starts acting up, since the search for [air conditioning repair Orange County](/services/air-conditioning-services/) residents run often turns up very different diagnoses depending on how far the home sits from the water and how much daily heat stress the equipment absorbs.

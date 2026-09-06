@@ -4,7 +4,7 @@ description: "Planning a new AC install? HiLo Heating & Air handles expert AC in
 date: 2026-07-26
 category: "AC Installation"
 author: "Cody"
-image: "/images/blog/hvac-replacement.webp"
+image: "/images/blog/ac-installation-los-angeles-guide.webp"
 ---
 
 At some point, every AC owner in this city hits the same wall. The unit's old, it's limping through summer, the repair bills keep stacking up, and eventually your tech looks at you and says something like "honestly, at this point, replacing it probably makes more sense than fixing it again." That's usually the moment people start looking into [AC installation](/services/air-conditioning-services/air-conditioning-installation/) Los Angeles companies, half-relieved to finally deal with it and half-dreading the cost.

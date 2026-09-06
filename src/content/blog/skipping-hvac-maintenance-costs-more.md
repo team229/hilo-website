@@ -4,7 +4,7 @@ description: "Skip the surprise breakdowns. HiLo Heating & Air's HVAC maintenanc
 date: 2026-07-26
 category: "HVAC Maintenance"
 author: "Cody"
-image: "/images/blog/seasonal-maintenance.png"
+image: "/images/blog/skipping-hvac-maintenance-costs-more.webp"
 ---
 
 Most people don't think about their heating and cooling system until it stops working. That's just how it goes — the AC hums along fine for years, so it fades into the background, and then one afternoon in July it just... doesn't turn on. At that point you're not looking at a routine checkup anymore, you're looking at an emergency repair bill and a house that's 85 degrees while you wait for someone to show up — a prime reason our [emergency AC repair](/services/air-conditioning-services/emergency-ac-repair/) line exists.

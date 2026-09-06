@@ -4,7 +4,7 @@ description: "Wall heaters, heat pumps, and central systems each fail differentl
 date: 2026-08-30
 category: "Heating Repair"
 author: "Cody"
-image: "/images/blog/heater-died-2am.webp"
+image: "/images/blog/heating-repair-los-angeles-equipment-types.webp"
 ---
 
 Unlike cities where nearly every home runs the same type of central furnace, the housing stock here includes everything from old wall heaters in Craftsman bungalows to heat pumps in newer builds and central systems in mid-century homes. That variety means the search for [heating repair](/services/heating-services/heating-repair/) Los Angeles residents run when something stops working can lead to very different diagnoses depending on the type of system installed and how old the property is. Knowing what to expect from each kind of setup makes it easier to spot trouble early.

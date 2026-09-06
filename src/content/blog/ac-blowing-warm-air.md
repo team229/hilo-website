@@ -4,7 +4,7 @@ description: "Your AC blowing warm air has several common causes. Here's what to
 date: 2026-05-25
 category: "AC Repair"
 author: "Cody"
-image: "/images/blog/ac-warm-air.jpg"
+image: "/images/blog/ac-blowing-warm-air.webp"
 ---
 
 There is nothing quite like the dread of turning on your air conditioner during a scorching Orange County summer day, only to be greeted by a blast of lukewarm or flat-out hot air.

@@ -4,7 +4,7 @@ description: "Coastal salt air wears on cooling systems. HiLo Heating & Air shar
 date: 2026-08-30
 category: "AC Repair"
 author: "Cody"
-image: "/images/blog/ac-warm-air.jpg"
+image: "/images/blog/ac-repair-newport-beach-coastal.webp"
 ---
 
 Coastal humidity, salty air, and long summer stretches put real strain on home cooling systems along the Orange County shoreline. When a unit starts short-cycling, blowing warm air, or making odd noises, most homeowners search for [air conditioning repair Newport Beach](/services/air-conditioning-services/) companies before the problem turns into a full breakdown. Catching these issues early not only restores comfort but also protects the lifespan of equipment that was never cheap to install in the first place.

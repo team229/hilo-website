@@ -4,7 +4,7 @@ description: "Emergency heating repair is different from a routine service call.
 date: 2026-07-08
 category: "Heating Repair"
 author: "Cody"
-image: "/images/blog/emergency-heating.webp"
+image: "/images/blog/emergency-heating-repair.webp"
 ---
 
 There's a specific kind of dread — waking up at 2 a.m. and the house has already gone cold. No warning. No slow fade. Just… silence where the furnace hum used to be. If you've lived through that, you already get why [emergency heating repair](https://hiloheatingandair.com/services/heating-services/heating-repair/) is its own category, separate from "let's schedule something for next Tuesday." This is "I need someone right now" territory. At Hilo Heating and Air we get calls like this constantly, especially once the temperature drops hard and fast overnight.

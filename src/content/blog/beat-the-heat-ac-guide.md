@@ -4,7 +4,7 @@ description: "As summer heats up, watch for AC warning signs. Learn when to call
 date: 2026-07-26
 category: "AC Repair"
 author: "Cody"
-image: "/images/blog/ac-warm-air.jpg"
+image: "/images/blog/beat-the-heat-ac-guide.webp"
 ---
 
 As summer temperatures rise, a reliable air conditioning system becomes essential for maintaining a comfortable home. When your AC starts blowing warm air, making unusual noises, or stops working altogether, it's time to seek professional [Air Conditioning Repair Orange County](/services/air-conditioning-services/) services. Recognizing early warning signs and addressing issues promptly can save you time, money, and the inconvenience of a complete system breakdown. If your unit dies on the hottest day of the year, our [emergency AC repair](/services/air-conditioning-services/emergency-ac-repair/) team answers around the clock.

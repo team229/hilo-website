@@ -4,7 +4,7 @@ description: "Protect your comfort and your wallet with routine air conditioning
 date: 2026-07-26
 category: "AC Maintenance"
 author: "Cody"
-image: "/images/blog/home-comfort-habit.webp"
+image: "/images/blog/why-ac-dies-in-july.webp"
 ---
 
 There's a pattern that plays out every single summer. The temperature climbs, everyone's AC is running around the clock, and suddenly the repair calls start flooding in — not because units are cursed, but because most of them never got looked at before the season started. By the time anyone notices something's wrong, the system's already been struggling for weeks. When it finally gives out mid-July, that's when homeowners hunt for an [emergency AC repair](/services/air-conditioning-services/emergency-ac-repair/) company that can actually get there the same day.

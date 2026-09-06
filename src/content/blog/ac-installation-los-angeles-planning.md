@@ -4,7 +4,7 @@ description: "Planning AC installation in [Los Angeles](/service-areas/los-angel
 date: 2026-08-30
 category: "AC Installation"
 author: "Cody"
-image: "/images/blog/hvac-replacement.webp"
+image: "/images/blog/ac-installation-los-angeles-planning.webp"
 ---
 
 A home that stays uncomfortably warm no matter how low the thermostat is set, or a unit that has needed one too many repairs, usually means it's time to stop patching and start planning. Many homeowners begin researching [AC installation](/services/air-conditioning-services/air-conditioning-installation/) Los Angeles options only after a breakdown during a heat spell, but starting the process earlier gives far more room to compare equipment, contractors, and financing without the pressure of a house that's already too hot to sleep in.

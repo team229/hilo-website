@@ -4,7 +4,7 @@ description: "Los Angeles winters can turn chilly fast. Learn the warning signs 
 date: 2026-07-26
 category: "Heating Repair"
 author: "Cody"
-image: "/images/blog/emergency-heating.webp"
+image: "/images/blog/heating-repairs-los-angeles-guide.webp"
 ---
 
 Although Los Angeles is known for its mild climate, winter mornings and evenings can still become surprisingly chilly. A dependable heating system helps keep your home comfortable during colder months. When your furnace or heater starts acting up, it's important to seek professional [heating repair](/services/heating-services/heating-repair/) Los Angeles services before a minor issue turns into a costly breakdown. If the heat goes out suddenly, our [emergency HVAC repair](/services/hvac-services/emergency-hvac-repair/) team responds around the clock.

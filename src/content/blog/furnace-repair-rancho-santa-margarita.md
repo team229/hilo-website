@@ -4,7 +4,7 @@ description: "Strange furnace noises or a pilot light that won't stay lit? HiLo 
 date: 2026-08-30
 category: "Heating Repair"
 author: "Cody"
-image: "/images/blog/emergency-heating.webp"
+image: "/images/blog/furnace-repair-rancho-santa-margarita.webp"
 ---
 
 A heating system rarely stops working without giving some notice first. Strange noises, uneven warmth between rooms, or a pilot light that keeps going out are usually early signals rather than sudden failures. Homeowners who catch these clues early often need only a quick service call, while those who wait tend to search for [furnace repair](/services/heating-services/heating-repair/) Rancho Santa Margarita help during an actual cold-weather emergency, when scheduling is tighter and the damage has usually spread to other components.

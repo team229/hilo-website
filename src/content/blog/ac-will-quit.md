@@ -4,7 +4,7 @@ description: "Air conditioning maintenance is the one thing standing between you
 date: 2026-06-25
 category: "Air Conditioning Maintenance"
 author: "Cody"
-image: "/images/blog/ac-quit.webp"
+image: "/images/blog/ac-will-quit.webp"
 ---
 
 Last July, a homeowner called us in a panic. It was a Tuesday, 97 degrees outside, and her AC had stopped blowing cold air sometime overnight. She had family visiting. Her house was already 84 degrees inside by 10 AM. We got out there as fast as we could — and when our tech opened the unit, the evaporator coil was completely frozen solid. The culprit? A filter so clogged it had probably been in there for two years.
