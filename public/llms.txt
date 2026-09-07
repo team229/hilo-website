@@ -1,0 +1,80 @@
+# HiLo Heating & Air
+
+> Family-owned and operated HVAC company serving Orange County and Los Angeles, California. HiLo Heating & Air provides same-day AC repair, heating repair, HVAC installation, and indoor air quality solutions. Licensed & insured (CA Lic. #1155955), EPA-certified technicians, 24/7 emergency service, free diagnostics with repair, and upfront pricing with no hidden fees. In business since 2000, headquartered at 8131 Electric Ave, Stanton, CA 90680. Phone: (714) 853-5534.
+
+## Company
+
+- [Home](https://www.hiloheatingandair.com/): Overview of HiLo Heating & Air, service highlights, and quick request-service form.
+- [About Us](https://www.hiloheatingandair.com/about-us/): Company history, values, and credentials.
+- [Contact Us](https://www.hiloheatingandair.com/contact-us/): Request service, phone, email, and office address.
+- [Service Area](https://www.hiloheatingandair.com/service-areas/): Overview of all cities served across Orange County and Los Angeles.
+
+## Services
+
+- [All Services](https://www.hiloheatingandair.com/services/): Full list of HVAC services offered.
+- [Air Conditioning Services](https://www.hiloheatingandair.com/services/air-conditioning-services/): AC repair, installation, and maintenance overview.
+  - [AC Maintenance](https://www.hiloheatingandair.com/services/air-conditioning-services/ac-maintenance/)
+  - [AC Installation](https://www.hiloheatingandair.com/services/air-conditioning-services/air-conditioning-installation/)
+  - [Emergency AC Repair](https://www.hiloheatingandair.com/services/air-conditioning-services/emergency-ac-repair/)
+  - [Mini Split Installation](https://www.hiloheatingandair.com/services/air-conditioning-services/mini-split-installation/)
+- [Heating Services](https://www.hiloheatingandair.com/services/heating-services/): Furnace and heater repair, maintenance, and installation overview.
+  - [Heating Repair](https://www.hiloheatingandair.com/services/heating-services/heating-repair/)
+  - [Heating Maintenance](https://www.hiloheatingandair.com/services/heating-services/heating-maintenance/)
+  - [Heating Installation](https://www.hiloheatingandair.com/services/heating-services/heating-installation/)
+- [HVAC Services](https://www.hiloheatingandair.com/services/hvac-services/): General HVAC installation, replacement, and emergency repair overview.
+  - [HVAC Installation](https://www.hiloheatingandair.com/services/hvac-services/hvac-installation/)
+  - [HVAC Replacement](https://www.hiloheatingandair.com/services/hvac-services/hvac-replacement/)
+  - [Emergency HVAC Repair](https://www.hiloheatingandair.com/services/hvac-services/emergency-hvac-repair/)
+- [Commercial HVAC](https://www.hiloheatingandair.com/services/commercial-hvac-services/): HVAC services for commercial/business properties.
+- [Indoor Air Quality Solutions](https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/): Air quality, humidity, and duct services overview.
+  - [Duct Installation](https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/duct-installation/)
+  - [Duct Repair](https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/hvac-duct-repair/)
+  - [Duct Sealing](https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/hvac-duct-sealing/)
+  - [Air Balancing](https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/hvac-air-balancing/)
+  - [Humidifier Installation](https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/air-humidifiers/)
+  - [Dryer Vent Cleaning](https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/dryer-vent-cleaning/)
+
+## Service Areas
+
+- [Anaheim](https://www.hiloheatingandair.com/service-areas/anaheim/)
+- [Costa Mesa](https://www.hiloheatingandair.com/service-areas/costa-mesa/)
+- [Garden Grove](https://www.hiloheatingandair.com/service-areas/garden-grove/)
+- [Irvine](https://www.hiloheatingandair.com/service-areas/irvine/)
+- [Laguna Hills](https://www.hiloheatingandair.com/service-areas/laguna-hills/)
+- [Los Angeles](https://www.hiloheatingandair.com/service-areas/los-angeles/)
+- [Newport Beach](https://www.hiloheatingandair.com/service-areas/newport-beach/)
+- [Orange](https://www.hiloheatingandair.com/service-areas/orange/)
+- [Orange County](https://www.hiloheatingandair.com/service-areas/orange-county/)
+- [Rancho Santa Margarita](https://www.hiloheatingandair.com/service-areas/rancho-santa-margarita/)
+- [Santa Ana](https://www.hiloheatingandair.com/service-areas/santa-ana/)
+- [Stanton](https://www.hiloheatingandair.com/service-areas/stanton/)
+
+## Blog
+
+- [Blog Home](https://www.hiloheatingandair.com/blogs/): HVAC tips, guides, and local service-area articles.
+- [AC Blowing Warm Air](https://www.hiloheatingandair.com/blogs/ac-blowing-warm-air/)
+- [AC Installation Los Angeles Guide](https://www.hiloheatingandair.com/blogs/ac-installation-los-angeles-guide/)
+- [AC Repair Los Angeles: City Strain](https://www.hiloheatingandair.com/blogs/ac-repair-los-angeles-city-strain/)
+- [AC Repair Newport Beach: Coastal Factors](https://www.hiloheatingandair.com/blogs/ac-repair-newport-beach-coastal/)
+- [AC Repair Orange County: Geography](https://www.hiloheatingandair.com/blogs/ac-repair-orange-county-geography/)
+- [Signs Your AC Will Quit](https://www.hiloheatingandair.com/blogs/ac-will-quit/)
+- [Anaheim AC Repair Guide](https://www.hiloheatingandair.com/blogs/anaheim-ac-repair-guide/)
+- [Beat the Heat: AC Guide](https://www.hiloheatingandair.com/blogs/beat-the-heat-ac-guide/)
+- [Commercial HVAC Mistakes](https://www.hiloheatingandair.com/blogs/commercial-hvac-mistakes/)
+- [Emergency Heating Repair](https://www.hiloheatingandair.com/blogs/emergency-heating-repair/)
+- [Furnace Installation Laguna Hills](https://www.hiloheatingandair.com/blogs/furnace-installation-laguna-hills/)
+- [Furnace Repair Rancho Santa Margarita](https://www.hiloheatingandair.com/blogs/furnace-repair-rancho-santa-margarita/)
+- [Heating Repairs Los Angeles Guide](https://www.hiloheatingandair.com/blogs/heating-repairs-los-angeles-guide/)
+- [Home Comfort Habit](https://www.hiloheatingandair.com/blogs/home-comfort-habit/)
+- [HVAC Replacement](https://www.hiloheatingandair.com/blogs/hvac-replacement/)
+- [Seasonal HVAC Maintenance](https://www.hiloheatingandair.com/blogs/seasonal-hvac-maintenance/)
+- [Set It and Forget It HVAC](https://www.hiloheatingandair.com/blogs/set-it-and-forget-it-hvac/)
+- [Skipping HVAC Maintenance Costs More](https://www.hiloheatingandair.com/blogs/skipping-hvac-maintenance-costs-more/)
+- [Split System Installation](https://www.hiloheatingandair.com/blogs/split-system-installation/)
+- [Why AC Dies in July](https://www.hiloheatingandair.com/blogs/why-ac-dies-in-july/)
+
+## Contact
+
+- Phone (24/7 Emergency): (714) 853-5534
+- Address: 8131 Electric Ave, Stanton, CA 90680
+- License: CA Lic. #1155955
