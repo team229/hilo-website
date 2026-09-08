@@ -1,5 +1,5 @@
 ---
-title: "What Homeowners Should Know Before Replacing a Heating System in [Laguna Hills](/service-areas/laguna-hills/)"
+title: "What Homeowners Should Know Before Replacing a Heating System in Laguna Hills"
 description: "Thinking about a new furnace in Laguna Hills CA? HiLo Heating & Air covers the warning signs, local sizing, efficiency ratings, and what a proper installation involves."
 date: 2026-08-30
 category: "Heating Repair"
