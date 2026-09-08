@@ -1,10 +1,10 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 
 const fleetImages = [
-  { src: 'https://i.ibb.co/Q7mzQv3G/1112.png', alt: 'HiLo Heating & Air HVAC service fleet heading out for same-day dispatch in Orange County' },
-  { src: 'https://i.ibb.co/svQ852CK/112.png', alt: 'Fully loaded HiLo Heating & Air service truck ready for HVAC repair in Orange County' },
-  { src: 'https://i.ibb.co/zVGs0xkZ/12.png', alt: 'HiLo HVAC truck stocked with parts for same-day AC repair and heating service' },
-  { src: 'https://i.ibb.co/sJqb23V3/6666.png', alt: 'HiLo Heating & Air dispatch fleet ready to service Orange County & LA' },
+  { src: '/images/fleet/1112.webp', alt: 'HiLo Heating & Air HVAC service fleet heading out for same-day dispatch in Orange County' },
+  { src: '/images/fleet/112.webp', alt: 'Fully loaded HiLo Heating & Air service truck ready for HVAC repair in Orange County' },
+  { src: '/images/fleet/12.webp', alt: 'HiLo HVAC truck stocked with parts for same-day AC repair and heating service' },
+  { src: '/images/fleet/6666.webp', alt: 'HiLo Heating & Air dispatch fleet ready to service Orange County & LA' },
 ];
 
 const AUTO_ADVANCE_MS = 4500;
