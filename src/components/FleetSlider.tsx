@@ -7,7 +7,7 @@ const fleetImages = [
   { src: '/images/fleet/6666.webp', alt: 'HiLo Heating & Air dispatch fleet ready to service Orange County & LA' },
 ];
 
-const AUTO_ADVANCE_MS = 4500;
+const AUTO_ADVANCE_MS = 2000;
 
 export default function FleetSlider() {
   const [index, setIndex] = useState(0);
