@@ -1,7 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 
 const fleetImages = [
-  { src: '/images/fleet/1112.webp', alt: 'HiLo Heating & Air HVAC service fleet heading out for same-day dispatch in Orange County' },
   { src: '/images/fleet/112.webp', alt: 'Fully loaded HiLo Heating & Air service truck ready for HVAC repair in Orange County' },
   { src: '/images/fleet/12.webp', alt: 'HiLo HVAC truck stocked with parts for same-day AC repair and heating service' },
   { src: '/images/fleet/6666.webp', alt: 'HiLo Heating & Air dispatch fleet ready to service Orange County & LA' },
