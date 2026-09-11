@@ -30,9 +30,70 @@ const articleData = {
 };
 const slugKey = post.id.replace(/\.md$/, '');
 const relatedServices = blogServiceMap[slugKey] || [serviceLinks.hvac, serviceLinks.airConditioning, serviceLinks.heating];
+
+const blogFaqSchemas: Record<string, object> = {
+  'commercial-hvac-services-guide': {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How is commercial HVAC different from residential HVAC?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Commercial systems typically use rooftop package units or multi-zone setups sized for larger spaces, unlike the single split system in most homes." }
+      },
+      {
+        "@type": "Question",
+        "name": "What types of businesses need commercial HVAC service?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Offices, restaurants, retail stores, warehouses, and medical facilities all use commercial-grade equipment with different needs than a house." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can commercial HVAC maintenance be scheduled around business hours?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Maintenance and non-emergency repairs can typically be scheduled before opening, after closing, or during slower periods." }
+      },
+      {
+        "@type": "Question",
+        "name": "How fast is emergency heating repair for a commercial property?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Same-day dispatch is standard, with 24/7 emergency service available for total system failures." }
+      },
+      {
+        "@type": "Question",
+        "name": "Why do rooftop units need regular checkups?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Rooftop units often fail gradually rather than suddenly, and slow refrigerant leaks or worn components are easier to catch during scheduled visits." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is furnace repair different for commercial buildings in Los Angeles?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Commercial furnaces are often larger and older than residential units, and repairs need to account for how the space is actually used now." }
+      },
+      {
+        "@type": "Question",
+        "name": "Are technicians licensed and insured for commercial HVAC work?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Technicians should hold EPA Section 608 certification for refrigerant work, and the contractor's license can be verified through the CSLB." }
+      },
+      {
+        "@type": "Question",
+        "name": "What does a commercial HVAC maintenance service actually include?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Typically filter changes, coil cleaning, refrigerant level checks, electrical connection inspection, and airflow testing." }
+      },
+      {
+        "@type": "Question",
+        "name": "Who is responsible for HVAC repairs in a leased commercial space?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Responsibility varies by lease terms, so confirming who can authorize repair work before an emergency happens prevents delays." }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I get started with commercial HVAC service?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Contact the company directly to schedule a diagnostic visit or set up an ongoing maintenance contract." }
+      }
+    ]
+  }
+};
+
+const faqSchema = blogFaqSchemas[slugKey];
 ---
 
-<BaseLayout title={title} description={description} article={articleData}>
+<BaseLayout title={title} description={description} article={articleData} faqSchema={faqSchema}>
   <Header />
   <main>
     <article>
@@ -162,5 +223,97 @@ const relatedServices = blogServiceMap[slugKey] || [serviceLinks.hvac, serviceLi
   }
   .prose strong {
     font-weight: 700;
+  }
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 1.5rem 0;
+    display: table;
+  }
+  .prose thead th {
+    background-color: var(--color-brand-blue);
+    color: #fff;
+    text-align: left;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+    white-space: nowrap;
+  }
+  .prose tbody th {
+    background-color: #f1f5f9;
+    text-align: left;
+    font-weight: 600;
+    color: #1e293b;
+    padding: 0.75rem 1rem;
+    vertical-align: top;
+  }
+  .prose tbody td {
+    padding: 0.75rem 1rem;
+    border: 1px solid #e2e8f0;
+    vertical-align: top;
+    color: #475569;
+  }
+  .prose tbody tr:nth-child(even) td {
+    background-color: #f8fafc;
+  }
+  .faq-accordion {
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .faq-item {
+    border: 1px solid #e2e8f0;
+    border-radius: 0.75rem;
+    background: #fff;
+    overflow: hidden;
+  }
+  .faq-item summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    font-weight: 600;
+    color: var(--color-brand-blue);
+  }
+  .faq-item summary::-webkit-details-marker {
+    display: none;
+  }
+  .faq-item summary:focus-visible {
+    outline: 2px solid var(--color-brand-blue);
+    outline-offset: -2px;
+    border-radius: 0.75rem;
+  }
+  .faq-item summary::after {
+    content: "+";
+    font-size: 1.35rem;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--color-brand-blue);
+    transition: transform 0.3s ease;
+  }
+  .faq-item[open] summary::after {
+    transform: rotate(45deg);
+  }
+  .faq-item .faq-body {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease;
+  }
+  .faq-item[open] .faq-body {
+    grid-template-rows: 1fr;
+  }
+  .faq-item .faq-content {
+    overflow: hidden;
+  }
+  .faq-item .faq-content p {
+    padding: 0 1.25rem 1.1rem;
+    margin: 0;
+    color: #475569;
+    font-size: 0.95rem;
   }
 </style>

@@ -234,6 +234,7 @@ export const blogServiceMap: Record<string, LinkItem[]> = {
   'ac-blowing-warm-air': [allServices[1], allServices[0], allServices[11]],
   'beat-the-heat-ac-guide': [allServices[1], allServices[3], allServices[0]],
   'commercial-hvac-mistakes': [allServices[16], allServices[7], allServices[8]],
+  'commercial-hvac-services-guide': [allServices[16], allServices[9], allServices[7]],
   'skipping-hvac-maintenance-costs-more': [allServices[0], allServices[5], allServices[7]],
   'seasonal-hvac-maintenance': [allServices[0], allServices[5], allServices[7]],
   'hvac-replacement': [allServices[8], allServices[7], allServices[1]],
