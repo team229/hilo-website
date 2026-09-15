@@ -32,6 +32,62 @@ const slugKey = post.id.replace(/\.md$/, '');
 const relatedServices = blogServiceMap[slugKey] || [serviceLinks.hvac, serviceLinks.airConditioning, serviceLinks.heating];
 
 const blogFaqSchemas: Record<string, object> = {
+  'ac-repair-anaheim-same-day-emergency': {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does AC repair cost in Anaheim?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It depends on the part and labor. You get an exact price before any work begins, and the diagnostic fee is waived if you approve the repair." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer same-day AC repair?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Most calls get a technician out the same day." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer emergency HVAC repair at night or on weekends?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Our emergency HVAC repair line is staffed 24/7 at (714) 853-5534." }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is my AC running but not cooling?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Common causes include a dirty filter, a failed capacitor, a frozen coil, or a refrigerant leak." }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is water leaking from my indoor unit?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Usually because of a clogged condensate drain or a frozen coil that is melting." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is it worth repairing a 10-year-old AC?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Often, yes. Compare the repair cost, the refrigerant type, and your system's repair history before deciding." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I still repair an R-22 system?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. The EPA does not require R-22 systems to be replaced, but recharges can be expensive." }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I keep running my AC if it's making a strange noise?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Turn it off and call a technician to avoid further damage." }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I prevent future breakdowns?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Change filters regularly and schedule AC maintenance before summer." }
+      },
+      {
+        "@type": "Question",
+        "name": "Are your technicians licensed?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. We hold California C-20 license #1155955, and our technicians are EPA-certified." }
+      }
+    ]
+  },
   'commercial-hvac-services-guide': {
     "@context": "https://schema.org",
     "@type": "FAQPage",

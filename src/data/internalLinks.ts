@@ -241,4 +241,5 @@ export const blogServiceMap: Record<string, LinkItem[]> = {
   'set-it-and-forget-it-hvac': [allServices[0], allServices[5], allServices[17]],
   'home-comfort-habit': [allServices[17], allServices[12], allServices[13]],
   'split-system-installation': [allServices[3], allServices[1], allServices[7]],
+  'ac-repair-anaheim-same-day-emergency': [allServices[2], allServices[0], allServices[1]],
 };
