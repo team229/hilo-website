@@ -1,7 +1,4 @@
 ---
-import { Image } from 'astro:assets';
-import secondSectionImage from '../assets/2nd-section.png';
-
 const checks = [
   '10+ years in business',
   'Same-Day service',
@@ -10,15 +7,7 @@ const checks = [
 ];
 ---
 
-<section class="relative bg-[#002d62] lg:bg-transparent lg:overflow-hidden lg:min-h-[600px]">
-  <Image
-    src={secondSectionImage}
-    alt="HiLo HVAC technician servicing equipment"
-    class="w-full h-auto lg:absolute lg:inset-0 lg:h-full lg:object-cover"
-    widths={[1920, 1440, 1024]}
-    sizes="100vw"
-  />
-  <div class="hidden lg:block absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-black/20"></div>
+<section class="relative bg-[#002d62] overflow-hidden lg:min-h-[600px]">
   <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-32">
     <div class="max-w-2xl space-y-6">
       <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white leading-tight uppercase">
@@ -27,9 +16,6 @@ const checks = [
         <span class="text-[#cc0000]">With Integrity</span>
       </h2>
       <div class="w-20 h-1.5 bg-[#cc0000] rounded"></div>
-      <p class="text-xs sm:text-sm font-extrabold tracking-widest text-white/80 uppercase">
-        Serving <a href="/service-areas/anaheim/" class="text-white underline underline-offset-2 hover:text-[#cc0000] transition-colors">Anaheim</a> and <a href="/service-areas/" class="text-white underline underline-offset-2 hover:text-[#cc0000] transition-colors">Orange County</a>, HiLo Heating &amp; Air offers <a href="/services/" class="text-white underline underline-offset-2 hover:text-[#cc0000] transition-colors">repair, maintenance, and installation</a> for home HVAC systems.
-      </p>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
         {checks.map((item) => (
           <div class="flex items-center gap-3">

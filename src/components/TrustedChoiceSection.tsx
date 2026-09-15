@@ -52,7 +52,7 @@ export default function TrustedChoiceSection() {
             <div className="w-16 h-1 bg-[#cc0000] mb-6"></div>
 
 <p className="text-base text-gray-600 max-w-xl mb-10 lg:mb-12 font-medium leading-relaxed">
-  We're proud to <a href="/service-areas/" className="text-[#002d62] underline underline-offset-2 hover:text-[#cc0000] transition-colors">serve our community</a> and provide our clients with the most exceptional customer service.
+  We're proud to <a href="/service-areas/" className="text-[#002d62] underline underline-offset-2 hover:text-[#cc0000] transition-colors">serve our community</a> and provide our clients with the most exceptional customer service. Serving <a href="/service-areas/anaheim/" className="text-[#002d62] underline underline-offset-2 hover:text-[#cc0000] transition-colors">Anaheim</a> and <a href="/service-areas/" className="text-[#002d62] underline underline-offset-2 hover:text-[#cc0000] transition-colors">Orange County</a>, HiLo Heating &amp; Air offers <a href="/services/" className="text-[#002d62] underline underline-offset-2 hover:text-[#cc0000] transition-colors">repair, maintenance, and installation</a> for home HVAC systems.
 </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">

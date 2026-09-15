@@ -3,7 +3,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import HeroSection from '../components/HeroSection.astro';
 
-import AboutIntro from '../components/AboutIntro.astro';
 import TrustedChoiceSection from '../components/TrustedChoiceSection';
 import ReliableService from '../components/ReliableService.astro';
 import ServiceCards from '../components/ServiceCards.astro';
@@ -26,7 +25,6 @@ const homeFaq = faqData['home'];
   <main>
     <HeroSection />
     <TrustStrip />
-    <AboutIntro />
     <TrustedChoiceSection client:visible />
     <ReliableService />
     <ServiceCards />

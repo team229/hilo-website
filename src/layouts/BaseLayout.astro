@@ -16,7 +16,6 @@ interface Props {
   robots?: string;
   faqSchema?: object;
   article?: ArticleProp;
-  gtm?: boolean;
 }
 
 const { 
@@ -26,7 +25,6 @@ const {
   robots,
   faqSchema,
   article,
-  gtm = false,
 } = Astro.props;
 
 const siteUrl = 'https://hiloheatingandair.com';
@@ -228,6 +226,15 @@ const schemaOrg = {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Google Tag Manager -->
+  <script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-K6JCR8GK');</script>
+  <!-- End Google Tag Manager -->
+  
   <meta name="description" content={description} />
   <meta name="robots" content={robots || 'index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large'} />
   <meta name="google-site-verification" content="gOqIw-4gLiS18wcu_Eab9w8SdgZQjZ6i6srXoUsrw0g" />
@@ -265,14 +272,6 @@ const schemaOrg = {
   <link rel="apple-touch-icon" href="/images/favicon-180.png" />
   <meta name="msapplication-TileImage" content="/images/favicon-270.png" />
 
-  {gtm && (
-    <script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-K6JCR8GK');</script>
-  )}
-  
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18314297181"></script>
   <script>
@@ -299,16 +298,16 @@ const schemaOrg = {
   <slot name="head" />
 </head>
 <body class="min-h-screen">
-  {gtm && (
-    <noscript>
-      <iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-K6JCR8GK"
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"
-      ></iframe>
-    </noscript>
-  )}
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-K6JCR8GK"
+      height="0"
+      width="0"
+      style="display:none;visibility:hidden"
+    ></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <slot />
 </body>
 </html>

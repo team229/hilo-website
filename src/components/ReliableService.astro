@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-import hiloAirConditioning from '../assets/hilo-air-conditioning.jpg';
+import reliableService from '../assets/reliable-service.webp';
 ---
 
 <section class="py-16 sm:py-24 bg-[#f3f7f9]">
@@ -28,11 +28,8 @@ import hiloAirConditioning from '../assets/hilo-air-conditioning.jpg';
       </div>
       <div class="lg:col-span-5 flex flex-col space-y-6">
         <div class="relative bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-lg p-3">
-          <div class="relative rounded-xl overflow-hidden aspect-[4/3] bg-[#002d62]">
-            <Image src={hiloAirConditioning} alt="HVAC Service" class="object-cover w-full h-full opacity-90" widths={[600, 400]} sizes="(max-width: 1024px) 100vw, 50vw" />
-            <div class="absolute top-4 left-4 bg-[#002d62] text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded shadow-md flex items-center gap-1">
-              <span class="w-1.5 h-1.5 rounded-full bg-[#cc0000]"></span>Certified Mechanics
-            </div>
+          <div class="relative rounded-xl overflow-hidden aspect-[3/2] bg-[#002d62]">
+            <Image src={reliableService} alt="HVAC Service" class="object-cover w-full h-full" widths={[640, 480, 320]} sizes="(max-width: 1024px) 100vw, 50vw" />
           </div>
           <div class="pt-4 px-2 pb-2 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-t border-brand-blue/5 mt-3">
             <div>
