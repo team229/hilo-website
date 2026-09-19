@@ -10,6 +10,7 @@ const blog = defineCollection({
     category: z.string(),
     author: z.string().default('Cody'),
     image: z.string().optional(),
+    imageAlt: z.string().optional(),
   }),
 });
 

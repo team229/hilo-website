@@ -64,7 +64,7 @@ const description = 'Expert HVAC advice, tips, and guides from the HiLo Heating 
                   <div class="aspect-[16/10] overflow-hidden">
                     <img
                       src={post.data.image}
-                      alt={post.data.title}
+                      alt={post.data.imageAlt || post.data.title}
                       class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                     />

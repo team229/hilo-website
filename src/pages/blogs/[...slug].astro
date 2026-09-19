@@ -143,6 +143,62 @@ const blogFaqSchemas: Record<string, object> = {
         "acceptedAnswer": { "@type": "Answer", "text": "Contact the company directly to schedule a diagnostic visit or set up an ongoing maintenance contract." }
       }
     ]
+  },
+  'hvac-maintenance-service-what-a-real-tune-up-includes': {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How often should HVAC maintenance be done?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Twice a year for systems that both heat and cool: cooling in spring, heating in fall. Once a year is acceptable for newer systems in mild climates with minimal heating use." }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does an HVAC maintenance visit take?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Usually 60 to 90 minutes for a single system when it is done properly. A 20-minute visit is an inspection, not a tune-up." }
+      },
+      {
+        "@type": "Question",
+        "name": "Does AC maintenance really lower energy bills?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, mainly by restoring airflow and correct refrigerant charge. Filter and coil cleanliness alone can make a measurable difference, per Department of Energy guidance." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I do AC maintenance myself?",
+        "acceptedAnswer": { "@type": "Answer", "text": "You can change filters, clear debris from around the condenser, keep vents unobstructed, and rinse the outdoor coil gently. Refrigerant work, electrical testing, and heat exchanger inspection require a licensed, certified technician." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is HVAC maintenance required to keep my warranty valid?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Most manufacturers require documented annual professional maintenance. Keep your service reports; they are what the manufacturer will ask for." }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the warning signs my system needs service now?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Weak airflow, longer run times, a bill increase without a rate change, new rattles or buzzing, water near the indoor unit, or uneven room temperatures." }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I replace refrigerant every year?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. A sealed system does not consume refrigerant. Repeated recharges mean an unrepaired leak." }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does an HVAC maintenance service cost?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Pricing varies by system count, equipment type, and whether you buy a plan. Ask for the price in writing before the visit and confirm whether filters are included." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is maintenance worth it on a system over 15 years old?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Often yes, to keep it running safely through the season while you plan a replacement. Maintenance cannot reverse worn-out equipment, but it can buy you time to make an unhurried decision." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do commercial systems need different maintenance?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Rooftop units, higher run hours, and multiple zones require more frequent visits and different testing. Commercial HVAC service is scheduled on its own cycle." }
+      }
+    ]
   }
 };
 
@@ -169,7 +225,7 @@ const faqSchema = blogFaqSchemas[slugKey];
           <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <img
               src={post.data.image}
-              alt={post.data.title}
+              alt={post.data.imageAlt || post.data.title}
               class="w-full rounded-t-2xl shadow-2xl object-cover aspect-[16/9]"
             />
           </div>
