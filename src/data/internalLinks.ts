@@ -243,4 +243,5 @@ export const blogServiceMap: Record<string, LinkItem[]> = {
   'split-system-installation': [allServices[3], allServices[1], allServices[7]],
   'ac-repair-anaheim-same-day-emergency': [allServices[2], allServices[0], allServices[1]],
   'hvac-maintenance-service-what-a-real-tune-up-includes': [allServices[0], allServices[5], allServices[9]],
+  'new-hvac-system-installation-what-to-verify': [allServices[7], allServices[8], allServices[1]],
 };
