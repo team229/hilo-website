@@ -1,91 +1,42 @@
 ---
 import { Image } from 'astro:assets';
 import heroBanner from '../assets/hero-banner.webp';
-import { Clock, ShieldCheck, Banknote, Check, Phone } from 'lucide-react';
+import { ShieldCheck, Phone } from 'lucide-react';
 ---
 
 <section class="relative bg-[#1f2d3d] text-white overflow-hidden">
-  <Image
-    src={heroBanner}
-    alt="HiLo Heating & Air banner advertising trusted HVAC service in Orange County"
-    class="w-full h-auto lg:absolute lg:inset-0 lg:h-full lg:object-cover"
-    widths={[1920, 1440, 1024, 768]}
-    sizes="100vw"
-    quality={100}
-    loading="eager"
-    fetchpriority="high"
-  />
-  <div class="hidden lg:block absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
-  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-8 lg:pt-40 lg:pb-12 w-full lg:min-h-svh lg:flex lg:items-end">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 w-full items-end">
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-6 sm:pt-6 sm:pb-8 lg:pt-12 lg:pb-16 w-full">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 w-full items-center">
 
-      {/* Left: Content */}
-      <div class="lg:col-span-7">
+      {/* Left: Content + Form */}
+      <div class="lg:col-span-6">
 
-        <div class="inline-flex items-center space-x-2 bg-[#cc0000] text-white px-3 py-1.5 lg:px-4 lg:py-2 rounded-md font-bold tracking-wider text-xs uppercase w-max mb-4 lg:mb-6 shadow-md">
+        <div class="inline-flex items-center space-x-2 bg-[#cc0000] text-white px-3 py-1.5 lg:px-4 lg:py-2 rounded-md font-bold tracking-wider text-xs uppercase w-max mb-3 lg:mb-6 shadow-md">
           <ShieldCheck class="w-3.5 h-3.5 lg:w-4 lg:h-4" strokeWidth={2.5} />
           <span>Trusted Local HVAC Company</span>
         </div>
 
-        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-4 lg:mb-6 tracking-tight">
+        <h1 class="text-[1.7rem] sm:text-5xl lg:text-6xl font-black text-white leading-[1.12] mb-3 lg:mb-6 tracking-tight">
           Orange County <br class="hidden sm:block" />
           HVAC Service <br />
           <span class="text-[#cc0000]">You Can Trust</span>
         </h1>
 
-        <p class="text-sm sm:text-base text-gray-200 max-w-xl mb-6 lg:mb-8 leading-relaxed font-medium">
+        <p class="text-sm sm:text-base text-gray-200 max-w-xl mb-4 lg:mb-8 leading-relaxed font-medium">
           Family owned &amp; operated HVAC company providing <a href="/services/air-conditioning-services/" class="text-white underline underline-offset-2 hover:text-[#cc0000] transition-colors font-semibold">same-day AC repair</a>, <a href="/services/heating-services/" class="text-white underline underline-offset-2 hover:text-[#cc0000] transition-colors font-semibold">heating service</a>, and <a href="/services/hvac-services/emergency-hvac-repair/" class="text-white underline underline-offset-2 hover:text-[#cc0000] transition-colors font-semibold">emergency HVAC repairs</a>.
         </p>
 
-        <div class="flex sm:grid sm:grid-cols-2 gap-3 sm:gap-4 max-w-xl mb-6 lg:mb-8 overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0 pb-2 sm:pb-0 scrollbar-none">
-          {[
-            { icon: 'clock', label: 'Same-Day Service' },
-            { icon: 'x', label: 'Emergency Repair' },
-            { icon: 'globe', label: 'EPA Certified' },
-            { icon: 'banknote', label: 'Financing Available' },
-            { icon: 'check', label: '24/7 Service' },
-            { icon: 'home', label: 'Home Respect' },
-          ].map((tag, i) => (
-            <div class="bg-white/95 text-gray-900 rounded-lg py-2.5 px-3.5 sm:py-3 sm:px-4 flex items-center space-x-2.5 sm:space-x-3 shadow-md backdrop-blur-sm shrink-0 sm:shrink">
-              <span class="text-[#cc0000] flex-shrink-0">
-                {tag.icon === 'clock' && <Clock class="w-4 h-4 sm:w-5 sm:h-5" strokeWidth={2.5} />}
-                {tag.icon === 'x' && (
-                  <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                )}
-                {tag.icon === 'globe' && (
-                  <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12a7.5 7.5 0 0015 0m-15 0a7.5 7.5 0 1115 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077l1.41-.513m14.095-5.128l1.41-.513M5.106 17.785l1.15-.827m11.379-8.16l1.15-.827M8.14 21.27l.707-.866m10.306-7.538l.707-.866M12 21v-1.5m0-13.5V3" />
-                  </svg>
-                )}
-                {tag.icon === 'banknote' && <Banknote class="w-4 h-4 sm:w-5 sm:h-5" strokeWidth={2.5} />}
-                {tag.icon === 'check' && <Check class="w-4 h-4 sm:w-5 sm:h-5" strokeWidth={2.5} />}
-                {tag.icon === 'home' && (
-                  <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                  </svg>
-                )}
-              </span>
-              <span class="font-bold text-xs sm:text-sm whitespace-nowrap">{tag.label}</span>
-            </div>
-          ))}
-        </div>
-
-        <div>
-          <a href="tel:+17148535534" class="inline-flex items-center space-x-3 bg-[#cc0000] hover:bg-[#b30000] text-white font-extrabold px-6 py-3.5 lg:px-8 lg:py-4 rounded-xl transition duration-200 shadow-lg group text-sm lg:text-base">
+        <div class="mb-5 lg:mb-8">
+          <a href="tel:+17148535534" class="flex sm:inline-flex items-center justify-center space-x-3 bg-[#cc0000] hover:bg-[#b30000] text-white font-extrabold px-6 py-3.5 lg:px-8 lg:py-4 rounded-xl transition duration-200 shadow-lg group text-sm lg:text-base">
             <Phone class="w-4 h-4 lg:w-5 lg:h-5 fill-current" />
             <span>Call For Same Day Service</span>
           </a>
         </div>
-      </div>
 
-      {/* Right: Form Card bottom-aligned */}
-      <div class="lg:col-span-5">
-        <div class="bg-[#003366]/95 rounded-2xl p-5 sm:p-6 shadow-[0_20px_50px_rgba(0,0,0,0.3)] border border-[#004080] backdrop-blur-sm">
+        <div class="bg-[#003366]/95 rounded-2xl p-4 sm:p-6 shadow-[0_20px_50px_rgba(0,0,0,0.3)] border border-[#004080] backdrop-blur-sm">
           <h3 class="text-lg sm:text-xl font-extrabold text-white mb-1">Schedule Service</h3>
-          <p class="text-xs text-gray-300 mb-4 font-medium">Fast response for repairs & installations</p>
-          <form id="hero-form" class="space-y-3">
+          <p class="text-xs text-gray-300 mb-3 sm:mb-4 font-medium">Fast response for repairs & installations</p>
+          <form id="hero-form" class="space-y-2.5 sm:space-y-3">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div class="relative">
                 <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400 pointer-events-none">
@@ -122,6 +73,22 @@ import { Clock, ShieldCheck, Banknote, Check, Phone } from 'lucide-react';
               Request Service
             </button>
           </form>
+        </div>
+      </div>
+
+      {/* Right: Banner image — fully visible, no overlay */}
+      <div class="lg:col-span-6 order-first lg:order-last">
+        <div class="rounded-2xl overflow-hidden ring-1 ring-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
+          <Image
+            src={heroBanner}
+            alt="HiLo Heating & Air banner advertising trusted HVAC service in Orange County"
+            class="w-full h-60 sm:h-80 lg:h-auto object-cover object-top lg:object-contain"
+            widths={[1086, 800, 640]}
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            quality={90}
+            loading="eager"
+            fetchpriority="high"
+          />
         </div>
       </div>
 

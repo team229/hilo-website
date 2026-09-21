@@ -3,7 +3,17 @@ import { Image } from 'astro:assets';
 import hiloAirConditioning from '../assets/hilo-air-conditioning.jpg';
 import hvacMaintenance from '../assets/hvac-maintenance.jpg';
 import hiloHvacServices from '../assets/hilo-hvac-services.jpg';
-import completeSolutions from '../assets/complete-solutions.webp';
+import repair1 from '../assets/repair-1.webp';
+import repair2 from '../assets/repair-2.webp';
+import repair3 from '../assets/repair-3.webp';
+import repair4 from '../assets/repair-4.webp';
+
+const solutionSlides = [
+  { src: repair1, alt: 'HiLo HVAC technician performing air conditioning repair' },
+  { src: repair2, alt: 'Professional heating and cooling system service' },
+  { src: repair3, alt: 'HVAC maintenance and repair by HiLo Heating & Air' },
+  { src: repair4, alt: 'Expert technician servicing a home comfort system' },
+];
 import teamImg from '../assets/team.jpg';
 
 const services = [
@@ -49,15 +59,30 @@ const services = [
         </p>
       </div>
       <div class="relative">
-        <div class="relative rounded-2xl overflow-hidden shadow-2xl">
-          <Image
-            src={completeSolutions}
-            alt="HiLo HVAC technician servicing air conditioning unit"
-            class="w-full h-[350px] sm:h-[400px] lg:h-[500px] object-cover object-center"
-            widths={[800, 600]}
-            sizes="(max-width: 1024px) 100vw, 50vw"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+        <div class="relative rounded-2xl overflow-hidden shadow-2xl h-[350px] sm:h-[400px] lg:h-[500px] bg-[#002d62]">
+          <div class="relative h-full w-full group" data-solutions-carousel>
+            {solutionSlides.map((s, i) => (
+              <div
+                class={`absolute inset-0 transition-opacity duration-700 ease-in-out ${i === 0 ? 'opacity-100' : 'opacity-0'}`}
+                data-solutions-slide={i}
+                aria-hidden={i === 0 ? 'false' : 'true'}
+              >
+                <Image src={s.src} alt={s.alt} class="object-cover object-center w-full h-full" widths={[800, 640, 480]} sizes="(max-width: 1024px) 100vw, 50vw" />
+              </div>
+            ))}
+            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent pointer-events-none"></div>
+            <div class="absolute bottom-3 left-1/2 -translate-x-1/2 z-10 flex items-center gap-2">
+              {solutionSlides.map((_, i) => (
+                <button
+                  type="button"
+                  class={`h-2 rounded-full transition-all duration-300 ${i === 0 ? 'w-7 bg-[#cc0000]' : 'w-2 bg-white/70 hover:bg-white'}`}
+                  data-solutions-dot={i}
+                  aria-label={`Go to image ${i + 1}`}
+                  aria-current={i === 0 ? 'true' : 'false'}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -101,3 +126,52 @@ const services = [
     </div>
   </div>
 </section>
+
+<script>
+  const solutionsRoot = document.querySelector('[data-solutions-carousel]');
+  if (solutionsRoot) {
+    const slides = Array.from(solutionsRoot.querySelectorAll('[data-solutions-slide]'));
+    const dots = Array.from(solutionsRoot.querySelectorAll('[data-solutions-dot]'));
+    const total = slides.length;
+    const AUTO_ADVANCE_MS = 2000;
+    let index = 0;
+    let timer = 0;
+    let paused = false;
+
+    const setActive = (next) => {
+      index = (next + total) % total;
+      slides.forEach((slide, i) => {
+        const active = i === index;
+        slide.classList.toggle('opacity-100', active);
+        slide.classList.toggle('opacity-0', !active);
+        slide.setAttribute('aria-hidden', String(!active));
+      });
+      dots.forEach((dot, i) => {
+        const active = i === index;
+        dot.classList.toggle('w-7', active);
+        dot.classList.toggle('bg-[#cc0000]', active);
+        dot.classList.toggle('w-2', !active);
+        dot.classList.toggle('bg-white/70', !active);
+        dot.setAttribute('aria-current', String(active));
+      });
+    };
+
+    const start = () => {
+      clearInterval(timer);
+      timer = window.setInterval(() => {
+        if (!paused) setActive(index + 1);
+      }, AUTO_ADVANCE_MS);
+    };
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => { setActive(i); start(); });
+    });
+
+    solutionsRoot.addEventListener('mouseenter', () => { paused = true; });
+    solutionsRoot.addEventListener('mouseleave', () => { paused = false; });
+    solutionsRoot.addEventListener('focusin', () => { paused = true; });
+    solutionsRoot.addEventListener('focusout', () => { paused = false; });
+
+    start();
+  }
+</script>
