@@ -1,6 +1,18 @@
 ---
 import { Image } from 'astro:assets';
-import reliableService from '../assets/reliable-service.webp';
+import chatgpt from '../assets/chatgpt-reliable.webp';
+import repair1 from '../assets/repair-1.webp';
+import repair2 from '../assets/repair-2.webp';
+import repair3 from '../assets/repair-3.webp';
+import repair4 from '../assets/repair-4.webp';
+
+const slides = [
+  { src: chatgpt, alt: 'HiLo Heating & Air trusted HVAC service for Orange County homes' },
+  { src: repair1, alt: 'HVAC repair service performed by HiLo Heating & Air' },
+  { src: repair2, alt: 'Air conditioning repair technician at work' },
+  { src: repair3, alt: 'Heating and cooling system service' },
+  { src: repair4, alt: 'Professional HVAC maintenance and repair' },
+];
 ---
 
 <section class="py-16 sm:py-24 bg-[#f3f7f9]">
@@ -28,8 +40,48 @@ import reliableService from '../assets/reliable-service.webp';
       </div>
       <div class="lg:col-span-5 flex flex-col space-y-6">
         <div class="relative bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-lg p-3">
-          <div class="relative rounded-xl overflow-hidden aspect-[3/2] bg-[#002d62]">
-            <Image src={reliableService} alt="HVAC Service" class="object-cover w-full h-full" widths={[640, 480, 320]} sizes="(max-width: 1024px) 100vw, 50vw" />
+          <div class="relative rounded-xl overflow-hidden aspect-square bg-[#002d62]">
+            <div class="relative h-full w-full group" data-reliable-carousel>
+              {slides.map((s, i) => (
+                <div
+                  class={`absolute inset-0 transition-opacity duration-700 ease-in-out ${i === 0 ? 'opacity-100' : 'opacity-0'}`}
+                  data-slide={i}
+                  aria-hidden={i === 0 ? 'false' : 'true'}
+                >
+                  <Image src={s.src} alt={s.alt} class="object-cover w-full h-full" widths={[800, 640, 480]} sizes="(max-width: 1024px) 100vw, 50vw" />
+                </div>
+              ))}
+
+              <button
+                type="button"
+                class="absolute left-2 top-1/2 -translate-y-1/2 z-10 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-black/35 backdrop-blur-sm text-white flex items-center justify-center hover:bg-[#cc0000] transition-colors opacity-80 sm:opacity-0 sm:group-hover:opacity-100"
+                aria-label="Previous image"
+                data-reliable-prev
+              >
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" /></svg>
+              </button>
+              <button
+                type="button"
+                class="absolute right-2 top-1/2 -translate-y-1/2 z-10 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-black/35 backdrop-blur-sm text-white flex items-center justify-center hover:bg-[#cc0000] transition-colors opacity-80 sm:opacity-0 sm:group-hover:opacity-100"
+                aria-label="Next image"
+                data-reliable-next
+              >
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
+              </button>
+
+              <div class="absolute bottom-3 left-1/2 -translate-x-1/2 z-10 flex items-center gap-2">
+                {slides.map((_, i) => (
+                  <button
+                    key={i}
+                    type="button"
+                    class={`h-2 rounded-full transition-all duration-300 ${i === 0 ? 'w-7 bg-[#cc0000]' : 'w-2 bg-white/70 hover:bg-white'}`}
+                    aria-label={`Go to slide ${i + 1}`}
+                    aria-current={i === 0 ? 'true' : 'false'}
+                    data-reliable-dot={i}
+                  />
+                ))}
+              </div>
+            </div>
           </div>
           <div class="pt-4 px-2 pb-2 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-t border-brand-blue/5 mt-3">
             <div>
@@ -44,3 +96,54 @@ import reliableService from '../assets/reliable-service.webp';
     </div>
   </div>
 </section>
+
+<script>
+  const root = document.querySelector('[data-reliable-carousel]');
+  if (root) {
+    const slides = Array.from(root.querySelectorAll('[data-slide]'));
+    const dots = Array.from(root.querySelectorAll('[data-reliable-dot]'));
+    const prevBtn = root.querySelector('[data-reliable-prev]');
+    const nextBtn = root.querySelector('[data-reliable-next]');
+    const total = slides.length;
+    const AUTO_ADVANCE_MS = 3000;
+    let index = 0;
+    let timer = 0;
+    let paused = false;
+
+    const setActive = (next) => {
+      index = (next + total) % total;
+      slides.forEach((slide, i) => {
+        const active = i === index;
+        slide.classList.toggle('opacity-100', active);
+        slide.classList.toggle('opacity-0', !active);
+        slide.setAttribute('aria-hidden', String(!active));
+      });
+      dots.forEach((dot, i) => {
+        const active = i === index;
+        dot.classList.toggle('w-7', active);
+        dot.classList.toggle('bg-[#cc0000]', active);
+        dot.classList.toggle('w-2', !active);
+        dot.classList.toggle('bg-white/70', !active);
+        dot.setAttribute('aria-current', String(active));
+      });
+    };
+
+    const start = () => {
+      clearInterval(timer);
+      timer = window.setInterval(() => {
+        if (!paused) setActive(index + 1);
+      }, AUTO_ADVANCE_MS);
+    };
+
+    prevBtn?.addEventListener('click', () => { setActive(index - 1); start(); });
+    nextBtn?.addEventListener('click', () => { setActive(index + 1); start(); });
+    dots.forEach((dot, i) => dot.addEventListener('click', () => { setActive(i); start(); }));
+
+    root.addEventListener('mouseenter', () => { paused = true; });
+    root.addEventListener('mouseleave', () => { paused = false; });
+    root.addEventListener('focusin', () => { paused = true; });
+    root.addEventListener('focusout', () => { paused = false; });
+
+    start();
+  }
+</script>
