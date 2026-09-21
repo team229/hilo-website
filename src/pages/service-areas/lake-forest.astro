@@ -1,0 +1,151 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { faqs as faqData } from '../../data/faqs';
+
+const faq = faqData['service-areas-lake-forest'];
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import CTASection from '../../components/CTASection';
+import FAQSection from '../../components/FAQSection';
+import ServiceForm from '../../components/ServiceForm';
+import Reviews from '../../components/Reviews';
+import LicenseBadges from '../../components/LicenseBadges.astro';
+import BrandsSection from '../../components/BrandsSection.astro';
+import VanSection from '../../components/VanSection.astro';
+---
+
+<BaseLayout title="AC Repair Lake Forest CA | HiLo Heating & Air" description="Same-day AC repair in Lake Forest, CA with free diagnostics for condos and family homes. Call HiLo Heating & Air at (714) 853-5534 for fast relief now." faqSchema={faq.faqSchema}>
+  <Header />
+  <main>
+    <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4">AC Repair Lake Forest CA</h1>
+        <p class="text-white/80 text-lg max-w-2xl mx-auto">Foothill warmth near Saddleback meets condos and family homes alike. See our <a href="/services/air-conditioning-services/ac-maintenance/" class="text-white underline underline-offset-2 hover:text-white/70">AC maintenance plans</a> to prevent summer breakdowns.</p>
+      </div>
+    </section>
+
+    <LicenseBadges />
+
+    <VanSection
+      title="Our Service Fleet"
+      subtitle="Professional HVAC vehicles ready to serve your home"
+    />
+
+    <section class="py-16 sm:py-24 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">
+        <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mt-0 mb-4">Saddleback Foothill Warmth Tests Condos and Family Homes</h2>
+
+        <p>Lake Forest catches warmer air rolling off Saddleback, so July afternoons feel heavier here than by the freeway. Sun hits the stucco hard in Foothill Ranch and Portola Hills, while condos near the 241 trap heat in stacked garages. Evening canyon breezes help, but only if your system can catch up by bedtime.</p>
+        <p>We meet a lot of owners juggling HOA rules, shared walls, and attic units wedged above closets. Choosing <a href="/services/air-conditioning-services/" class="text-brand-blue underline hover:text-brand-red"><strong>ac repair Lake Forest CA</strong></a> from a local crew means someone who already knows those closet air handlers and HOA quiet hours.</p>
+        <p>Our techs snake cameras through condo line sets, wash foothill dust out of coils after windy weeks, and replace tired attic drain pans before they stain ceilings. Single-family or townhome, we keep the fix tidy and the paperwork HOA-friendly.</p>
+
+        <h2>When Should You Call for AC Repair in Lake Forest?</h2>
+        <p>Foothill dust sneaks into everything here, coating filters and blower wheels faster than coastal homes. If your vents puff gray dust or airflow fades a month after a filter change, the indoor coil is likely choking. Warm bedrooms over the garage are another classic flag.</p>
+        <p>Do not ignore a sweet chemical odor, a swollen drain pan, or an air handler humming loudly in the hallway closet. Those hints often precede a full no-cool weekend right when Saddleback heat peaks.</p>
+        <ul>
+          <li>Bedrooms over garage never cooling properly</li>
+          <li>Gray dust puffing from vents after filter change</li>
+          <li>Sweet chemical smell near indoor unit</li>
+          <li>Closet air handler humming or vibrating loudly</li>
+          <li>AC tripping HOA breaker panel repeatedly</li>
+          <li>Hot air bursts between cooling cycles</li>
+          <li>Thermostat losing WiFi connection often</li>
+        </ul>
+        <p>Catch those foothill warning signs early in Lake Forest and you will dodge most emergency weekend calls.</p>
+
+        <h2>What We Handle</h2>
+        <p>Reliable <strong>ac repair in Lake Forest</strong> includes closet air handlers, attic furnaces with coils, outdoor heat pumps, and ductless heads for converted garages. We service York, Goodman, Rheem, Carrier, Trane, and Lennox models found across condos and detached homes alike.</p>
+        <p>Filter-slot upgrades for dusty foothill air, blower cleanings, condensate pump installs, line-set leak repairs, control board swaps, sound-blanket additions for HOA noise limits, and attic insulation referrals round out the work. We leave closets cleaner than we found them, every time.</p>
+
+        <h2>What Makes HiLo Different — Honestly</h2>
+        <p>Nobody wants a stranger tracking foothill dust through a condo hallway. Our crew wears boot covers, lays runners, and vacuums the closet before leaving. Small courtesies matter when neighbors share walls.</p>
+        <p>We also keep condo paperwork painless with model numbers, photos, and HOA-friendly descriptions attached to every invoice. If a board needs proof of licensed work, you will already have it in your inbox.</p>
+        <ul>
+          <li>Condo-aware scheduling around HOA quiet hours</li>
+          <li>Dust-focused tune-ups for Saddleback foothill air</li>
+          <li>Straightforward texts with ETA and upfront pricing</li>
+          <li>Free diagnostics bundled with completed repairs</li>
+        </ul>
+        <p>Lake Forest neighbors recommend us because we show up prepared and leave no mess behind.</p>
+      </div>
+    </section>
+
+    <section class="py-16 sm:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div>
+            <span class="inline-block bg-brand-blue/10 text-brand-blue text-sm font-semibold px-4 py-1.5 rounded-full mb-4">Schedule Service</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-brand-blue mb-4">Get a Free Estimate</h2>
+            <p class="text-slate-600 mb-6">Fill out the form and our team will get back to you within 15 minutes. Same-day service available.</p>
+            <div class="space-y-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-brand-blue/10 rounded-lg flex items-center justify-center">
+                  <svg class="w-5 h-5 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <span class="text-sm font-semibold text-brand-blue">Same-Day Service Available</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-brand-blue/10 rounded-lg flex items-center justify-center">
+                  <svg class="w-5 h-5 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+                </div>
+                <span class="text-sm font-semibold text-brand-blue">Free Diagnostics with Repair</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-brand-blue/10 rounded-lg flex items-center justify-center">
+                  <svg class="w-5 h-5 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"/></svg>
+                </div>
+                <span class="text-sm font-semibold text-brand-blue">Upfront Pricing, No Hidden Fees</span>
+              </div>
+            </div>
+          </div>
+          <ServiceForm client:load />
+        </div>
+      </div>
+    </section>
+
+    <Reviews client:visible />
+    <BrandsSection />
+
+    <FAQSection client:visible faqs={faq.faqs} />
+
+    <section class="bg-brand-blue/5 py-8">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-brand-blue font-semibold">HiLo Heating & Air Conditioning · 8131 Electric Ave, Stanton, CA 90680, United States</p>
+        <p class="text-slate-600 mt-1"><a href="tel:+17148535534" class="hover:text-brand-red transition">(714) 853-5534</a> · <a href="mailto:info@hiloheatingandair.com" class="hover:text-brand-red transition">info@hiloheatingandair.com</a></p>
+      </div>
+    </section>
+
+
+    {/* Internal Linking: Services + Nearby Areas */}
+    <section class="py-12 sm:py-16 bg-slate-50 border-y border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold text-brand-blue mb-6 text-center">Related HVAC Services in Lake Forest</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+          <a href="/services/air-conditioning-services/" class="bg-white border border-slate-200 rounded-xl p-4 text-center hover:shadow-md hover:border-brand-blue/30 transition group"><span class="text-sm font-bold text-brand-blue group-hover:text-brand-red">Air Conditioning</span><span class="block text-xs text-slate-500 mt-1">AC repair & install</span></a>
+          <a href="/services/heating-services/" class="bg-white border border-slate-200 rounded-xl p-4 text-center hover:shadow-md hover:border-brand-blue/30 transition group"><span class="text-sm font-bold text-brand-blue group-hover:text-brand-red">Heating Services</span><span class="block text-xs text-slate-500 mt-1">Furnace repair & install</span></a>
+          <a href="/services/hvac-services/" class="bg-white border border-slate-200 rounded-xl p-4 text-center hover:shadow-md hover:border-brand-blue/30 transition group"><span class="text-sm font-bold text-brand-blue group-hover:text-brand-red">HVAC Services</span><span class="block text-xs text-slate-500 mt-1">Maintenance & install</span></a>
+          <a href="/services/hvac-services/emergency-hvac-repair/" class="bg-white border border-slate-200 rounded-xl p-4 text-center hover:shadow-md hover:border-brand-blue/30 transition group"><span class="text-sm font-bold text-brand-blue group-hover:text-brand-red">Emergency Repair</span><span class="block text-xs text-slate-500 mt-1">24/7 same-day</span></a>
+          <a href="/services/air-conditioning-services/ac-maintenance/" class="bg-white border border-slate-200 rounded-xl p-4 text-center hover:shadow-md hover:border-brand-blue/30 transition group"><span class="text-sm font-bold text-brand-blue group-hover:text-brand-red">AC Maintenance</span><span class="block text-xs text-slate-500 mt-1">Tune-ups</span></a>
+          <a href="/services/indoor-air-quality-solutions/" class="bg-white border border-slate-200 rounded-xl p-4 text-center hover:shadow-md hover:border-brand-blue/30 transition group"><span class="text-sm font-bold text-brand-blue group-hover:text-brand-red">Indoor Air Quality</span><span class="block text-xs text-slate-500 mt-1">Duct & air</span></a>
+          <a href="/services/commercial-hvac-services/" class="bg-white border border-slate-200 rounded-xl p-4 text-center hover:shadow-md hover:border-brand-blue/30 transition group"><span class="text-sm font-bold text-brand-blue group-hover:text-brand-red">Commercial HVAC</span><span class="block text-xs text-slate-500 mt-1">Business systems</span></a>
+          <a href="/blogs/" class="bg-white border border-slate-200 rounded-xl p-4 text-center hover:shadow-md hover:border-brand-blue/30 transition group"><span class="text-sm font-bold text-brand-blue group-hover:text-brand-red">HVAC Blog</span><span class="block text-xs text-slate-500 mt-1">Tips & guides</span></a>
+        </div>
+        <div class="mt-8 text-center">
+          <p class="text-sm text-slate-500 mb-3">Nearby service areas:</p>
+          <div class="flex flex-wrap justify-center gap-2">
+            <a href="/service-areas/mission-viejo/" class="text-sm text-brand-blue hover:text-brand-red hover:underline">Mission Viejo</a><span class="text-slate-300">·</span>
+            <a href="/service-areas/irvine/" class="text-sm text-brand-blue hover:text-brand-red hover:underline">Irvine</a><span class="text-slate-300">·</span>
+            <a href="/service-areas/laguna-hills/" class="text-sm text-brand-blue hover:text-brand-red hover:underline">Laguna Hills</a><span class="text-slate-300">·</span>
+            <a href="/service-areas/rancho-santa-margarita/" class="text-sm text-brand-blue hover:text-brand-red hover:underline">Rancho Santa Margarita</a><span class="text-slate-300">·</span>
+            <a href="/service-areas/tustin/" class="text-sm text-brand-blue hover:text-brand-red hover:underline">Tustin</a><span class="text-slate-300">·</span>
+            <a href="/service-areas/costa-mesa/" class="text-sm text-brand-blue hover:text-brand-red hover:underline">Costa Mesa</a><span class="text-slate-300">·</span>
+            <a href="/service-areas/" class="text-sm font-semibold text-brand-blue hover:text-brand-red hover:underline">View All Areas →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <CTASection client:visible />
+  </main>
+  <Footer />
+</BaseLayout>

@@ -72,20 +72,33 @@ export const servicesByCategory: Record<string, LinkItem[]> = {
   ],
 };
 
-// ── Service Areas (12) ──
+// ── Service Areas (25) ──
 export const serviceAreas: LinkItem[] = [
   { name: 'Anaheim', href: '/service-areas/anaheim/', description: 'AC repair & HVAC services in Anaheim' },
+  { name: 'Brea', href: '/service-areas/brea/', description: 'AC & heating services in Brea' },
+  { name: 'Buena Park', href: '/service-areas/buena-park/', description: 'HVAC repair & installation in Buena Park' },
   { name: 'Costa Mesa', href: '/service-areas/costa-mesa/', description: 'HVAC repair & installation in Costa Mesa' },
+  { name: 'Cypress', href: '/service-areas/cypress/', description: 'Heating & cooling services in Cypress' },
+  { name: 'Fountain Valley', href: '/service-areas/fountain-valley/', description: 'AC repair & HVAC services in Fountain Valley' },
+  { name: 'Fullerton', href: '/service-areas/fullerton/', description: 'AC repair & heating services in Fullerton' },
   { name: 'Garden Grove', href: '/service-areas/garden-grove/', description: 'AC & heating services in Garden Grove' },
+  { name: 'Huntington Beach', href: '/service-areas/huntington-beach/', description: 'Coastal HVAC services in Huntington Beach' },
   { name: 'Irvine', href: '/service-areas/irvine/', description: 'Heating & cooling services in Irvine' },
+  { name: 'La Habra', href: '/service-areas/la-habra/', description: 'HVAC services in La Habra' },
   { name: 'Laguna Hills', href: '/service-areas/laguna-hills/', description: 'HVAC solutions in Laguna Hills' },
+  { name: 'Lake Forest', href: '/service-areas/lake-forest/', description: 'Heating & cooling services in Lake Forest' },
   { name: 'Los Angeles', href: '/service-areas/los-angeles/', description: 'AC & furnace services in Los Angeles' },
+  { name: 'Mission Viejo', href: '/service-areas/mission-viejo/', description: 'AC & heating services in Mission Viejo' },
   { name: 'Newport Beach', href: '/service-areas/newport-beach/', description: 'Coastal HVAC services in Newport Beach' },
   { name: 'Orange', href: '/service-areas/orange/', description: 'Heating & AC services in Orange' },
   { name: 'Orange County', href: '/service-areas/orange-county/', description: 'Complete HVAC solutions across Orange County' },
+  { name: 'Placentia', href: '/service-areas/placentia/', description: 'HVAC repair & maintenance in Placentia' },
   { name: 'Rancho Santa Margarita', href: '/service-areas/rancho-santa-margarita/', description: 'HVAC services in Rancho Santa Margarita' },
   { name: 'Santa Ana', href: '/service-areas/santa-ana/', description: 'HVAC repair & maintenance in Santa Ana' },
   { name: 'Stanton', href: '/service-areas/stanton/', description: 'Local HVAC in Stanton — our HQ city' },
+  { name: 'Tustin', href: '/service-areas/tustin/', description: 'Heating & cooling services in Tustin' },
+  { name: 'Westminster', href: '/service-areas/westminster/', description: 'AC & heating services in Westminster' },
+  { name: 'Yorba Linda', href: '/service-areas/yorba-linda/', description: 'HVAC services in Yorba Linda' },
 ];
 
 // ── Hub pages (for contextual linking) ──

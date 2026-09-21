@@ -1,0 +1,151 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { faqs as faqData } from '../../data/faqs';
+
+const faq = faqData['service-areas-fountain-valley'];
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import CTASection from '../../components/CTASection';
+import FAQSection from '../../components/FAQSection';
+import ServiceForm from '../../components/ServiceForm';
+import Reviews from '../../components/Reviews';
+import LicenseBadges from '../../components/LicenseBadges.astro';
+import BrandsSection from '../../components/BrandsSection.astro';
+import VanSection from '../../components/VanSection.astro';
+---
+
+<BaseLayout title="AC Repair Fountain Valley CA | HiLo Heating & Air" description="Same-day AC repair in Fountain Valley, CA plus free diagnostics for tract homes. Call HiLo Heating & Air at (714) 853-5534 for fast cooling relief now." faqSchema={faq.faqSchema}>
+  <Header />
+  <main>
+    <section class="bg-gradient-to-br from-brand-blue to-blue-800 py-20 sm:py-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4">AC Repair Fountain Valley CA</h1>
+        <p class="text-white/80 text-lg max-w-2xl mx-auto">Tract-home pros serving streets around Mile Square Park with quick diagnostics. Check our <a href="/services/air-conditioning-services/" class="text-white underline underline-offset-2 hover:text-white/70">cooling repair services</a> for same-day help.</p>
+      </div>
+    </section>
+
+    <LicenseBadges />
+
+    <VanSection
+      title="Our Service Fleet"
+      subtitle="Professional HVAC vehicles ready to serve your home"
+    />
+
+    <section class="py-16 sm:py-24 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg">
+        <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue mt-0 mb-4">Mile Square Park Breezes Can't Save an Aging Tract Unit</h2>
+
+        <p>Fountain Valley feels easy most of the year, with soft coastal air drifting over from Huntington Beach. Then a Santa Ana heat spike parks over these flat tract neighborhoods and every original 1990s condenser on the block groans at once. Attics here bake fast because roofs are low and vents are small.</p>
+        <p>Plenty of breakdowns come down to neglected maintenance catching up all at once. If you are hunting for <a href="/services/air-conditioning-services/" class="text-brand-blue underline hover:text-brand-red"><strong>ac repair Fountain Valley CA</strong></a>, we will pull the disconnect, open the panels, and walk you through the failure point by point.</p>
+        <p>We spend a lot of time in Fountain Valley garages and side yards where builders squeezed equipment tight to the fence. Our techs clear cottonwood fluff from coils, straighten crushed flex ducts over the garage, and get those single-story ranches breathing evenly again.</p>
+
+        <h2>When Should You Call for AC Repair in Fountain Valley?</h2>
+        <p>Because weather here is usually mild, folks run the fan on auto for months without noticing fading performance. The first real 90-degree weekend exposes every weakness at once. Weak airflow in the back bedrooms is the early tell.</p>
+        <p>Watch for condensation stains on hallway ceilings or a gurgling drain by the laundry wall. Tract homes share similar drain routing that clogs with algae right around August, and overflow shuts the whole system down.</p>
+        <ul>
+          <li>Back bedrooms staying warm while living room cools</li>
+          <li>Hissing or bubbling noise near indoor coil</li>
+          <li>Ceiling stains or drips by hallway vents</li>
+          <li>Fan running but compressor silent outside</li>
+          <li>Thermostat set to 72 but stuck at 78</li>
+          <li>Hot, stuffy air from one vent only</li>
+          <li>Repeated drain float-switch shutdowns</li>
+        </ul>
+        <p>See any of those clues in Fountain Valley, and snap a photo of your thermostat reading to help us triage by phone.</p>
+
+        <h2>What We Handle</h2>
+        <p>Count on thorough <strong>ac repair in Fountain Valley</strong> for builder-grade split systems, upgraded variable-speed installs, condo air handlers, and garage furnaces paired with AC coils. We wrench daily on Goodman, Carrier, Rheem, Trane, Lennox, and York boxes found all over these tracts.</p>
+        <p>Coil cleanings, hard-start kits, fan blade swaps, TXV replacements, leak stops with nitrogen testing, new line-set insulation, WiFi thermostat setups, and attic duct repairs keep us busy here. We also add return air where builders undersized it for these floorplans.</p>
+
+        <h2>What Makes HiLo Different — Honestly</h2>
+        <p>We do not hire commissioned salespeople to ride along on repair calls. The person who shows up is a licensed tech whose only job is fixing your cooling correctly. That keeps advice honest when money is tight.</p>
+        <p>You will get straight talk about whether your 15-year-old Goodman deserves another capacitor or a planned retirement next spring. We write both numbers down, answer questions patiently, and let you sleep on big calls.</p>
+        <ul>
+          <li>Free second look if cooling fades within 30 days</li>
+          <li>Fully stocked vans for one-trip Fountain Valley fixes</li>
+          <li>Respect for HOA hours, driveways, and side gates</li>
+          <li>Clear texts with photos before we replace anything pricey</li>
+        </ul>
+        <p>Our goal is simple: cool house tonight, no regrets tomorrow morning.</p>
+      </div>
+    </section>
+
+    <section class="py-16 sm:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div>
+            <span class="inline-block bg-brand-blue/10 text-brand-blue text-sm font-semibold px-4 py-1.5 rounded-full mb-4">Schedule Service</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-brand-blue mb-4">Get a Free Estimate</h2>
+            <p class="text-slate-600 mb-6">Fill out the form and our team will get back to you within 15 minutes. Same-day service available.</p>
+            <div class="space-y-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-brand-blue/10 rounded-lg flex items-center justify-center">
+                  <svg class="w-5 h-5 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <span class="text-sm font-semibold text-brand-blue">Same-Day Service Available</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-brand-blue/10 rounded-lg flex items-center justify-center">
+                  <svg class="w-5 h-5 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+                </div>
+                <span class="text-sm font-semibold text-brand-blue">Free Diagnostics with Repair</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-brand-blue/10 rounded-lg flex items-center justify-center">
+                  <svg class="w-5 h-5 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"/></svg>
+                </div>
+                <span class="text-sm font-semibold text-brand-blue">Upfront Pricing, No Hidden Fees</span>
+              </div>
+            </div>
+          </div>
+          <ServiceForm client:load />
+        </div>
+      </div>
+    </section>
+
+    <Reviews client:visible />
+    <BrandsSection />
+
+    <FAQSection client:visible faqs={faq.faqs} />
+
+    <section class="bg-brand-blue/5 py-8">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-brand-blue font-semibold">HiLo Heating & Air Conditioning · 8131 Electric Ave, Stanton, CA 90680, United States</p>
+        <p class="text-slate-600 mt-1"><a href="tel:+17148535534" class="hover:text-brand-red transition">(714) 853-5534</a> · <a href="mailto:info@hiloheatingandair.com" class="hover:text-brand-red transition">info@hiloheatingandair.com</a></p>
+      </div>
+    </section>
+
+
+    {/* Internal Linking: Services + Nearby Areas */}
+    <section class="py-12 sm:py-16 bg-slate-50 border-y border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold text-brand-blue mb-6 text-center">Related HVAC Services in Fountain Valley</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+          <a href="/services/air-conditioning-services/" class="bg-white border border-slate-200 rounded-xl p-4 text-center hover:shadow-md hover:border-brand-blue/30 transition group"><span class="text-sm font-bold text-brand-blue group-hover:text-brand-red">Air Conditioning</span><span class="block text-xs text-slate-500 mt-1">AC repair & install</span></a>
+          <a href="/services/heating-services/" class="bg-white border border-slate-200 rounded-xl p-4 text-center hover:shadow-md hover:border-brand-blue/30 transition group"><span class="text-sm font-bold text-brand-blue group-hover:text-brand-red">Heating Services</span><span class="block text-xs text-slate-500 mt-1">Furnace repair & install</span></a>
+          <a href="/services/hvac-services/" class="bg-white border border-slate-200 rounded-xl p-4 text-center hover:shadow-md hover:border-brand-blue/30 transition group"><span class="text-sm font-bold text-brand-blue group-hover:text-brand-red">HVAC Services</span><span class="block text-xs text-slate-500 mt-1">Maintenance & install</span></a>
+          <a href="/services/hvac-services/emergency-hvac-repair/" class="bg-white border border-slate-200 rounded-xl p-4 text-center hover:shadow-md hover:border-brand-blue/30 transition group"><span class="text-sm font-bold text-brand-blue group-hover:text-brand-red">Emergency Repair</span><span class="block text-xs text-slate-500 mt-1">24/7 same-day</span></a>
+          <a href="/services/air-conditioning-services/ac-maintenance/" class="bg-white border border-slate-200 rounded-xl p-4 text-center hover:shadow-md hover:border-brand-blue/30 transition group"><span class="text-sm font-bold text-brand-blue group-hover:text-brand-red">AC Maintenance</span><span class="block text-xs text-slate-500 mt-1">Tune-ups</span></a>
+          <a href="/services/indoor-air-quality-solutions/" class="bg-white border border-slate-200 rounded-xl p-4 text-center hover:shadow-md hover:border-brand-blue/30 transition group"><span class="text-sm font-bold text-brand-blue group-hover:text-brand-red">Indoor Air Quality</span><span class="block text-xs text-slate-500 mt-1">Duct & air</span></a>
+          <a href="/services/commercial-hvac-services/" class="bg-white border border-slate-200 rounded-xl p-4 text-center hover:shadow-md hover:border-brand-blue/30 transition group"><span class="text-sm font-bold text-brand-blue group-hover:text-brand-red">Commercial HVAC</span><span class="block text-xs text-slate-500 mt-1">Business systems</span></a>
+          <a href="/blogs/" class="bg-white border border-slate-200 rounded-xl p-4 text-center hover:shadow-md hover:border-brand-blue/30 transition group"><span class="text-sm font-bold text-brand-blue group-hover:text-brand-red">HVAC Blog</span><span class="block text-xs text-slate-500 mt-1">Tips & guides</span></a>
+        </div>
+        <div class="mt-8 text-center">
+          <p class="text-sm text-slate-500 mb-3">Nearby service areas:</p>
+          <div class="flex flex-wrap justify-center gap-2">
+            <a href="/service-areas/huntington-beach/" class="text-sm text-brand-blue hover:text-brand-red hover:underline">Huntington Beach</a><span class="text-slate-300">·</span>
+            <a href="/service-areas/costa-mesa/" class="text-sm text-brand-blue hover:text-brand-red hover:underline">Costa Mesa</a><span class="text-slate-300">·</span>
+            <a href="/service-areas/westminster/" class="text-sm text-brand-blue hover:text-brand-red hover:underline">Westminster</a><span class="text-slate-300">·</span>
+            <a href="/service-areas/garden-grove/" class="text-sm text-brand-blue hover:text-brand-red hover:underline">Garden Grove</a><span class="text-slate-300">·</span>
+            <a href="/service-areas/santa-ana/" class="text-sm text-brand-blue hover:text-brand-red hover:underline">Santa Ana</a><span class="text-slate-300">·</span>
+            <a href="/service-areas/newport-beach/" class="text-sm text-brand-blue hover:text-brand-red hover:underline">Newport Beach</a><span class="text-slate-300">·</span>
+            <a href="/service-areas/" class="text-sm font-semibold text-brand-blue hover:text-brand-red hover:underline">View All Areas →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <CTASection client:visible />
+  </main>
+  <Footer />
+</BaseLayout>

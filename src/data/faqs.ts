@@ -1197,4 +1197,355 @@ export const faqs: Record<string, FaqEntry> = {
       a: 'Repairs are covered under our guarantee. If the problem returns within the applicable coverage period, contact us and we’ll address the issue.',
     },
   ]),
+
+  'service-areas-brea': entry([
+    {
+      q: 'Can you come today if our Brea AC died?',
+      a: 'Yes, we reserve same-day capacity for Brea, from downtown to the hills. Call (714) 853-5534 and we\'ll offer the nearest available arrival window.',
+    },
+    {
+      q: 'Why does my system quit every hot afternoon?',
+      a: 'Afternoon failures near Brea often stem from high head pressure due to dirty coils or low airflow. Heat magnifies the problem as the day warms. Cleaning and correcting charge usually restores steady cooling.',
+    },
+    {
+      q: 'Do newer hillside homes have different AC issues?',
+      a: 'Newer tracts often have tight construction but scorching attics that stress ducts. Flexible runs can kink or detach up there. We inspect attic ductwork and seal any leaks we find.',
+    },
+    {
+      q: 'Is a buzzing condenser dangerous?',
+      a: 'A loud buzz with no startup usually means a stuck contactor or failed capacitor. Turn cooling off to avoid overheating the compressor. We can swap those electrical parts quickly.',
+    },
+    {
+      q: 'How do I know if my refrigerant is low?',
+      a: 'Frost on lines, long runtimes, and tepid supply air hint at low charge. Only gauges and superheat readings confirm it. We leak-test before adding refrigerant so you don\'t pay twice.',
+    },
+    {
+      q: 'Do you service townhome package units near the mall?',
+      a: 'Yes, we maintain and repair package units common around the Imperial Highway corridor. Fan motors, boards, and economizer quirks are all within our daily work.',
+    },
+  ]),
+
+  'service-areas-buena-park': entry([
+    {
+      q: 'Why does my Buena Park AC freeze up during crowded summer weekends?',
+      a: 'Heavy runtime plus dusty coils restricts airflow, which drops coil temperature until ice forms. We clean the coil, verify charge, and check the blower so it stops happening every Saturday.',
+    },
+    {
+      q: 'Can you reach my place near Knott\'s the same day I call?',
+      a: 'Most days yes. Call (714) 853-5534 before noon and we usually roll a truck to Buena Park that afternoon with parts on board.',
+    },
+    {
+      q: 'My rental near Beach Boulevard smells musty when the AC starts — is that dangerous?',
+      a: 'It is usually algae in the drain pan or dusty ducts, not an emergency, but it should be cleaned soon. We flush the line, sanitize the pan, and check for duct leaks.',
+    },
+    {
+      q: 'Should I fix a 14-year-old rooftop unit or start planning for replacement?',
+      a: 'If the compressor and coil still test strong, a targeted repair often buys you a few more seasons. We will give you amp draws and honest math so you can decide without pressure.',
+    },
+    {
+      q: 'Why does my breaker trip only when the AC cycles on hot evenings?',
+      a: 'A weak capacitor or tightening compressor draws extra amps on startup, which pops older breakers. We test startup draw and swap the failing component before wiring overheats.',
+    },
+    {
+      q: 'Do older Buena Park ranch homes need duct work with AC repair?',
+      a: 'Not always, though crushed attic runs are common in these houses. During diagnostics we measure static pressure and only suggest duct fixes when the numbers prove it.',
+    },
+  ]),
+
+  'service-areas-cypress': entry([
+    {
+      q: 'Why do Cypress tract homes get uneven cooling between rooms?',
+      a: 'Builders often installed one return for four bedrooms, starving far rooms of air. We add returns or adjust dampers so each bedroom gets its fair share.',
+    },
+    {
+      q: 'Our AC near Los Alamitos Race Course clicks but will not start — what gives?',
+      a: 'That click is usually a worn contactor or swollen capacitor trying to engage. We test both under load and replace only the culprit.',
+    },
+    {
+      q: 'Is it worth repairing a builder-grade unit from the early 2000s?',
+      a: 'Often yes when the coil and compressor test healthy. We compare repair cost against remaining life so Cypress families do not overspend.',
+    },
+    {
+      q: 'Can you come after school hours so kids are not disrupted?',
+      a: 'Absolutely — we offer late-afternoon windows around Cypress. Call (714) 853-5534 and mention school pickup, we will plan around it.',
+    },
+    {
+      q: 'What causes whistling vents when bedroom doors close?',
+      a: 'Pressure buildup from missing return paths forces air through tiny gaps. Adding jump ducts or undercutting doors usually silences it fast.',
+    },
+    {
+      q: 'How do I keep my side-yard condenser safe from gardeners and toys?',
+      a: 'Keep two feet of clearance, rinse grass clippings off coils monthly, and ask us for a protective disconnect cover during tune-ups.',
+    },
+  ]),
+
+  'service-areas-fountain-valley': entry([
+    {
+      q: 'Why do Fountain Valley tract homes cool unevenly?',
+      a: 'Builders often ran long flex ducts with sharp bends to back rooms. We measure each register and rebalance dampers or add returns to even things out.',
+    },
+    {
+      q: 'What causes ceiling drips near my hallway vent?',
+      a: 'A clogged condensate line or frozen coil overflowing the pan is the usual culprit. We vacuum the line, treat algae, and check refrigerant to stop repeats.',
+    },
+    {
+      q: 'Do you offer free AC diagnostics in Fountain Valley?',
+      a: 'Yes, diagnostics are free with any completed repair. Just mention this page when you call (714) 853-5534 so we apply it.',
+    },
+    {
+      q: 'How long does a typical repair visit take?',
+      a: 'Most fixes wrap in 60 to 90 minutes because we stock common tract-system parts. Coil or motor jobs can stretch to half a day.',
+    },
+    {
+      q: 'My outdoor unit is jammed against the fence — is that a problem?',
+      a: 'It can starve airflow and raise head pressure on hot days. We will clear clearance, rinse coils, and suggest a smarter pad spot if relocation helps.',
+    },
+    {
+      q: 'Should I repair my 18-year-old AC again?',
+      a: 'If repairs top a few hundred yearly and bills keep climbing, replacement math starts winning. We will lay out both paths without pushing either.',
+    },
+  ]),
+
+  'service-areas-fullerton': entry([
+    {
+      q: 'How fast can you get to my Fullerton home during a heatwave?',
+      a: 'We hold same-day slots for Fullerton all summer, especially near CSUF and downtown. Call (714) 853-5534 early in the morning for the quickest window.',
+    },
+    {
+      q: 'Why does my older Fullerton bungalow cool so unevenly?',
+      a: 'Many downtown bungalows have undersized returns and leaky attic ducts from the 60s and 70s. We test airflow room by room and often fix it with duct sealing or a return upgrade instead of a new unit.',
+    },
+    {
+      q: 'My AC is blowing warm air — is that always low refrigerant?',
+      a: 'Not always. Warm air around Fullerton often comes from a failed capacitor or a dirty condenser choked with dust and cottonwood fluff. We check electrical and airflow first before testing refrigerant.',
+    },
+    {
+      q: 'Do you repair package units on Fullerton townhomes?',
+      a: 'Yes, we service rooftop and ground-level package systems common in townhome communities off Chapman and Euclid. Most electrical and fan failures are resolved in one trip.',
+    },
+    {
+      q: 'Should I repair or replace my 15-year-old condenser?',
+      a: 'It depends on the repair cost and how often it has needed work. If the compressor and coil are still solid, a mid-size repair makes sense. If repairs are stacking up, we will show you honest replacement numbers.',
+    },
+    {
+      q: 'What does your free diagnostic include?',
+      a: 'A full system check covering pressures, temperatures, electrical readings, and drain condition. You get a clear explanation and firm price, with no obligation to proceed.',
+    },
+  ]),
+
+  'service-areas-huntington-beach': entry([
+    {
+      q: 'Why does my Huntington Beach AC corrode so fast?',
+      a: 'Ocean salt settles on condenser coils and electrical terminals every night with the marine layer. We recommend a gentle coil rinse each spring and a corrosion check during tune-ups to stretch equipment life.',
+    },
+    {
+      q: 'My AC blows cool in the morning but warm by afternoon — what\'s wrong?',
+      a: 'That pattern usually points to low refrigerant, a dirty outdoor coil, or a weak capacitor that fails under heat load. We can test all three in one visit and pinpoint it fast.',
+    },
+    {
+      q: 'Do you offer same-day AC repair in Huntington Beach?',
+      a: 'Yes, we hold same-day openings for Huntington Beach most weekdays. Dial (714) 853-5534 early and we will usually have a tech out before dinner.',
+    },
+    {
+      q: 'Should I cover my outdoor unit from salt air?',
+      a: 'Please don\'t wrap it in plastic, because trapped moisture makes corrosion worse. A breathable top cover in winter is fine, but regular rinsing and airflow matter more.',
+    },
+    {
+      q: 'How much does AC repair cost near the beach?',
+      a: 'Small electrical fixes land in the low hundreds, while motors or leak repairs run higher. You approve a flat price upfront, and diagnostics are free with the repair.',
+    },
+    {
+      q: 'Can you service my condo rooftop unit downtown?',
+      a: 'Absolutely. We handle roof access coordination, bring compact parts for tight curbs, and check HOA noise rules so your neighbors stay happy.',
+    },
+  ]),
+
+  'service-areas-la-habra': entry([
+    {
+      q: 'Why do La Habra homes near the hills feel hotter than the thermostat shows?',
+      a: 'Attic ducts soak up radiant heat and leak cooled air before it reaches far rooms. We seal and insulate the worst runs, then rebalance airflow so readings match reality.',
+    },
+    {
+      q: 'My condenser sits in full afternoon sun — does that kill efficiency?',
+      a: 'It forces higher head pressure and longer runtimes, which wears parts quicker. Shade clearance, coil washing, and correct charge help a lot, and we handle all three.',
+    },
+    {
+      q: 'How quickly can a tech get to north Orange County on a scorcher?',
+      a: 'We hold daily flex slots for La Habra and nearby Brea. Dial (714) 853-5534 early and we will usually have someone out before dinner.',
+    },
+    {
+      q: 'Is a frozen suction line always a refrigerant leak?',
+      a: 'Not necessarily — dirty filters and weak blowers freeze lines too. We thaw it safely, test airflow first, then check charge so you do not pay for refrigerant you never needed.',
+    },
+    {
+      q: 'Our 1970s ranch has original ducts — must they be replaced with every repair?',
+      a: 'Only when testing shows major leakage or collapse. Many La Habra ducts can be resealed and strapped for far less than full replacement.',
+    },
+    {
+      q: 'What upkeep helps hillside systems survive August?',
+      a: 'Monthly filter swaps, hosed-down condenser coils, and a cleared drain line go furthest. Our tune-up covers those plus electrical tightening before peak heat arrives.',
+    },
+  ]),
+
+  'service-areas-lake-forest': entry([
+    {
+      q: 'Why do rooms over the garage stay hot in Lake Forest?',
+      a: 'Garage heat soaks through thin floors while ducts run longest to those rooms. We boost insulation, seal ducts, and adjust airflow to pull temperatures even.',
+    },
+    {
+      q: 'Can you work in my condo\'s tiny closet air handler?',
+      a: 'Yes, we service those compact closets weekly. We bring short-profile tools, protect finishes, and test drains without flooding neighbors below.',
+    },
+    {
+      q: 'Does foothill dust really hurt my AC?',
+      a: 'It coats coils and wheels quickly, cutting efficiency and airflow. Seasonal rinses plus better filtration keep Lake Forest systems breathing easier.',
+    },
+    {
+      q: 'Do you coordinate with HOAs for repairs?',
+      a: 'We do. Call (714) 853-5534 and tell us your community rules, and we will schedule within quiet hours and supply paperwork boards request.',
+    },
+    {
+      q: 'Why does my thermostat keep dropping WiFi?',
+      a: 'Stucco walls and distant routers weaken signals common in Lake Forest layouts. We check low-voltage power first, then suggest placement or extender fixes.',
+    },
+    {
+      q: 'Repair or replace my 16-year-old foothill unit?',
+      a: 'We weigh leak history, efficiency, and attic condition honestly. Many owners repair once more while planning replacement for fall rebates.',
+    },
+  ]),
+
+  'service-areas-mission-viejo': entry([
+    {
+      q: 'Why is my upstairs so much hotter in Mission Viejo?',
+      a: 'Heat rises into tall entries while undersized upstairs ducts starve airflow. We test zone dampers and returns, then rebalance so both floors land within a few degrees.',
+    },
+    {
+      q: 'Can you fix zoned systems with multiple thermostats?',
+      a: 'Yes, zoning is our bread and butter here. We diagnose panels, dampers, and bypass settings to stop floors fighting each other.',
+    },
+    {
+      q: 'How quickly can you reach Mission Viejo homes?',
+      a: 'We run same-day routes through Mission Viejo daily in summer. Calling (714) 853-5534 in the morning gives the best shot at afternoon relief.',
+    },
+    {
+      q: 'Is closing vents in unused rooms a good idea?',
+      a: 'Not with modern zoned gear, since pressure spikes can freeze coils or crack ducts. Let us set proper zone staging instead of shutting vents by hand.',
+    },
+    {
+      q: 'What brands do you repair around the lake?',
+      a: 'We carry parts for Trane, Carrier, Lennox, York, Rheem, and Goodman, which cover nearly every Mission Viejo subdivision build.',
+    },
+    {
+      q: 'My hillside condenser pad tilted — does it matter?',
+      a: 'Yes, tilt strains refrigerant oil flow and fan balance. We relevel pads and check for kinked lines during the same visit.',
+    },
+  ]),
+
+  'service-areas-placentia': entry([
+    {
+      q: 'How quickly can you fix our AC in Placentia?',
+      a: 'We keep daily openings for Placentia family neighborhoods. Call (714) 853-5534 before noon and we can usually arrive the same afternoon.',
+    },
+    {
+      q: 'Why is my ranch house humid even with the AC on?',
+      a: 'Ranch ducts often leak humid attic air into the system. Oversized short-cycling units also skip dehumidification. We measure humidity and airflow to pinpoint it.',
+    },
+    {
+      q: 'Is it safe to keep running a noisy air handler?',
+      a: 'Loud grinding or squealing means a motor or blower wheel is failing. Shut it down if it gets worse quickly and schedule service. Running it hard can snap a belt or overheat the motor.',
+    },
+    {
+      q: 'Do you work on older R-22 systems in Placentia?',
+      a: 'Yes, we still service many R-22 ranch units around town. When parts allow, we keep them running efficiently. If refrigerant costs climb too high, we\'ll compare repair versus retrofit options.',
+    },
+    {
+      q: 'What if my thermostat keeps going blank?',
+      a: 'A blank thermostat often signals a tripped drain safety switch or dead batteries. Check batteries first, then look for water near the air handler. We can clear the drain and prevent ceiling damage.',
+    },
+    {
+      q: 'Can you add cooling to a converted garage?',
+      a: 'Yes, ductless mini-splits work perfectly for garage conversions and additions. They cool quietly without extending old ductwork. We size and install them cleanly.',
+    },
+  ]),
+
+  'service-areas-tustin': entry([
+    {
+      q: 'Why is my Tustin Legacy home short-cycling?',
+      a: 'New tight homes often have oversensitive thermostats or misadjusted dampers that shut zones too fast. We rebalance airflow and check staging so cycles stretch out properly.',
+    },
+    {
+      q: 'My Old Town Tustin house has weak airflow — can ducts be saved?',
+      a: 'Usually yes. We test for leaks and crushed runs, then seal or replace only bad sections instead of ripping everything out.',
+    },
+    {
+      q: 'How fast can you get to Tustin for no-cool calls?',
+      a: 'Most no-cool calls in Tustin get same-day service when you phone (714) 853-5534 before 2 p.m. Evenings fill quickly during heat waves, so call early.',
+    },
+    {
+      q: 'Do smart thermostats cause AC problems here?',
+      a: 'They can when the C-wire or settings are wrong for two-stage gear common in Legacy builds. We verify wiring and programming during every repair.',
+    },
+    {
+      q: 'What does AC repair cost in Tustin?',
+      a: 'Minor sensors and drains are modest, mid-range boards and motors cost more, and coils top the list. We always confirm flat pricing first, with free diagnostics on approved work.',
+    },
+    {
+      q: 'Is replacement better for my 20-year-old Old Town unit?',
+      a: 'Sometimes, especially with R-22 refrigerant and rotted ducts. We will give honest math on repair cost versus efficiency savings so you decide without pressure.',
+    },
+  ]),
+
+  'service-areas-westminster': entry([
+    {
+      q: 'My Westminster unit is 18 years old — is repair throwing money away?',
+      a: 'Not if the compressor draws normal amps and the coil holds pressure. We test both and will tell you honestly when another season makes sense versus replacement.',
+    },
+    {
+      q: 'Why does my home near Little Saigon stay humid despite cold vents?',
+      a: 'Oversized or leaky ducts short-cycle before moisture drains away. We slow the blower slightly, seal returns, and verify drainage to dry things out.',
+    },
+    {
+      q: 'Can you service homes with multiple generations under one roof?',
+      a: 'Yes, we zone expectations room by room and prioritize elder comfort. Call (714) 853-5534 and tell us who sleeps where so we target airflow accordingly.',
+    },
+    {
+      q: 'What makes breakers trip only during family dinner time?',
+      a: 'Cooking appliances plus startup surge can overload older Westminster panels. We measure the spike and often solve it with a hard-start kit and tightened connections.',
+    },
+    {
+      q: 'How do I keep a shaded-narrow side yard unit breathing properly?',
+      a: 'Trim back two feet on all sides, hose the coil gently from inside out, and keep storage boxes away. We will show you the rinse technique during our visit.',
+    },
+    {
+      q: 'Do you work on rooftop package systems above local shops?',
+      a: 'We do handle small commercial rooftops along Bolsa and Brookhurst. Expect the same flat pricing, photo documentation, and after-hours options when foot traffic closes.',
+    },
+  ]),
+
+  'service-areas-yorba-linda': entry([
+    {
+      q: 'Why won\'t my Yorba Linda upstairs cool below 80 degrees?',
+      a: 'Two-story heat gain plus long duct runs often starve the upper floor. We balance dampers, check attic impacts, and verify charge. Call (714) 853-5534 and we\'ll test it same-day.',
+    },
+    {
+      q: 'Does dust from the equestrian trails really affect my AC?',
+      a: 'Yes, trail-area dust loads up filters and condenser coils quickly. We suggest checking filters monthly in summer and rinsing the condenser gently. A professional coil cleaning each year helps a lot.',
+    },
+    {
+      q: 'How long does a typical repair visit take in Yorba Linda?',
+      a: 'Most single-issue fixes wrap in 60 to 90 minutes once we\'re on site. Complex zone or leak searches can take longer, but we keep you updated the whole time.',
+    },
+    {
+      q: 'Can you fix zoned systems with separate thermostats?',
+      a: 'Absolutely, many Yorba Linda homes have two or three zones with dampers. We test each damper motor, sensor, and board to isolate the faulty zone without guessing.',
+    },
+    {
+      q: 'My unit is only 8 years old but needs frequent fixes — why?',
+      a: 'Hill heat and long runtimes wear contactors and capacitors faster than average. Voltage swings don\'t help either. We hunt for the root cause instead of swapping the same part repeatedly.',
+    },
+    {
+      q: 'Do you offer maintenance to prevent breakdowns?',
+      a: 'Yes, seasonal tune-ups catch weak parts before August. We clean coils, tighten electrical connections, flush drains, and verify refrigerant. It extends equipment life noticeably.',
+    },
+  ]),
 };
