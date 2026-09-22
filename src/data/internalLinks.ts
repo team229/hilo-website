@@ -257,4 +257,6 @@ export const blogServiceMap: Record<string, LinkItem[]> = {
   'ac-repair-anaheim-same-day-emergency': [allServices[2], allServices[0], allServices[1]],
   'hvac-maintenance-service-what-a-real-tune-up-includes': [allServices[0], allServices[5], allServices[9]],
   'new-hvac-system-installation-what-to-verify': [allServices[7], allServices[8], allServices[1]],
+  'ac-repair-anaheim-warning-signs-common-failures': [allServices[2], allServices[0], allServices[1]],
+  'hvac-system-inspection': [allServices[0], allServices[5], allServices[17]],
 };
