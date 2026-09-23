@@ -1,214 +1,264 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-US">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sitemap | HiLo Heating &amp; Air</title>
-<style>
-  :root{
-    --navy:#0f2a4a;
-    --blue:#1d6fd6;
-    --ink:#1b2530;
-    --muted:#5b6b7c;
-    --bg:#f6f8fb;
-    --card:#ffffff;
-    --border:#e3e8ef;
-  }
-  *{box-sizing:border-box;}
-  body{
-    margin:0;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    background:var(--bg);
-    color:var(--ink);
-    line-height:1.5;
-  }
-  header{
-    background:var(--navy);
-    color:#fff;
-    padding:48px 24px;
-    text-align:center;
-  }
-  header h1{
-    margin:0 0 8px;
-    font-size:2rem;
-  }
-  header p{
-    margin:0;
-    color:#c7d6ea;
-    font-size:1rem;
-  }
-  main{
-    max-width:1100px;
-    margin:0 auto;
-    padding:40px 20px 80px;
-  }
-  .grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:24px;
-  }
-  section.card{
-    background:var(--card);
-    border:1px solid var(--border);
-    border-radius:12px;
-    padding:24px 26px;
-    box-shadow:0 1px 3px rgba(15,42,74,0.06);
-  }
-  section.card h2{
-    margin:0 0 14px;
-    font-size:1.1rem;
-    color:var(--navy);
-    border-bottom:2px solid var(--blue);
-    padding-bottom:8px;
-  }
-  ul{
-    list-style:none;
-    margin:0;
-    padding:0;
-  }
-  li{
-    margin:8px 0;
-  }
-  a{
-    color:var(--blue);
-    text-decoration:none;
-    font-size:0.96rem;
-  }
-  a:hover{
-    text-decoration:underline;
-  }
-  .top-level > li > a{
-    font-weight:600;
-    color:var(--ink);
-  }
-  .full-width{
-    grid-column:1 / -1;
-  }
-  footer{
-    text-align:center;
-    padding:24px;
-    color:var(--muted);
-    font-size:0.85rem;
-  }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Sitemap | HiLo Heating &amp; Air</title>
+  <meta name="description" content="Browse all canonical, public, indexable pages on the HiLo Heating &amp; Air website, including HVAC services, service areas, company pages, and HVAC blog articles.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <link rel="canonical" href="https://www.hiloheatingandair.com/sitemap.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="HTML Sitemap | HiLo Heating &amp; Air">
+  <meta property="og:description" content="Complete HTML sitemap for HiLo Heating &amp; Air.">
+  <meta property="og:url" content="https://www.hiloheatingandair.com/sitemap.html">
+  <style>
+    :root {
+      color-scheme: light;
+      --navy: #0f2a4a;
+      --blue: #155eef;
+      --blue-dark: #0b3b91;
+      --ink: #172033;
+      --muted: #5d6b7d;
+      --line: #dbe3ef;
+      --surface: #ffffff;
+      --background: #f5f8fc;
+      --shadow: 0 12px 30px rgba(15, 42, 74, 0.08);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+    a { color: var(--blue-dark); }
+    a:hover { color: var(--blue); text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid #f59e0b; outline-offset: 3px; border-radius: 4px; }
+    .skip-link {
+      position: absolute;
+      left: 1rem;
+      top: -5rem;
+      z-index: 10;
+      padding: .75rem 1rem;
+      border-radius: .5rem;
+      background: #fff;
+      color: var(--navy);
+      font-weight: 700;
+    }
+    .skip-link:focus { top: 1rem; }
+    .site-header { background: var(--navy); color: #fff; padding: 3.5rem 1.25rem 3rem; }
+    .header-inner, .content, .site-footer { width: min(1120px, 100%); margin: 0 auto; }
+    .eyebrow { margin: 0 0 .5rem; color: #9fc4ff; font-size: .8rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { margin: 0; font-size: clamp(2.2rem, 6vw, 4rem); line-height: 1.08; letter-spacing: -.035em; }
+    .lede { max-width: 760px; margin: 1rem 0 0; color: #d8e6f8; font-size: 1.05rem; }
+    .jump-nav { margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: .55rem; }
+    .jump-nav a {
+      padding: .45rem .75rem;
+      border: 1px solid rgba(255,255,255,.24);
+      border-radius: 999px;
+      color: #fff;
+      font-size: .88rem;
+      text-decoration: none;
+    }
+    .jump-nav a:hover { background: rgba(255,255,255,.1); }
+    main { padding: 2rem 1.25rem 4rem; }
+    .content { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+    .panel {
+      min-width: 0;
+      padding: 1.4rem 1.5rem 1.6rem;
+      border: 1px solid var(--line);
+      border-radius: 1rem;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      scroll-margin-top: 1rem;
+    }
+    .panel:nth-child(1), .panel:nth-child(7), .panel:nth-child(8) { grid-column: 1 / -1; }
+    .section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; border-bottom: 2px solid #dce9ff; margin-bottom: .9rem; }
+    h2 { margin: 0 0 .65rem; color: var(--navy); font-size: 1.2rem; }
+    .section-heading span { flex: none; color: var(--muted); font-size: .82rem; }
+    .link-list { columns: 2 290px; column-gap: 2rem; margin: 0; padding-left: 1.2rem; }
+    .link-list li { break-inside: avoid; margin: .42rem 0; }
+    .link-list a { overflow-wrap: anywhere; }
+    .site-footer { padding: 0 1.25rem 2.5rem; color: var(--muted); font-size: .9rem; text-align: center; }
+    .site-footer p { margin: .35rem 0; }
+    @media (max-width: 760px) {
+      .content { grid-template-columns: 1fr; }
+      .panel { grid-column: 1 / -1; }
+      .link-list { columns: 1; }
+    }
+    @media print {
+      body { background: #fff; }
+      .site-header { background: #fff; color: #000; padding: 1rem 0; }
+      .lede, .eyebrow, .jump-nav { color: #333; }
+      .panel { break-inside: avoid; box-shadow: none; }
+    }
+  </style>
 </head>
 <body>
-
-<header>
-  <h1>HTML Sitemap</h1>
-  <p>HiLo Heating &amp; Air — hiloheatingandair.com</p>
-</header>
-
-<main>
-  <div class="grid">
-
-    <section class="card full-width">
-      <h2>Main Pages</h2>
-      <ul class="top-level">
-        <li><a href="https://www.hiloheatingandair.com/">Home</a></li>
-        <li><a href="https://www.hiloheatingandair.com/services/">Services</a></li>
-        <li><a href="https://www.hiloheatingandair.com/service-areas/">Service Area</a></li>
-        <li><a href="https://www.hiloheatingandair.com/about-us/">About Us</a></li>
-        <li><a href="https://www.hiloheatingandair.com/blogs/">Blogs</a></li>
-        <li><a href="https://www.hiloheatingandair.com/contact-us/">Contact Us</a></li>
+  <a class="skip-link" href="#main-content">Skip to sitemap</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="eyebrow">HiLo Heating &amp; Air</p>
+      <h1>HTML Sitemap</h1>
+      <p class="lede">All 84 canonical, public, indexable URLs currently published by hiloheatingandair.com. Redirected, duplicate, private, and noindex routes are excluded.</p>
+      <nav class="jump-nav" aria-label="Sitemap sections"><a href="#main-pages">Main Pages</a><a href="#air-conditioning">Air Conditioning</a><a href="#heating">Heating</a><a href="#hvac-services">HVAC Services</a><a href="#commercial-hvac">Commercial HVAC</a><a href="#indoor-air-quality">Indoor Air Quality</a><a href="#service-areas">Service Areas</a><a href="#blog">Blog</a></nav>
+    </div>
+  </header>
+  <main id="main-content" class="content">
+    <section class="panel" id="main-pages" aria-labelledby="main-pages-heading">
+      <div class="section-heading">
+        <h2 id="main-pages-heading">Main Pages</h2>
+        <span>7 URLs</span>
+      </div>
+      <ul class="link-list">
+          <li><a href="https://www.hiloheatingandair.com/">AC Repair Anaheim</a></li>
+          <li><a href="https://www.hiloheatingandair.com/about-us">About Us</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs">Blogs</a></li>
+          <li><a href="https://www.hiloheatingandair.com/contact-us">Contact Us</a></li>
+          <li><a href="https://www.hiloheatingandair.com/service-areas">Service Areas</a></li>
+          <li><a href="https://www.hiloheatingandair.com/services">HVAC Maintenance, Inspection &amp; Installation</a></li>
+          <li><a href="https://www.hiloheatingandair.com/sitemap.html">HTML Sitemap</a></li>
       </ul>
     </section>
-
-    <section class="card">
-      <h2>Air Conditioning</h2>
-      <ul>
-        <li><a href="https://www.hiloheatingandair.com/services/air-conditioning-services/">AC Repair &amp; Maintenance</a></li>
-        <li><a href="https://www.hiloheatingandair.com/services/air-conditioning-services/ac-maintenance/">AC Maintenance</a></li>
-        <li><a href="https://www.hiloheatingandair.com/services/air-conditioning-services/air-conditioning-installation/">AC Installation</a></li>
-        <li><a href="https://www.hiloheatingandair.com/services/air-conditioning-services/emergency-ac-repair/">Emergency AC Repair</a></li>
-        <li><a href="https://www.hiloheatingandair.com/services/air-conditioning-services/mini-split-installation/">Mini Split Installation</a></li>
+    <section class="panel" id="air-conditioning" aria-labelledby="air-conditioning-heading">
+      <div class="section-heading">
+        <h2 id="air-conditioning-heading">Air Conditioning</h2>
+        <span>5 URLs</span>
+      </div>
+      <ul class="link-list">
+          <li><a href="https://www.hiloheatingandair.com/services/air-conditioning-services">Air Conditioning Maintenance Services</a></li>
+          <li><a href="https://www.hiloheatingandair.com/services/air-conditioning-services/ac-maintenance">AC Maintenance &amp; Seasonal HVAC Tune-Ups</a></li>
+          <li><a href="https://www.hiloheatingandair.com/services/air-conditioning-services/air-conditioning-installation">AC Installation Los Angeles</a></li>
+          <li><a href="https://www.hiloheatingandair.com/services/air-conditioning-services/emergency-ac-repair">Emergency AC Repair &amp; Same-Day Service</a></li>
+          <li><a href="https://www.hiloheatingandair.com/services/air-conditioning-services/mini-split-installation">Mini Split Installation | Cost &amp; Contractors</a></li>
       </ul>
     </section>
-
-    <section class="card">
-      <h2>Heating</h2>
-      <ul>
-        <li><a href="https://www.hiloheatingandair.com/services/heating-services/">Heating Services</a></li>
-        <li><a href="https://www.hiloheatingandair.com/services/heating-services/heating-repair/">Heating Repair</a></li>
-        <li><a href="https://www.hiloheatingandair.com/services/heating-services/heating-maintenance/">Heating Maintenance</a></li>
-        <li><a href="https://www.hiloheatingandair.com/services/heating-services/heating-installation/">Heating Installation</a></li>
+    <section class="panel" id="heating" aria-labelledby="heating-heading">
+      <div class="section-heading">
+        <h2 id="heating-heading">Heating</h2>
+        <span>4 URLs</span>
+      </div>
+      <ul class="link-list">
+          <li><a href="https://www.hiloheatingandair.com/services/heating-services">Heating Repair Los Angeles</a></li>
+          <li><a href="https://www.hiloheatingandair.com/services/heating-services/heating-installation">Furnace Installation Laguna Hills CA | New HVAC System Install</a></li>
+          <li><a href="https://www.hiloheatingandair.com/services/heating-services/heating-maintenance">Heating Maintenance &amp; Seasonal HVAC Service</a></li>
+          <li><a href="https://www.hiloheatingandair.com/services/heating-services/heating-repair">Emergency Heating Repair &amp; Furnace Repair Los Angeles</a></li>
       </ul>
     </section>
-
-    <section class="card">
-      <h2>HVAC &amp; Commercial</h2>
-      <ul>
-        <li><a href="https://www.hiloheatingandair.com/services/hvac-services/">HVAC Services</a></li>
-        <li><a href="https://www.hiloheatingandair.com/services/hvac-services/hvac-installation/">HVAC Installation</a></li>
-        <li><a href="https://www.hiloheatingandair.com/services/hvac-services/hvac-replacement/">HVAC Replacement</a></li>
-        <li><a href="https://www.hiloheatingandair.com/services/hvac-services/emergency-hvac-repair/">Emergency HVAC Repair</a></li>
-        <li><a href="https://www.hiloheatingandair.com/services/commercial-hvac-services/">Commercial HVAC</a></li>
+    <section class="panel" id="hvac-services" aria-labelledby="hvac-services-heading">
+      <div class="section-heading">
+        <h2 id="hvac-services-heading">HVAC Services</h2>
+        <span>4 URLs</span>
+      </div>
+      <ul class="link-list">
+          <li><a href="https://www.hiloheatingandair.com/services/hvac-services">HVAC Maintenance &amp; System Inspection Services</a></li>
+          <li><a href="https://www.hiloheatingandair.com/services/hvac-services/emergency-hvac-repair">Emergency HVAC Repair &amp; 24/7 Emergency HVAC Services</a></li>
+          <li><a href="https://www.hiloheatingandair.com/services/hvac-services/hvac-installation">New HVAC System Installation Orange County</a></li>
+          <li><a href="https://www.hiloheatingandair.com/services/hvac-services/hvac-replacement">HVAC Replacement After System Inspection</a></li>
       </ul>
     </section>
-
-    <section class="card">
-      <h2>Indoor Air Quality</h2>
-      <ul>
-        <li><a href="https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/">IAQ Solutions</a></li>
-        <li><a href="https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/duct-installation/">Duct Installation</a></li>
-        <li><a href="https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/hvac-duct-repair/">Duct Repair</a></li>
-        <li><a href="https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/hvac-duct-sealing/">Duct Sealing</a></li>
-        <li><a href="https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/hvac-air-balancing/">Air Balancing</a></li>
-        <li><a href="https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/air-humidifiers/">Humidifiers</a></li>
-        <li><a href="https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/dryer-vent-cleaning/">Dryer Vent Cleaning</a></li>
+    <section class="panel" id="commercial-hvac" aria-labelledby="commercial-hvac-heading">
+      <div class="section-heading">
+        <h2 id="commercial-hvac-heading">Commercial HVAC</h2>
+        <span>1 URL</span>
+      </div>
+      <ul class="link-list">
+          <li><a href="https://www.hiloheatingandair.com/services/commercial-hvac-services">Commercial HVAC Services Orange County</a></li>
       </ul>
     </section>
-
-    <section class="card full-width">
-      <h2>Service Areas</h2>
-      <ul style="columns:2 260px; column-gap:24px;">
-        <li><a href="https://www.hiloheatingandair.com/service-areas/anaheim/">Anaheim</a></li>
-        <li><a href="https://www.hiloheatingandair.com/service-areas/costa-mesa/">Costa Mesa</a></li>
-        <li><a href="https://www.hiloheatingandair.com/service-areas/garden-grove/">Garden Grove</a></li>
-        <li><a href="https://www.hiloheatingandair.com/service-areas/irvine/">Irvine</a></li>
-        <li><a href="https://www.hiloheatingandair.com/service-areas/laguna-hills/">Laguna Hills</a></li>
-        <li><a href="https://www.hiloheatingandair.com/service-areas/los-angeles/">Los Angeles</a></li>
-        <li><a href="https://www.hiloheatingandair.com/service-areas/newport-beach/">Newport Beach</a></li>
-        <li><a href="https://www.hiloheatingandair.com/service-areas/orange/">Orange</a></li>
-        <li><a href="https://www.hiloheatingandair.com/service-areas/orange-county/">Orange County</a></li>
-        <li><a href="https://www.hiloheatingandair.com/service-areas/rancho-santa-margarita/">Rancho Santa Margarita</a></li>
-        <li><a href="https://www.hiloheatingandair.com/service-areas/santa-ana/">Santa Ana</a></li>
-        <li><a href="https://www.hiloheatingandair.com/service-areas/stanton/">Stanton</a></li>
+    <section class="panel" id="indoor-air-quality" aria-labelledby="indoor-air-quality-heading">
+      <div class="section-heading">
+        <h2 id="indoor-air-quality-heading">Indoor Air Quality</h2>
+        <span>7 URLs</span>
+      </div>
+      <ul class="link-list">
+          <li><a href="https://www.hiloheatingandair.com/services/indoor-air-quality-solutions">Indoor Air Quality Solutions Orange County</a></li>
+          <li><a href="https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/air-humidifiers">HVAC Humidifier Installation Orange County</a></li>
+          <li><a href="https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/dryer-vent-cleaning">Dryer Vent Cleaning Services Orange County</a></li>
+          <li><a href="https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/duct-installation">Duct Installation Services Orange County</a></li>
+          <li><a href="https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/hvac-air-balancing">HVAC Air Balancing &amp; System Inspection</a></li>
+          <li><a href="https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/hvac-duct-repair">HVAC Duct Repair &amp; Ductwork Replacement</a></li>
+          <li><a href="https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/hvac-duct-sealing">HVAC Duct Sealing &amp; Ductwork Repair</a></li>
       </ul>
     </section>
-
-    <section class="card full-width">
-      <h2>Blog</h2>
-      <ul style="columns:2 300px; column-gap:24px;">
-        <li><a href="https://www.hiloheatingandair.com/blogs/ac-blowing-warm-air/">AC Blowing Warm Air</a></li>
-        <li><a href="https://www.hiloheatingandair.com/blogs/ac-installation-los-angeles-guide/">AC Installation Los Angeles Guide</a></li>
-        <li><a href="https://www.hiloheatingandair.com/blogs/ac-repair-los-angeles-city-strain/">AC Repair Los Angeles: City Strain</a></li>
-        <li><a href="https://www.hiloheatingandair.com/blogs/ac-repair-newport-beach-coastal/">AC Repair Newport Beach: Coastal</a></li>
-        <li><a href="https://www.hiloheatingandair.com/blogs/ac-repair-orange-county-geography/">AC Repair Orange County: Geography</a></li>
-        <li><a href="https://www.hiloheatingandair.com/blogs/ac-will-quit/">Signs Your AC Will Quit</a></li>
-        <li><a href="https://www.hiloheatingandair.com/blogs/anaheim-ac-repair-guide/">Anaheim AC Repair Guide</a></li>
-        <li><a href="https://www.hiloheatingandair.com/blogs/beat-the-heat-ac-guide/">Beat the Heat: AC Guide</a></li>
-        <li><a href="https://www.hiloheatingandair.com/blogs/commercial-hvac-mistakes/">Commercial HVAC Mistakes</a></li>
-        <li><a href="https://www.hiloheatingandair.com/blogs/emergency-heating-repair/">Emergency Heating Repair</a></li>
-        <li><a href="https://www.hiloheatingandair.com/blogs/furnace-installation-laguna-hills/">Furnace Installation Laguna Hills</a></li>
-        <li><a href="https://www.hiloheatingandair.com/blogs/furnace-repair-rancho-santa-margarita/">Furnace Repair Rancho Santa Margarita</a></li>
-        <li><a href="https://www.hiloheatingandair.com/blogs/heating-repairs-los-angeles-guide/">Heating Repairs Los Angeles Guide</a></li>
-        <li><a href="https://www.hiloheatingandair.com/blogs/home-comfort-habit/">Home Comfort Habit</a></li>
-        <li><a href="https://www.hiloheatingandair.com/blogs/hvac-replacement/">HVAC Replacement</a></li>
-        <li><a href="https://www.hiloheatingandair.com/blogs/seasonal-hvac-maintenance/">Seasonal HVAC Maintenance</a></li>
-        <li><a href="https://www.hiloheatingandair.com/blogs/set-it-and-forget-it-hvac/">Set It and Forget It HVAC</a></li>
-        <li><a href="https://www.hiloheatingandair.com/blogs/skipping-hvac-maintenance-costs-more/">Skipping HVAC Maintenance Costs More</a></li>
-        <li><a href="https://www.hiloheatingandair.com/blogs/split-system-installation/">Split System Installation</a></li>
-        <li><a href="https://www.hiloheatingandair.com/blogs/why-ac-dies-in-july/">Why AC Dies in July</a></li>
+    <section class="panel" id="service-areas" aria-labelledby="service-areas-heading">
+      <div class="section-heading">
+        <h2 id="service-areas-heading">Service Areas</h2>
+        <span>25 URLs</span>
+      </div>
+      <ul class="link-list">
+          <li><a href="https://www.hiloheatingandair.com/service-areas/anaheim">AC Repair Anaheim CA</a></li>
+          <li><a href="https://www.hiloheatingandair.com/service-areas/brea">AC Repair Brea CA</a></li>
+          <li><a href="https://www.hiloheatingandair.com/service-areas/buena-park">AC Repair Buena Park CA</a></li>
+          <li><a href="https://www.hiloheatingandair.com/service-areas/costa-mesa">Air Conditioning Repair Costa Mesa</a></li>
+          <li><a href="https://www.hiloheatingandair.com/service-areas/cypress">AC Repair Cypress CA</a></li>
+          <li><a href="https://www.hiloheatingandair.com/service-areas/fountain-valley">AC Repair Fountain Valley CA</a></li>
+          <li><a href="https://www.hiloheatingandair.com/service-areas/fullerton">AC Repair Fullerton CA</a></li>
+          <li><a href="https://www.hiloheatingandair.com/service-areas/garden-grove">Air Conditioning Repair Garden Grove</a></li>
+          <li><a href="https://www.hiloheatingandair.com/service-areas/huntington-beach">AC Repair Huntington Beach CA</a></li>
+          <li><a href="https://www.hiloheatingandair.com/service-areas/irvine">AC Repair &amp; Furnace Repair Irvine</a></li>
+          <li><a href="https://www.hiloheatingandair.com/service-areas/la-habra">AC Repair La Habra CA</a></li>
+          <li><a href="https://www.hiloheatingandair.com/service-areas/laguna-hills">Furnace Installation Laguna Hills CA</a></li>
+          <li><a href="https://www.hiloheatingandair.com/service-areas/lake-forest">AC Repair Lake Forest CA</a></li>
+          <li><a href="https://www.hiloheatingandair.com/service-areas/los-angeles">AC Repair, Installation &amp; Heating Repair Los Angeles</a></li>
+          <li><a href="https://www.hiloheatingandair.com/service-areas/mission-viejo">AC Repair Mission Viejo CA</a></li>
+          <li><a href="https://www.hiloheatingandair.com/service-areas/newport-beach">Air Conditioning Repair Newport Beach</a></li>
+          <li><a href="https://www.hiloheatingandair.com/service-areas/orange">Furnace Repair in Orange, CA</a></li>
+          <li><a href="https://www.hiloheatingandair.com/service-areas/orange-county">Air Conditioning Repair Orange County</a></li>
+          <li><a href="https://www.hiloheatingandair.com/service-areas/placentia">AC Repair Placentia CA</a></li>
+          <li><a href="https://www.hiloheatingandair.com/service-areas/rancho-santa-margarita">Furnace Repair Rancho Santa Margarita</a></li>
+          <li><a href="https://www.hiloheatingandair.com/service-areas/santa-ana">AC &amp; Furnace Repair Santa Ana</a></li>
+          <li><a href="https://www.hiloheatingandair.com/service-areas/stanton">HVAC Services in Stanton, CA</a></li>
+          <li><a href="https://www.hiloheatingandair.com/service-areas/tustin">AC Repair Tustin CA</a></li>
+          <li><a href="https://www.hiloheatingandair.com/service-areas/westminster">AC Repair Westminster CA</a></li>
+          <li><a href="https://www.hiloheatingandair.com/service-areas/yorba-linda">AC Repair Yorba Linda CA</a></li>
       </ul>
     </section>
-
-  </div>
-</main>
-
-<footer>
-  &copy; 2026 HiLo Heating &amp; Air. Generated sitemap for hiloheatingandair.com
-</footer>
-
+    <section class="panel" id="blog" aria-labelledby="blog-heading">
+      <div class="section-heading">
+        <h2 id="blog-heading">Blog</h2>
+        <span>31 URLs</span>
+      </div>
+      <ul class="link-list">
+          <li><a href="https://www.hiloheatingandair.com/blogs/ac-blowing-warm-air">Why is My AC Blowing Warm Air? (And When to Call an Orange County Pro)</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/ac-installation-los-angeles-guide">What Nobody Tells You Before You Install a New AC in LA</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/ac-installation-los-angeles-planning">Planning a New Cooling System That Actually Fits Your Home</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/ac-just-died-what-to-do">Your AC Just Died. Here&#x27;s What to Actually Do Before You Panic-Call</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/ac-repair-anaheim-same-day-emergency">AC Repair in Anaheim: Same-Day &amp; 24/7 Emergency Air Conditioner Repair From a Licensed C-20 Contractor</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/ac-repair-anaheim-warning-signs-common-failures">AC Repair Anaheim: Warning Signs, Common Failures, and Smart Decisions for Homeowners</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/ac-repair-los-angeles-city-strain">Keeping Cool in a City That Rarely Gives Your AC a Break</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/ac-repair-newport-beach-coastal">Why Newport Beach Homeowners Can&#x27;t Afford to Ignore a Struggling AC Unit</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/ac-repair-orange-county-geography">How Geography Shapes the Way Cooling Systems Wear Out in Orange County</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/ac-will-quit">Your AC Will Quit On You — Unless You Do This First</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/anaheim-ac-repair-guide">The Anaheim Homeowner&#x27;s Honest Guide to Getting Your AC Fixed</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/beat-the-heat-ac-guide">Beat the Heat: A Homeowner&#x27;s Guide to Keeping Your AC System Running Strong</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/commercial-hvac-mistakes">What Every Business Owner Gets Wrong About Commercial HVAC Services</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/commercial-hvac-services-guide">Commercial HVAC Services in Orange County and Los Angeles: What Business Owners Should Know</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/emergency-heating-repair">When the Heat Dies at the Worst Possible Time: What You Need to Know About Emergency Heating Repair</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/furnace-installation-laguna-hills">What Homeowners Should Know Before Replacing a Heating System in Laguna Hills</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/furnace-repair-los-angeles-mild-climate">Why Heating Systems in a Mild Climate Still Break Down</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/furnace-repair-rancho-santa-margarita">Reading the Warning Signs Before a Furnace Fails Completely</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/heater-died-2am">Your Heater Died at 2 AM — Here&#x27;s Exactly What to Do Next</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/heating-repair-los-angeles-equipment-types">The Wide Range of Home Heating Problems Across Los Angeles</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/heating-repairs-los-angeles-guide">Staying Warm: A Homeowner&#x27;s Guide to Heating Repairs</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/home-comfort-habit">The Home Comfort Habit Most People Skip Until It&#x27;s Too Late</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/hvac-maintenance-service-what-a-real-tune-up-includes">HVAC Maintenance Service: What a Real Tune-Up Should Include</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/hvac-replacement">The HVAC Replacement Conversation Nobody Prepares You For</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/hvac-system-inspection">HVAC System Inspection: What Really Gets Checked and Why It Protects Your Home and Wallet</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/new-hvac-system-installation-what-to-verify">New HVAC System Installation: What to Verify Before You Sign the Contract</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/seasonal-hvac-maintenance">Why Seasonal HVAC Maintenance Is the Secret to a Comfortable Home Year-Round</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/set-it-and-forget-it-hvac">Why &quot;Set It and Forget It&quot; Doesn&#x27;t Work for Your HVAC System</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/skipping-hvac-maintenance-costs-more">Why Skipping HVAC Maintenance Almost Always Costs You More Later</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/split-system-installation">Thinking About Ductless Cooling? Here&#x27;s What a Split System Air Conditioner Installation Really Involves</a></li>
+          <li><a href="https://www.hiloheatingandair.com/blogs/why-ac-dies-in-july">The Real Reason Your AC Dies in July (And How to Stop It)</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>Last reviewed <time datetime="2026-09-23">2026-09-23</time>.</p>
+    <p><a href="https://www.hiloheatingandair.com/sitemap.xml">XML sitemap</a></p>
+  </footer>
 </body>
 </html>
