@@ -7,17 +7,18 @@ import { ShieldCheck, Phone } from 'lucide-react';
 const heroDesktop = await getImage({ src: heroBanner, widths: [1969, 1400, 1000], format: 'webp', quality: 85 });
 ---
 
-<section class="relative isolate overflow-hidden bg-[#ddeefc]">
-  {/* Hero background. object-right keeps the van in frame; the section
-      background (#ddeefc) matches the photo's own left haze exactly, so
-      any horizontal cropping is invisible and the two read as one surface. */}
-  <picture class="absolute inset-0 -z-10 block h-full w-full">
+<section class="relative isolate grid bg-[#ddeefc]">
+  {/* Hero image and content share grid cell 1/1. The image sits in normal
+      flow at its natural 1969:799 ratio, so NOTHING is ever cropped. The
+      section height is the taller of the two, so if the form runs long the
+      background simply extends below the photo instead of clipping it. */}
+  <picture class="[grid-area:1/1] block w-full">
     <source media="(min-width: 1024px)" type="image/webp" srcset={heroDesktop.srcSet.attribute} sizes="100vw" />
     <Image
       src={heroBannerMobile}
       alt="HiLo Heating & Air branded service van in a sunny Orange County neighborhood"
-      class="h-full w-full object-cover object-right"
-      widths={[1536, 1100, 768]}
+      class="block w-full h-auto"
+      widths={[1969, 1400, 1000]}
       sizes="100vw"
       quality={85}
       loading="eager"
@@ -25,7 +26,7 @@ const heroDesktop = await getImage({ src: heroBanner, widths: [1969, 1400, 1000]
     />
   </picture>
 
-  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-8 sm:pt-12 sm:pb-12 lg:pt-16 lg:pb-20 w-full">
+  <div class="[grid-area:1/1] relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-8 sm:pt-12 sm:pb-12 lg:pt-16 lg:pb-20 w-full">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 w-full items-center">
 
       {/* Left: Content + Form */}
@@ -42,8 +43,8 @@ const heroDesktop = await getImage({ src: heroBanner, widths: [1969, 1400, 1000]
           <span class="text-[#b30000]">You Can Trust</span>
         </h1>
 
-        <p class="text-sm sm:text-base text-slate-800 max-w-xl mb-4 lg:mb-8 leading-relaxed font-medium">
-          Family owned &amp; operated HVAC company providing <a href="/services/air-conditioning-services/" class="text-[#0a3d7d] underline underline-offset-2 hover:text-[#cc0000] transition-colors font-semibold">same-day AC repair</a>, <a href="/services/heating-services/" class="text-[#0a3d7d] underline underline-offset-2 hover:text-[#cc0000] transition-colors font-semibold">heating service</a>, and <a href="/services/hvac-services/emergency-hvac-repair/" class="text-[#0a3d7d] underline underline-offset-2 hover:text-[#cc0000] transition-colors font-semibold">emergency HVAC repairs</a>.
+        <p class="text-sm sm:text-base text-[#0B3764] max-w-xl mb-4 lg:mb-8 leading-relaxed font-semibold [text-shadow:0_0_6px_rgba(255,255,255,0.95),0_1px_3px_rgba(255,255,255,0.8)]">
+          Family owned &amp; operated HVAC company providing <a href="/services/air-conditioning-services/" class="text-[#0B3764] underline underline-offset-2 decoration-2 hover:text-[#12508f] transition-colors font-bold">same-day AC repair</a>, <a href="/services/heating-services/" class="text-[#0B3764] underline underline-offset-2 decoration-2 hover:text-[#12508f] transition-colors font-bold">heating service</a>, and <a href="/services/hvac-services/emergency-hvac-repair/" class="text-[#0B3764] underline underline-offset-2 decoration-2 hover:text-[#12508f] transition-colors font-bold">emergency HVAC repairs</a>.
         </p>
 
         <div class="mb-5 lg:mb-8">
