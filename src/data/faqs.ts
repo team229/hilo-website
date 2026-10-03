@@ -125,7 +125,7 @@ export const faqs: Record<string, FaqEntry> = {
     },
     {
       q: 'How long has HiLo been repairing ACs in Anaheim?',
-      a: 'HiLo Heating & Air Conditioning has been serving Anaheim homeowners since 2000, with over two decades of experience across all types of residential AC systems.',
+      a: 'HiLo Heating & Air Conditioning has been serving Anaheim homeowners since 2016, with over a decade of experience across all types of residential AC systems.',
     },
     {
       q: 'Do repairs come with a warranty?',
@@ -335,7 +335,7 @@ export const faqs: Record<string, FaqEntry> = {
     },
     {
       q: 'How long has HiLo been repairing furnaces in Orange County?',
-      a: 'HiLo Heating & Air Conditioning has been serving Orange County homeowners since 2000.',
+      a: 'HiLo Heating & Air Conditioning has been serving Orange County homeowners since 2016.',
     },
     {
       q: 'Do furnace repairs come with a warranty?',
