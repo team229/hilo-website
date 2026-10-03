@@ -1548,4 +1548,139 @@ export const faqs: Record<string, FaqEntry> = {
       a: 'Yes, seasonal tune-ups catch weak parts before August. We clean coils, tighten electrical connections, flush drains, and verify refrigerant. It extends equipment life noticeably.',
     },
   ]),
+
+  'services-air-conditioning-ac-repair': entry([
+    {
+      q: 'Do you repair AC systems or recommend replacement automatically?',
+      a: 'We diagnose the system first. When the equipment has useful life left and the failure is repairable, we explain the repair and let you decide with clear pricing. Replacement is discussed only when testing shows it is the more responsible option.',
+    },
+    {
+      q: 'What air-conditioning problems do you repair?',
+      a: 'Common repairs include failed capacitors, contactors, motors, refrigerant leaks, clogged drains, frozen coils, compressor failures, thermostat faults, electrical problems, and airflow issues caused by damaged or restricted ductwork.',
+    },
+    {
+      q: 'Can you provide same-day AC repair?',
+      a: 'Many AC repair calls can be scheduled the same day, depending on the problem and route availability. Call (714) 853-5534 with the system type, brand, and symptoms so we can give you a realistic appointment window.',
+    },
+    {
+      q: 'Is the AC diagnostic fee waived?',
+      a: 'The regular diagnostic fee is waived when you approve the recommended repair. The repair price is explained before work begins.',
+    },
+    {
+      q: 'How do you know whether an AC should be repaired or replaced?',
+      a: 'The decision depends on test results, equipment age, repair history, refrigerant type, remaining component life, cabinet and coil condition, airflow, and the cost of the repair compared with replacement. Age alone does not settle the question.',
+    },
+    {
+      q: 'Where do you provide AC repair?',
+      a: 'HiLo provides AC repair throughout Orange County and Los Angeles, including Anaheim, Costa Mesa, Fullerton, Irvine, Los Angeles, Santa Ana, Stanton, and surrounding cities.',
+    },
+  ]),
+
+  'services-hvac-repair': entry([
+    {
+      q: 'Do you repair both heating and cooling systems?',
+      a: 'Yes. Our HVAC repair covers air handlers, furnaces, heat pumps, air conditioners, thermostats, controls, refrigerant circuits, drainage, electrical components, and airflow problems that affect the complete system.',
+    },
+    {
+      q: 'What signs mean I need an HVAC repair visit?',
+      a: 'Common signs include weak airflow, uneven temperatures, unusual noise, water leaks, short cycling, a system that runs constantly, inconsistent heating or cooling, and repeated breaker or safety-switch trips.',
+    },
+    {
+      q: 'What does an HVAC diagnostic include?',
+      a: 'The visit includes airflow and static-pressure checks, electrical readings, refrigerant and temperature measurements, control and safety testing, drain inspection, and a review of visible duct conditions. The recommendation follows those findings.',
+    },
+    {
+      q: 'When is HVAC replacement better than another repair?',
+      a: 'Replacement deserves consideration when major components are failing together, a compressor has failed, the equipment is unsafe, the refrigerant system is impractical to service, or ductwork would require major reconstruction. A repair-versus-replacement comparison should come from testing.',
+    },
+    {
+      q: 'Should I book emergency HVAC repair or a scheduled visit?',
+      a: 'Use emergency service for no heat during dangerous cold, no cooling during severe heat, burning smells, water near electrical equipment, gas odors, carbon-monoxide alarms, or repeated breaker trips. A system that still operates with performance or noise concerns is usually a scheduled repair.',
+    },
+    {
+      q: 'Which cities are covered by HVAC repair service?',
+      a: 'We repair complete HVAC systems across Orange County and Los Angeles, including Anaheim, Costa Mesa, Fullerton, Irvine, Los Angeles, Santa Ana, Stanton, and nearby communities.',
+    },
+  ]),
+
+  'services-iaq-duct-cleaning': entry([
+    {
+      q: 'What does professional HVAC duct cleaning include?',
+      a: 'The technician inspects accessible ductwork and registers, removes accumulated dust and debris where it can be serviced safely, checks airflow afterward, and reports damaged, disconnected, leaking, or poorly supported duct sections.',
+    },
+    {
+      q: 'How often should HVAC ducts be cleaned?',
+      a: 'There is no universal schedule. Cleaning frequency depends on visible buildup, airflow, pets, construction dust, allergies, humidity, and how the system is used. A maintenance visit can help determine whether cleaning is worthwhile.',
+    },
+    {
+      q: 'Can duct cleaning improve HVAC efficiency?',
+      a: 'It can when buildup is restricting airflow. Cleaning cannot repair leaks, replace damaged ductwork, correct an undersized return, or fix an equipment problem, so the system should be inspected before scheduling.',
+    },
+    {
+      q: 'Is HVAC duct cleaning the same as dryer vent cleaning?',
+      a: 'No. HVAC duct cleaning addresses the supply and return ducts used every day by the heating and cooling system. Dryer vent cleaning removes lint from the separate dryer exhaust line and addresses a separate fire-safety risk.',
+    },
+    {
+      q: 'What signs suggest the ducts need cleaning?',
+      a: 'Possible signs include dust around registers, persistent odors, reduced airflow, visible buildup, allergy symptoms that worsen while the HVAC system runs, and longer run times without a change in comfort.',
+    },
+    {
+      q: 'Do you provide duct cleaning throughout Orange County and Los Angeles?',
+      a: 'Yes. We provide HVAC duct cleaning in Anaheim, Costa Mesa, Fullerton, Irvine, Los Angeles, Santa Ana, Stanton, and surrounding communities.',
+    },
+  ]),
+
+  'services-ductless-mini-split': entry([
+    {
+      q: 'What ductless mini-split services do you provide?',
+      a: 'HiLo designs, installs, repairs, and maintains ductless systems for single rooms, additions, garages, ADUs, and multi-zone homes throughout Orange County and Los Angeles.',
+    },
+    {
+      q: 'Where are ductless mini-splits a good fit?',
+      a: 'They are often useful for converted garages, additions, older homes without suitable ductwork, rooms that are difficult to cool or heat, and buildings designed for multiple indoor heads or zones.',
+    },
+    {
+      q: 'Should I install a single-zone or multi-zone mini-split?',
+      a: 'A single-zone system serves one area with one indoor head. A multi-zone system serves several areas with separate heads. Capacity, room size, exposure, and simultaneous use must be considered before choosing the layout.',
+    },
+    {
+      q: 'Why is my ductless system not heating or cooling properly?',
+      a: 'Possible causes include a clogged filter or coil, drainage problems, refrigerant issues, a fan or control fault, wiring problems, zone-control errors, or incorrect sizing. A diagnostic is needed before replacing equipment.',
+    },
+    {
+      q: 'Is a ductless system better than central HVAC?',
+      a: 'It depends on the building. Ductless can be ideal for additions or difficult rooms, while a properly sized central system may be better for the entire home. The assessment should consider the space, not just the product.',
+    },
+    {
+      q: 'Where do you install and repair ductless systems?',
+      a: 'We serve Anaheim, Fullerton, Irvine, Los Angeles, Newport Beach, Santa Ana, Stanton, and communities throughout Orange County and Los Angeles.',
+    },
+  ]),
+
+  'services-thermostat': entry([
+    {
+      q: 'Do you install, replace, and repair thermostats?',
+      a: 'Yes. We install compatible thermostats, replace unreliable controls, diagnose wiring and communication problems, calibrate temperature readings, and configure heating, cooling, fan, staging, and schedule settings.',
+    },
+    {
+      q: 'How do you know which thermostat will work with my HVAC system?',
+      a: 'We identify the equipment type, voltage, wiring, stages, fan options, heat-pump mode, zoning, and accessories before recommending a thermostat. Compatibility is checked before installation.',
+    },
+    {
+      q: 'What if my home does not have a C-wire?',
+      a: 'Some systems can use an appropriate adapter or power-stealing arrangement, while others require a proper connection. The existing wiring and equipment determine which method is safe and compatible.',
+    },
+    {
+      q: 'Can you set up a smart or Wi-Fi thermostat?',
+      a: 'Yes. Setup can include equipment mode, temperature schedules, fan behavior, available stages, alerts, and app features. The system is tested after programming so the controls match the installed HVAC equipment.',
+    },
+    {
+      q: 'Is the problem my thermostat or my HVAC equipment?',
+      a: 'A thermostat problem often follows the display, schedule, temperature reading, or system response. Equipment problems continue even with basic controls. A diagnostic separates the two so you do not replace the wrong part.',
+    },
+    {
+      q: 'Where do you provide thermostat service?',
+      a: 'Thermostat installation and repair are available throughout Orange County and Los Angeles, including Anaheim, Costa Mesa, Cypress, Fullerton, Irvine, Los Angeles, Santa Ana, Stanton, and nearby cities.',
+    },
+  ]),
 };

@@ -10,7 +10,7 @@
 - California C-20 HVAC contractor license: #1155955
 - Credentials stated by the site: licensed, bonded, insured; EPA-certified technicians
 - Service highlights stated by the site: same-day service, 24/7 emergency availability, free estimates, free diagnostic fee when an approved repair is performed, and upfront pricing
-- Last reviewed: 2026-09-23
+- Last reviewed: 2026-09-24
 
 ## Core pages
 
@@ -25,10 +25,12 @@
 ## Air Conditioning
 
 - [Air Conditioning Maintenance Services](https://www.hiloheatingandair.com/services/air-conditioning-services)
+- [AC Repair Services](https://www.hiloheatingandair.com/services/air-conditioning-services/ac-repair)
 - [AC Maintenance & Seasonal HVAC Tune-Ups](https://www.hiloheatingandair.com/services/air-conditioning-services/ac-maintenance)
 - [AC Installation Los Angeles](https://www.hiloheatingandair.com/services/air-conditioning-services/air-conditioning-installation)
 - [Emergency AC Repair & Same-Day Service](https://www.hiloheatingandair.com/services/air-conditioning-services/emergency-ac-repair)
 - [Mini Split Installation | Cost & Contractors](https://www.hiloheatingandair.com/services/air-conditioning-services/mini-split-installation)
+- [Ductless Mini-Split Services](https://www.hiloheatingandair.com/services/ductless-mini-split-services)
 
 ## Heating
 
@@ -40,6 +42,8 @@
 ## HVAC Services
 
 - [HVAC Maintenance & System Inspection Services](https://www.hiloheatingandair.com/services/hvac-services)
+- [HVAC Repair Services](https://www.hiloheatingandair.com/services/hvac-services/hvac-repair)
+- [Thermostat Services](https://www.hiloheatingandair.com/services/thermostat-services)
 - [Emergency HVAC Repair & 24/7 Emergency HVAC Services](https://www.hiloheatingandair.com/services/hvac-services/emergency-hvac-repair)
 - [New HVAC System Installation Orange County](https://www.hiloheatingandair.com/services/hvac-services/hvac-installation)
 - [HVAC Replacement After System Inspection](https://www.hiloheatingandair.com/services/hvac-services/hvac-replacement)
@@ -51,12 +55,13 @@
 ## Indoor Air Quality
 
 - [Indoor Air Quality Solutions Orange County](https://www.hiloheatingandair.com/services/indoor-air-quality-solutions)
+- [HVAC Duct Cleaning Services](https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/duct-cleaning)
 - [HVAC Humidifier Installation Orange County](https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/air-humidifiers)
 - [Dryer Vent Cleaning Services Orange County](https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/dryer-vent-cleaning)
 - [Duct Installation Services Orange County](https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/duct-installation)
 - [HVAC Air Balancing & System Inspection](https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/hvac-air-balancing)
 - [HVAC Duct Repair & Ductwork Replacement](https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/hvac-duct-repair)
-- [HVAC Duct Sealing & Ductwork Repair](https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/hvac-duct-sealing)
+- [HVAC Duct Sealing & Air Leak Fixes](https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/hvac-duct-sealing)
 
 ## Service Areas
 

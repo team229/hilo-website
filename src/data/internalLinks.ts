@@ -16,10 +16,12 @@ export const serviceCategories: LinkItem[] = [
   { name: 'Heating Services', href: '/services/heating-services/', description: 'Furnace repair, installation & maintenance' },
   { name: 'HVAC Services', href: '/services/hvac-services/', description: 'Complete HVAC installation, replacement & repair' },
   { name: 'Indoor Air Quality Solutions', href: '/services/indoor-air-quality-solutions/', description: 'Air purification, filtration & duct services' },
+  { name: 'Ductless Mini-Split Services', href: '/services/ductless-mini-split-services/', description: 'Ductless heating, cooling, installation & repair' },
+  { name: 'Thermostat Services', href: '/services/thermostat-services/', description: 'Installation, replacement, repair & smart setup' },
   { name: 'Commercial HVAC Services', href: '/services/commercial-hvac-services/', description: 'HVAC for offices, retail, restaurants & warehouses' },
 ];
 
-// ── All leaf service pages (18) ──
+// ── All leaf service pages (23) ──
 export const allServices: LinkItem[] = [
   { name: 'AC Maintenance', href: '/services/air-conditioning-services/ac-maintenance/', description: 'Seasonal tune-ups & AC maintenance' },
   { name: 'AC Installation', href: '/services/air-conditioning-services/air-conditioning-installation/', description: 'Professional AC installation with proper sizing' },
@@ -39,11 +41,18 @@ export const allServices: LinkItem[] = [
   { name: 'Dryer Vent Cleaning', href: '/services/indoor-air-quality-solutions/dryer-vent-cleaning/', description: 'Dryer vent cleaning & fire prevention' },
   { name: 'Commercial HVAC', href: '/services/commercial-hvac-services/', description: 'Commercial HVAC installation & maintenance' },
   { name: 'Indoor Air Quality', href: '/services/indoor-air-quality-solutions/', description: 'Air purifiers, filtration & duct cleaning' },
+  { name: 'AC Repair', href: '/services/air-conditioning-services/ac-repair/', description: 'General air-conditioning diagnostics & repair' },
+  { name: 'HVAC Repair', href: '/services/hvac-services/hvac-repair/', description: 'Complete heating & cooling system repair' },
+  { name: 'Duct Cleaning', href: '/services/indoor-air-quality-solutions/duct-cleaning/', description: 'Professional HVAC duct cleaning' },
+  { name: 'Ductless Mini-Split Services', href: '/services/ductless-mini-split-services/', description: 'Ductless installation, repair & maintenance' },
+  { name: 'Thermostat Services', href: '/services/thermostat-services/', description: 'Thermostat installation, repair & smart setup' },
 ];
 
 // ── Grouped by category for RelatedServices cards ──
 export const servicesByCategory: Record<string, LinkItem[]> = {
   'air-conditioning': [
+    { name: 'AC Repair', href: '/services/air-conditioning-services/ac-repair/', description: 'General AC diagnostics and repair' },
+    { name: 'Ductless Mini-Split Services', href: '/services/ductless-mini-split-services/', description: 'Ductless heating, cooling, installation, and repair' },
     { name: 'AC Maintenance', href: '/services/air-conditioning-services/ac-maintenance/', description: 'Keep your AC efficient with seasonal tune-ups' },
     { name: 'AC Installation', href: '/services/air-conditioning-services/air-conditioning-installation/', description: 'Professional sizing & expert installation' },
     { name: 'Emergency AC Repair', href: '/services/air-conditioning-services/emergency-ac-repair/', description: '24/7 emergency & same-day AC repair' },
@@ -55,17 +64,29 @@ export const servicesByCategory: Record<string, LinkItem[]> = {
     { name: 'Heating Installation', href: '/services/heating-services/heating-installation/', description: 'Furnace sizing & installation done right' },
   ],
   'hvac': [
+    { name: 'HVAC Repair', href: '/services/hvac-services/hvac-repair/', description: 'Complete heating and cooling system repair' },
     { name: 'HVAC Installation', href: '/services/hvac-services/hvac-installation/', description: 'New system installation with proper sizing' },
     { name: 'HVAC Replacement', href: '/services/hvac-services/hvac-replacement/', description: 'Honest replacement after thorough inspection' },
     { name: 'Emergency HVAC Repair', href: '/services/hvac-services/emergency-hvac-repair/', description: '24/7 emergency heating & cooling repair' },
   ],
   'iaq': [
+    { name: 'Duct Cleaning', href: '/services/indoor-air-quality-solutions/duct-cleaning/', description: 'Remove dust and debris from HVAC ductwork' },
     { name: 'Duct Installation', href: '/services/indoor-air-quality-solutions/duct-installation/', description: 'New ductwork for better airflow' },
     { name: 'Duct Repair', href: '/services/indoor-air-quality-solutions/hvac-duct-repair/', description: 'Patch leaks & fix crushed ducts' },
     { name: 'Duct Sealing', href: '/services/indoor-air-quality-solutions/hvac-duct-sealing/', description: 'Seal gaps with mastic to save energy' },
     { name: 'Humidifier Installation', href: '/services/indoor-air-quality-solutions/air-humidifiers/', description: 'Whole-home humidity control' },
     { name: 'Air Balancing', href: '/services/indoor-air-quality-solutions/hvac-air-balancing/', description: 'Even temperatures in every room' },
     { name: 'Dryer Vent Cleaning', href: '/services/indoor-air-quality-solutions/dryer-vent-cleaning/', description: 'Prevent fires & improve dryer efficiency' },
+  ],
+  'ductless': [
+    { name: 'Ductless Mini-Split Services', href: '/services/ductless-mini-split-services/', description: 'Ductless heating and cooling service hub' },
+    { name: 'Mini Split Installation', href: '/services/air-conditioning-services/mini-split-installation/', description: 'Right-sized single- or multi-zone installation' },
+    { name: 'Thermostat Services', href: '/services/thermostat-services/', description: 'Ductless controls, repair, and programming' },
+  ],
+  'thermostat': [
+    { name: 'Thermostat Services', href: '/services/thermostat-services/', description: 'Installation, replacement, repair, and smart setup' },
+    { name: 'HVAC Repair', href: '/services/hvac-services/hvac-repair/', description: 'Diagnose equipment when the thermostat is not the cause' },
+    { name: 'AC Repair', href: '/services/air-conditioning-services/ac-repair/', description: 'Complete cooling-system diagnostics' },
   ],
   'commercial': [
     { name: 'Commercial HVAC Services', href: '/services/commercial-hvac-services/', description: 'Rooftop units, multi-zone & maintenance plans' },
@@ -223,7 +244,35 @@ export function getRelated(key: string): LinkItem[] {
 
 // ── Compatibility aliases (used by ServicePageLayout / Footer) ──
 export const hubServices = serviceCategories;
-export const serviceLinks = { hub: { name: 'All Services', href: '/services/' }, airConditioning: { name: 'Air Conditioning', href: '/services/air-conditioning-services/' }, acInstallation: { name: 'AC Installation', href: '/services/air-conditioning-services/air-conditioning-installation/' }, acMaintenance: { name: 'AC Maintenance', href: '/services/air-conditioning-services/ac-maintenance/' }, emergencyAc: { name: 'Emergency AC Repair', href: '/services/air-conditioning-services/emergency-ac-repair/' }, miniSplit: { name: 'Mini Split Installation', href: '/services/air-conditioning-services/mini-split-installation/' }, heating: { name: 'Heating Services', href: '/services/heating-services/' }, heatingRepair: { name: 'Heating Repair', href: '/services/heating-services/heating-repair/' }, heatingMaintenance: { name: 'Heating Maintenance', href: '/services/heating-services/heating-maintenance/' }, heatingInstallation: { name: 'Heating Installation', href: '/services/heating-services/heating-installation/' }, hvac: { name: 'HVAC Services', href: '/services/hvac-services/' }, hvacInstallation: { name: 'HVAC Installation', href: '/services/hvac-services/hvac-installation/' }, hvacReplacement: { name: 'HVAC Replacement', href: '/services/hvac-services/hvac-replacement/' }, emergencyHvac: { name: 'Emergency HVAC Repair', href: '/services/hvac-services/emergency-hvac-repair/' }, iaq: { name: 'Indoor Air Quality', href: '/services/indoor-air-quality-solutions/' }, airHumidifiers: { name: 'HVAC Humidifier', href: '/services/indoor-air-quality-solutions/air-humidifiers/' }, ductInstall: { name: 'Duct Installation', href: '/services/indoor-air-quality-solutions/duct-installation/' }, ductRepair: { name: 'Duct Repair', href: '/services/indoor-air-quality-solutions/hvac-duct-repair/' }, ductSealing: { name: 'Duct Sealing', href: '/services/indoor-air-quality-solutions/hvac-duct-sealing/' }, airBalancing: { name: 'Air Balancing', href: '/services/indoor-air-quality-solutions/hvac-air-balancing/' }, dryerVent: { name: 'Dryer Vent Cleaning', href: '/services/indoor-air-quality-solutions/dryer-vent-cleaning/' }, commercial: { name: 'Commercial HVAC', href: '/services/commercial-hvac-services/' } } as const;
+export const serviceLinks = {
+  hub: { name: 'All Services', href: '/services/' },
+  airConditioning: { name: 'Air Conditioning', href: '/services/air-conditioning-services/' },
+  acRepair: { name: 'AC Repair', href: '/services/air-conditioning-services/ac-repair/' },
+  acInstallation: { name: 'AC Installation', href: '/services/air-conditioning-services/air-conditioning-installation/' },
+  acMaintenance: { name: 'AC Maintenance', href: '/services/air-conditioning-services/ac-maintenance/' },
+  emergencyAc: { name: 'Emergency AC Repair', href: '/services/air-conditioning-services/emergency-ac-repair/' },
+  miniSplit: { name: 'Mini Split Installation', href: '/services/air-conditioning-services/mini-split-installation/' },
+  ductless: { name: 'Ductless Mini-Split Services', href: '/services/ductless-mini-split-services/' },
+  heating: { name: 'Heating Services', href: '/services/heating-services/' },
+  heatingRepair: { name: 'Heating Repair', href: '/services/heating-services/heating-repair/' },
+  heatingMaintenance: { name: 'Heating Maintenance', href: '/services/heating-services/heating-maintenance/' },
+  heatingInstallation: { name: 'Heating Installation', href: '/services/heating-services/heating-installation/' },
+  hvac: { name: 'HVAC Services', href: '/services/hvac-services/' },
+  hvacRepair: { name: 'HVAC Repair', href: '/services/hvac-services/hvac-repair/' },
+  hvacInstallation: { name: 'HVAC Installation', href: '/services/hvac-services/hvac-installation/' },
+  hvacReplacement: { name: 'HVAC Replacement', href: '/services/hvac-services/hvac-replacement/' },
+  emergencyHvac: { name: 'Emergency HVAC Repair', href: '/services/hvac-services/emergency-hvac-repair/' },
+  thermostat: { name: 'Thermostat Services', href: '/services/thermostat-services/' },
+  iaq: { name: 'Indoor Air Quality', href: '/services/indoor-air-quality-solutions/' },
+  ductCleaning: { name: 'Duct Cleaning', href: '/services/indoor-air-quality-solutions/duct-cleaning/' },
+  airHumidifiers: { name: 'HVAC Humidifier', href: '/services/indoor-air-quality-solutions/air-humidifiers/' },
+  ductInstall: { name: 'Duct Installation', href: '/services/indoor-air-quality-solutions/duct-installation/' },
+  ductRepair: { name: 'Duct Repair', href: '/services/indoor-air-quality-solutions/hvac-duct-repair/' },
+  ductSealing: { name: 'Duct Sealing', href: '/services/indoor-air-quality-solutions/hvac-duct-sealing/' },
+  airBalancing: { name: 'Air Balancing', href: '/services/indoor-air-quality-solutions/hvac-air-balancing/' },
+  dryerVent: { name: 'Dryer Vent Cleaning', href: '/services/indoor-air-quality-solutions/dryer-vent-cleaning/' },
+  commercial: { name: 'Commercial HVAC', href: '/services/commercial-hvac-services/' },
+} as const;
 export const areaLinks = serviceAreas;
 
 // Blog -> service mapping (for [...slug].astro)

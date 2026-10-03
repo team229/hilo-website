@@ -2,11 +2,13 @@ import { useState, useEffect, useRef } from 'react';
 
 const SERVICES = [
   'AC Repair',
+  'HVAC Repair',
   'Heating/Furnace Repair',
   'Maintenance / Tune-Up',
   'New AC / HVAC Installation',
-  'Mini-Split',
-  'Thermostat',
+  'Ductless Mini-Split',
+  'Thermostat Services',
+  'Duct Cleaning',
   'Indoor Air Quality',
   'Commercial HVAC',
   'Other',

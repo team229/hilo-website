@@ -72,4 +72,29 @@ import VanSection from '../../components/VanSection.astro';
       </div>
     </div>
   </section>
+
+  <section class="py-16 sm:py-24 bg-white border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <span class="inline-block bg-brand-blue/10 text-brand-blue text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">More Services</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-blue mb-4">Repair, Airflow & Comfort Controls</h2>
+        <p class="text-slate-600 max-w-2xl mx-auto font-medium">Focused service pages for common problems that need more than a general category link.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {[
+          { title: 'AC Repair', desc: 'General air-conditioning diagnostics and repair.', href: '/services/air-conditioning-services/ac-repair/' },
+          { title: 'HVAC Repair', desc: 'Complete heating and cooling system repair.', href: '/services/hvac-services/hvac-repair/' },
+          { title: 'Duct Cleaning', desc: 'Remove dust and debris from HVAC ductwork.', href: '/services/indoor-air-quality-solutions/duct-cleaning/' },
+          { title: 'Ductless Mini-Split Services', desc: 'Ductless installation, repair, and maintenance.', href: '/services/ductless-mini-split-services/' },
+          { title: 'Thermostat Services', desc: 'Thermostat installation, repair, replacement, and smart setup.', href: '/services/thermostat-services/' },
+        ].map((svc) => (
+          <a href={svc.href} class="group bg-white border border-brand-blue/10 rounded-2xl p-6 hover:shadow-lg hover:border-brand-blue/30 transition-all">
+            <h3 class="text-lg font-bold text-brand-blue mb-2 group-hover:text-brand-red transition-colors">{svc.title}</h3>
+            <p class="text-sm text-slate-600 mb-4">{svc.desc}</p>
+            <span class="text-sm font-semibold text-brand-blue group-hover:text-brand-red transition-colors">Learn More →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
 </ServicePageLayout>

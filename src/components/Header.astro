@@ -7,6 +7,7 @@ const services = [
     name: 'Air Conditioning',
     href: '/services/air-conditioning-services/',
     sub: [
+      { name: 'AC Repair', href: '/services/air-conditioning-services/ac-repair/' },
       { name: 'AC Maintenance', href: '/services/air-conditioning-services/ac-maintenance/' },
       { name: 'AC Installation', href: '/services/air-conditioning-services/air-conditioning-installation/' },
       { name: 'Emergency AC Repair', href: '/services/air-conditioning-services/emergency-ac-repair/' },
@@ -26,6 +27,7 @@ const services = [
     name: 'HVAC Services',
     href: '/services/hvac-services',
     sub: [
+      { name: 'HVAC Repair', href: '/services/hvac-services/hvac-repair/' },
       { name: 'HVAC Installation', href: '/services/hvac-services/hvac-installation/' },
       { name: 'HVAC Replacement', href: '/services/hvac-services/hvac-replacement/' },
       { name: 'Air Balancing', href: '/services/indoor-air-quality-solutions/hvac-air-balancing/' },
@@ -37,7 +39,18 @@ const services = [
       { name: 'Commercial HVAC', href: '/services/commercial-hvac-services/' },
     ],
   },
-  { name: 'Indoor Air Quality', href: '/services/indoor-air-quality-solutions/' },
+  {
+    name: 'Indoor Air Quality',
+    href: '/services/indoor-air-quality-solutions/',
+    sub: [
+      { name: 'Duct Cleaning', href: '/services/indoor-air-quality-solutions/duct-cleaning/' },
+      { name: 'Duct Repair', href: '/services/indoor-air-quality-solutions/hvac-duct-repair/' },
+      { name: 'Duct Sealing', href: '/services/indoor-air-quality-solutions/hvac-duct-sealing/' },
+      { name: 'Duct Installation', href: '/services/indoor-air-quality-solutions/duct-installation/' },
+    ],
+  },
+  { name: 'Ductless Mini-Split', href: '/services/ductless-mini-split-services/' },
+  { name: 'Thermostats', href: '/services/thermostat-services/' },
 ];
 
 const navLinks = [

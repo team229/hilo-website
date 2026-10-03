@@ -10,6 +10,8 @@ import VanSection from '../../../components/VanSection.astro';
   heroSubtitle="Your AC dies in July. Or your furnace decides to quit the one cold week of the year. That's us. Hilo Heating and Air has been working on heating and cooling systems around Stanton for years."
   faqKey="services-hvac"
   relatedServices={[
+    { name: 'HVAC Repair', href: '/services/hvac-services/hvac-repair/', desc: 'Complete heating and cooling system diagnostics.' },
+    { name: 'Thermostat Services', href: '/services/thermostat-services/', desc: 'Installation, replacement, repair, and smart setup.' },
     { name: 'HVAC Installation', href: '/services/hvac-services/hvac-installation/', desc: 'Correctly sized, code-compliant new systems.' },
     { name: 'HVAC Replacement', href: '/services/hvac-services/hvac-replacement/', desc: 'Honest assessment when repair isn’t enough.' },
     { name: 'Emergency HVAC Repair', href: '/services/hvac-services/emergency-hvac-repair/', desc: '24/7 heating + cooling emergencies.' },
@@ -47,6 +49,8 @@ import VanSection from '../../../components/VanSection.astro';
       <h2 class="text-3xl font-bold text-brand-blue mb-8 text-center">Our HVAC Services</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {[
+          { title: 'HVAC Repair', desc: 'Complete heating and cooling diagnostics for the whole system.', href: '/services/hvac-services/hvac-repair/' },
+          { title: 'Thermostat Services', desc: 'Install, replace, repair, calibrate, and connect compatible controls.', href: '/services/thermostat-services/' },
           { title: 'HVAC Installation', desc: 'New HVAC system installation with proper sizing.', href: '/services/hvac-services/hvac-installation/' },
           { title: 'HVAC Replacement', desc: 'Honest assessments and quality system replacement.', href: '/services/hvac-services/hvac-replacement/' },
           { title: 'Air Balancing', desc: 'Fix uneven temperatures throughout your home.', href: '/services/indoor-air-quality-solutions/hvac-air-balancing/' },
