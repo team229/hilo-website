@@ -32,6 +32,38 @@ const slugKey = post.id.replace(/\.md$/, '');
 const relatedServices = blogServiceMap[slugKey] || [serviceLinks.hvac, serviceLinks.airConditioning, serviceLinks.heating];
 
 const blogFaqSchemas: Record<string, object> = {
+  'hvac-duct-repair-stanton-ca': {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "How much does HVAC duct repair cost?", "acceptedAnswer": { "@type": "Answer", "text": "Cost depends on damage, access and materials. Ask for a written estimate after inspection." } },
+      { "@type": "Question", "name": "How long does duct repair take?", "acceptedAnswer": { "@type": "Answer", "text": "Time varies with the extent of damage. Small repairs can be quick, but replacement takes longer." } },
+      { "@type": "Question", "name": "Can leaky ducts raise my energy bills?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. ENERGY STAR says leaks waste conditioned air and reduce system efficiency." } },
+      { "@type": "Question", "name": "Is duct sealing the same as duct repair?", "acceptedAnswer": { "@type": "Answer", "text": "Not exactly. Sealing closes small gaps, while repair fixes damaged or disconnected sections." } },
+      { "@type": "Question", "name": "When is air duct replacement necessary?", "acceptedAnswer": { "@type": "Answer", "text": "When ducts are too old, damaged or undersized for your system. An inspection confirms it." } },
+      { "@type": "Question", "name": "Can I repair ducts myself?", "acceptedAnswer": { "@type": "Answer", "text": "Minor accessible fixes are possible. Professionals should handle ducts in attics and crawlspaces." } },
+      { "@type": "Question", "name": "Can damaged ducts affect indoor air quality?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. HiLo notes damaged ductwork can pull dust, allergens and pests into the air supply." } },
+      { "@type": "Question", "name": "What causes duct damage?", "acceptedAnswer": { "@type": "Answer", "text": "Age, crushed sections, loose seams and rodents are common causes." } },
+      { "@type": "Question", "name": "Do I need air balancing after repair?", "acceptedAnswer": { "@type": "Answer", "text": "Sometimes. Ask whether uneven airflow remains after repairs." } },
+      { "@type": "Question", "name": "How do I find duct repair near Stanton, CA?", "acceptedAnswer": { "@type": "Answer", "text": "Choose a licensed contractor who inspects first and explains options clearly." } }
+    ]
+  },
+  'hvac-system-inspection-stanton-ca': {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "How long does an HVAC system inspection take?", "acceptedAnswer": { "@type": "Answer", "text": "Time depends on home size and system complexity. Ask your contractor for an estimate when you book." } },
+      { "@type": "Question", "name": "What is the difference between an inspection and maintenance?", "acceptedAnswer": { "@type": "Answer", "text": "Maintenance keeps equipment running. An inspection evaluates how the whole system performs, including airflow." } },
+      { "@type": "Question", "name": "Why is one room always too hot or too cold?", "acceptedAnswer": { "@type": "Answer", "text": "Uneven airflow is a common cause. Dampers, duct layout and missing returns can all play a role." } },
+      { "@type": "Question", "name": "Is air balancing the same as duct repair?", "acceptedAnswer": { "@type": "Answer", "text": "No. Balancing adjusts airflow. Repair fixes physical duct damage." } },
+      { "@type": "Question", "name": "Do I need an inspection if my system works fine?", "acceptedAnswer": { "@type": "Answer", "text": "Occasional inspections catch small problems early. They are useful before issues become failures." } },
+      { "@type": "Question", "name": "Can an inspection find duct leaks?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Contractors can look for leaks as part of the duct evaluation." } },
+      { "@type": "Question", "name": "Will balancing lower my energy bills?", "acceptedAnswer": { "@type": "Answer", "text": "It can reduce strain on equipment, according to HiLo, but results vary by home." } },
+      { "@type": "Question", "name": "How often should I schedule an inspection?", "acceptedAnswer": { "@type": "Answer", "text": "Many homeowners pair inspections with seasonal maintenance. Ask your contractor what fits your system." } },
+      { "@type": "Question", "name": "What if the inspection finds a bigger problem?", "acceptedAnswer": { "@type": "Answer", "text": "A good contractor explains the options and costs before any work begins." } },
+      { "@type": "Question", "name": "How do I find HVAC inspection services in Stanton, CA?", "acceptedAnswer": { "@type": "Answer", "text": "Choose a licensed local contractor who measures airflow and explains findings clearly." } }
+    ]
+  },
   'ac-repair-anaheim-same-day-emergency': {
     "@context": "https://schema.org",
     "@type": "FAQPage",

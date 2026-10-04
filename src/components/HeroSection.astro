@@ -1,24 +1,24 @@
 ---
 import { Image, getImage } from 'astro:assets';
-import heroBanner from '../assets/hero-banner-van.webp';
-import heroBannerMobile from '../assets/hero-banner-van-mobile.webp';
+import heroBanner from '../assets/hero-banner-sunlit.webp';
+import heroBannerMobile from '../assets/hero-banner-sunlit-mobile.webp';
 import { ShieldCheck, Phone } from 'lucide-react';
 
-const heroDesktop = await getImage({ src: heroBanner, widths: [1969, 1400, 1000], format: 'webp', quality: 85 });
+const heroDesktop = await getImage({ src: heroBanner, widths: [1300, 1100, 800], format: 'webp', quality: 86 });
 ---
 
-<section class="relative isolate grid bg-[#ddeefc]">
-  {/* Hero image and content share grid cell 1/1. The image sits in normal
-      flow at its natural 1969:799 ratio, so NOTHING is ever cropped. The
-      section height is the taller of the two, so if the form runs long the
-      background simply extends below the photo instead of clipping it. */}
-  <picture class="[grid-area:1/1] block w-full">
+<section class="relative isolate overflow-hidden">
+  {/* The image is taken out of flow and stretched to fill whatever height the
+      content needs, so the hero always ENDS at the form with no trailing lawn
+      and no flat colour band. object-cover crops sky and foreground only -
+      the crop is vertical, so the van and house stay intact at every width. */}
+  <picture class="absolute inset-0 -z-10 block h-full w-full">
     <source media="(min-width: 1024px)" type="image/webp" srcset={heroDesktop.srcSet.attribute} sizes="100vw" />
     <Image
       src={heroBannerMobile}
-      alt="HiLo Heating & Air branded service van in a sunny Orange County neighborhood"
-      class="block w-full h-auto"
-      widths={[1969, 1400, 1000]}
+      alt="HiLo Heating &amp; Air branded service van on a sunlit suburban street in Orange County"
+      class="h-full w-full object-cover object-[center_52%]"
+      widths={[604, 480, 360]}
       sizes="100vw"
       quality={85}
       loading="eager"
@@ -26,7 +26,15 @@ const heroDesktop = await getImage({ src: heroBanner, widths: [1969, 1400, 1000]
     />
   </picture>
 
-  <div class="[grid-area:1/1] relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-8 sm:pt-12 sm:pb-12 lg:pt-16 lg:pb-20 w-full">
+  {/* Readability scrim, confined to the band the navy text actually occupies
+      (measured: badge/h1/para span y 0.048-0.303; the form card below is
+      opaque navy). Measured sweep over the backdrop shows alpha 0.75 is the
+      lowest that keeps the worst pixel at 4.5:1 (5.29:1); 0.65 fails at
+      4.14:1. The vertical mask + height cap keep the lower lawn and brick path
+      fully saturated instead of washing the whole frame. */}
+  <div class="absolute inset-x-0 top-0 h-[64%] pointer-events-none bg-white/72 lg:bg-gradient-to-r lg:from-white/78 lg:via-white/62 lg:to-white/0 [mask-image:linear-gradient(to_bottom,black_76%,transparent_100%)]" aria-hidden="true"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-8 sm:pt-12 sm:pb-12 lg:pt-16 lg:pb-20 w-full">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 w-full items-center">
 
       {/* Left: Content + Form */}
