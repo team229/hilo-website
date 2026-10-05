@@ -84,8 +84,8 @@ export default function TrustedChoiceSection() {
           <div className="lg:col-span-5">
             <div className="relative rounded-2xl overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.08)]">
               <img
-                src="/images/hero-technician.png"
-                alt="HiLo HVAC Technician"
+                src="/images/hvac-technician-at-work.webp"
+                alt="HiLo Heating &amp; Air technician servicing an indoor air handler in a residential closet"
                 className="w-full h-auto object-cover aspect-[4/3] sm:aspect-[4/5] lg:aspect-[3/4]"
               />
               <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4">
