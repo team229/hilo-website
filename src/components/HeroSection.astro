@@ -1,7 +1,7 @@
 ---
 import { Image, getImage } from 'astro:assets';
-import heroBanner from '../assets/hero-banner-sunlit.webp';
-import heroBannerMobile from '../assets/hero-banner-sunlit-mobile.webp';
+import heroBanner from '../assets/hero-banner-suburb.webp';
+import heroBannerMobile from '../assets/hero-banner-suburb-mobile.webp';
 import { ShieldCheck, Phone } from 'lucide-react';
 
 const heroDesktop = await getImage({ src: heroBanner, widths: [1300, 1100, 800], format: 'webp', quality: 86 });
@@ -45,10 +45,8 @@ const heroDesktop = await getImage({ src: heroBanner, widths: [1300, 1100, 800],
           <span>Trusted Local HVAC Company</span>
         </div>
 
-        <h1 class="text-[1.7rem] sm:text-5xl lg:text-6xl font-black text-[#08294d] leading-[1.12] mb-3 lg:mb-6 tracking-tight">
-          Orange County <br class="hidden sm:block" />
-          HVAC Service <br />
-          <span class="text-[#b30000]">You Can Trust</span>
+        <h1 class="text-[1.7rem] sm:text-4xl lg:text-4xl font-black text-[#08294d] leading-[1.12] mb-3 lg:mb-6 tracking-tight lg:whitespace-nowrap lg:w-[700px]">
+          Orange County HVAC Service <span class="text-[#b30000]">You Can Trust</span>
         </h1>
 
         <p class="text-sm sm:text-base text-[#0B3764] max-w-xl mb-4 lg:mb-8 leading-relaxed font-semibold [text-shadow:0_0_6px_rgba(255,255,255,0.95),0_1px_3px_rgba(255,255,255,0.8)]">
