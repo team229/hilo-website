@@ -4,10 +4,17 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import CTASection from '../../components/CTASection';
 import { getCollection } from 'astro:content';
+import { getAuthor } from '../../data/authors';
 
 const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
 );
+
+const postAuthors: Record<string, ReturnType<typeof getAuthor>> = {};
+for (const post of posts) {
+  const a = getAuthor(post.data.author);
+  if (a) postAuthors[post.id] = a;
+}
 
 const faqSchemaObject = {
   "@context": "https://schema.org",
@@ -77,6 +84,12 @@ const description = 'Expert HVAC advice, tips, and guides from the HiLo Heating 
                       {post.data.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
                     </time>
                   </div>
+                  {postAuthors[post.id] && (
+                    <div class="flex items-center gap-2 mb-3">
+                      <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wider">By</span>
+                      <span class="text-xs font-semibold text-gray-800">{postAuthors[post.id].name}</span>
+                    </div>
+                  )}
                   <h2 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand-blue transition-colors line-clamp-2">{post.data.title}</h2>
                   <p class="text-gray-500 text-sm leading-relaxed line-clamp-3">{post.data.description}</p>
                   <div class="mt-4 flex items-center text-brand-blue text-sm font-semibold">
