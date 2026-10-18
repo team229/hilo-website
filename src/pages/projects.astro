@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const projects = [
+  { href: 'https://ibb.co/9m9KmVDV', src: 'https://i.ibb.co/DPDcP8J8/unnamed-3.png', alt: 'HiLo Heating & Air HVAC installation project' },
+  { href: 'https://ibb.co/BHQ9y8rc', src: 'https://i.ibb.co/xKBN1VfX/unnamed-2.png', alt: 'HiLo Heating & Air HVAC repair project' },
+  { href: 'https://ibb.co/4nKkkLXd', src: 'https://i.ibb.co/ycd22CZS/unnamed-1.png', alt: 'HiLo Heating & Air furnace installation' },
+  { href: 'https://ibb.co/QF7ybywS', src: 'https://i.ibb.co/svp8m8Yx/unnamed-7.jpg', alt: 'HiLo Heating & Air AC replacement' },
+  { href: 'https://ibb.co/pj9P6L4c', src: 'https://i.ibb.co/nM50qLQ9/unnamed-5.jpg', alt: 'HiLo Heating & Air ductwork project' },
+  { href: 'https://ibb.co/F4MM65kw', src: 'https://i.ibb.co/HTss7tLz/unnamed-4.jpg', alt: 'HiLo Heating & Air mini-split installation' },
+  { href: 'https://ibb.co/spPXdDmc', src: 'https://i.ibb.co/mrBPVYDd/unnamed-3.jpg', alt: 'HiLo Heating & Air emergency repair' },
+  { href: 'https://ibb.co/ycTqQ5Gt', src: 'https://i.ibb.co/mVs4ct1k/unnamed-2.jpg', alt: 'HiLo Heating & Air commercial HVAC' },
+  { href: 'https://ibb.co/kVRw72Sx', src: 'https://i.ibb.co/mrL2j5cG/unnamed-1.jpg', alt: 'HiLo Heating & Air maintenance project' },
+];
+---
+
+<BaseLayout title="HVAC Projects | HiLo Heating & Air" description="See our recent HVAC installation, repair, and maintenance projects across Orange County — Stanton, Anaheim, Irvine, Santa Ana, Orange, Fullerton, and beyond. Free estimates on all installations.">
+  <Header />
+  <main>
+    <!-- Free Estimates Banner -->
+    <section class="bg-brand-red text-white py-3 sm:py-4">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-sm sm:text-base font-semibold">
+          💰 Free estimates on all installations &nbsp;·&nbsp; Call (714) 853-5534 &nbsp;·&nbsp;
+          <a href="https://share.google/Xr1KLRM21kgxpA2Ef" class="underline hover:text-brand-yellow/80 transition">See our Google reviews</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="py-16 sm:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h1 class="text-3xl sm:text-4xl font-bold text-brand-blue mb-4">Recent HVAC Projects</h1>
+          <p class="text-slate-600 max-w-2xl mx-auto">See our recent heating, cooling, and ductwork installations across Orange County. From Stanton to Anaheim, Irvine to Santa Ana — HiLo Heating & Air delivers quality work every time.</p>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+          {projects.map((p) => (
+            <a href={p.href} target="_blank" rel="noopener noreferrer" class="block rounded-xl overflow-hidden hover:scale-105 transition duration-300 border border-slate-200">
+              <img src={p.src} alt={p.alt} class="w-full h-48 object-cover" loading="lazy" />
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 sm:py-24 bg-slate-50 border-y border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl sm:text-4xl font-bold text-brand-blue mb-4">Ready for Your HVAC Project?</h2>
+        <p class="text-slate-600 mb-8 max-w-2xl mx-auto">Whether you need AC repair, furnace installation, or a full HVAC replacement in Orange County, HiLo Heating & Air is ready to help. Same-day service, free diagnostics with repair, and upfront pricing.</p>
+        <a href="tel:+17148535534" class="inline-block bg-brand-blue text-white font-bold px-8 py-4 rounded-lg hover:bg-blue-700 transition text-lg">
+          (714) 853-5534
+        </a>
+        <a href="/contact-us/" class="inline-block ml-4 bg-brand-red text-white font-bold px-8 py-4 rounded-lg hover:bg-red-700 transition text-lg">
+          Request Service Online
+        </a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
