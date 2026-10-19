@@ -150,11 +150,37 @@ export default function ServiceForm() {
         }),
       });
       if (res.ok) {
+        const w = window as any;
+        w.dataLayer = w.dataLayer || [];
+        w.dataLayer.push({
+          event: 'generate_lead',
+          postType: 'Lead',
+          leadForm: 'service',
+          city: formData.city,
+          issue: formData.issue,
+          utmSource: '',
+          utmCampaign: '',
+          utmMedium: '',
+          gclid: '',
+        });
+        w.dataLayer.push({ event: 'service_form_submission' });
+        if (typeof w.gtag === 'function') {
+          w.gtag('event', 'generate_lead', {
+            form_name: 'service',
+            lead_type: 'form',
+            value: 150,
+            currency: 'USD',
+          });
+          w.gtag('event', 'conversion', { send_to: 'AW-18314297181/XPSFCJTp4-QcEN3-95xE' });
+        }
         window.location.href = '/thank-you/';
       } else {
         setStatus('error');
       }
     } catch {
+      const w = window as any;
+      w.dataLayer = w.dataLayer || [];
+      w.dataLayer.push({ event: 'service_form_error', error: 'submit_failed' });
       setStatus('error');
     }
   };

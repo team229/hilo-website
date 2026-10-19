@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 
 // Google Ads conversion label for FORM SUBMISSIONS (create one in Ads -> Conversions -> Website).
 // Format: 'AW-18314297181/XXXXXXXXXXX-XXXXXXXXXX'. Leave '' to only fire GA4/dataLayer events.
-const GOOGLE_ADS_FORM_CONVERSION = '';
+const GOOGLE_ADS_FORM_CONVERSION = 'AW-18314297181/XPSFCJTp4-QcEN3-95xE';
 
 const issues = [
   { value: 'AC not cooling', label: '❄️ AC not cooling' },

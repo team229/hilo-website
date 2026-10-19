@@ -6,6 +6,15 @@ import CTASection from '../components/CTASection';
 ---
 
 <BaseLayout title="Thank You | HiLo Heating & Air" description="Your HVAC service request has been received. Our dispatcher will call you within 15 minutes." robots="noindex, nofollow">
+  <script is:inline>
+    const w = window as any;
+    w.dataLayer = w.dataLayer || [];
+    w.dataLayer.push({ event: 'thank_you_page_view' });
+    w.dataLayer.push({ event: 'conversion', conversion_type: 'thank_you_page' });
+    if (typeof w.gtag === 'function') {
+      w.gtag('event', 'conversion', { send_to: 'AW-18314297181/XPSFCJTp4-QcEN3-95xE' });
+    }
+  </script>
   <Header />
   <main>
     <section class="py-20 sm:py-28 bg-gradient-to-br from-brand-blue to-blue-800">
