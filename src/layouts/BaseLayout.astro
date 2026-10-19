@@ -293,6 +293,67 @@ const schemaOrg = {
     })();
   </script>
 
+  <!-- Meta Pixel (Facebook) - TODO: Replace META_PIXEL_ID with your actual Pixel ID -->
+  <script is:inline>
+    (function() {
+      var META_PIXEL_ID = ''; // <-- Set your Meta Pixel ID here, e.g. '123456789012345'
+      if (!META_PIXEL_ID) return;
+      !(function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js'
+      );
+      fbq('init', META_PIXEL_ID);
+      fbq('track', 'PageView');
+    })();
+  </script>
+
+  <!-- Microsoft Advertising UET - TODO: Replace UET_ID with your actual UET ID -->
+  <script is:inline>
+    (function() {
+      var UET_ID = ''; // <-- Set your Microsoft Advertising UET ID here
+      if (!UET_ID) return;
+      !(function(w, d, t, r, s) {
+        var f, i;
+        w[r] = w[r] || [];
+        for (var j = 0; j < w[r].length; j++) {
+          f = w[r][j];
+          if (typeof f === 'function') f.apply(w[r], arguments);
+        }
+        if (!w[r].push) {
+          f = function() {
+            w[r].arguments = arguments;
+            w[r].push(f);
+          };
+        }
+        f = w[r] = f;
+        i = d.createElement(t);
+        i.async = 1;
+        i.src = 'https://www.bingads.microsoft.com/microsoft-clarity/events.js'; // placeholder
+        s = d.getElementsByTagName(t)[0];
+        s.parentNode.insertBefore(i, s);
+      })(window, document, 'script', 'uetq');
+      uetq('init', UET_ID);
+      uetq('pageview');
+    })();
+  </script>
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

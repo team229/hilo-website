@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { initUtmPersistence } from '../utils/utmPersistence';
 
 const SERVICES = [
   'AC Repair',
@@ -48,6 +49,37 @@ export default function ServiceForm() {
   const [captchaError, setCaptchaError] = useState(false);
   const [photoError, setPhotoError] = useState('');
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const [hasInteracted, setHasInteracted] = useState(false);
+
+  // Initialize persisted UTM params on mount
+  useEffect(() => {
+    initUtmPersistence();
+  }, []);
+
+  // Form abandonment tracking: fire when user interacts but doesn't submit
+  useEffect(() => {
+    const handleInput = () => {
+      if (!hasInteracted) {
+        setHasInteracted(true);
+        const w = window as any;
+        w.dataLayer = w.dataLayer || [];
+        w.dataLayer.push({
+          event: 'form_abandonment_risk',
+          form_name: 'service',
+          interacted_at: new Date().toISOString(),
+        });
+      }
+    };
+
+    const inputs = document.querySelectorAll('input, select, textarea');
+    inputs.forEach((el) => el.addEventListener('input', handleInput));
+    inputs.forEach((el) => el.addEventListener('change', handleInput));
+
+    return () => {
+      inputs.forEach((el) => el.removeEventListener('input', handleInput));
+      inputs.forEach((el) => el.removeEventListener('change', handleInput));
+    };
+  }, [hasInteracted]);
 
   const generateCaptcha = () => {
     const num1 = Math.floor(Math.random() * 10) + 1;
@@ -152,16 +184,17 @@ export default function ServiceForm() {
       if (res.ok) {
         const w = window as any;
         w.dataLayer = w.dataLayer || [];
+        const persistedUtm = initUtmPersistence();
         w.dataLayer.push({
           event: 'generate_lead',
           postType: 'Lead',
           leadForm: 'service',
           city: formData.city,
           issue: formData.issue,
-          utmSource: '',
-          utmCampaign: '',
-          utmMedium: '',
-          gclid: '',
+          utmSource: persistedUtm.utm_source || '',
+          utmCampaign: persistedUtm.utm_campaign || '',
+          utmMedium: persistedUtm.utm_medium || '',
+          gclid: persistedUtm.gclid || '',
         });
         w.dataLayer.push({ event: 'service_form_submission' });
         if (typeof w.gtag === 'function') {

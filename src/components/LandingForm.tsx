@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { initUtmPersistence, getPersistedUtmParams } from '../utils/utmPersistence';
 
 // Google Ads conversion label for FORM SUBMISSIONS (create one in Ads -> Conversions -> Website).
 // Format: 'AW-18314297181/XXXXXXXXXXX-XXXXXXXXXX'. Leave '' to only fire GA4/dataLayer events.
@@ -93,10 +94,38 @@ export default function LandingForm() {
   const [utm, setUtm] = useState<Record<string, string>>({});
   const [honeypot, setHoneypot] = useState('');
   const mountedAt = useRef(Date.now());
+  const [hasInteracted, setHasInteracted] = useState(false);
 
+  // Initialize persisted UTM params on mount
   useEffect(() => {
-    setUtm(getUtmParams());
+    const persisted = initUtmPersistence();
+    setUtm(persisted);
   }, []);
+
+  // Form abandonment tracking: fire when user interacts but doesn't submit
+  useEffect(() => {
+    const handleInput = () => {
+      if (!hasInteracted) {
+        setHasInteracted(true);
+        const w = window as any;
+        w.dataLayer = w.dataLayer || [];
+        w.dataLayer.push({
+          event: 'form_abandonment_risk',
+          form_name: 'landing',
+          interacted_at: new Date().toISOString(),
+        });
+      }
+    };
+
+    const inputs = document.querySelectorAll('input, select, textarea');
+    inputs.forEach((el) => el.addEventListener('input', handleInput));
+    inputs.forEach((el) => el.addEventListener('change', handleInput));
+
+    return () => {
+      inputs.forEach((el) => el.removeEventListener('input', handleInput));
+      inputs.forEach((el) => el.removeEventListener('change', handleInput));
+    };
+  }, [hasInteracted]);
 
   const fakeSuccess = () => {
     window.location.href = '/thank-you/';
