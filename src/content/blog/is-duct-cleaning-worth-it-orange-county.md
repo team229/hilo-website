@@ -117,7 +117,7 @@ HiLo quotes after inspecting, never over the phone. If you don't need cleaning, 
 
 One number matters more than dust. [ENERGY STAR](https://www.energystar.gov/saveathome/heating-cooling/duct-sealing) reports that in a typical house **20 to 30 percent of the air moving through the duct system is lost to leaks, holes, and poorly connected ducts**, and that [leaky ducts can reduce system efficiency by as much as 20 percent](https://www.energystar.gov/saveathome/heating-cooling/duct-sealing/benefits). That's a bigger number than anything dust does to your bill. Cleaning does not touch it.
 
-The [indoor air quality hub](/services/indoor-air-quality-solutions/) lays out how these fit together.
+The [indoor air quality services](/services/indoor-air-quality-solutions/) page lays out how these fit together.
 
 ## Can You Clean Your Ducts Yourself?
 
