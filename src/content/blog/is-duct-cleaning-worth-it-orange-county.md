@@ -62,7 +62,7 @@ What actually helps:
 
 - **Filtration sized to the blower.** We usually land on MERV 11 to 13, changed on schedule. Higher is not better if the pressure drop starves airflow.
 - **Sealed ducts.** Attic returns pull in insulation fibers and outdoor air.
-- **Humidity control.** 30 to 50 percent indoors. Coastal homes may need dehumidification, and dry winter air may need a [humidifier](/services/indoor-air-quality-solutions/air-humidifiers/).
+- **Humidity control.** 30 to 50 percent indoors. Coastal homes may need dehumidification, and dry winter air may need a [humidifier](/services/indoor-air-quality-solutions/air-humidifiers/). If the house feels clammy rather than dusty, start with [why a house feels stuffy with the AC on](/blogs/why-house-feels-stuffy-with-ac-on-orange-county).
 - **A clean coil and drain pan.** The component cleaning the EPA actually suggests may pay off.
 
 ## Why Is Duct Advice Different in Orange County?
