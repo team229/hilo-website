@@ -7,13 +7,36 @@ import CTASection from '../components/CTASection';
 
 <BaseLayout title="Thank You | HiLo Heating & Air" description="Your HVAC service request has been received. Our dispatcher will call you within 15 minutes." robots="noindex, nofollow">
   <script is:inline>
-    const w = window as any;
-    w.dataLayer = w.dataLayer || [];
-    w.dataLayer.push({ event: 'thank_you_page_view' });
-    w.dataLayer.push({ event: 'conversion', conversion_type: 'thank_you_page' });
-    if (typeof w.gtag === 'function') {
-      w.gtag('event', 'conversion', { send_to: 'AW-18314297181/XPSFCJTp4-QcEN3-95xE' });
-    }
+    (function() {
+      // Conversion fires here, once, and only for a real form submission.
+      // The forms set this key just before redirecting; direct visits and
+      // refreshes do not, so they can never inflate leads.
+      var LEAD_FLAG = 'hilo_lead_submitted';
+      var w = window;
+      w.dataLayer = w.dataLayer || [];
+      w.dataLayer.push({ event: 'thank_you_page_view' });
+
+      var submitted = false;
+      try {
+        submitted = !!sessionStorage.getItem(LEAD_FLAG);
+        if (submitted) sessionStorage.removeItem(LEAD_FLAG);
+      } catch (e) {}
+
+      if (!submitted) return;
+
+      w.dataLayer.push({ event: 'lead_confirmed', conversion_type: 'form_lead' });
+
+      if (typeof w.gtag === 'function') {
+        w.gtag('event', 'conversion', { send_to: 'AW-18314297181/XPSFCJTp4-QcEN3-95xE' });
+        w.gtag('event', 'generate_lead', {
+          send_to: 'G-REY6C0ZJ6D',
+          form_name: 'hilo_form',
+          lead_type: 'form',
+          value: 150,
+          currency: 'USD'
+        });
+      }
+    })();
   </script>
   <Header />
   <main>

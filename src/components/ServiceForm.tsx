@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { initUtmPersistence } from '../utils/utmPersistence';
+import { markLeadSubmitted } from '../utils/leadTracking';
 
 const SERVICES = [
   'AC Repair',
@@ -199,14 +200,16 @@ export default function ServiceForm() {
         w.dataLayer.push({ event: 'service_form_submission' });
         if (typeof w.gtag === 'function') {
           w.gtag('event', 'generate_lead', {
+            send_to: 'G-REY6C0ZJ6D',
             form_name: 'service',
             lead_type: 'form',
             value: 150,
             currency: 'USD',
           });
-          w.gtag('event', 'conversion', { send_to: 'AW-18314297181/XPSFCJTp4-QcEN3-95xE' });
         }
-        window.location.href = '/thank-you/';
+        // Ads conversion fires once on /thank-you/ (see thank-you.astro).
+        markLeadSubmitted();
+        window.location.href = '/thank-you';
       } else {
         setStatus('error');
       }

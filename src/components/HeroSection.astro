@@ -130,7 +130,9 @@ const heroDesktop = await getImage({ src: heroBanner, widths: [1969, 1600, 1300,
         }),
       });
       if (res.ok) {
-        window.location.href = '/thank-you/';
+        // Mark the lead so /thank-you/ fires the Ads conversion exactly once.
+        try { sessionStorage.setItem('hilo_lead_submitted', String(Date.now())); } catch (e) {}
+        window.location.href = '/thank-you';
       } else {
         throw new Error('Submission failed');
       }

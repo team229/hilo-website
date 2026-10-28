@@ -84,19 +84,9 @@ const cities = [
   canonical={`${siteUrl}/landing`}
   robots="noindex, nofollow"
 >
-  <script slot="head" is:inline>
-    gtag('config', 'AW-18314297181/XPSFCJTp4-QcEN3-95xE', {
-      'phone_conversion_number': '(714) 853-5534'
-    });
-    document.addEventListener('click', function (e) {
-      var el = e.target && e.target.closest ? e.target.closest('a[href^="tel:"]') : null;
-      if (el && typeof gtag === 'function') {
-        gtag('event', 'conversion', { 'send_to': 'AW-18314297181/XPSFCJTp4-QcEN3-95xE' });
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({ 'event': 'phone_call_click', 'conversionLabel': 'XPSFCJTp4-QcEN3-95xE' });
-      }
-    });
-  </script>
+  <!-- Phone clicks are tracked site-wide by BaseLayout (phone_click, observe
+       only). The invalid gtag('config', 'AW-.../<label>') call and its duplicate
+       click listener lived here and threw before gtag was defined. -->
 
   <!-- === TOP URGENCY BAR (sticky) === -->
   <div class="sticky top-0 z-[99999] bg-brand-red text-white text-xs sm:text-sm font-bold shadow-lg shadow-black/20">

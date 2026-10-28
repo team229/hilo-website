@@ -35,7 +35,7 @@ export default function HeroForm() {
         }),
       });
       if (res.ok) {
-        window.location.href = '/thank-you/';
+        window.location.href = '/thank-you';
       } else {
         setStatus('error');
       }

@@ -50,3 +50,5 @@ At Hilo Heating and Air, we serve **Anaheim, Stanton, and the greater Orange Cou
 ---
 
 **Related services:** [AC Repair](/services/air-conditioning-services/) · [Heating Repair](/services/heating-services/heating-repair/) · [Emergency HVAC](/services/hvac-services/emergency-hvac-repair/) · [All Services](/services/) · [Service Areas](/service-areas/)
+
+**Related reading:** the heating mirror of this problem — [why your heater is blowing cold air](/blogs/heater-blowing-cold-air-orange-county) and what usually causes it.

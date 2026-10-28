@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
 import { initUtmPersistence, getPersistedUtmParams } from '../utils/utmPersistence';
+import { markLeadSubmitted } from '../utils/leadTracking';
 
-// Google Ads conversion label for FORM SUBMISSIONS (create one in Ads -> Conversions -> Website).
-// Format: 'AW-18314297181/XXXXXXXXXXX-XXXXXXXXXX'. Leave '' to only fire GA4/dataLayer events.
-const GOOGLE_ADS_FORM_CONVERSION = 'AW-18314297181/XPSFCJTp4-QcEN3-95xE';
+// Ads conversion is fired once on /thank-you/ (see thank-you.astro). Do not
+// fire it here as well — that double counted every lead.
 
 const issues = [
   { value: 'AC not cooling', label: '❄️ AC not cooling' },
@@ -70,15 +70,16 @@ function trackLead({ city, issue, utm }: { city: string; issue: string; utm: Rec
 
   if (typeof (w as any).gtag === 'function') {
     (w as any).gtag('event', 'generate_lead', {
+      send_to: 'G-REY6C0ZJ6D',
       form_name: 'landing',
       lead_type: 'form',
       value: 150,
       currency: 'USD',
     });
-    if (GOOGLE_ADS_FORM_CONVERSION) {
-      (w as any).gtag('event', 'conversion', { send_to: GOOGLE_ADS_FORM_CONVERSION });
-    }
   }
+
+  // Ads conversion fires once on /thank-you/.
+  markLeadSubmitted();
 }
 
 function trackError(msg: string) {
@@ -128,13 +129,16 @@ export default function LandingForm() {
   }, [hasInteracted]);
 
   const fakeSuccess = () => {
-    window.location.href = '/thank-you/';
+    window.location.href = '/thank-you';
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (honeypot) return fakeSuccess();
-    if (Date.now() - mountedAt.current < MIN_TYPING_TIME_MS) return fakeSuccess();
+
+    // Fast submits are usually autofill or bots. Flag them for review but still
+    // send the lead — the old code silently discarded real autofill submissions.
+    const submittedTooFast = Date.now() - mountedAt.current < MIN_TYPING_TIME_MS;
 
     const phoneDigits = formData.phone.replace(/\D/g, '').length;
     if (phoneDigits < 10) {
@@ -152,13 +156,13 @@ export default function LandingForm() {
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
-          message: `Phone: ${formData.phone}\n\nArea/City: ${formData.city}\n\nIssue: ${formData.issue}${utmTags ? `\n\n---\n${utmTags}` : ''}`,
+          message: `Phone: ${formData.phone}\n\nArea/City: ${formData.city}\n\nIssue: ${formData.issue}${utmTags ? `\n\n---\n${utmTags}` : ''}${submittedTooFast ? '\n\n---\nNote: submitted in under 3s (possible bot/autofill)' : ''}`,
         }),
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       trackLead({ city: formData.city, issue: formData.issue, utm });
       setTimeout(() => {
-        window.location.href = '/thank-you/';
+        window.location.href = '/thank-you';
       }, 150);
     } catch (err) {
       const msg = err instanceof Error ? err.message : 'Request failed';

@@ -312,4 +312,5 @@ export const blogServiceMap: Record<string, LinkItem[]> = {
   'hvac-system-inspection-stanton-ca': [allServices[0], allServices[10], allServices[11]],
   'is-duct-cleaning-worth-it-orange-county': [allServices[20], allServices[12], allServices[10]],
   'why-house-feels-stuffy-with-ac-on-orange-county': [allServices[10], allServices[12], allServices[17]],
+  'heater-blowing-cold-air-orange-county': [allServices[4], allServices[5], allServices[9]],
 };

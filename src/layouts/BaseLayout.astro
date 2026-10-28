@@ -260,15 +260,21 @@ const schemaOrg = {
   <meta name="msapplication-TileImage" content="/images/favicon-270.png" />
 
   <!-- Google tag (gtag.js) -->
+  <!-- is:inline is required: Astro otherwise compiles this to a module, which
+       scopes gtag() locally and leaves window.gtag undefined, silently
+       disabling every conversion call on the site. -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18314297181"></script>
-  <script>
+  <script is:inline>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
     gtag('js', new Date());
     gtag('config', 'AW-18314297181');
     gtag('config', 'G-REY6C0ZJ6D');
   </script>
-  <!-- Global phone click tracking for all tel: links -->
+  <!-- Global phone click tracking for all tel: links.
+       Observe-only: pushes phone_click for GA4/GTM, deliberately NOT an Ads
+       conversion. Clicks are not calls and must not drive bidding. -->
   <script is:inline>
     (function() {
       var w = window;
@@ -279,13 +285,10 @@ const schemaOrg = {
           link.addEventListener('click', function() {
             var tel = link.getAttribute('href') || '';
             w.dataLayer.push({
-              event: 'phone_call_click',
+              event: 'phone_click',
               phone_number: tel.replace('tel:', ''),
-              conversion_label: 'XPSFCJTp4-QcEN3-95xE'
+              page_path: w.location.pathname
             });
-            if (typeof w.gtag === 'function') {
-              w.gtag('event', 'conversion', { send_to: 'AW-18314297181/XPSFCJTp4-QcEN3-95xE' });
-            }
           });
         });
       }
