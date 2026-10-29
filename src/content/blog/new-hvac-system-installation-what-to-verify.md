@@ -268,3 +268,5 @@ Installation quality determines how a system performs far more than the badge on
 If you are weighing [repair against replacement](/services/hvac-services/hvac-replacement/), or comparing quotes and want a clear second opinion, HiLo Heating & Air can walk your property and give you a written assessment before you commit.
 
 Call [(714) 853-5534](tel:+17148535534) or [request service through the contact page](/contact-us/). Estimates are free, pricing is provided upfront, and financing is available. You can also review [AC installation](/services/air-conditioning-services/air-conditioning-installation/) and [heating installation](/services/heating-services/heating-installation/) options, or check coverage across [Orange County](/service-areas/orange-county/) and [Los Angeles](/service-areas/los-angeles/). The team is licensed, bonded, and insured under California license #1155955, with EPA certified technicians.
+
+Before you compare bids, read the [2026 HVAC replacement cost guide for Orange County](/blogs/hvac-replacement-cost-orange-county) so you know which line items belong in the quote.

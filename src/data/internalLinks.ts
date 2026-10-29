@@ -315,4 +315,5 @@ export const blogServiceMap: Record<string, LinkItem[]> = {
   'heater-blowing-cold-air-orange-county': [allServices[4], allServices[5], allServices[9]],
   'heat-pump-vs-furnace-orange-county': [allServices[6], allServices[8], allServices[5]],
   'ac-smells-musty-burning-orange-county': [allServices[18], allServices[0], allServices[20]],
+  'hvac-replacement-cost-orange-county': [allServices[8], allServices[7], allServices[6]],
 };
