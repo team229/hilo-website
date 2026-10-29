@@ -62,8 +62,7 @@ What actually helps:
 
 - **Filtration sized to the blower.** We usually land on MERV 11 to 13, changed on schedule. Higher is not better if the pressure drop starves airflow.
 - **Sealed ducts.** Attic returns pull in insulation fibers and outdoor air.
-- **Humidity control.** 30 to 50 percent indoors. Coastal homes may need dehumidification, and dry winter air may need a [humidifier](/services/indoor-air-quality-solutions/air-humidifiers/). If the house feels clammy rather than dusty, start with [why a house feels stuffy with the AC on](/blogs/why-house-feels-stuffy-with-ac-on-orange-county).
-- **A clean coil and drain pan.** The component cleaning the EPA actually suggests may pay off.
+- **Humidity control.** 30 to 50 percent indoors. Coastal homes may need dehumidification, and dry winter air may need a [humidifier](/services/indoor-air-quality-solutions/air-humidifiers/). If the house feels clammy rather than dusty, start with [why a house feels stuffy with the AC on](/blogs/why-house-feels-stuffy-with-ac-on-orange-county).- **A clean coil and drain pan.** The component cleaning the EPA actually suggests may pay off.
 
 ## Why Is Duct Advice Different in Orange County?
 
@@ -71,7 +70,7 @@ National guidance assumes a generic house. Four local conditions change the math
 
 ### Marine layer humidity, May and June
 
-Huntington Beach, Costa Mesa, and Newport Beach sit under a marine layer that keeps air damp for weeks. Closet air handlers sweat, condensate pans stay wet, and what grows first is not dust. Vacuuming a wet plenum buys one season. Fixing insulation, slope, and drainage is the repair.
+Huntington Beach, Costa Mesa, and Newport Beach sit under a marine layer that keeps air damp for weeks. Closet air handlers sweat, condensate pans stay wet, and what grows first is not dust. Vacuuming a wet plenum buys one season. Fixing insulation, slope, and drainage is the repair. If the symptom you actually notice is a smell rather than dust, start with [the odor guide](/blogs/ac-smells-musty-burning-orange-county) instead.
 
 ### Santa Ana winds and wildfire smoke
 

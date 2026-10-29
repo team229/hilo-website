@@ -314,4 +314,5 @@ export const blogServiceMap: Record<string, LinkItem[]> = {
   'why-house-feels-stuffy-with-ac-on-orange-county': [allServices[10], allServices[12], allServices[17]],
   'heater-blowing-cold-air-orange-county': [allServices[4], allServices[5], allServices[9]],
   'heat-pump-vs-furnace-orange-county': [allServices[6], allServices[8], allServices[5]],
+  'ac-smells-musty-burning-orange-county': [allServices[18], allServices[0], allServices[20]],
 };
