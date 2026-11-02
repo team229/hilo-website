@@ -90,7 +90,7 @@ Two contractors can install identical equipment and deliver different systems. T
 
 ## Repair or replace
 
-Age is the first filter. HomeGuide puts AC service life at 15 to 20 years and furnaces at 15 to 30, with gas furnaces at 15 to 25 on its furnace page ([HomeGuide](https://homeguide.com/costs/hvac-cost), Aug 27, 2025). Past 15 with a second major repair in 18 months, replacement usually wins.
+Age is the first filter. HomeGuide puts AC service life at 15 to 20 years and furnaces at 15 to 30, with gas furnaces at 15 to 25 on its furnace page ([HomeGuide](https://homeguide.com/costs/hvac-cost), Aug 27, 2025). Past 15 with a second major repair in 18 months, replacement usually wins. For the local version of that math, see [how long an AC actually lasts in Orange County](/blogs/how-long-does-ac-last-orange-county).
 
 The $5,000 rule says that if repair cost multiplied by age in years exceeds $5,000, replace it. HomeGuide publishes exactly that. It is a rule of thumb, not a standard, and it tells you to scrap a 9-year-old system over a $600 repair.
 
