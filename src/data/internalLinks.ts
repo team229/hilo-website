@@ -318,4 +318,6 @@ export const blogServiceMap: Record<string, LinkItem[]> = {
   'hvac-replacement-cost-orange-county': [allServices[8], allServices[7], allServices[6]],
   'thermostat-blank-not-responding-orange-county': [allServices[22], allServices[18], allServices[19]],
   'how-long-does-ac-last-orange-county': [allServices[18], allServices[0], allServices[8]],
+  'ac-leaking-water-orange-county': [allServices[18], allServices[0], allServices[2]],
+  'what-size-ac-do-i-need-orange-county': [allServices[1], allServices[7], allServices[8]],
 };
