@@ -4,6 +4,8 @@ description: "Water at the air handler, a ceiling stain, or a drip outside? How 
 date: 2026-11-03
 category: "AC Repair"
 author: "Cody"
+image: "/images/blog/ac-leaking-water-orange-county.webp"
+imageAlt: "HiLo technician working inside a closet air handler, the spot where condensate leaks start"
 ---
 
 **Quick answer:** A clogged condensate drain line is the most common reason an AC leaks water inside the house. Turn the system off at the thermostat, mop up what you can, and call before you run it again. If the water is near a ceiling, an electrical box, or an attic air handler, call now and leave it off.

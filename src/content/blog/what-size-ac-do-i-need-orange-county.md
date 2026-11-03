@@ -4,6 +4,8 @@ description: "Square-foot charts guess. A Manual J load calculation sizes your A
 date: 2026-11-03
 category: "AC Installation"
 author: "Cody"
+image: "/images/blog/what-size-ac-do-i-need-orange-county.webp"
+imageAlt: "Technician commissioning an outdoor AC condenser with a vacuum pump before start-up"
 ---
 
 **Quick answer:** What size AC you need comes from a Manual J load calculation, a room-by-room heat gain estimate built from your actual house. Tonnage alone cannot answer the question, because a ton only describes capacity: 12,000 BTU of heat removed per hour. Two homes with the same square footage can need different equipment, and in Orange County they often do.
