@@ -322,4 +322,6 @@ export const blogServiceMap: Record<string, LinkItem[]> = {
   'what-size-ac-do-i-need-orange-county': [allServices[1], allServices[7], allServices[8]],
   'furnace-making-noise-orange-county': [allServices[4], allServices[5], allServices[9]],
   'winter-energy-bill-high-orange-county': [allServices[5], allServices[4], allServices[12]],
+  'whole-home-air-purifier-worth-it-orange-county': [allServices[17], allServices[20], allServices[12]],
+  'smart-thermostat-worth-it-orange-county': [allServices[22], allServices[0], allServices[5]],
 };
