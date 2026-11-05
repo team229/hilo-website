@@ -320,4 +320,6 @@ export const blogServiceMap: Record<string, LinkItem[]> = {
   'how-long-does-ac-last-orange-county': [allServices[18], allServices[0], allServices[8]],
   'ac-leaking-water-orange-county': [allServices[18], allServices[0], allServices[2]],
   'what-size-ac-do-i-need-orange-county': [allServices[1], allServices[7], allServices[8]],
+  'furnace-making-noise-orange-county': [allServices[4], allServices[5], allServices[9]],
+  'winter-energy-bill-high-orange-county': [allServices[5], allServices[4], allServices[12]],
 };

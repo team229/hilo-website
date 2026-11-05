@@ -491,6 +491,32 @@ const blogFaqSchemas: Record<string, object> = {
       { "@type": "Question", "name": "What is CFM per ton?", "acceptedAnswer": { "@type": "Answer", "text": "CFM is cubic feet per minute of airflow. Manufacturers rate capacity at 400 CFM per ton, and California's airflow path requires at least 350. Below that, the equipment delivers less than its rating." } },
       { "@type": "Question", "name": "What if my contractor will not show me the load calculation?", "acceptedAnswer": { "@type": "Answer", "text": "That is your answer. A contractor who ran it can produce the report. You are entitled to see the inputs and results before you sign." } }
     ]
+  },
+  'furnace-making-noise-orange-county': {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Why does my furnace bang when it starts?", "acceptedAnswer": { "@type": "Answer", "text": "Delayed ignition. Gas opens before it lights, pools, then burns all at once. A soft whoosh within a second of the valve opening is normal. A boom, or a whoosh several seconds late, is not. Shut it off and call." } },
+      { "@type": "Question", "name": "Why is my furnace making noise all of a sudden?", "acceptedAnswer": { "@type": "Answer", "text": "Usually because it sat idle. Dust in the burner compartment, a drier blower bearing, and a looser panel all surface on the first cold night. The exception is a bang at ignition, which is fuel, not dust." } },
+      { "@type": "Question", "name": "Why does my furnace click but never light?", "acceptedAnswer": { "@type": "Answer", "text": "The board is running its ignition sequence and failing to prove flame. Usually a weak ignitor, a dirty flame sensor, or a valve that is not opening. Most boards lock out after three tries." } },
+      { "@type": "Question", "name": "Is a squealing furnace dangerous?", "acceptedAnswer": { "@type": "Answer", "text": "Less often than a banging one, but do not ignore it. A seizing blower can trip the limit, and a failing inducer can stop venting gas. Shut it off if the pitch climbs." } },
+      { "@type": "Question", "name": "Can a dirty filter really make my furnace whistle?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and it is first on the list. A clogged filter forces air through gaps at higher velocity. Change it, listen again, then call." } },
+      { "@type": "Question", "name": "What does it cost to fix a noisy furnace?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on the part. A belt is a small parts line. A blower motor, inducer, or heat exchanger is not. Expect a diagnostic visit in the $75 to $200 range before any repair quote." } },
+      { "@type": "Question", "name": "Should I shut my furnace off if it is making noise?", "acceptedAnswer": { "@type": "Answer", "text": "Shut it off for banging, grinding, scraping, a blower that hums without moving air, rumbling after the burner stops, or any noise with soot, a yellow flame, gas smell, or a CO alarm. Rattling and whistling can wait." } }
+    ]
+  },
+  'winter-energy-bill-high-orange-county': {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Why is my electric bill high in winter but my gas bill is normal?", "acceptedAnswer": { "@type": "Answer", "text": "Your heat is likely electric: a heat pump with auxiliary strip heat, or space heaters. If the gas bill is flat, the furnace is not the load that changed." } },
+      { "@type": "Question", "name": "How do I know if my auxiliary heat is running?", "acceptedAnswer": { "@type": "Answer", "text": "Check the thermostat for an AUX, EM, or auxiliary indicator on a cold morning while the heat is running. Some systems also show it during defrost. Runtime history is the more reliable measure." } },
+      { "@type": "Question", "name": "Does a dirty filter really raise my bill?", "acceptedAnswer": { "@type": "Answer", "text": "It can. Restricted airflow makes the blower work harder and can trip a limit or freeze a coil, so the system runs longer for less heat. It is the cheapest thing to rule out first." } },
+      { "@type": "Question", "name": "Is it cheaper to heat with a heat pump or a furnace here?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on your electric rate against gas. At 2026 California rates, heating with a heat pump often costs more per unit of heat than a 96% furnace. Our heat pump comparison covers the math." } },
+      { "@type": "Question", "name": "Why did my bill go up when I did not change anything?", "acceptedAnswer": { "@type": "Answer", "text": "Rates, billing-cycle length, weather, a new appliance, or a failing component can all move it. Compare the same month year over year and check whether the change is in kWh, therms, or both." } },
+      { "@type": "Question", "name": "Will a new HVAC system lower my winter bill?", "acceptedAnswer": { "@type": "Answer", "text": "Possibly, but rarely enough to justify replacement on its own. Duct sealing, air sealing, and controls usually return more per dollar. Replace when the equipment is at end of life, not as a bill fix." } },
+      { "@type": "Question", "name": "Should I turn the heat off when I leave?", "acceptedAnswer": { "@type": "Answer", "text": "A modest setback is fine for a gas furnace. For a heat pump, deep setbacks can trigger expensive auxiliary heat on recovery, so a small setback or a steady temperature is usually cheaper." } }
+    ]
   }
 };
 
