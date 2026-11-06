@@ -1,7 +1,7 @@
 ---
 title: "Furnace Making Noise? What Each Sound Means in Orange County"
 description: "Banging, rattling, clicking, or squealing? Learn what each furnace noise means, which ones are dangerous, and when to shut the unit off and call."
-date: 2026-11-12
+date: 2026-11-06
 category: "Heating Repair"
 author: "Cody"
 image: "/images/blog/furnace-making-noise-orange-county.webp"

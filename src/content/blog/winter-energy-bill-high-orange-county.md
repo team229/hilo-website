@@ -1,7 +1,7 @@
 ---
 title: "Why Is My Energy Bill So High in Winter? Check This First"
 description: "Before you blame the furnace, split the bill. How Orange County homeowners find the real energy bill culprit in an hour, from strip heat to duct leaks."
-date: 2026-11-19
+date: 2026-11-06
 category: "HVAC Maintenance"
 author: "Cody"
 image: "/images/blog/winter-energy-bill-high-orange-county.webp"

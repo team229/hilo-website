@@ -1,7 +1,7 @@
 ---
 title: "Are Smart Thermostats Worth It? Orange County Buyer's Guide"
 description: "Smart thermostats rarely pay back fast in Orange County. What they do well, what they cannot fix, and the C-wire check that decides your install cost."
-date: 2026-11-30
+date: 2026-11-06
 category: "Thermostat"
 author: "Cody"
 ---

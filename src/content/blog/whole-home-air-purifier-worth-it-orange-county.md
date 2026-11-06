@@ -1,7 +1,7 @@
 ---
 title: "Is a Whole-Home Air Purifier Worth It in Orange County?"
 description: "Four technologies get sold as air purifiers. What each removes, what it misses, why duct leakage decides the result, and what each one costs installed."
-date: 2026-11-26
+date: 2026-11-06
 category: "Indoor Air Quality"
 author: "Cody"
 image: "/images/blog/whole-home-air-purifier-worth-it-orange-county.webp"

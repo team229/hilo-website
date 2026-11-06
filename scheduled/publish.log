@@ -6,3 +6,22 @@
 [2026-11-05 16:06:19] skip whole-home-air-purifier-worth-it-orange-county (due 2026-11-26)
 [2026-11-05 16:06:19] skip smart-thermostat-worth-it-orange-county (due 2026-11-30)
 [2026-11-05 16:06:19] nothing due on 2026-11-05
+[2026-11-06 17:56:21] skip furnace-making-noise-orange-county (due 2026-11-12)
+[2026-11-06 17:56:21] skip winter-energy-bill-high-orange-county (due 2026-11-19)
+[2026-11-06 17:56:21] skip whole-home-air-purifier-worth-it-orange-county (due 2026-11-26)
+[2026-11-06 17:56:21] skip smart-thermostat-worth-it-orange-county (due 2026-11-30)
+[2026-11-06 17:56:21] nothing due on 2026-11-06
+[2026-11-06 17:56:24] warn: furnace-making-noise-orange-county due 2026-11-06 but staged file missing
+[2026-11-06 17:56:24] warn: winter-energy-bill-high-orange-county due 2026-11-06 but staged file missing
+[2026-11-06 17:56:24] warn: whole-home-air-purifier-worth-it-orange-county due 2026-11-06 but staged file missing
+[2026-11-06 17:56:24] warn: smart-thermostat-worth-it-orange-county due 2026-11-06 but staged file missing
+[2026-11-06 17:56:24] nothing due on 2026-11-06
+[2026-11-06 17:56:27] warn: furnace-making-noise-orange-county due 2026-11-06 but staged file missing
+[2026-11-06 17:56:27] warn: winter-energy-bill-high-orange-county due 2026-11-06 but staged file missing
+[2026-11-06 17:56:27] warn: whole-home-air-purifier-worth-it-orange-county due 2026-11-06 but staged file missing
+[2026-11-06 17:56:27] warn: smart-thermostat-worth-it-orange-county due 2026-11-06 but staged file missing
+[2026-11-06 17:56:27] nothing due on 2026-11-06
+[2026-11-06 17:56:30] publishing furnace-making-noise-orange-county (2026-11-06)
+[2026-11-06 17:56:30] publishing winter-energy-bill-high-orange-county (2026-11-06)
+[2026-11-06 17:56:30] publishing whole-home-air-purifier-worth-it-orange-county (2026-11-06)
+[2026-11-06 17:56:30] publishing smart-thermostat-worth-it-orange-county (2026-11-06)
