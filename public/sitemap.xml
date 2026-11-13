@@ -1,384 +1,240 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Main Pages -->
   <url>
     <loc>https://www.hiloheatingandair.com/</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/about-us</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/contact-us</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/service-areas</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-11</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/services</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-03</lastmod>
   </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/sitemap.html</loc>
-    <lastmod>2026-09-24</lastmod>
-  </url>
-  <!-- Air Conditioning -->
   <url>
     <loc>https://www.hiloheatingandair.com/services/air-conditioning-services</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/services/air-conditioning-services/ac-repair</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/services/air-conditioning-services/ac-maintenance</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-11-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/services/air-conditioning-services/ac-repair</loc>
+    <lastmod>2026-11-03</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/services/air-conditioning-services/air-conditioning-installation</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-11-03</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/services/air-conditioning-services/emergency-ac-repair</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-06</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/services/air-conditioning-services/mini-split-installation</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/services/commercial-hvac-services</loc>
+    <lastmod>2026-09-06</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/services/ductless-mini-split-services</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-10-03</lastmod>
   </url>
-  <!-- Heating -->
   <url>
     <loc>https://www.hiloheatingandair.com/services/heating-services</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-03</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/services/heating-services/heating-installation</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/services/heating-services/heating-maintenance</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-06</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/services/heating-services/heating-repair</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-28</lastmod>
   </url>
-  <!-- HVAC Services -->
   <url>
     <loc>https://www.hiloheatingandair.com/services/hvac-services</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/services/hvac-services/hvac-repair</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-10-03</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/services/hvac-services/emergency-hvac-repair</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-06</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/services/hvac-services/hvac-installation</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/services/hvac-services/hvac-repair</loc>
+    <lastmod>2026-10-03</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/services/hvac-services/hvac-replacement</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-29</lastmod>
   </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/services/thermostat-services</loc>
-    <lastmod>2026-09-24</lastmod>
-  </url>
-  <!-- Commercial HVAC -->
-  <url>
-    <loc>https://www.hiloheatingandair.com/services/commercial-hvac-services</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <!-- Indoor Air Quality -->
   <url>
     <loc>https://www.hiloheatingandair.com/services/indoor-air-quality-solutions</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/duct-cleaning</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-10-26</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/air-humidifiers</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-06</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/dryer-vent-cleaning</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/duct-cleaning</loc>
+    <lastmod>2026-10-26</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/duct-installation</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-06</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/hvac-air-balancing</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-26</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/hvac-duct-repair</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-06</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/services/indoor-air-quality-solutions/hvac-duct-sealing</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-03</lastmod>
   </url>
-  <!-- Service Areas -->
+  <url>
+    <loc>https://www.hiloheatingandair.com/services/thermostat-services</loc>
+    <lastmod>2026-11-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/service-areas</loc>
+    <lastmod>2026-10-03</lastmod>
+  </url>
   <url>
     <loc>https://www.hiloheatingandair.com/service-areas/anaheim</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/service-areas/brea</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/service-areas/buena-park</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/service-areas/costa-mesa</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/service-areas/cypress</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/service-areas/fountain-valley</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/service-areas/fullerton</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/service-areas/garden-grove</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/service-areas/huntington-beach</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/service-areas/irvine</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/service-areas/la-habra</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/service-areas/laguna-hills</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/service-areas/lake-forest</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/service-areas/los-angeles</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/service-areas/mission-viejo</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/service-areas/newport-beach</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/service-areas/orange</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/service-areas/orange-county</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/service-areas/placentia</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/service-areas/rancho-santa-margarita</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/service-areas/santa-ana</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/service-areas/stanton</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/service-areas/tustin</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/service-areas/westminster</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/service-areas/yorba-linda</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <!-- Blog -->
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/ac-blowing-warm-air</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
-    <loc>https://www.hiloheatingandair.com/blogs/ac-installation-los-angeles-guide</loc>
-    <lastmod>2026-09-23</lastmod>
+    <loc>https://www.hiloheatingandair.com/blogs</loc>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
-    <loc>https://www.hiloheatingandair.com/blogs/ac-installation-los-angeles-planning</loc>
-    <lastmod>2026-09-23</lastmod>
+    <loc>https://www.hiloheatingandair.com/blogs/furnace-making-noise-orange-county</loc>
+    <lastmod>2026-11-06</lastmod>
   </url>
   <url>
-    <loc>https://www.hiloheatingandair.com/blogs/ac-just-died-what-to-do</loc>
-    <lastmod>2026-09-23</lastmod>
+    <loc>https://www.hiloheatingandair.com/blogs/smart-thermostat-worth-it-orange-county</loc>
+    <lastmod>2026-11-06</lastmod>
   </url>
   <url>
-    <loc>https://www.hiloheatingandair.com/blogs/ac-repair-anaheim-same-day-emergency</loc>
-    <lastmod>2026-09-23</lastmod>
+    <loc>https://www.hiloheatingandair.com/blogs/whole-home-air-purifier-worth-it-orange-county</loc>
+    <lastmod>2026-11-06</lastmod>
   </url>
   <url>
-    <loc>https://www.hiloheatingandair.com/blogs/ac-repair-anaheim-warning-signs-common-failures</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/ac-repair-los-angeles-city-strain</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/ac-repair-newport-beach-coastal</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/ac-repair-orange-county-geography</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/ac-will-quit</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/anaheim-ac-repair-guide</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/beat-the-heat-ac-guide</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/commercial-hvac-mistakes</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/commercial-hvac-services-guide</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/emergency-heating-repair</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/furnace-installation-laguna-hills</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/furnace-repair-los-angeles-mild-climate</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/furnace-repair-rancho-santa-margarita</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/heater-died-2am</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/heating-repair-los-angeles-equipment-types</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/heating-repairs-los-angeles-guide</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/home-comfort-habit</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/hvac-maintenance-service-what-a-real-tune-up-includes</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/hvac-replacement</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/hvac-duct-repair-stanton-ca</loc>
-    <lastmod>2026-10-04</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/hvac-system-inspection</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/hvac-system-inspection-stanton-ca</loc>
-    <lastmod>2026-10-04</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/is-duct-cleaning-worth-it-orange-county</loc>
-    <lastmod>2026-10-26</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/why-house-feels-stuffy-with-ac-on-orange-county</loc>
-    <lastmod>2026-10-26</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/heater-blowing-cold-air-orange-county</loc>
-    <lastmod>2026-10-28</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/heat-pump-vs-furnace-orange-county</loc>
-    <lastmod>2026-10-28</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/ac-smells-musty-burning-orange-county</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/hvac-replacement-cost-orange-county</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/thermostat-blank-not-responding-orange-county</loc>
-    <lastmod>2026-11-02</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/how-long-does-ac-last-orange-county</loc>
-    <lastmod>2026-11-02</lastmod>
+    <loc>https://www.hiloheatingandair.com/blogs/winter-energy-bill-high-orange-county</loc>
+    <lastmod>2026-11-06</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/blogs/ac-leaking-water-orange-county</loc>
@@ -389,47 +245,191 @@
     <lastmod>2026-11-03</lastmod>
   </url>
   <url>
-    <loc>https://www.hiloheatingandair.com/blogs/new-hvac-system-installation-what-to-verify</loc>
-    <lastmod>2026-09-23</lastmod>
+    <loc>https://www.hiloheatingandair.com/blogs/how-long-does-ac-last-orange-county</loc>
+    <lastmod>2026-11-02</lastmod>
   </url>
   <url>
-    <loc>https://www.hiloheatingandair.com/blogs/seasonal-hvac-maintenance</loc>
-    <lastmod>2026-09-23</lastmod>
+    <loc>https://www.hiloheatingandair.com/blogs/thermostat-blank-not-responding-orange-county</loc>
+    <lastmod>2026-11-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/ac-smells-musty-burning-orange-county</loc>
+    <lastmod>2026-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/hvac-replacement-cost-orange-county</loc>
+    <lastmod>2026-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/heat-pump-vs-furnace-orange-county</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/heater-blowing-cold-air-orange-county</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/is-duct-cleaning-worth-it-orange-county</loc>
+    <lastmod>2026-10-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/why-house-feels-stuffy-with-ac-on-orange-county</loc>
+    <lastmod>2026-10-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/hvac-duct-repair-stanton-ca</loc>
+    <lastmod>2026-10-04</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/hvac-system-inspection-stanton-ca</loc>
+    <lastmod>2026-10-04</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/ac-repair-anaheim-warning-signs-common-failures</loc>
+    <lastmod>2026-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/hvac-system-inspection</loc>
+    <lastmod>2026-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/hvac-maintenance-service-what-a-real-tune-up-includes</loc>
+    <lastmod>2026-09-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/new-hvac-system-installation-what-to-verify</loc>
+    <lastmod>2026-09-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/ac-repair-anaheim-same-day-emergency</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/commercial-hvac-services-guide</loc>
+    <lastmod>2026-09-11</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/ac-installation-los-angeles-planning</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/ac-repair-los-angeles-city-strain</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/ac-repair-newport-beach-coastal</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/ac-repair-orange-county-geography</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/furnace-installation-laguna-hills</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/furnace-repair-los-angeles-mild-climate</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/furnace-repair-rancho-santa-margarita</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/heating-repair-los-angeles-equipment-types</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/ac-installation-los-angeles-guide</loc>
+    <lastmod>2026-07-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/ac-just-died-what-to-do</loc>
+    <lastmod>2026-07-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/anaheim-ac-repair-guide</loc>
+    <lastmod>2026-07-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/beat-the-heat-ac-guide</loc>
+    <lastmod>2026-07-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/heating-repairs-los-angeles-guide</loc>
+    <lastmod>2026-07-26</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/blogs/set-it-and-forget-it-hvac</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-07-26</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/blogs/skipping-hvac-maintenance-costs-more</loc>
-    <lastmod>2026-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/split-system-installation</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-07-26</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/blogs/why-ac-dies-in-july</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-07-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/emergency-heating-repair</loc>
+    <lastmod>2026-07-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/home-comfort-habit</loc>
+    <lastmod>2026-07-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/seasonal-hvac-maintenance</loc>
+    <lastmod>2026-07-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/split-system-installation</loc>
+    <lastmod>2026-07-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/ac-will-quit</loc>
+    <lastmod>2026-06-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/heater-died-2am</loc>
+    <lastmod>2026-06-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/commercial-hvac-mistakes</loc>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/hvac-replacement</loc>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/blogs/ac-blowing-warm-air</loc>
+    <lastmod>2026-05-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/about-us</loc>
+    <lastmod>2026-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hiloheatingandair.com/contact-us</loc>
+    <lastmod>2026-08-30</lastmod>
   </url>
   <url>
     <loc>https://www.hiloheatingandair.com/projects</loc>
     <lastmod>2026-10-18</lastmod>
   </url>
   <url>
-    <loc>https://www.hiloheatingandair.com/blogs/furnace-making-noise-orange-county</loc>
-    <lastmod>2026-11-06</lastmod>
+    <loc>https://www.hiloheatingandair.com/service</loc>
+    <lastmod>2026-09-06</lastmod>
   </url>
   <url>
-    <loc>https://www.hiloheatingandair.com/blogs/winter-energy-bill-high-orange-county</loc>
-    <lastmod>2026-11-06</lastmod>
+    <loc>https://www.hiloheatingandair.com/service/hvac-services</loc>
+    <lastmod>2026-09-06</lastmod>
   </url>
   <url>
-    <loc>https://www.hiloheatingandair.com/blogs/whole-home-air-purifier-worth-it-orange-county</loc>
-    <lastmod>2026-11-06</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hiloheatingandair.com/blogs/smart-thermostat-worth-it-orange-county</loc>
-    <lastmod>2026-11-06</lastmod>
+    <loc>https://www.hiloheatingandair.com/sitemap.html</loc>
+    <lastmod>2026-10-18</lastmod>
   </url>
 </urlset>
