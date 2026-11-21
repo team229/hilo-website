@@ -4,6 +4,8 @@ description: "Smart thermostats rarely pay back fast in Orange County. What they
 date: 2026-11-30
 category: "Thermostat"
 author: "Cody"
+image: "/images/blog/smart-thermostat-worth-it-orange-county.webp"
+imageAlt: "Homeowner adjusting a smart thermostat on a hallway wall while holding a smartphone"
 ---
 
 **Quick answer:** For most Orange County homeowners, a smart thermostat is a comfort purchase, not an investment. It pays back only when the house sits empty for hours and nobody sets the temperature back by hand. Heat pump owners are the exception, in the other direction: settings matter more, and a deep setback can cost more than it saves.
@@ -196,3 +198,5 @@ Most run about ten years before the display or touch panel fails. If you replace
 Not sure what is on your wall? [Send us a photo of the wall plate](/contact-us) and we will tell you what you have.
 
 *Written by Cody at HiLo Heating & Air, Stanton, CA. Cost ranges are third-party national data, not HiLo pricing; every job is quoted after an inspection. Sources checked November 2026.*
+
+*Photo: Shixart1985, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Woman_adjusts_smart_home_thermostat_while_holding_smartphone_in_home_setting.jpg).*
