@@ -1,7 +1,7 @@
 ---
 title: "How Long Does an AC Last in Orange County? 12 to 15 Years"
 description: "Most central ACs in Orange County last 12 to 15 years, not 20. What shortens life here, how to read your unit's age, and when repair stops paying."
-date: 2026-11-02
+date: 2026-11-27
 category: "AC Repair"
 author: "Cody"
 image: "/images/blog/how-long-does-ac-last-orange-county.webp"

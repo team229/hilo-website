@@ -1,7 +1,7 @@
 ---
 title: "AC Leaking Water? Why It Happens in Orange County Homes"
 description: "Water at the air handler, a ceiling stain, or a drip outside? How Orange County homeowners can find the real cause, stay safe, and stop the damage."
-date: 2026-11-03
+date: 2026-11-20
 category: "AC Repair"
 author: "Cody"
 image: "/images/blog/ac-leaking-water-orange-county.webp"

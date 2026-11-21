@@ -1,7 +1,7 @@
 ---
 title: "Thermostat Blank or Not Responding? Orange County Fixes"
 description: "Thermostat blank or not responding? Work through batteries, the breaker, settings, and the filter, then see when an Orange County homeowner should stop."
-date: 2026-11-02
+date: 2026-11-30
 category: "Thermostat"
 author: "Cody"
 image: "/images/blog/thermostat-blank-not-responding-orange-county.webp"

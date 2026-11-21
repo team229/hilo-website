@@ -1,7 +1,7 @@
 ---
 title: "What Size AC Do I Need? Manual J Sizing for Orange County"
 description: "Square-foot charts guess. A Manual J load calculation sizes your AC for Orange County heat, glass, ducts, and design temperature. How to check a bid."
-date: 2026-11-03
+date: 2026-11-25
 category: "AC Installation"
 author: "Cody"
 image: "/images/blog/what-size-ac-do-i-need-orange-county.webp"
